@@ -1,0 +1,39 @@
+{
+  "kind": "actual_content_cleanup_read_only",
+  "checks": [
+    {
+      "name": "real provider metadata retained and all test assets tombstoned",
+      "result": "passed"
+    },
+    {
+      "name": "article_media synthetic associations removed",
+      "result": "passed"
+    },
+    {
+      "name": "homepage_media synthetic associations removed",
+      "result": "passed"
+    },
+    {
+      "name": "synthetic article remains deleted and hidden: cms7fc409e8e62b",
+      "result": "passed"
+    },
+    {
+      "name": "deleted synthetic URL returns 404: cms7fc409e8e62b",
+      "result": "passed"
+    },
+    {
+      "name": "synthetic article remains deleted and hidden: cms7fc409e8e62b-second",
+      "result": "passed"
+    },
+    {
+      "name": "deleted synthetic URL returns 404: cms7fc409e8e62b-second",
+      "result": "passed"
+    },
+    {
+      "name": "all previous homepage selections restored exactly",
+      "result": "passed"
+    }
+  ],
+  "status": "passed",
+  "business_mutations": 0
+}

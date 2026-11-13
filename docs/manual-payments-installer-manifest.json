@@ -1,0 +1,6 @@
+{
+  "canonical": "202610150016_manual_advance_payments.sql",
+  "canonical_sha256": "d0e29a69895ac34b808371c40c126235f7b7d019ee77874b218b3a65cbfdb612",
+  "installer_sha256": "38bd7630686a04e8e3a225b370021686328d7031038aa10ba4d32d621cdfe644",
+  "prior_015_sha256": "b89d4a6a6ae13c27be9d71928c5ea288c26b64691f8be0d867c8070abf5b0ce0"
+}

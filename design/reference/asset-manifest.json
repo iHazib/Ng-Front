@@ -1,0 +1,344 @@
+[
+  {
+    "path": "/assets/brand/logo.png",
+    "width": 1000,
+    "height": 1000,
+    "role": "Footer transparent logo",
+    "status": "approved-wireframe",
+    "note": "",
+    "sha256": "8b5dd9369e6d559151cc136b285e6d73dc2c088d08a0ad738f4a270acd1bb308"
+  },
+  {
+    "path": "/assets/brand/logo-header.png",
+    "width": 1800,
+    "height": 1800,
+    "role": "Approved header logo",
+    "status": "approved-wireframe",
+    "note": "",
+    "sha256": "c1a040c9e829d1caf0c7ac5baf0d00dfddb8d620a4a416cd95d934d2b32fb50b"
+  },
+  {
+    "path": "/assets/hero/brand-introduction.webp",
+    "width": 1672,
+    "height": 941,
+    "role": "Hero brand-introduction",
+    "status": "approved-wireframe",
+    "note": "",
+    "sha256": "04fe4d3780853fed6d87e3e2876ed3d5a6cfc61f78647b524e465e80b3868e34"
+  },
+  {
+    "path": "/assets/hero/makeup.webp",
+    "width": 1672,
+    "height": 941,
+    "role": "Hero makeup",
+    "status": "approved-wireframe",
+    "note": "",
+    "sha256": "b9ee3debeb6b9a22029863629e147018cd66afe1a10dfd37ab5075fb54913c48"
+  },
+  {
+    "path": "/assets/hero/skincare.webp",
+    "width": 1672,
+    "height": 941,
+    "role": "Hero skincare",
+    "status": "approved-wireframe",
+    "note": "",
+    "sha256": "d834b02229dfc5c58d2bec0d41badd3ce6e5550939f11345a0e88335c29fe25c"
+  },
+  {
+    "path": "/assets/hero/fragrances.webp",
+    "width": 1672,
+    "height": 941,
+    "role": "Hero fragrances",
+    "status": "approved-wireframe",
+    "note": "",
+    "sha256": "b5fee32b2d41987806bb3fed6f865284b5a7e70baefee4cf2d4784a21c936348"
+  },
+  {
+    "path": "/assets/categories/skincare.webp",
+    "width": 1024,
+    "height": 1536,
+    "role": "Category skincare",
+    "status": "approved-wireframe",
+    "note": "",
+    "sha256": "b3c7d858732a781bc928af456b3eee777f37222baf1d70ea4179be53a3bbbc10"
+  },
+  {
+    "path": "/assets/categories/makeup.webp",
+    "width": 1312,
+    "height": 1199,
+    "role": "Category makeup",
+    "status": "approved-wireframe",
+    "note": "",
+    "sha256": "f94315adbade7bd0e5147fa7a949d16e760c9e4b877be37420479cfb94826a86"
+  },
+  {
+    "path": "/assets/categories/fragrances.webp",
+    "width": 1000,
+    "height": 563,
+    "role": "Category fragrances",
+    "status": "approved-wireframe",
+    "note": "",
+    "sha256": "dc8a743d0259246cd49785838f0f964e3d750b9a9edec7de48ccba412c3eaeae"
+  },
+  {
+    "path": "/assets/categories/bath-body.webp",
+    "width": 1024,
+    "height": 1536,
+    "role": "Category bath-body",
+    "status": "preview-placeholder",
+    "note": "Bath & Body reuses approved care artwork; dedicated image pending.",
+    "sha256": "b3c7d858732a781bc928af456b3eee777f37222baf1d70ea4179be53a3bbbc10"
+  },
+  {
+    "path": "/assets/categories/cutlery.webp",
+    "width": 1254,
+    "height": 1254,
+    "role": "Category cutlery",
+    "status": "approved-wireframe",
+    "note": "",
+    "sha256": "c20dc51e3e9d109cf1812ceb7e36b3e72f796a03a02bb6132d069a5281b7d969"
+  },
+  {
+    "path": "/assets/concerns/skincare/dryness.webp",
+    "width": 1000,
+    "height": 1000,
+    "role": "Dryness",
+    "status": "approved-wireframe",
+    "note": "Concern-to-product assignments require evidence; image is not proof of efficacy.",
+    "sha256": "8abd71b5746e06de69469ad77be76f665506d277cdfd8dfb3e40a5824a88d0ec"
+  },
+  {
+    "path": "/assets/concerns/skincare/dark-spots.webp",
+    "width": 1000,
+    "height": 1000,
+    "role": "Dark Spots",
+    "status": "approved-wireframe",
+    "note": "Concern-to-product assignments require evidence; image is not proof of efficacy.",
+    "sha256": "09bd13616b8e8de60c89040d04507033c8bc01b076864dc0e9c1bd0019805c85"
+  },
+  {
+    "path": "/assets/concerns/skincare/oiliness.webp",
+    "width": 1000,
+    "height": 1000,
+    "role": "Oiliness",
+    "status": "approved-wireframe",
+    "note": "Concern-to-product assignments require evidence; image is not proof of efficacy.",
+    "sha256": "c1e9c820b9e6763559875eae350c0212d9b9ad618afd981b6f31ff9b8da2e079"
+  },
+  {
+    "path": "/assets/concerns/skincare/uneven-texture.webp",
+    "width": 1000,
+    "height": 1000,
+    "role": "Uneven Texture",
+    "status": "approved-wireframe",
+    "note": "Concern-to-product assignments require evidence; image is not proof of efficacy.",
+    "sha256": "83726ca5dff17edfe2c66054bd8233f17b709c59d16c7357b0f2f8798c13c8f9"
+  },
+  {
+    "path": "/assets/concerns/skincare/acne-and-blemishes.webp",
+    "width": 1000,
+    "height": 1000,
+    "role": "Acne and Blemishes",
+    "status": "approved-wireframe",
+    "note": "Concern-to-product assignments require evidence; image is not proof of efficacy.",
+    "sha256": "03fa8a3be0a6f68a42c9c40b90e845ceef3ec69da1a110616f67bda90592fe94"
+  },
+  {
+    "path": "/assets/concerns/skincare/sensitive-skin.webp",
+    "width": 1000,
+    "height": 1000,
+    "role": "Sensitive Skin",
+    "status": "approved-wireframe",
+    "note": "Concern-to-product assignments require evidence; image is not proof of efficacy.",
+    "sha256": "ba105b424f5edbd14e8a84b75a4883338b1a76b684db9d7c11234e6d18a7627c"
+  },
+  {
+    "path": "/assets/concerns/skincare/dullness.webp",
+    "width": 1000,
+    "height": 1000,
+    "role": "Dullness",
+    "status": "approved-wireframe",
+    "note": "Concern-to-product assignments require evidence; image is not proof of efficacy.",
+    "sha256": "2eb7cdd098d7235da2b63a5c74cd4abaa9de2e0edec12d34bcdf7a32a409d1ac"
+  },
+  {
+    "path": "/assets/concerns/skincare/fine-lines.webp",
+    "width": 1000,
+    "height": 1000,
+    "role": "Fine lines",
+    "status": "approved-wireframe",
+    "note": "Concern-to-product assignments require evidence; image is not proof of efficacy.",
+    "sha256": "4be2280441f63ffd1224418e76a7565ad5ff73e7acb87c0c8ec10bb4d603bd4f"
+  },
+  {
+    "path": "/assets/brands/axis-y/logo.webp",
+    "width": 1800,
+    "height": 1800,
+    "role": "Brand axis-y",
+    "status": "approved-wireframe",
+    "note": "",
+    "sha256": "337f4b135ed1062febec8e577088cdb4441ffb23c22bfcda095fbc153cb2203b"
+  },
+  {
+    "path": "/assets/brands/pixi/logo.webp",
+    "width": 1800,
+    "height": 1800,
+    "role": "Brand pixi",
+    "status": "approved-wireframe",
+    "note": "",
+    "sha256": "9fdee75804aefb41e7b090b778ea5f603d8b32388c4aa71606d534aa17cd6ab1"
+  },
+  {
+    "path": "/assets/brands/cera-ve/logo.webp",
+    "width": 1800,
+    "height": 1800,
+    "role": "Brand cera-ve",
+    "status": "approved-wireframe",
+    "note": "",
+    "sha256": "a545bc9686190584be4856ef976ebbe5e68ae4ec7c757313bfc46794f9fdd1d8"
+  },
+  {
+    "path": "/assets/brands/soap-and-glory/logo.webp",
+    "width": 1800,
+    "height": 1800,
+    "role": "Brand soap-and-glory",
+    "status": "approved-wireframe",
+    "note": "",
+    "sha256": "f566cfe2960d719c44bb3ef9ab4a0aac5282fa6b90493ab7ba89dd36661d1aaf"
+  },
+  {
+    "path": "/assets/brands/the-ordinary/logo.webp",
+    "width": 1800,
+    "height": 1800,
+    "role": "Brand the-ordinary",
+    "status": "approved-wireframe",
+    "note": "",
+    "sha256": "ae1f924544bbf6502a020d9c9959e6df9542f1383d31e9a2278955caad8e460f"
+  },
+  {
+    "path": "/assets/brands/sk-ii/logo.webp",
+    "width": 1800,
+    "height": 1800,
+    "role": "Brand sk-ii",
+    "status": "approved-wireframe",
+    "note": "",
+    "sha256": "6c804aa242eb6aa574906f6b0fa1e1274e36f392ca24bd7ce593311cf0e760fb"
+  },
+  {
+    "path": "/assets/brands/cetaphil/logo.webp",
+    "width": 1800,
+    "height": 1800,
+    "role": "Brand cetaphil",
+    "status": "approved-wireframe",
+    "note": "",
+    "sha256": "991a20982ac9656425bb6b311576295b9a4d66fb49b686c28b150afda0f89238"
+  },
+  {
+    "path": "/assets/brands/origins/logo.webp",
+    "width": 1800,
+    "height": 1800,
+    "role": "Brand origins",
+    "status": "approved-wireframe",
+    "note": "",
+    "sha256": "87af45bc20ff98e620fa582764bb9db1224f6e02c8a9ee3cd2882497713bd2bc"
+  },
+  {
+    "path": "/assets/brands/neutrogena/logo.webp",
+    "width": 1800,
+    "height": 1800,
+    "role": "Brand neutrogena",
+    "status": "approved-wireframe",
+    "note": "",
+    "sha256": "1e5e4c24efd936b1d66048bf0d975969252da6f0dcdca17d4ae41bc490213775"
+  },
+  {
+    "path": "/assets/brands/boots/logo.webp",
+    "width": 1800,
+    "height": 1800,
+    "role": "Brand boots",
+    "status": "approved-wireframe",
+    "note": "",
+    "sha256": "64b186ee5fe63ba540cdf0c1c0dc1b14cc7775def90abce4d5771f2bae380a8c"
+  },
+  {
+    "path": "/assets/brands/la-roche-posay/logo.webp",
+    "width": 1800,
+    "height": 1800,
+    "role": "Brand la-roche-posay",
+    "status": "approved-wireframe",
+    "note": "",
+    "sha256": "fc838354ba3c6c6d3981ab67523a9fde6872e8a371410503254454d0556066f0"
+  },
+  {
+    "path": "/assets/brands/bath-and-body-works/logo.webp",
+    "width": 1800,
+    "height": 1800,
+    "role": "Brand bath-and-body-works",
+    "status": "approved-wireframe",
+    "note": "",
+    "sha256": "21868ffaf3da6250da00f57b690add5cc01290a12be4d476fe180a4f8c654610"
+  },
+  {
+    "path": "/assets/products/dark-spot-correcting-glow-serum/primary.webp",
+    "width": 1024,
+    "height": 1536,
+    "role": "Dark Spot Correcting Glow Serum",
+    "status": "wireframe-sample",
+    "note": "Match exact SKU/variant against catalog; prices and current-edit selection in wireframe are illustrative. Gallery secondary/detail views reuse primary with CSS framing.",
+    "sha256": "b3c7d858732a781bc928af456b3eee777f37222baf1d70ea4179be53a3bbbc10"
+  },
+  {
+    "path": "/assets/products/foaming-cleanser/primary.webp",
+    "width": 1024,
+    "height": 1536,
+    "role": "Foaming Cleanser",
+    "status": "wireframe-sample",
+    "note": "Match exact SKU/variant against catalog; prices and current-edit selection in wireframe are illustrative. Gallery secondary/detail views reuse primary with CSS framing.",
+    "sha256": "7be2fbeea9874aa8e19731df37cb2cbc95c31c3d42befeddfc4989274235fb5d"
+  },
+  {
+    "path": "/assets/products/on-the-glow-blush-ruby/primary.webp",
+    "width": 1312,
+    "height": 1199,
+    "role": "On the Glow Blush Ruby",
+    "status": "wireframe-sample",
+    "note": "Match exact SKU/variant against catalog; prices and current-edit selection in wireframe are illustrative. Gallery secondary/detail views reuse primary with CSS framing.",
+    "sha256": "f94315adbade7bd0e5147fa7a949d16e760c9e4b877be37420479cfb94826a86"
+  },
+  {
+    "path": "/assets/products/gold-stainless-cutlery-set/primary.webp",
+    "width": 1254,
+    "height": 1254,
+    "role": "Gold Stainless Cutlery Set",
+    "status": "wireframe-sample",
+    "note": "Match exact SKU/variant against catalog; prices and current-edit selection in wireframe are illustrative. Gallery secondary/detail views reuse primary with CSS framing.",
+    "sha256": "c20dc51e3e9d109cf1812ceb7e36b3e72f796a03a02bb6132d069a5281b7d969"
+  },
+  {
+    "path": "/assets/editorial/skincare.webp",
+    "width": 1536,
+    "height": 1024,
+    "role": "Sample article image",
+    "status": "sample-editorial",
+    "note": "Sample article content and image, to be replaced by admin-selected published posts.",
+    "sha256": "84ac712dd9f72187180fa28f23ac926f975cc36b4f9b496c25aff2e4809b9a37"
+  },
+  {
+    "path": "/assets/editorial/table-styling.webp",
+    "width": 1400,
+    "height": 788,
+    "role": "Sample article image",
+    "status": "sample-editorial",
+    "note": "Sample article content and image, to be replaced by admin-selected published posts.",
+    "sha256": "9cd7b852d9bbd5ba924b45397fb5f083fca4ed1d12502d0cf77bd25e163213cc"
+  },
+  {
+    "path": "/assets/editorial/makeup.webp",
+    "width": 1536,
+    "height": 1024,
+    "role": "Sample article image",
+    "status": "sample-editorial",
+    "note": "Sample article content and image, to be replaced by admin-selected published posts.",
+    "sha256": "24f427c126da42cfd00baf837af17627378df6a3f849af2008693c5e9b463a25"
+  }
+]

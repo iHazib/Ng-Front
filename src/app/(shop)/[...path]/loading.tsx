@@ -1,0 +1,1 @@
+export default function Loading() { return <section className="commerce-empty" role="status" aria-live="polite"><p className="eyebrow">Nook & Glow</p><h1>Opening the edit…</h1><p>Loading the collection.</p><div className="loading-lines" aria-hidden="true" /></section>; }

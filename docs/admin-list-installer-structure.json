@@ -1,0 +1,15 @@
+{
+  "source": "202610090013_admin_catalog_list.sql",
+  "canonical_sha256": "de9272e1f837c654aa613e84fbabc8e1e12fc6248475764573a6a153d46e51b0",
+  "installer_sha256": "c570fff73caf5395271f6e5cde9bce658cb7e5359c13e301684cb23be2584310",
+  "functions": [
+    "app_private.admin_current_issues",
+    "app_private.refresh_admin_catalog",
+    "app_private.refresh_admin_catalog_trigger",
+    "app_private.admin_query_matches",
+    "public.admin_catalog_list",
+    "public.admin_catalog_filter_options",
+    "public.admin_catalog_reminder"
+  ],
+  "matched_dollar_quotes": true
+}

@@ -1,0 +1,30 @@
+{
+  "engine": "PostgreSQL 16.11, compiled by Visual C++ build 1944, 64-bit",
+  "migrations": [
+    "202610050001_catalog.sql",
+    "202610050002_commerce_content.sql",
+    "202610050003_security_publication.sql",
+    "202610050004_access_import.sql",
+    "202610050005_taxonomy.sql",
+    "202610050006_invariants.sql",
+    "202610050007_media_service.sql",
+    "202610060008_daily_product_editor.sql",
+    "202610070009_public_storefront.sql",
+    "202610070010_content_cms.sql",
+    "202610070011_customer_reviews.sql"
+  ],
+  "installation_mode": "exact_reviews_file_with_001_010_base",
+  "source_rows": 121,
+  "permission_tests": "passed",
+  "supabase_auth_service": "not tested; auth.uid test double",
+  "supabase_storage_service": "not tested; table/policy test double",
+  "network_provider_operations": 0,
+  "production_imports": 0,
+  "exact_file": "supabase/sql-editor/09_install_customer_reviews_clean.sql",
+  "exact_sha256": "32e40f5f7e2cbec18a3ccd8d81de86bb76f0b2c7f108761f155cf193fbb0cc52",
+  "evidence": "database-test-b55a660b1c2e",
+  "review_permissions_media_moderation_tests": "passed",
+  "repeat_install_refusal": "passed",
+  "all_pre_existing_business_rows_unchanged": true,
+  "read_only_preflight_before_after": "passed"
+}

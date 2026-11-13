@@ -1,0 +1,64 @@
+{
+  "status": "passed",
+  "kind": "actual Chrome / Next.js / Supabase Auth & PostgREST / private Storage / Cloudinary fixture lifecycle; no mock transports",
+  "passed_check_observations": 153,
+  "raw_reports": [
+    "manual-payments-live-verification.json",
+    "manual-payments-hosted-races.json",
+    "manual-payments-hosted-security.json",
+    "manual-payments-hosted-configuration.json",
+    "manual-payments-hosted-fresh-browser.json",
+    "manual-payments-hosted-cleanup.json"
+  ],
+  "resolved_harness_issue": {
+    "reason": "Fixture stock request initially omitted required productId; no application/schema change needed",
+    "initial_report": "manual-payments-live-verification.json",
+    "resolved_report": "manual-payments-hosted-races.json",
+    "retested": "passed"
+  },
+  "preservation": {
+    "original_rows": 1313,
+    "tables": 37,
+    "first_pass": "passed",
+    "second_baseline_rows": 1367,
+    "second_pass": "passed",
+    "original_sources": 64,
+    "approved_css_blocks": 14,
+    "applied_015_016_artifacts_unchanged": true,
+    "hosted_sql_executed": false
+  },
+  "cleanup": {
+    "synthetic_orders": 14,
+    "active_reservations": 0,
+    "private_proof_files_deleted": 3,
+    "public_fixture_images_deleted": 2,
+    "products_hidden": 2,
+    "variants_archived": 6,
+    "audit_history_retained": true,
+    "reconciliation": {
+      "overdueHolds": 0,
+      "balanceMismatches": 0
+    }
+  },
+  "maintenance_cli": {
+    "executed": true,
+    "expired": 0,
+    "overdueHolds": 0,
+    "balanceMismatches": 0,
+    "scheduler_configured": false
+  },
+  "real_checkout_enabled": false,
+  "remaining": [
+    "Owner-approved receiving-account details and instructions",
+    "Owner-selected payment/review deadlines",
+    "Approved shipping/cities/tax treatment",
+    "Trusted ingress and external expiry scheduler on eventual hosting",
+    "Production proof retention/orphan housekeeping and under/over/late-payment resolution policies"
+  ],
+  "boundaries": [
+    "No real transfer or bank/wallet API used; all receipt acknowledgements and monetary entries were synthetic development fixtures",
+    "Physical phones, other browser engines and production load not tested",
+    "No new homepage screenshot comparison; application UI/CSS/assets were not edited, source integrity passed",
+    "Previous local SQL/unit/mock browser results remain separate historical evidence"
+  ]
+}

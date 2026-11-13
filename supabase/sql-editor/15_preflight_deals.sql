@@ -1,0 +1,16 @@
+-- READ ONLY: no customer, catalog or account details.
+select exists(select 1 from app_private.sql_editor_receipts where version='202610150016' and sha256='d0e29a69895ac34b808371c40c126235f7b7d019ee77874b218b3a65cbfdb612') prerequisite_016,
+ to_regclass('app_private.deal_settings') is not null deals_present,
+ to_regclass('app_private.deal_pools') is not null pools_present,
+ to_regclass('app_private.order_component_snapshots') is not null snapshots_present,
+ to_regclass('public.deal_media') is not null media_present,
+ to_regprocedure('public.save_deal(uuid,integer,uuid,text,jsonb)') is not null save_present,
+ to_regprocedure('public.storefront_deals(text,uuid[],integer,boolean)') is not null public_projection_present,
+ to_regprocedure('public.expire_deal_allocations(integer)') is not null expiry_present,
+ exists(select 1 from app_private.sql_editor_receipts where version='202610160017') receipt_present,
+ exists(select 1 from app_private.sql_editor_receipts where version='202610160017' and sha256='dfdae129e62884b12d58e0bb43f628a7b9dece652dc413c789af3a381db8c7e7') receipt_matches,
+ (select count(*)=6 and bool_and(relrowsecurity) from pg_class where oid in(to_regclass('app_private.deal_settings'),to_regclass('app_private.deal_pools'),to_regclass('app_private.deal_operations'),to_regclass('app_private.deal_allocation_events'),to_regclass('app_private.order_component_snapshots'),to_regclass('app_private.order_pool_sources'))) private_rls,
+ not exists(select 1 from pg_policies where schemaname='app_private' and tablename in('deal_settings','deal_pools','deal_operations','deal_allocation_events','order_component_snapshots','order_pool_sources')) no_client_policies,
+ coalesce((select prosecdef and position('require_admin()' in prosrc)>0 from pg_proc where oid=to_regprocedure('public.save_deal(uuid,integer,uuid,text,jsonb)')),false) admin_authorization,
+ coalesce((select position('73525' in prosrc)>0 from pg_proc where oid=to_regprocedure('public.place_guest_order(uuid,text,text,jsonb,jsonb,jsonb,jsonb,jsonb)')),false) inventory_gate,
+ coalesce((select position('deal_pools' in prosrc)>0 from pg_proc where oid=to_regprocedure('app_private.assert_order_allocation(uuid,text,boolean)')),false) shared_assertion;

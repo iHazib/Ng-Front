@@ -1,0 +1,8 @@
+// Presentation contracts only; private data is fetched through the authorized server boundary.
+export type Reminder={key:string;episode:string;code:string;required:boolean;variantId:string|null;ignored:boolean};
+export type AdminListRow={product_id:string;variant_id:string|null;original_sku:string|null;name:string;status:string;variant_status:string|null;variant_label:string|null;price_minor:number|null;stock:number|null;reserved:number|null;media_id:string|null;issues:Reminder[]};
+export type AdminListResult={rows:AdminListRow[];total:number;skus?:number;products:number;offset:number;limit:number};
+export type AdminFacet={key:string;label:string;values:{value:string;label:string}[]};
+export type AdminListFilters={status?:string;brand?:string;category?:string;type?:string;facets?:Record<string,string[]>;issues?:string[];mode?:'any'|'all';reminders?:''|'ignored'};
+export const reminderLabels:Record<string,string>={slug_missing:'Product link missing',description_missing:'Description missing',usage_missing:'How to use missing',benefits_missing:'Key benefits missing',price_missing:'Price missing',price_approval:'Price needs approval',image_missing:'Image missing',image_approval:'Main image needs approval',stock_count_missing:'Stock not counted',out_of_stock:'Out of stock',brand_missing:'Brand missing',category_type_missing:'Category or product type missing',option_missing:'Add a shade/size or SKU',publication_blockers:'Publication blockers'};
+export const attentionOptions=['description_missing','usage_missing','benefits_missing','price_missing','image_missing','stock_count_missing','out_of_stock','publication_blockers'] as const;

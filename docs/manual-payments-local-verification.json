@@ -1,0 +1,32 @@
+{
+  "kind": "disposable PostgreSQL; Auth/Storage doubles",
+  "exact_file": "supabase/sql-editor/14_install_manual_payments_clean.sql",
+  "sha256": "38bd7630686a04e8e3a225b370021686328d7031038aa10ba4d32d621cdfe644",
+  "base_migrations": [
+    "202610050001_catalog.sql",
+    "202610050002_commerce_content.sql",
+    "202610050003_security_publication.sql",
+    "202610050004_access_import.sql",
+    "202610050005_taxonomy.sql",
+    "202610050006_invariants.sql",
+    "202610050007_media_service.sql",
+    "202610060008_daily_product_editor.sql",
+    "202610070009_public_storefront.sql",
+    "202610070010_content_cms.sql",
+    "202610070011_customer_reviews.sql",
+    "202610080012_product_markdown.sql",
+    "202610090013_admin_catalog_list.sql",
+    "202610120014_admin_exact_identifier_search.sql",
+    "202610130015_guest_commerce.sql"
+  ],
+  "all_existing_rows_unchanged": true,
+  "repeat_refused": true,
+  "fourteen_final_flags": true,
+  "sql_regressions": "passed",
+  "concurrent_late_stock_race": "passed; two independent PostgreSQL sessions",
+  "concurrent_duplicate_reference": "passed; one transfer credited once",
+  "seeded_legacy_order_catalog_inventory_preservation": true,
+  "generated_public_types": true,
+  "hosted": "pending 016 application",
+  "evidence": "database-test-70ff19191edf"
+}

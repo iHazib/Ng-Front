@@ -1,0 +1,47 @@
+{
+  "kind": "mock_content_actual_next_chrome",
+  "checks": [
+    {
+      "name": "published index renders article link",
+      "result": "passed"
+    },
+    {
+      "name": "public read sanitizes mock unsafe HTML",
+      "result": "passed"
+    },
+    {
+      "name": "SEO title defaults to article title",
+      "result": "passed"
+    },
+    {
+      "name": "cover has restrained responsive framing",
+      "result": "passed"
+    },
+    {
+      "name": "unknown article returns actual 404",
+      "result": "passed"
+    },
+    {
+      "name": "homepage keeps four heroes and one narrow editorial slide",
+      "result": "passed"
+    },
+    {
+      "name": "homepage uses chosen article colour",
+      "result": "passed"
+    },
+    {
+      "name": "mobile homepage has no overflow",
+      "result": "passed"
+    },
+    {
+      "name": "mobile cover retains visible framing",
+      "result": "passed"
+    },
+    {
+      "name": "mobile article has no overflow",
+      "result": "passed"
+    }
+  ],
+  "status": "passed",
+  "limitations": "Content writes, homepage selections and public RPC responses are explicit mocks. No provider upload or hosted CMS verification."
+}

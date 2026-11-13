@@ -1,0 +1,26 @@
+{
+  "engine": "PostgreSQL 16.11, compiled by Visual C++ build 1944, 64-bit",
+  "migrations": [
+    "202610050001_catalog.sql",
+    "202610050002_commerce_content.sql",
+    "202610050003_security_publication.sql",
+    "202610050004_access_import.sql",
+    "202610050005_taxonomy.sql",
+    "202610050006_invariants.sql",
+    "202610050007_media_service.sql",
+    "202610060008_daily_product_editor.sql",
+    "202610070009_public_storefront.sql",
+    "202610070010_content_cms.sql",
+    "202610070011_customer_reviews.sql",
+    "202610080012_product_markdown.sql",
+    "202610090013_admin_catalog_list.sql",
+    "202610120014_admin_exact_identifier_search.sql"
+  ],
+  "installation_mode": "individual_migrations",
+  "source_rows": 121,
+  "permission_tests": "passed",
+  "supabase_auth_service": "not tested; auth.uid test double",
+  "supabase_storage_service": "not tested; table/policy test double",
+  "network_provider_operations": 0,
+  "production_imports": 0
+}

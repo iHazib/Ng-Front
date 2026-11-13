@@ -1,0 +1,15 @@
+-- READ ONLY. No customer, receiving-account or catalog data returned.
+select exists(select 1 from app_private.sql_editor_receipts where version='202610130015' and sha256='b89d4a6a6ae13c27be9d71928c5ea288c26b64691f8be0d867c8070abf5b0ce0') prerequisite_015,
+ to_regclass('app_private.manual_payments') is not null manual_payments_present,
+ to_regclass('app_private.payment_submissions') is not null submissions_present,
+ to_regclass('app_private.payment_receipts') is not null receipts_present,
+ to_regclass('app_private.payment_actions') is not null actions_present,
+ (to_regprocedure('public.review_manual_payment(uuid,integer,text,uuid,jsonb)') is not null and to_regprocedure('public.admin_payment_orders(text,text,date,date,integer,uuid,text)') is not null and to_regprocedure('app_private.reacquire_payment_stock(uuid)') is not null) review_present,
+ to_regprocedure('public.payment_proof(uuid,text,text,uuid,text,jsonb)') is not null proof_present,
+ exists(select 1 from pg_trigger where tgname='payment_proof_private' and tgrelid='public.media_assets'::regclass) private_proof_guard,
+ exists(select 1 from app_private.sql_editor_receipts where version='202610150016') receipt_present,
+ exists(select 1 from app_private.sql_editor_receipts where version='202610150016' and sha256='d0e29a69895ac34b808371c40c126235f7b7d019ee77874b218b3a65cbfdb612') receipt_matches,
+ (select count(*)=4 and bool_and(relrowsecurity) from pg_class where oid in(to_regclass('app_private.manual_payments'),to_regclass('app_private.payment_submissions'),to_regclass('app_private.payment_receipts'),to_regclass('app_private.payment_actions'))) private_rls,
+ not exists(select 1 from pg_policies where schemaname='app_private' and tablename in('manual_payments','payment_submissions','payment_receipts','payment_actions')) no_client_policies,
+ case when to_regprocedure('public.review_manual_payment(uuid,integer,text,uuid,jsonb)') is null then false else has_function_privilege('authenticated','public.review_manual_payment(uuid,integer,text,uuid,jsonb)','execute') and not has_function_privilege('anon','public.review_manual_payment(uuid,integer,text,uuid,jsonb)','execute') and (select prosecdef and position('require_admin()' in prosrc)>0 from pg_proc where oid=to_regprocedure('public.review_manual_payment(uuid,integer,text,uuid,jsonb)')) end admin_authorization,
+ case when to_regprocedure('public.submit_manual_payment(uuid,text,text,uuid,text,bigint,uuid)') is null then false else has_function_privilege('service_role','public.submit_manual_payment(uuid,text,text,uuid,text,bigint,uuid)','execute') and not has_function_privilege('authenticated','public.submit_manual_payment(uuid,text,text,uuid,text,bigint,uuid)','execute') and not has_function_privilege('anon','public.submit_manual_payment(uuid,text,text,uuid,text,bigint,uuid)','execute') end guest_gateway_private;

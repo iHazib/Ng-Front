@@ -1,0 +1,19 @@
+{
+  "status": "implemented_local_verified_hosted_013_pending",
+  "actual_hosted_access_checks": 4,
+  "actual_fixture_checks": "pending migration 013 installed-state confirmation",
+  "hosted_catalog_fixtures_created": 0,
+  "mock_browser_checks": 14,
+  "exact_disposable_database_tests": "passed",
+  "installer_sha256": "75bc003fe42951a7c5c47aa7359c846347678973afeef378449c837f4e48e354",
+  "lint": "passed",
+  "typecheck": "passed",
+  "production_build": "passed final source",
+  "production_boundaries": "passed",
+  "source_files_preserved": 64,
+  "reference_css_blocks": 14,
+  "browser_limitations": "Chrome desktop/mobile emulation; no physical Safari",
+  "storefront_and_real_catalog": "preserved; no hosted catalog writes",
+  "next_commerce_stage": "not started",
+  "final_browser_retest": "14 passed"
+}

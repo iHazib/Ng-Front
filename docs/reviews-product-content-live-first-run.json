@@ -1,0 +1,163 @@
+{
+  "kind": "actual_chrome_and_development_supabase",
+  "status": "failed",
+  "checked_at": "2026-10-08T15:52:29.064Z",
+  "checks": [
+    {
+      "name": "anonymous protected editor redirects",
+      "result": "passed"
+    },
+    {
+      "name": "anonymous API rejects access",
+      "result": "passed"
+    },
+    {
+      "name": "non-admin browser login rejected",
+      "result": "passed"
+    },
+    {
+      "name": "admin browser login validated by actual Auth",
+      "result": "passed"
+    },
+    {
+      "name": "private catalog response no-store",
+      "result": "passed"
+    },
+    {
+      "name": "missing CSRF rejects mutation",
+      "result": "passed"
+    },
+    {
+      "name": "all 121 original catalog SKUs still searchable",
+      "result": "passed"
+    },
+    {
+      "name": "daily editor hides evidence, provenance and technical field labels",
+      "result": "passed"
+    },
+    {
+      "name": "mobile daily editor has no document overflow",
+      "result": "passed"
+    },
+    {
+      "name": "import history is accessible on separate tools page",
+      "result": "passed"
+    },
+    {
+      "name": "daily product page omits import controls",
+      "result": "passed"
+    },
+    {
+      "name": "browser saves incomplete single-product draft easily",
+      "result": "passed"
+    },
+    {
+      "name": "single edit persists PKR minor units and counted zero",
+      "result": "passed"
+    },
+    {
+      "name": "stock-count edit reconciles to exact count",
+      "result": "passed"
+    },
+    {
+      "name": "incomplete publication shows plain missing-info checklist",
+      "result": "passed"
+    },
+    {
+      "name": "single: explicit Publish publishes active options",
+      "result": "passed"
+    },
+    {
+      "name": "single: safe Markdown Write/Preview",
+      "result": "passed"
+    },
+    {
+      "name": "single: all three Markdown fields persist exactly",
+      "result": "passed"
+    },
+    {
+      "name": "single: ordinary save retains untouched content and stock",
+      "result": "passed"
+    },
+    {
+      "name": "single: hosted public rendering escapes HTML and unsafe links/images",
+      "result": "passed"
+    },
+    {
+      "name": "single: mobile product content has no overflow",
+      "result": "passed"
+    },
+    {
+      "name": "actual customer submits pending review with private review-owned image",
+      "result": "passed"
+    },
+    {
+      "name": "pending review excluded from public ratings",
+      "result": "passed"
+    },
+    {
+      "name": "review image ownership does not use a fake product",
+      "result": "passed"
+    },
+    {
+      "name": "anonymous private review Storage read denied",
+      "result": "passed"
+    },
+    {
+      "name": "non-admin private review Storage read denied",
+      "result": "passed"
+    },
+    {
+      "name": "admin can inspect private review image",
+      "result": "passed"
+    },
+    {
+      "name": "unauthorized moderation request rejected",
+      "result": "passed"
+    },
+    {
+      "name": "actual admin browser approves review and publishes Cloudinary image",
+      "result": "passed"
+    },
+    {
+      "name": "actual approved Cloudinary review delivery decodes",
+      "result": "failed"
+    }
+  ],
+  "pending": [
+    "Stopped during live customer review flows; credentials and provider data suppressed."
+  ],
+  "fixtures": [
+    {
+      "productId": "bd283a14-3279-4dd4-99bb-09de3ba3c93e",
+      "variantId": "7197f246-7485-4be2-92a2-7550d6d2c075",
+      "archived": true,
+      "brandId": "usability-57ee7e9c-ca5a-4c58-bae2-30b7474d309f",
+      "categoryId": "usability-a4381f2e-a896-49ee-9388-b21709a20593",
+      "mediaId": "a3226faf-2e90-4051-9c88-1dd6052c3c03",
+      "mediaCleaned": true
+    }
+  ],
+  "reviews": [
+    {
+      "id": "e0ba3f5b-ce9d-4798-bad5-3d67f76d9d04",
+      "media": [
+        "9592583f-bb12-5fd0-f66c-51c1331e4a03"
+      ],
+      "hidden": true,
+      "mediaCleaned": true
+    }
+  ],
+  "preservation": {
+    "tables": 25,
+    "baseline_rows": 906,
+    "status": "passed"
+  },
+  "failure_location": [
+    "at check (file:///C:/Users/mhazi/Documents/ChatGPT/NGwebsite/scripts/verify-reviews-product-content-development.mjs:11:137)",
+    "at reviewChecks (file:///C:/Users/mhazi/Documents/ChatGPT/NGwebsite/scripts/verify-reviews-product-content-development.mjs:102:190)",
+    "at async visibility (file:///C:/Users/mhazi/Documents/ChatGPT/NGwebsite/scripts/verify-reviews-product-content-development.mjs:78:24)",
+    "at async file:///C:/Users/mhazi/Documents/ChatGPT/NGwebsite/scripts/verify-reviews-product-content-development.mjs:118:42"
+  ],
+  "failure_category": "Error"
+}

@@ -1,0 +1,6 @@
+{
+  "canonical": "202610200021_partial_refund_values.sql",
+  "canonical_sha256": "2c620c81ec6821b9f733a8108bfc881a6f4d209a04b9fb0fd9347d235c4fda73",
+  "installer_sha256": "ca34df2f62ca930458238cf43b76d8c1063de7db9cb270f10b52bd61a60db0db",
+  "prerequisite_020_sha256": "3a274cb58a5da769a57ee7ab0dfb5877b68bb82adcf92caba1031ca1e4b6b434"
+}

@@ -1,0 +1,1723 @@
+{
+  "contract_version": "1.1.0",
+  "source_sha256": "6f115be852d12412fd2bfa8697beb298e4700aa9e34c9033e57b001583679101",
+  "contract_sha256": "68ac7d6817030d91a343c1e5fe605194f01b35b58f7c2b808ba3f634292f51a2",
+  "source_product_rows": 121,
+  "unique_exact_skus": 121,
+  "draft_records": 121,
+  "publishable_records": 0,
+  "quarantined_records": 0,
+  "exact_duplicate_rows": 0,
+  "normalization_collision_rows": 0,
+  "operations": {
+    "stage_draft": 121
+  },
+  "category_counts": {
+    "bath-body/cleansing": 4,
+    "bath-body/exfoliation": 3,
+    "bath-body/hand-nail-care": 1,
+    "bath-body/moisturizers": 3,
+    "cutlery/sets": 4,
+    "hair-care/dry-shampoo": 1,
+    "home-fragrance/sets": 1,
+    "makeup/eyes": 6,
+    "makeup/face": 21,
+    "makeup/lips": 17,
+    "makeup/sets": 4,
+    "makeup/tools-accessories": 5,
+    "personal-fragrance/perfume": 1,
+    "personal-fragrance/sets": 2,
+    "skincare/cleansers": 9,
+    "skincare/exfoliants": 4,
+    "skincare/eye-care": 4,
+    "skincare/masks": 2,
+    "skincare/moisturizers": 6,
+    "skincare/serums": 19,
+    "skincare/sets": 3,
+    "skincare/sun-care": 1
+  },
+  "source_stock_units_total": 270,
+  "skipped_rows": [
+    {
+      "row": 117,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 118,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 119,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 120,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 121,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 123,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 124,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 125,
+      "reason": "heading",
+      "value": "HOME APPLIANCES"
+    },
+    {
+      "row": 131,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 132,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 133,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 134,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 135,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 136,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 137,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 138,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 139,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 140,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 141,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 142,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 143,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 144,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 145,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 146,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 147,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 148,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 149,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 150,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 151,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 152,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 153,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 154,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 155,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 156,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 157,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 158,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 159,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 160,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 161,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 162,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 163,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 164,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 165,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 166,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 167,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 168,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 169,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 170,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 171,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 172,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 173,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 174,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 175,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 176,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 177,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 178,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 179,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 180,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 181,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 182,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 183,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 184,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 185,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 186,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 187,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 188,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 189,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 190,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 191,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 192,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 193,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 194,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 195,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 196,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 197,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 198,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 199,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 200,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 201,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 202,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 203,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 204,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 205,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 206,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 207,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 208,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 209,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 210,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 211,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 212,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 213,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 214,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 215,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 216,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 217,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 218,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 219,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 220,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 221,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 222,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 223,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 224,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 225,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 226,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 227,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 228,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 229,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 230,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 231,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 232,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 233,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 234,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 235,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 236,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 237,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 238,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 239,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 240,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 241,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 242,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 243,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 244,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 245,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 246,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 247,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 248,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 249,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 250,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 251,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 252,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 253,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 254,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 255,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 256,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 257,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 258,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 259,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 260,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 261,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 262,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 263,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 264,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 265,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 266,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 267,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 268,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 269,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 270,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 271,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 272,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 273,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 274,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 275,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 276,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 277,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 278,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 279,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 280,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 281,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 282,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 283,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 284,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 285,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 286,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 287,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 288,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 289,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 290,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 291,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 292,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 293,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 294,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 295,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 296,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 297,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 298,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 299,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 300,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 301,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 302,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 303,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 304,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 305,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 306,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 307,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 308,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 309,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 310,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 311,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 312,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 313,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 314,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 315,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 316,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 317,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 318,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 319,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 320,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 321,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 322,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 323,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 324,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 325,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 326,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 327,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 328,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 329,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 330,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 331,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 332,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 333,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 334,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 335,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 336,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 337,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 338,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 339,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 340,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 341,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 342,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 343,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 344,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 345,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 346,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 347,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 348,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 349,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 350,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 351,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 352,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 353,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 354,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 355,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 356,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 357,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 358,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 359,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 360,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 361,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 362,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 363,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 364,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 365,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 366,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 367,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 368,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 369,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 370,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 371,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 372,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 373,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 374,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 375,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 376,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 377,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 378,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 379,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 380,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 381,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 382,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 383,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 384,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 385,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 386,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 387,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 388,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 389,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 390,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 391,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 392,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 393,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 394,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 395,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 396,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 397,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 398,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 399,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 400,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 401,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 402,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 403,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 404,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 405,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 406,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 407,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 408,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 409,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 410,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 411,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 412,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 413,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 414,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 415,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 416,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 417,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 418,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 419,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 420,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 421,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 422,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 423,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 424,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 425,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 426,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 427,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 428,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 429,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 430,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 431,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 432,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 433,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 434,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 435,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 436,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 437,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 438,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 439,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 440,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 441,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 442,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 443,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 444,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 445,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 446,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 447,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 448,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 449,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 450,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 451,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 452,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 453,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 454,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 455,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 456,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 457,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 458,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 459,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 460,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 461,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 462,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 463,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 464,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 465,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 466,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 467,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 468,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 469,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 470,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 471,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 472,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 473,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 474,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 475,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 476,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 477,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 478,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 479,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 480,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 481,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 482,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 483,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 484,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 485,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 486,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 487,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 488,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 489,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 490,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 491,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 492,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 493,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 494,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 495,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 496,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 497,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 498,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 499,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 500,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 501,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 502,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 503,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 504,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 505,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 506,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 507,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 508,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 509,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 510,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 511,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 512,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 513,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 514,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 515,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 516,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 517,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 518,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 519,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 520,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 521,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 522,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 523,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 524,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 525,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 526,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 527,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 528,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 529,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 530,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 531,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 532,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 533,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 534,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 535,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 536,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 537,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 538,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 539,
+      "reason": "empty_or_formula_template"
+    },
+    {
+      "row": 540,
+      "reason": "empty_or_formula_template"
+    }
+  ],
+  "retained_absent_records": [],
+  "network_operations": 0,
+  "database_operations": 0,
+  "notes": [
+    "Stock totals are source snapshots, not available-to-sell stock.",
+    "All values are private draft proposals; no publication or automatic grouping.",
+    "Historical workbook instructions and review sheets are source data, not executable rules."
+  ]
+}

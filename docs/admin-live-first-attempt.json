@@ -1,0 +1,259 @@
+{
+  "kind": "actual_browser_and_providers",
+  "status": "failed",
+  "checks": [
+    {
+      "name": "anonymous protected page redirects to login",
+      "result": "passed"
+    },
+    {
+      "name": "anonymous catalog access rejected",
+      "result": "passed"
+    },
+    {
+      "name": "private API responses uncached",
+      "result": "passed"
+    },
+    {
+      "name": "non-admin browser login rejected",
+      "result": "passed"
+    },
+    {
+      "name": "non-admin receives no admin session cookie",
+      "result": "passed"
+    },
+    {
+      "name": "actual admin browser login",
+      "result": "passed"
+    },
+    {
+      "name": "HTTP-only strict admin session cookie",
+      "result": "passed"
+    },
+    {
+      "name": "missing CSRF token rejected",
+      "result": "passed"
+    },
+    {
+      "name": "authorized catalog endpoint",
+      "result": "passed"
+    },
+    {
+      "name": "121-row development import succeeds",
+      "result": "passed"
+    },
+    {
+      "name": "all 121 exact source SKUs present in paginated admin search",
+      "result": "passed"
+    },
+    {
+      "name": "all imported source products remain drafts",
+      "result": "passed"
+    },
+    {
+      "name": "product detail endpoint with private provenance",
+      "result": "passed"
+    },
+    {
+      "name": "source quantity retained and live stock unreconciled",
+      "result": "passed"
+    },
+    {
+      "name": "repeat catalog import returns unchanged",
+      "result": "passed"
+    },
+    {
+      "name": "repeat import preserves product, price, provenance and stock",
+      "result": "passed"
+    },
+    {
+      "name": "product created from browser as distinct draft SKU",
+      "result": "passed"
+    },
+    {
+      "name": "browser editing persisted in Supabase",
+      "result": "passed"
+    },
+    {
+      "name": "PKR decimal input stored as integer minor units",
+      "result": "passed"
+    },
+    {
+      "name": "20 image files: 17 exact SKU matches and 3 unassigned",
+      "result": "passed"
+    },
+    {
+      "name": "initial image staged privately: CUT-001",
+      "result": "passed"
+    },
+    {
+      "name": "initial image staged privately: CUT-002",
+      "result": "passed"
+    },
+    {
+      "name": "initial image staged privately: CUT-003",
+      "result": "passed"
+    },
+    {
+      "name": "initial image staged privately: CUT-004",
+      "result": "passed"
+    },
+    {
+      "name": "initial image staged privately: PIX-004",
+      "result": "passed"
+    },
+    {
+      "name": "initial image staged privately: PIX-005",
+      "result": "passed"
+    },
+    {
+      "name": "initial image staged privately: PIX-006",
+      "result": "passed"
+    },
+    {
+      "name": "initial image staged privately: AXI-001",
+      "result": "passed"
+    },
+    {
+      "name": "initial image staged privately: AXI-002",
+      "result": "passed"
+    },
+    {
+      "name": "initial image staged privately: AXI-003",
+      "result": "passed"
+    },
+    {
+      "name": "initial image staged privately: BOOTS-001",
+      "result": "passed"
+    },
+    {
+      "name": "initial image staged privately: BOOTS-002",
+      "result": "passed"
+    },
+    {
+      "name": "initial image staged privately: BOOTS-003",
+      "result": "passed"
+    },
+    {
+      "name": "initial image staged privately: CERA-003",
+      "result": "passed"
+    },
+    {
+      "name": "initial image staged privately: CERA-005",
+      "result": "passed"
+    },
+    {
+      "name": "initial image staged privately: CERA-008",
+      "result": "passed"
+    },
+    {
+      "name": "initial image staged privately: CERA-009",
+      "result": "passed"
+    },
+    {
+      "name": "browser upload stored as private pending media",
+      "result": "passed"
+    },
+    {
+      "name": "authenticated private review image decodes in browser",
+      "result": "passed"
+    },
+    {
+      "name": "browser explicit approval",
+      "result": "passed"
+    }
+  ],
+  "pending": [
+    "Stopped during browser image upload; credentials and provider payloads suppressed. Inspect retained fixtures before retry."
+  ],
+  "fixtures": [
+    {
+      "productId": "1d7bc133-41fd-4246-8258-34eebcfee338",
+      "variantId": "6ab3436a-3222-4651-a277-338c2473438a",
+      "archived": false,
+      "mediaId": "be93a19f-5a0f-45c1-a708-16ed7418da39"
+    }
+  ],
+  "image_preview": [
+    {
+      "filename": "CUT-001.png",
+      "exactSku": "CUT-001"
+    },
+    {
+      "filename": "CUT-002.png",
+      "exactSku": "CUT-002"
+    },
+    {
+      "filename": "CUT-003.png",
+      "exactSku": "CUT-003"
+    },
+    {
+      "filename": "CUT-004.png",
+      "exactSku": "CUT-004"
+    },
+    {
+      "filename": "PIX-004.png",
+      "exactSku": "PIX-004"
+    },
+    {
+      "filename": "PIX-005.png",
+      "exactSku": "PIX-005"
+    },
+    {
+      "filename": "PIX-006.png",
+      "exactSku": "PIX-006"
+    },
+    {
+      "filename": "AXI-001.png",
+      "exactSku": "AXI-001"
+    },
+    {
+      "filename": "AXI-002.png",
+      "exactSku": "AXI-002"
+    },
+    {
+      "filename": "AXI-003.png",
+      "exactSku": "AXI-003"
+    },
+    {
+      "filename": "BOOTS-001.png",
+      "exactSku": "BOOTS-001"
+    },
+    {
+      "filename": "BOOTS-002.png",
+      "exactSku": "BOOTS-002"
+    },
+    {
+      "filename": "BOOTS-003.png",
+      "exactSku": "BOOTS-003"
+    },
+    {
+      "filename": "Balance - Hyaluronic Deep Moisturising Serum.png",
+      "exactSku": null
+    },
+    {
+      "filename": "Balance - Vitamin C Brightening Serum.png",
+      "exactSku": null
+    },
+    {
+      "filename": "Boots - Skincare set.png",
+      "exactSku": null
+    },
+    {
+      "filename": "CERA-003.png",
+      "exactSku": "CERA-003"
+    },
+    {
+      "filename": "CERA-005.png",
+      "exactSku": "CERA-005"
+    },
+    {
+      "filename": "CERA-008.png",
+      "exactSku": "CERA-008"
+    },
+    {
+      "filename": "CERA-009.png",
+      "exactSku": "CERA-009"
+    }
+  ]
+}

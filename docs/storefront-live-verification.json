@@ -1,0 +1,137 @@
+{
+  "kind": "actual_development_supabase_cloudinary_chrome",
+  "checked_at": "2026-10-07T00:00:41.032Z",
+  "status": "passed",
+  "checks": [
+    {
+      "name": "anonymous projection includes two eligible published families and no draft",
+      "result": "passed"
+    },
+    {
+      "name": "public payload excludes costs, provenance, private media and inventory internals",
+      "result": "passed"
+    },
+    {
+      "name": "admin-token public RPC retains same public allowlist",
+      "result": "passed"
+    },
+    {
+      "name": "combined manufacturer/type/verified concern search",
+      "result": "passed"
+    },
+    {
+      "name": "spelling variation and partial search",
+      "result": "passed"
+    },
+    {
+      "name": "exact original SKU search",
+      "result": "passed"
+    },
+    {
+      "name": "unsupported suitability has no inferred match",
+      "result": "passed"
+    },
+    {
+      "name": "OR within a facet plus AND across facets",
+      "result": "passed"
+    },
+    {
+      "name": "variant-specific filters cannot cross-match different options",
+      "result": "passed"
+    },
+    {
+      "name": "bounded pagination preserves total and unique ordered products",
+      "result": "passed"
+    },
+    {
+      "name": "variant prices/availability and primary-specific media distinct",
+      "result": "passed"
+    },
+    {
+      "name": "real responsive Cloudinary delivery",
+      "result": "passed"
+    },
+    {
+      "name": "homepage uses eligible explicit selections",
+      "result": "passed"
+    },
+    {
+      "name": "actual category/search product rendering",
+      "result": "passed"
+    },
+    {
+      "name": "browser option selection changes availability and blocks bag",
+      "result": "passed"
+    },
+    {
+      "name": "real published variant survives bag navigation and revalidation",
+      "result": "passed"
+    },
+    {
+      "name": "mobile filter drawer and no document overflow",
+      "result": "passed"
+    },
+    {
+      "name": "committed admin price edit immediately visible to anonymous reads",
+      "result": "passed"
+    },
+    {
+      "name": "Next server wrapper returns fresh admin price in browser",
+      "result": "passed"
+    },
+    {
+      "name": "hidden fixture immediately disappears from public RPC",
+      "result": "passed"
+    },
+    {
+      "name": "all pre-existing catalog/source/media rows unchanged",
+      "result": "passed"
+    }
+  ],
+  "pending": [],
+  "fixtures": [
+    {
+      "productId": "5d9eaa38-3359-4baa-8982-06db44ce3094",
+      "variants": [
+        "fb6d0862-9532-4fed-a703-5b3432f323fa",
+        "26dd0740-da4e-4bbc-ba23-edb06d82b867"
+      ],
+      "media": [
+        "c67a4528-4fba-4f93-b15e-7f5329437c19",
+        "e132d034-50f1-4387-b0bd-221f07507646"
+      ],
+      "hidden": true,
+      "cleaned": [
+        "c67a4528-4fba-4f93-b15e-7f5329437c19",
+        "e132d034-50f1-4387-b0bd-221f07507646"
+      ]
+    },
+    {
+      "productId": "d2e07e5d-a1a6-4938-b328-06139a798ef9",
+      "variants": [
+        "f5672923-7257-492f-9870-b208867f396e"
+      ],
+      "media": [
+        "f2a978c2-933e-44f0-916b-be60e9906399"
+      ],
+      "hidden": true,
+      "cleaned": [
+        "f2a978c2-933e-44f0-916b-be60e9906399"
+      ]
+    },
+    {
+      "productId": "c1ae604e-8be3-467a-9b64-a29edbbd9acc",
+      "variants": [
+        "d20ad8f3-d8b9-48d4-b106-ad28647d7127"
+      ],
+      "media": [],
+      "hidden": true
+    }
+  ],
+  "rpc_http": 200,
+  "preservation": {
+    "tables": 18,
+    "baseline_rows": 881,
+    "status": "passed"
+  }
+}

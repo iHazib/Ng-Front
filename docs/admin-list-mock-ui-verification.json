@@ -1,0 +1,63 @@
+{
+  "kind": "actual_Next_Chrome_mock_providers",
+  "status": "passed",
+  "checks": [
+    {
+      "name": "unauthorized list API denied",
+      "result": "passed"
+    },
+    {
+      "name": "initial page bounded to 25 rows",
+      "result": "passed"
+    },
+    {
+      "name": "advanced filters collapsed",
+      "result": "passed"
+    },
+    {
+      "name": "server pagination accurate",
+      "result": "passed"
+    },
+    {
+      "name": "matching shade/size visible",
+      "result": "passed"
+    },
+    {
+      "name": "uncounted and confirmed zero distinguished",
+      "result": "passed"
+    },
+    {
+      "name": "ignore hides active required badge only",
+      "result": "passed"
+    },
+    {
+      "name": "Undo restores reminder",
+      "result": "passed"
+    },
+    {
+      "name": "ignored reminder persists after reload",
+      "result": "passed"
+    },
+    {
+      "name": "ignored view and Restore update count",
+      "result": "passed"
+    },
+    {
+      "name": "combinable filters sent to server with all mode",
+      "result": "passed"
+    },
+    {
+      "name": "assigned facet values included in server request",
+      "result": "passed"
+    },
+    {
+      "name": "responsive list/filter layout no document overflow",
+      "result": "passed"
+    },
+    {
+      "name": "CSRF-less reminder mutation rejected",
+      "result": "passed"
+    }
+  ],
+  "hosted_writes": 0
+}

@@ -1,0 +1,52 @@
+{
+  "checked_at": "2026-10-07",
+  "build": "passed: Next.js16.3.8 production build, TypeScript and production route manifest",
+  "lint": "passed",
+  "typecheck_after_final_changes": "passed",
+  "original_source_integrity": "passed:64 files,14 reference CSS blocks",
+  "unit_tests": {
+    "passed": 13,
+    "failed": 0,
+    "provider_operations": "mock transports only"
+  },
+  "mock_browser_report": "docs/content-ui-mock-verification.json",
+  "actual_content_provider_report": "docs/content-live-verification.json",
+  "actual_content_status": "passed:44 actual checks; no pending items",
+  "production_reference_route": "excluded",
+  "real_business_publications": 0,
+  "npm_audit": {
+    "production_findings": 0,
+    "development_high": 4,
+    "chain": "existing Next ESLint plugin / fast-glob / micromatch / braces",
+    "incompatible_downgrade_applied": false
+  },
+  "browser_scope": "installed Chrome desktop/mobile emulation; not physical Safari",
+  "homepage_regression": {
+    "passed": 8,
+    "skipped": 2,
+    "failed_final": 0,
+    "runs": "four motion/resolver checks passed first run; four timed-out screenshot/navigation/mobile checks passed targeted rerun with unchanged assertions and larger Windows time budget",
+    "desktop_reference_geometry_and_all_carousel_states": "passed",
+    "screenshots_reviewed": "reference/edit-1 and React/edit-1 match visually; CMS mobile article/homepage/curation inspected",
+    "mobile": "all hero states/menu interactions/no overflow passed",
+    "limits": "Chrome emulation; user-authorized mobile redesign intentionally excluded from original desktop geometry comparison"
+  },
+  "additional_public_mock_checks": {
+    "passed": 10,
+    "cover_framing": "passed desktop/mobile after scoped fix",
+    "report": "docs/content-public-ui-mock-verification.json"
+  },
+  "actual_next_security": {
+    "anonymous_content_get": 401,
+    "csrf_less_content_post": 403,
+    "cache_control": "private, no-store",
+    "development_reference": 200
+  },
+  "final_build": "passed after final responsive cover and image identity changes",
+  "pinned_dependency_tree": "npm ls --depth=0 passed",
+  "actual_reports": [
+    "docs/content-live-verification.json",
+    "docs/content-live-permissions.json",
+    "docs/content-live-cleanup-verification.json"
+  ]
+}

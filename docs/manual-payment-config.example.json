@@ -1,0 +1,13 @@
+{
+  "mode": "approved",
+  "version": "owner-config-1",
+  "taxTreatment": "",
+  "paymentSeconds": null,
+  "reviewExtensionSeconds": null,
+  "shipping": [{"id": "owner-delivery", "label": "", "feeMinor": null, "cities": []}],
+  "payment": [
+    {"id": "bank-transfer", "enabled": false, "label": "Bank Transfer", "bankName": "", "accountTitle": "", "destination": "", "instructions": ""},
+    {"id": "easypaisa", "enabled": false, "label": "Easypaisa", "accountTitle": "", "destination": "", "instructions": ""},
+    {"id": "jazzcash", "enabled": false, "label": "JazzCash", "accountTitle": "", "destination": "", "instructions": ""}
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "kind": "real Next SSR/Chrome with local HTTP RPC double and neutral image interception; NOT hosted provider verification",
+  "checks": [
+    {
+      "name": "manual deal/product order in existing homepage cards 1440",
+      "passed": true
+    },
+    {
+      "name": "four heroes/footer and unchanged theme 1440",
+      "passed": true
+    },
+    {
+      "name": "bounded SSR deal listing 1440",
+      "passed": true
+    },
+    {
+      "name": "real second-page link 1440",
+      "passed": true
+    },
+    {
+      "name": "exact component/price and responsive image resolver 1440",
+      "passed": true
+    },
+    {
+      "name": "public detail fits viewport 1440",
+      "passed": true
+    },
+    {
+      "name": "unknown/ineligible detail is 404 1440",
+      "passed": true
+    },
+    {
+      "name": "manual deal/product order in existing homepage cards 390",
+      "passed": true
+    },
+    {
+      "name": "four heroes/footer and unchanged theme 390",
+      "passed": true
+    },
+    {
+      "name": "bounded SSR deal listing 390",
+      "passed": true
+    },
+    {
+      "name": "real second-page link 390",
+      "passed": true
+    },
+    {
+      "name": "exact component/price and responsive image resolver 390",
+      "passed": true
+    },
+    {
+      "name": "public detail fits viewport 390",
+      "passed": true
+    },
+    {
+      "name": "unknown/ineligible detail is 404 390",
+      "passed": true
+    }
+  ],
+  "status": "passed"
+}

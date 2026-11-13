@@ -1,0 +1,6 @@
+{
+  "canonical": "202610160017_assembled_deals.sql",
+  "canonical_sha256": "dfdae129e62884b12d58e0bb43f628a7b9dece652dc413c789af3a381db8c7e7",
+  "installer_sha256": "a7228064c4fe7cc7ad5fc79148b0c2bdd60402905cc1c879a3dc9c79f1918f59",
+  "prior_016_sha256": "d0e29a69895ac34b808371c40c126235f7b7d019ee77874b218b3a65cbfdb612"
+}

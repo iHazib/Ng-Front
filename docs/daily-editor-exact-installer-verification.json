@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "base_migrations": [
+    "202610050001_catalog.sql",
+    "202610050002_commerce_content.sql",
+    "202610050003_security_publication.sql",
+    "202610050004_access_import.sql",
+    "202610050005_taxonomy.sql",
+    "202610050006_invariants.sql",
+    "202610050007_media_service.sql"
+  ],
+  "earlier_installers_executed": false,
+  "exact_file": "supabase/sql-editor/06_install_daily_product_editor_clean.sql",
+  "sha256": "ff2d5f584b5572a3c08b82e20251e842f38ca68715a72c335297063ba566ee11",
+  "execution": "psql -X -v ON_ERROR_STOP=1 -f exact_file",
+  "seeded_source_products": 121,
+  "all_pre_existing_business_tables_unchanged": true,
+  "syntax_failure_rollback": "passed",
+  "repeat_install_refusal": "passed",
+  "local_evidence": "database-test-df18db4e913f",
+  "auth_and_storage": "test doubles; not hosted Supabase verification",
+  "catalog_security_media_and_daily_editor_regressions": "passed"
+}

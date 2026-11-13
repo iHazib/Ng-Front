@@ -1,0 +1,32 @@
+{
+  "kind": "actual_development_auth_and_read_only_api_inspection",
+  "checked_at": "2026-10-06T20:21:14.101Z",
+  "checks": [
+    {
+      "name": "actual Auth token and active database admin membership",
+      "result": "passed"
+    },
+    {
+      "name": "products endpoint",
+      "http_status": 200
+    },
+    {
+      "name": "inventory_counts endpoint",
+      "http_status": 404,
+      "provider_code": "PGRST205"
+    },
+    {
+      "name": "publication report version",
+      "http_status": 200,
+      "daily_editor_version": null
+    },
+    {
+      "name": "save RPC discovery only (GET; no mutation)",
+      "http_status": 404,
+      "provider_code": "PGRST202"
+    }
+  ],
+  "private_sql_inspection": "unavailable: no configured SQL connection; API visibility is not a definitive pg_catalog inspection",
+  "required_next_step": "Run 06_preflight_daily_product_editor.sql before considering another installer attempt",
+  "result": "API inspection completed; SQL preflight still required"
+}

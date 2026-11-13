@@ -1,0 +1,8 @@
+{
+  "file": "supabase/sql-editor/09_install_customer_reviews_clean.sql",
+  "sha256": "32e40f5f7e2cbec18a3ccd8d81de86bb76f0b2c7f108761f155cf193fbb0cc52",
+  "migration_receipt_sha256": "0a3d7c1ad1e67b09f876c3c43ea8c335f23e698d32bbc38eee0a595321975e52",
+  "function_count": 10,
+  "duplicate_functions": 0,
+  "receipt_inserts": 1
+}

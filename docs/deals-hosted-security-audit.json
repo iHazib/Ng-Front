@@ -1,0 +1,45 @@
+{
+  "kind": "actual installed metadata supplied by owner from read-only SQL Editor audit",
+  "date": "2026-10-18",
+  "receipt_017_matches": true,
+  "seven_tables_rls_enabled": true,
+  "no_force_rls": true,
+  "six_private_tables": {
+    "policies": 0,
+    "effective_anon_authenticated_service_grants": 0
+  },
+  "deal_media": {
+    "policies": [
+      "admin_read authenticated SELECT is_admin()",
+      "public_read anon/authenticated SELECT deal_is_public(deal_id)"
+    ],
+    "unexpected_client_grants": [
+      "INSERT",
+      "UPDATE",
+      "DELETE",
+      "TRUNCATE",
+      "REFERENCES",
+      "TRIGGER"
+    ],
+    "roles": [
+      "anon",
+      "authenticated"
+    ],
+    "public_pseudo_role_grants": 0
+  },
+  "rpc_owner_definer_search_path_and_grants": "all 17 match",
+  "cause": "cannot establish historical cause; consistent with hosted default table grants not explicitly revoked by 017",
+  "reported_before_change": true,
+  "hosted_permission_changes": 0,
+  "correction": "incremental 018 applied by owner; all seven final verification flags confirmed true",
+  "policy_dispatch_correction": {
+    "version": "019",
+    "owner_confirmed_installed": true,
+    "receipt_matches": true,
+    "legacy_policy_count": 0,
+    "dispatcher_policy_count": 5,
+    "legacy_helper_private": true,
+    "all_five_tables_rls_enabled": true,
+    "hosted_readonly_all_three_roles": "all five tables HTTP 200"
+  }
+}

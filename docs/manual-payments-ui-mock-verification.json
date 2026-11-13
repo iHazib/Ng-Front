@@ -1,0 +1,78 @@
+{
+  "kind": "actual_Chrome_UI_with_mock_commerce_catalog_responses",
+  "checks": [
+    {
+      "name": "bag shows current price change (1440)",
+      "passed": true
+    },
+    {
+      "name": "adding/reloading bag creates no orders (1440)",
+      "passed": true
+    },
+    {
+      "name": "quantity revalidation (1440)",
+      "passed": true
+    },
+    {
+      "name": "responsive checkout fits viewport (1440)",
+      "passed": true
+    },
+    {
+      "name": "browser sends identifiers/quantities, no trusted totals (1440)",
+      "passed": true
+    },
+    {
+      "name": "interrupted response resumes existing confirmation, one placement (1440)",
+      "passed": true
+    },
+    {
+      "name": "confirmation renders separate payment status (1440)",
+      "passed": true
+    },
+    {
+      "name": "proof submission never marks Paid (1440)",
+      "passed": true
+    },
+    {
+      "name": "payment deadline and private submission fit mobile (1440)",
+      "passed": true
+    },
+    {
+      "name": "bag shows current price change (390)",
+      "passed": true
+    },
+    {
+      "name": "adding/reloading bag creates no orders (390)",
+      "passed": true
+    },
+    {
+      "name": "quantity revalidation (390)",
+      "passed": true
+    },
+    {
+      "name": "responsive checkout fits viewport (390)",
+      "passed": true
+    },
+    {
+      "name": "browser sends identifiers/quantities, no trusted totals (390)",
+      "passed": true
+    },
+    {
+      "name": "interrupted response resumes existing confirmation, one placement (390)",
+      "passed": true
+    },
+    {
+      "name": "confirmation renders separate payment status (390)",
+      "passed": true
+    },
+    {
+      "name": "proof submission never marks Paid (390)",
+      "passed": true
+    },
+    {
+      "name": "payment deadline and private submission fit mobile (390)",
+      "passed": true
+    }
+  ],
+  "status": "passed"
+}

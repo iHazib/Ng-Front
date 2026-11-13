@@ -1,0 +1,12 @@
+{
+  "source": "202610080012_product_markdown.sql",
+  "canonical_sha256": "12038d5d88f52a014bca3050567d75e68e8d3066ac8771eb364b47d3f2381bc7",
+  "installer_sha256": "2f5df9628568e304f21250379ca1b993db4c8a05b4f2c03a3221cbcd404c1002",
+  "declarations": [
+    "public.save_daily_product",
+    "app_private.storefront_variants",
+    "public.storefront_catalog",
+    "public.admin_product_list"
+  ],
+  "matched_dollar_quotes": true
+}

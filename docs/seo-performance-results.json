@@ -1,0 +1,137 @@
+{
+  "generatedAt": "2026-11-09T07:41:24.651Z",
+  "build": "next build (production) with APP_ENV=staging, noindex preview",
+  "desktop": {
+    "name": "desktop-home",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "elapsedMs": 3411,
+    "lcp": 1292,
+    "lcpElement": "img.hero-photo",
+    "cls": 0,
+    "domContentLoaded": 1136,
+    "load": 1222,
+    "resourceCount": 20,
+    "transferBytes": 1934824,
+    "encodedBytes": 1928824,
+    "images": [
+      {
+        "name": "/assets/hero/fragrances.webp",
+        "initiator": "img",
+        "transfer": 249154,
+        "encoded": 248854
+      },
+      {
+        "name": "/assets/hero/skincare.webp",
+        "initiator": "img",
+        "transfer": 221450,
+        "encoded": 221150
+      },
+      {
+        "name": "/assets/products/gold-stainless-cutlery-set/primary.webp",
+        "initiator": "img",
+        "transfer": 178406,
+        "encoded": 178106
+      },
+      {
+        "name": "/assets/hero/makeup.webp",
+        "initiator": "img",
+        "transfer": 165428,
+        "encoded": 165128
+      },
+      {
+        "name": "/assets/categories/fragrances.webp",
+        "initiator": "img",
+        "transfer": 105250,
+        "encoded": 104950
+      },
+      {
+        "name": "/assets/products/dark-spot-correcting-glow-serum/primary.webp",
+        "initiator": "img",
+        "transfer": 67880,
+        "encoded": 67580
+      },
+      {
+        "name": "/assets/products/on-the-glow-blush-ruby/primary.webp",
+        "initiator": "img",
+        "transfer": 52550,
+        "encoded": 52250
+      }
+    ],
+    "imageBytes": 1040118,
+    "scripts": 148252,
+    "styles": 13923,
+    "interactionDurationMs": 88
+  },
+  "mobile": {
+    "name": "mobile-home",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "elapsedMs": 2997,
+    "lcp": 816,
+    "lcpElement": "img.hero-photo",
+    "cls": 0,
+    "domContentLoaded": 767,
+    "load": 829,
+    "resourceCount": 20,
+    "transferBytes": 1934824,
+    "encodedBytes": 1928824,
+    "images": [
+      {
+        "name": "/assets/hero/fragrances.webp",
+        "initiator": "img",
+        "transfer": 249154,
+        "encoded": 248854
+      },
+      {
+        "name": "/assets/hero/skincare.webp",
+        "initiator": "img",
+        "transfer": 221450,
+        "encoded": 221150
+      },
+      {
+        "name": "/assets/products/gold-stainless-cutlery-set/primary.webp",
+        "initiator": "img",
+        "transfer": 178406,
+        "encoded": 178106
+      },
+      {
+        "name": "/assets/hero/makeup.webp",
+        "initiator": "img",
+        "transfer": 165428,
+        "encoded": 165128
+      },
+      {
+        "name": "/assets/categories/fragrances.webp",
+        "initiator": "img",
+        "transfer": 105250,
+        "encoded": 104950
+      },
+      {
+        "name": "/assets/products/dark-spot-correcting-glow-serum/primary.webp",
+        "initiator": "img",
+        "transfer": 67880,
+        "encoded": 67580
+      },
+      {
+        "name": "/assets/products/on-the-glow-blush-ruby/primary.webp",
+        "initiator": "img",
+        "transfer": 52550,
+        "encoded": 52250
+      }
+    ],
+    "imageBytes": 1040118,
+    "scripts": 148252,
+    "styles": 13923,
+    "interactionDurationMs": 24
+  },
+  "reducedMotion": {
+    "reducesMotion": true,
+    "firstIndex": 0,
+    "secondIndex": 0
+  }
+}

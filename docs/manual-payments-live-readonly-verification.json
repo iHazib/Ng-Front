@@ -1,0 +1,7 @@
+{
+  "kind": "actual Chrome / Next.js / hosted Supabase; no business mutations",
+  "checks": [],
+  "pending": [],
+  "status": "failed",
+  "failure": "Verification failed; provider payloads and credentials suppressed."
+}

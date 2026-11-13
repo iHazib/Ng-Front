@@ -1,0 +1,208 @@
+{
+  "kind": "actual_Chrome_Next_Supabase",
+  "status": "passed",
+  "checks": [
+    {
+      "name": "anonymous list API denied",
+      "result": "passed"
+    },
+    {
+      "name": "actual non-admin login denied",
+      "result": "passed"
+    },
+    {
+      "name": "actual admin browser login works",
+      "result": "passed"
+    },
+    {
+      "name": "CSRF-less dismissal denied",
+      "result": "passed"
+    },
+    {
+      "name": "private list responses uncached",
+      "result": "passed"
+    },
+    {
+      "name": "anonymous hosted RPC admin_catalog_list denied",
+      "result": "passed"
+    },
+    {
+      "name": "anonymous hosted RPC admin_catalog_filter_options denied",
+      "result": "passed"
+    },
+    {
+      "name": "anonymous hosted RPC admin_catalog_reminder denied",
+      "result": "passed"
+    },
+    {
+      "name": "anonymous direct private API read denied",
+      "result": "passed"
+    },
+    {
+      "name": "non-admin hosted RPC admin_catalog_list denied",
+      "result": "passed"
+    },
+    {
+      "name": "non-admin hosted RPC admin_catalog_filter_options denied",
+      "result": "passed"
+    },
+    {
+      "name": "non-admin hosted RPC admin_catalog_reminder denied",
+      "result": "passed"
+    },
+    {
+      "name": "non-admin direct private API read denied",
+      "result": "passed"
+    },
+    {
+      "name": "earlier aborted synthetic product safely hidden",
+      "result": "passed"
+    },
+    {
+      "name": "additional-category descendants match combined brand/facet filters",
+      "result": "passed"
+    },
+    {
+      "name": "additional-category offered facets match the list",
+      "result": "passed"
+    },
+    {
+      "name": "additional-category removal is immediately fresh",
+      "result": "passed"
+    },
+    {
+      "name": "actual assigned combination/typo search",
+      "result": "passed"
+    },
+    {
+      "name": "original SKU alias and matching option",
+      "result": "passed"
+    },
+    {
+      "name": "same-option OR/AND facets",
+      "result": "passed"
+    },
+    {
+      "name": "all selected attention issues",
+      "result": "passed"
+    },
+    {
+      "name": "any selected attention issues",
+      "result": "passed"
+    },
+    {
+      "name": "uncounted versus confirmed zero",
+      "result": "passed"
+    },
+    {
+      "name": "incomplete removed option does not pollute active option",
+      "result": "passed"
+    },
+    {
+      "name": "browser shows required and optional missing-information badges",
+      "result": "passed"
+    },
+    {
+      "name": "browser distinguishes uncounted and zero-stock options",
+      "result": "passed"
+    },
+    {
+      "name": "actual browser edit immediately refreshes name search",
+      "result": "passed"
+    },
+    {
+      "name": "dismissal preserves product revision/content/stock",
+      "result": "passed"
+    },
+    {
+      "name": "dismissal persisted and ignored view count",
+      "result": "passed"
+    },
+    {
+      "name": "ignoring cannot publish missing required data",
+      "result": "passed"
+    },
+    {
+      "name": "Restore returns reminder",
+      "result": "passed"
+    },
+    {
+      "name": "fix then recurrence restores reminder",
+      "result": "passed"
+    },
+    {
+      "name": "published products and options searchable",
+      "result": "passed"
+    },
+    {
+      "name": "actual browser Undo restores reminder",
+      "result": "passed"
+    },
+    {
+      "name": "actual browser dismissal persists without revision changes",
+      "result": "passed"
+    },
+    {
+      "name": "actual browser Restore works",
+      "result": "passed"
+    },
+    {
+      "name": "hidden products searchable",
+      "result": "passed"
+    },
+    {
+      "name": "combined mismatched filters return empty",
+      "result": "passed"
+    },
+    {
+      "name": "bounded actual pagination with accurate total",
+      "result": "passed"
+    },
+    {
+      "name": "actual browser lists matching shade/size",
+      "result": "passed"
+    },
+    {
+      "name": "actual mobile list fits",
+      "result": "passed"
+    },
+    {
+      "name": "pre-existing hosted business records unchanged",
+      "result": "passed"
+    }
+  ],
+  "pending": [],
+  "fixtures": [
+    {
+      "productId": "fc52b8fa-b74b-4d6e-b5f4-61d9515fa17a",
+      "variantId": "2690074c-73b9-424f-955f-bff248bcdd89",
+      "sku": "AL-0ed2928d-e9c2-4dea-9820-8f42d1ff1768",
+      "hidden": true,
+      "mediaId": "fc5032d8-3e63-4516-a0c5-acb731c55d03",
+      "mediaCleaned": true
+    }
+  ],
+  "recoveredSyntheticFixture": {
+    "productId": "5c5ac960-9471-46b9-88b4-de8f59784ff3",
+    "hidden": true,
+    "taxonomyInactive": true
+  },
+  "preservation": {
+    "tables": 29,
+    "rows": 1211,
+    "status": "passed"
+  },
+  "taxonomy": {
+    "brand": "al-0ed2928d-e9c2-4dea-9820-8f42d1ff1768",
+    "category": "al-cat-0ed2928d-e9c2-4dea-9820-8f42d1ff1768",
+    "parent": "al-parent-0ed2928d-e9c2-4dea-9820-8f42d1ff1768",
+    "additionalParent": "al-extra-parent-0ed2928d-e9c2-4dea-9820-8f42d1ff1768",
+    "additionalCategory": "al-extra-child-0ed2928d-e9c2-4dea-9820-8f42d1ff1768",
+    "concern": "al-dry-0ed2928d-e9c2-4dea-9820-8f42d1ff1768",
+    "facet": "al-finish-0ed2928d-e9c2-4dea-9820-8f42d1ff1768",
+    "values": [
+      "al-small-0ed2928d-e9c2-4dea-9820-8f42d1ff1768",
+      "al-large-0ed2928d-e9c2-4dea-9820-8f42d1ff1768"
+    ]
+  }
+}

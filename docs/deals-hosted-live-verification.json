@@ -1,0 +1,574 @@
+{
+  "kind": "actual Next.js / Chrome / hosted Supabase / private Storage / Cloudinary",
+  "date": "2026-10-18",
+  "marker": "5f0e8388-2230-440a-b7fe-0c4f36193744",
+  "status": "passed",
+  "checks": [
+    {
+      "name": "anonymous deals API denied",
+      "passed": true
+    },
+    {
+      "name": "actual non-admin browser login denied",
+      "passed": true
+    },
+    {
+      "name": "actual admin Auth/server membership",
+      "passed": true
+    },
+    {
+      "name": "installed 017 Next RPC and private no-store",
+      "passed": true
+    },
+    {
+      "name": "anonymous admin_deals denied",
+      "passed": true
+    },
+    {
+      "name": "anonymous save_deal denied",
+      "passed": true
+    },
+    {
+      "name": "anonymous create_deal_upload denied",
+      "passed": true
+    },
+    {
+      "name": "anonymous expire_deal_allocations denied",
+      "passed": true
+    },
+    {
+      "name": "anonymous private API schema deal_settings unavailable",
+      "passed": true
+    },
+    {
+      "name": "anonymous private API schema deal_pools unavailable",
+      "passed": true
+    },
+    {
+      "name": "anonymous private API schema deal_operations unavailable",
+      "passed": true
+    },
+    {
+      "name": "anonymous private API schema deal_allocation_events unavailable",
+      "passed": true
+    },
+    {
+      "name": "anonymous private API schema order_component_snapshots unavailable",
+      "passed": true
+    },
+    {
+      "name": "anonymous private API schema order_pool_sources unavailable",
+      "passed": true
+    },
+    {
+      "name": "non-admin admin_deals denied",
+      "passed": true
+    },
+    {
+      "name": "non-admin save_deal denied",
+      "passed": true
+    },
+    {
+      "name": "non-admin create_deal_upload denied",
+      "passed": true
+    },
+    {
+      "name": "non-admin expire_deal_allocations denied",
+      "passed": true
+    },
+    {
+      "name": "non-admin private API schema deal_settings unavailable",
+      "passed": true
+    },
+    {
+      "name": "non-admin private API schema deal_pools unavailable",
+      "passed": true
+    },
+    {
+      "name": "non-admin private API schema deal_operations unavailable",
+      "passed": true
+    },
+    {
+      "name": "non-admin private API schema deal_allocation_events unavailable",
+      "passed": true
+    },
+    {
+      "name": "non-admin private API schema order_component_snapshots unavailable",
+      "passed": true
+    },
+    {
+      "name": "non-admin private API schema order_pool_sources unavailable",
+      "passed": true
+    },
+    {
+      "name": "CSRF-less deal write denied",
+      "passed": true
+    },
+    {
+      "name": "two separate synthetic product families published with exact options",
+      "passed": true
+    },
+    {
+      "name": "actual browser Create / exact SKU choices / Save draft",
+      "passed": true
+    },
+    {
+      "name": "draft deals isolated from public RPC",
+      "passed": true
+    },
+    {
+      "name": "publish without approved image blocked",
+      "passed": true
+    },
+    {
+      "name": "actual browser private deal upload",
+      "passed": true
+    },
+    {
+      "name": "deal image has proper owner and no fake product",
+      "passed": true
+    },
+    {
+      "name": "anonymous private deal image denied",
+      "passed": true
+    },
+    {
+      "name": "non-admin private deal image denied",
+      "passed": true
+    },
+    {
+      "name": "admin private deal image readable",
+      "passed": true
+    },
+    {
+      "name": "pending image public metadata hidden",
+      "passed": true
+    },
+    {
+      "name": "actual browser explicit approval / Cloudinary publishing",
+      "passed": true
+    },
+    {
+      "name": "duplicate completion does not duplicate association",
+      "passed": true
+    },
+    {
+      "name": "actual responsive Cloudinary image delivery",
+      "passed": true
+    },
+    {
+      "name": "approved but draft deal association remains private",
+      "passed": true
+    },
+    {
+      "name": "anonymous native media POST denied after grant correction",
+      "passed": true
+    },
+    {
+      "name": "anonymous native media PATCH denied after grant correction",
+      "passed": true
+    },
+    {
+      "name": "anonymous native media DELETE denied after grant correction",
+      "passed": true
+    },
+    {
+      "name": "non-admin native media POST denied after grant correction",
+      "passed": true
+    },
+    {
+      "name": "non-admin native media PATCH denied after grant correction",
+      "passed": true
+    },
+    {
+      "name": "non-admin native media DELETE denied after grant correction",
+      "passed": true
+    },
+    {
+      "name": "admin native media POST denied after grant correction",
+      "passed": true
+    },
+    {
+      "name": "admin native media PATCH denied after grant correction",
+      "passed": true
+    },
+    {
+      "name": "admin native media DELETE denied after grant correction",
+      "passed": true
+    },
+    {
+      "name": "actual browser Save preserves Published",
+      "passed": true
+    },
+    {
+      "name": "actual browser Save preserves Hidden",
+      "passed": true
+    },
+    {
+      "name": "hidden public isolation",
+      "passed": true
+    },
+    {
+      "name": "only eligible active fixtures public",
+      "passed": true
+    },
+    {
+      "name": "repeated component SKUs aggregate to exact quantities",
+      "passed": true
+    },
+    {
+      "name": "stale deal edit rejected",
+      "passed": true
+    },
+    {
+      "name": "invalid published edit rolls back",
+      "passed": true
+    },
+    {
+      "name": "actual manual homepage deal ordering",
+      "passed": true
+    },
+    {
+      "name": "actual homepage reordered without replacing owner selections",
+      "passed": true
+    },
+    {
+      "name": "actual homepage uses approved card template",
+      "passed": true
+    },
+    {
+      "name": "individual competes with deal for last shared unit",
+      "passed": true
+    },
+    {
+      "name": "guest duplicate order retry reserves once",
+      "passed": true
+    },
+    {
+      "name": "cancellation releases once",
+      "passed": true
+    },
+    {
+      "name": "two deals share one last component",
+      "passed": true
+    },
+    {
+      "name": "guest duplicate order retry reserves once",
+      "passed": true
+    },
+    {
+      "name": "cancellation releases once",
+      "passed": true
+    },
+    {
+      "name": "mixed shared-component shortage rolls back complete order",
+      "passed": true
+    },
+    {
+      "name": "multi-component unavailable line leaves no partial reservation",
+      "passed": true
+    },
+    {
+      "name": "server rejects browser deal price override",
+      "passed": true
+    },
+    {
+      "name": "set-aside blocks individual and other deals",
+      "passed": true
+    },
+    {
+      "name": "deal pool transfers into order without double count",
+      "passed": true
+    },
+    {
+      "name": "cancel returns own unchanged pool",
+      "passed": true
+    },
+    {
+      "name": "hide releases only unused allocations",
+      "passed": true
+    },
+    {
+      "name": "aggregated set-aside uses component units",
+      "passed": true
+    },
+    {
+      "name": "mixed cart aggregate reservation and authoritative total",
+      "passed": true
+    },
+    {
+      "name": "mixed cancellation returns only pool-sourced units",
+      "passed": true
+    },
+    {
+      "name": "hiding releases idle but retains placed order units",
+      "passed": true
+    },
+    {
+      "name": "cancel after hide returns general stock, not closed pool",
+      "passed": true
+    },
+    {
+      "name": "actual mixed bag persists without reservation",
+      "passed": true
+    },
+    {
+      "name": "browser checkout snapshots full mixed deal components",
+      "passed": true
+    },
+    {
+      "name": "another guest cannot read mixed order",
+      "passed": true
+    },
+    {
+      "name": "deal payment submission never marks Paid",
+      "passed": true
+    },
+    {
+      "name": "later edit/hide leaves immutable order snapshot and total",
+      "passed": true
+    },
+    {
+      "name": "unpaid fulfilment disabled in actual admin browser",
+      "passed": true
+    },
+    {
+      "name": "actual browser explicit mixed-order payment verification",
+      "passed": true
+    },
+    {
+      "name": "dispatch uses old mixed quantities once; Complete never deducts again",
+      "passed": true
+    },
+    {
+      "name": "real expiry task releases once",
+      "passed": true
+    },
+    {
+      "name": "expiry returns own unchanged pool",
+      "passed": true
+    },
+    {
+      "name": "late manual payment reacquires own returned allocation",
+      "passed": true
+    },
+    {
+      "name": "verification retry preserves one receipt",
+      "passed": true
+    },
+    {
+      "name": "two actual deal deadlines expire",
+      "passed": true
+    },
+    {
+      "name": "actual late deal race allocates one last unit, retaining both receipts",
+      "passed": true
+    },
+    {
+      "name": "payment received without stock cannot fulfil",
+      "passed": true
+    },
+    {
+      "name": "ended deals disappear before allocation maintenance",
+      "passed": true
+    },
+    {
+      "name": "ended idle pool maintenance releases exactly once",
+      "passed": true
+    },
+    {
+      "name": "actual mobile deal editor fits",
+      "passed": true
+    },
+    {
+      "name": "actual mobile deal detail and approved images render",
+      "passed": true
+    },
+    {
+      "name": "normal storefront checkout stays disabled",
+      "passed": true
+    },
+    {
+      "name": "all fixture variant allocations released",
+      "passed": true
+    },
+    {
+      "name": "all original checked rows and homepage selections preserved",
+      "passed": true
+    }
+  ],
+  "pending": [],
+  "products": [
+    {
+      "id": "b2b56e13-be4e-498d-be8f-29e9531d037a",
+      "name": "Synthetic deals 5f0e8388-2230-440a-b7fe-0c4f36193744 one",
+      "variants": [
+        {
+          "id": "1b9b4ffe-704b-4d7f-a4e3-ed61e8509dca",
+          "sku": "DL-5f0e8388-2230-440a-b7fe-0c4f36193744-A",
+          "label": "Last unit",
+          "priceMinor": 100000,
+          "stock": 1
+        },
+        {
+          "id": "4af3ac7f-171e-48d1-b3ea-20631002e2a8",
+          "sku": "DL-5f0e8388-2230-440a-b7fe-0c4f36193744-N",
+          "label": "Normal",
+          "priceMinor": 100000,
+          "stock": 30
+        },
+        {
+          "id": "9e57b825-d599-45c1-925c-cf8dfb5f3bc5",
+          "sku": "DL-5f0e8388-2230-440a-b7fe-0c4f36193744-ZERO",
+          "label": "Zero",
+          "priceMinor": 100000,
+          "stock": 0
+        }
+      ],
+      "hidden": true
+    },
+    {
+      "id": "9413ec16-4a64-4414-ba36-c29a335ecf38",
+      "name": "Synthetic deals 5f0e8388-2230-440a-b7fe-0c4f36193744 two",
+      "variants": [
+        {
+          "id": "482d7a93-a7a6-4bc6-9aa7-4619a1710ed7",
+          "sku": "DL-5f0e8388-2230-440a-b7fe-0c4f36193744-B",
+          "label": "Large",
+          "priceMinor": 200000,
+          "stock": 30
+        }
+      ],
+      "hidden": true
+    }
+  ],
+  "deals": [
+    {
+      "id": "9dd7e9ec-bc91-4546-91b6-6541aa22b406",
+      "title": "Synthetic deals 5f0e8388-2230-440a-b7fe-0c4f36193744 first",
+      "slug": "synthetic-deals-5f0e8388-2230-440a-b7fe-0c4f36193744-first",
+      "priceMinor": 150000,
+      "components": [
+        {
+          "id": "1b9b4ffe-704b-4d7f-a4e3-ed61e8509dca",
+          "quantity": 1
+        },
+        {
+          "id": "482d7a93-a7a6-4bc6-9aa7-4619a1710ed7",
+          "quantity": 1
+        }
+      ],
+      "hidden": true
+    },
+    {
+      "id": "dbd30594-7078-4025-888d-6acdc07e6c13",
+      "title": "Synthetic deals 5f0e8388-2230-440a-b7fe-0c4f36193744 second",
+      "slug": "dl-second-5f0e8388-2230-440a-b7fe-0c4f36193744",
+      "priceMinor": 170000,
+      "components": [
+        {
+          "id": "1b9b4ffe-704b-4d7f-a4e3-ed61e8509dca",
+          "quantity": 1
+        },
+        {
+          "id": "482d7a93-a7a6-4bc6-9aa7-4619a1710ed7",
+          "quantity": 1
+        }
+      ],
+      "hidden": true
+    },
+    {
+      "id": "9e313cba-758c-4f24-99e3-0050a18c88b1",
+      "title": "Synthetic deals 5f0e8388-2230-440a-b7fe-0c4f36193744 quantity",
+      "slug": "dl-quantity-5f0e8388-2230-440a-b7fe-0c4f36193744",
+      "priceMinor": 450000,
+      "components": [
+        {
+          "id": "4af3ac7f-171e-48d1-b3ea-20631002e2a8",
+          "quantity": 1
+        },
+        {
+          "id": "482d7a93-a7a6-4bc6-9aa7-4619a1710ed7",
+          "quantity": 1
+        }
+      ],
+      "hidden": true
+    }
+  ],
+  "media": [
+    {
+      "id": "4e1b30bc-f24e-43df-846b-81b97317d16e",
+      "owner": "product",
+      "ownerId": "b2b56e13-be4e-498d-be8f-29e9531d037a",
+      "cleaned": true
+    },
+    {
+      "id": "12749b27-a53e-458a-a2c1-862a0fd24a70",
+      "owner": "product",
+      "ownerId": "9413ec16-4a64-4414-ba36-c29a335ecf38",
+      "cleaned": true
+    },
+    {
+      "id": "00463fe9-d571-4f9e-8816-e565e4e4e6ea",
+      "owner": "deal",
+      "ownerId": "9dd7e9ec-bc91-4546-91b6-6541aa22b406",
+      "cleaned": true
+    },
+    {
+      "id": "874ebd80-98a5-46c1-a04c-36f0b704b91e",
+      "owner": "deal",
+      "ownerId": "dbd30594-7078-4025-888d-6acdc07e6c13",
+      "cleaned": true
+    },
+    {
+      "id": "8af0e543-06b8-43b7-98f9-759961e671a6",
+      "owner": "deal",
+      "ownerId": "9e313cba-758c-4f24-99e3-0050a18c88b1",
+      "cleaned": true
+    }
+  ],
+  "orders": [
+    "fea33876-97bd-4431-a0ec-d368f38ba5e5",
+    "4aa26a92-4b49-4658-894c-0eeb2dd8e2c7",
+    "3faed28e-0da9-4864-a663-953851ed2d60",
+    "adc03f27-8e75-4d5a-b308-9dddcb65a18b",
+    "15c7bb3c-0543-466f-8946-6dd3ada3307e",
+    "9708fb8f-75a8-4398-b999-e7983544a687",
+    "16675086-e384-4296-bdc4-482c1775b18b",
+    "6e6d8321-c5bf-413b-8256-d573b662d88a",
+    "49503970-fe2b-46d7-b312-997ff0901ef6"
+  ],
+  "attemptedOrders": [
+    "fea33876-97bd-4431-a0ec-d368f38ba5e5",
+    "7190ca99-f5e2-4917-886a-28ba0368092f",
+    "4aa26a92-4b49-4658-894c-0eeb2dd8e2c7",
+    "6b486950-27b4-425d-bae6-432b9fbae03f",
+    "c41d8b11-3cde-4964-bf89-bfa4c2942902",
+    "8f3a8561-cd15-40e0-b83e-4603b1a3c7e0",
+    "80363a3d-b5e6-47d5-b7aa-6ed1c612facf",
+    "523a98cd-9797-4ec5-96ba-3f41a22d45bb",
+    "3faed28e-0da9-4864-a663-953851ed2d60",
+    "adc03f27-8e75-4d5a-b308-9dddcb65a18b",
+    "15c7bb3c-0543-466f-8946-6dd3ada3307e",
+    "9708fb8f-75a8-4398-b999-e7983544a687",
+    "16675086-e384-4296-bdc4-482c1775b18b",
+    "6e6d8321-c5bf-413b-8256-d573b662d88a",
+    "49503970-fe2b-46d7-b312-997ff0901ef6"
+  ],
+  "hostedSqlExecuted": 0,
+  "preservation": {
+    "tables": 40,
+    "rows": 1416,
+    "status": "passed"
+  },
+  "existingTemporaryHolds": 0,
+  "taxonomy": {
+    "brand": "dl-5f0e8388-2230-440a-b7fe-0c4f36193744",
+    "category": "dl-cat-5f0e8388-2230-440a-b7fe-0c4f36193744"
+  },
+  "cleanup": {
+    "hiddenProducts": 2,
+    "hiddenDeals": 3,
+    "cleanedMedia": 5
+  }
+}

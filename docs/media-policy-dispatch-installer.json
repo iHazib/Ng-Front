@@ -1,0 +1,5 @@
+{
+  "canonical_sha256": "19ee24e376d66ad9dca4e09cc5bec42b1a703e3dfb69011849eef0dd8796623c",
+  "installer_sha256": "dedd871f8041ce158b0e32bbb12dde832f8bdc9854011402df9ef78869ae5a3e",
+  "installer": "supabase\\sql-editor\\17_install_media_policy_dispatch_clean.sql"
+}

@@ -1,0 +1,22 @@
+{
+  "kind": "actual_hosted_read_only",
+  "checked_at": "2026-11-09T11:42:46.578Z",
+  "checks": [
+    {
+      "name": "SUPABASE_SECRET_KEY configured",
+      "result": "passed"
+    },
+    {
+      "name": "REVIEW_SESSION_SECRET configured",
+      "result": "passed"
+    },
+    {
+      "name": "Hosted public review RPC available",
+      "result": "passed",
+      "http": 200
+    }
+  ],
+  "pending": [],
+  "mutations": 0,
+  "status": "ready_for_live_fixtures"
+}

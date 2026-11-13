@@ -1,0 +1,6 @@
+{
+  "canonical": "202610180018_deal_media_privileges.sql",
+  "canonical_sha256": "6bcb154fd582e4809cefbdb89d2c054e127f12fb3daf38ce7715ea36597958a3",
+  "installer_sha256": "c5f793cb6fb447699094700e8a3c3002668f74bfabae434be78a9b45fb2817b5",
+  "scope": "permission-only correction for 017, not next commerce stage"
+}

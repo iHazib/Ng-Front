@@ -1,0 +1,23 @@
+{
+  "canonical": "202610130015_guest_commerce.sql",
+  "canonical_sha256": "b89d4a6a6ae13c27be9d71928c5ea288c26b64691f8be0d867c8070abf5b0ce0",
+  "installer_sha256": "ea1d878b6caa9209cba75885448dd84f5b6c075576266f8d1c51c74d1f176ef0",
+  "prior_014_sha256": "3f771bd8309cd0c1de097e93b6aaf76963d7a18c1f26029fb7047ec2c86e53c3",
+  "functions": [
+    "app_private.commerce_lines",
+    "public.commerce_quote",
+    "app_private.reserve_inventory",
+    "app_private.finish_inventory",
+    "app_private.assert_order_allocation",
+    "public.reserve_order",
+    "public.finish_reservation",
+    "public.commerce_rate",
+    "app_private.commerce_view",
+    "public.place_guest_order",
+    "public.guest_order_confirmation",
+    "public.admin_order_action",
+    "public.expire_commerce_holds",
+    "public.commerce_reconciliation",
+    "public.admin_orders"
+  ]
+}

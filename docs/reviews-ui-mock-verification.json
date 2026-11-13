@@ -1,0 +1,63 @@
+{
+  "kind": "actual_next_chrome_mock_provider",
+  "checks": [
+    {
+      "name": "Next rejects unauthenticated admin review API",
+      "result": "passed"
+    },
+    {
+      "name": "server-protected moderation page redirects to login",
+      "result": "passed"
+    },
+    {
+      "name": "Next rejects customer submission without origin/CSRF",
+      "result": "passed"
+    },
+    {
+      "name": "browser submits pending review through real Next gateway",
+      "result": "passed"
+    },
+    {
+      "name": "public page isolates pending review",
+      "result": "passed"
+    },
+    {
+      "name": "browser approval through authorized Next moderation API",
+      "result": "passed"
+    },
+    {
+      "name": "public refresh displays approved count and average",
+      "result": "passed"
+    },
+    {
+      "name": "private contact and unsupported purchase badge absent",
+      "result": "passed"
+    },
+    {
+      "name": "browser edit returns to pending",
+      "result": "passed"
+    },
+    {
+      "name": "browser decline removes public review",
+      "result": "passed"
+    },
+    {
+      "name": "browser hide marks declined entry hidden",
+      "result": "passed"
+    },
+    {
+      "name": "browser optional image travels through private review-owned gateway",
+      "result": "passed"
+    },
+    {
+      "name": "mobile review form has no horizontal overflow",
+      "result": "passed"
+    },
+    {
+      "name": "mobile moderation tabs and pending private image preview render",
+      "result": "passed"
+    }
+  ],
+  "status": "passed",
+  "limitations": "Auth, PostgreSQL responses, Storage and image delivery are explicit doubles. No hosted writes, real Cloudinary upload or live RLS verification."
+}

@@ -1,0 +1,194 @@
+{
+  "kind": "independent actual hosted read-only cleanup/reconciliation",
+  "checks": [
+    {
+      "name": "fixture product hidden 3ff625ab-3b89-4410-a4d6-ac3f014d9ec0",
+      "passed": true
+    },
+    {
+      "name": "fixture options archived 3ff625ab-3b89-4410-a4d6-ac3f014d9ec0",
+      "passed": true
+    },
+    {
+      "name": "fixture product not public 3ff625ab-3b89-4410-a4d6-ac3f014d9ec0",
+      "passed": true
+    },
+    {
+      "name": "fixture product hidden 6e1b9d48-7b11-4c58-9ac5-978c476c5e09",
+      "passed": true
+    },
+    {
+      "name": "fixture options archived 6e1b9d48-7b11-4c58-9ac5-978c476c5e09",
+      "passed": true
+    },
+    {
+      "name": "fixture product not public 6e1b9d48-7b11-4c58-9ac5-978c476c5e09",
+      "passed": true
+    },
+    {
+      "name": "fixture reserved counters zero",
+      "passed": true
+    },
+    {
+      "name": "fixture active reservations zero",
+      "passed": true
+    },
+    {
+      "name": "fixture deal hidden and idle pool empty 668d730e-7467-472a-9f31-9eaf2553ea0a",
+      "passed": true
+    },
+    {
+      "name": "fixture home selection retired 668d730e-7467-472a-9f31-9eaf2553ea0a",
+      "passed": true
+    },
+    {
+      "name": "fixture deal hidden and idle pool empty ff93c9eb-8530-4b11-9623-d13b0df70f09",
+      "passed": true
+    },
+    {
+      "name": "fixture home selection retired ff93c9eb-8530-4b11-9623-d13b0df70f09",
+      "passed": true
+    },
+    {
+      "name": "fixture deal hidden and idle pool empty f84c28c2-507f-4d9e-9077-38aabf67264d",
+      "passed": true
+    },
+    {
+      "name": "fixture home selection retired f84c28c2-507f-4d9e-9077-38aabf67264d",
+      "passed": true
+    },
+    {
+      "name": "fixture deals absent publicly",
+      "passed": true
+    },
+    {
+      "name": "fixture asset deleted 1e03c41b-fbb7-456a-ab3e-69ea02838ba1",
+      "passed": true
+    },
+    {
+      "name": "fixture private original removed 1e03c41b-fbb7-456a-ab3e-69ea02838ba1",
+      "passed": true
+    },
+    {
+      "name": "fixture asset deleted 112ff168-86df-4731-8b26-6438ae73cbba",
+      "passed": true
+    },
+    {
+      "name": "fixture private original removed 112ff168-86df-4731-8b26-6438ae73cbba",
+      "passed": true
+    },
+    {
+      "name": "fixture asset deleted 34f7987f-29ca-4cd4-9d3b-fb0aaa799c98",
+      "passed": true
+    },
+    {
+      "name": "fixture private original removed 34f7987f-29ca-4cd4-9d3b-fb0aaa799c98",
+      "passed": true
+    },
+    {
+      "name": "fixture asset deleted c685430e-f98c-463b-add5-697863732436",
+      "passed": true
+    },
+    {
+      "name": "fixture private original removed c685430e-f98c-463b-add5-697863732436",
+      "passed": true
+    },
+    {
+      "name": "fixture asset deleted ae8400af-31d6-4103-8c6c-e09646ef30f2",
+      "passed": true
+    },
+    {
+      "name": "fixture private original removed ae8400af-31d6-4103-8c6c-e09646ef30f2",
+      "passed": true
+    },
+    {
+      "name": "fixture order history retained without active hold 6a22edf9-8d87-4d5e-a148-4b50cdcf2cb4",
+      "passed": true
+    },
+    {
+      "name": "fixture order history retained without active hold 8606d1e5-4afd-49ad-bc3d-dc9217241d92",
+      "passed": true
+    },
+    {
+      "name": "fixture order history retained without active hold 227b172d-9063-4570-9465-bfbad9518b57",
+      "passed": true
+    },
+    {
+      "name": "fixture order history retained without active hold a2c20c96-199b-40c4-ad81-bd87f0536eca",
+      "passed": true
+    },
+    {
+      "name": "fixture order history retained without active hold 61e10585-f227-4cd6-9b84-a2f943c9a135",
+      "passed": true
+    },
+    {
+      "name": "fixture order history retained without active hold 9837f5be-1c4d-46e3-b599-13ca37bda01b",
+      "passed": true
+    },
+    {
+      "name": "fixture financial holds released 6a22edf9-8d87-4d5e-a148-4b50cdcf2cb4",
+      "passed": true
+    },
+    {
+      "name": "fixture financial audit retained 6a22edf9-8d87-4d5e-a148-4b50cdcf2cb4",
+      "passed": true
+    },
+    {
+      "name": "fixture financial holds released 8606d1e5-4afd-49ad-bc3d-dc9217241d92",
+      "passed": true
+    },
+    {
+      "name": "fixture financial audit retained 8606d1e5-4afd-49ad-bc3d-dc9217241d92",
+      "passed": true
+    },
+    {
+      "name": "fixture financial holds released 227b172d-9063-4570-9465-bfbad9518b57",
+      "passed": true
+    },
+    {
+      "name": "fixture financial audit retained 227b172d-9063-4570-9465-bfbad9518b57",
+      "passed": true
+    },
+    {
+      "name": "fixture financial holds released a2c20c96-199b-40c4-ad81-bd87f0536eca",
+      "passed": true
+    },
+    {
+      "name": "fixture financial audit retained a2c20c96-199b-40c4-ad81-bd87f0536eca",
+      "passed": true
+    },
+    {
+      "name": "fixture financial holds released 61e10585-f227-4cd6-9b84-a2f943c9a135",
+      "passed": true
+    },
+    {
+      "name": "fixture financial audit retained 61e10585-f227-4cd6-9b84-a2f943c9a135",
+      "passed": true
+    },
+    {
+      "name": "fixture financial holds released 9837f5be-1c4d-46e3-b599-13ca37bda01b",
+      "passed": true
+    },
+    {
+      "name": "fixture financial audit retained 9837f5be-1c4d-46e3-b599-13ca37bda01b",
+      "passed": true
+    },
+    {
+      "name": "global balance, overdue holds and ended pools reconcile",
+      "passed": true
+    }
+  ],
+  "counts": {
+    "products": 2,
+    "deals": 3,
+    "media": 5,
+    "orders": 6
+  },
+  "writes": 0,
+  "reconciliation": {
+    "overdueHolds": 0,
+    "balanceMismatches": 0,
+    "endedDealAllocations": 0
+  },
+  "status": "passed"
+}

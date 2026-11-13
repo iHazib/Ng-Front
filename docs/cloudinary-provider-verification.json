@@ -1,0 +1,67 @@
+{
+  "kind": "actual_provider",
+  "status": "passed",
+  "checks": [
+    {
+      "check": "verified admin session",
+      "result": "passed"
+    },
+    {
+      "check": "incremental media migration available",
+      "result": "passed"
+    },
+    {
+      "check": "private pending upload",
+      "result": "passed"
+    },
+    {
+      "check": "private source bytes match generated fixture",
+      "result": "passed"
+    },
+    {
+      "check": "pending review has no public Cloudinary asset",
+      "result": "passed"
+    },
+    {
+      "check": "explicit private review approval",
+      "result": "passed"
+    },
+    {
+      "check": "verified Cloudinary metadata and association",
+      "result": "passed"
+    },
+    {
+      "check": "duplicate completion is idempotent",
+      "result": "passed"
+    },
+    {
+      "check": "stored provider identity version dimensions format and lifecycle",
+      "result": "passed"
+    },
+    {
+      "check": "one primary ordered database association after duplicate completion",
+      "result": "passed"
+    },
+    {
+      "check": "responsive image delivery",
+      "result": "passed"
+    },
+    {
+      "check": "cleanup refuses referenced asset without deleting provider image",
+      "result": "passed"
+    },
+    {
+      "check": "Cloudinary deletion confirmed",
+      "result": "passed"
+    },
+    {
+      "check": "private cleanup and deletion tombstone",
+      "result": "passed"
+    }
+  ],
+  "missing_configuration": [],
+  "real_catalog_imported": false,
+  "retained_metadata": "If executed: archived synthetic product, media workflow/tombstone and audit records retain retry/cleanup history.",
+  "fixture_media_id": "c4662352-6f80-4729-97a6-99467f0f102b",
+  "fixture_product_id": "29f6ba72-11f2-4aab-87f7-78493f2af81b"
+}

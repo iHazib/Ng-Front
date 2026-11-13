@@ -1,0 +1,72 @@
+{
+  "status": "implemented_local_verified_hosted_017_pending",
+  "installer_sha256": "a7228064c4fe7cc7ad5fc79148b0c2bdd60402905cc1c879a3dc9c79f1918f59",
+  "canonical_sha256": "dfdae129e62884b12d58e0bb43f628a7b9dece652dc413c789af3a381db8c7e7",
+  "exact_installer_test": {
+    "kind": "disposable PostgreSQL; Auth/Storage/media doubles",
+    "status": "passed",
+    "exact_file": "supabase/sql-editor/15_install_deals_clean.sql",
+    "installer_sha256": "a7228064c4fe7cc7ad5fc79148b0c2bdd60402905cc1c879a3dc9c79f1918f59",
+    "base_migrations": [
+      "202610050001_catalog.sql",
+      "202610050002_commerce_content.sql",
+      "202610050003_security_publication.sql",
+      "202610050004_access_import.sql",
+      "202610050005_taxonomy.sql",
+      "202610050006_invariants.sql",
+      "202610050007_media_service.sql",
+      "202610060008_daily_product_editor.sql",
+      "202610070009_public_storefront.sql",
+      "202610070010_content_cms.sql",
+      "202610070011_customer_reviews.sql",
+      "202610080012_product_markdown.sql",
+      "202610090013_admin_catalog_list.sql",
+      "202610120014_admin_exact_identifier_search.sql",
+      "202610130015_guest_commerce.sql",
+      "202610150016_manual_advance_payments.sql"
+    ],
+    "existing_values_preserved": true,
+    "repeat_refused": true,
+    "fifteen_flags": true,
+    "sql_regressions": "passed",
+    "concurrency": "individual versus deal, two deals, late payment stock race; independent PG sessions",
+    "manual_payment_regressions": "passed against 017",
+    "cleanup": "all race reservations released; disposable cluster stopped",
+    "hosted": "pending incremental 017 application",
+    "evidence": "database-test-94d12d6e0515"
+  },
+  "unit_checks_passed": 17,
+  "lint": "passed",
+  "typecheck": "passed",
+  "production_build": "passed",
+  "production_security": "passed; reference and temporary harness absent",
+  "provided_sources": "64 byte-identical; 14 CSS blocks verified",
+  "homepage_browser": "6 passed, 2 intended project skips; desktop geometry and mobile hero/menu/motion controls",
+  "homepage_pixels": {
+    "identical_pairs": 21,
+    "total_pairs": 23,
+    "comparison_threshold": "not passed due existing sample-search link; two differences explicitly retained in homepage-visual-checks.json"
+  },
+  "mock_admin_cart_checks": 24,
+  "mock_public_ssr_checks": 14,
+  "actual_read_only_observations": 11,
+  "hosted_new_rpc": {
+    "http": 404,
+    "code": "PGRST202"
+  },
+  "hosted_business_writes": 0,
+  "real_checkout_enabled": false,
+  "pending": [
+    "Owner application of incremental 017 and all fifteen receipt/object/RLS checks",
+    "Actual hosted deal/media/mixed-cart/manual-payment and concurrency lifecycle checks with synthetic fixtures and baseline preservation",
+    "External maintenance schedule and approved real checkout business configuration"
+  ],
+  "no_next_stage_started": true,
+  "normal_development_smoke": {
+    "commerce_http": 200,
+    "checkout_enabled": false,
+    "reference_http": 200
+  },
+  "temporary_servers": "owned 3100/3204 test instances stopped; public mock server tree stopped; normal 3000 preserved",
+  "homepage_selection_sql": "passed: mixed ordering, article choice isolation, protected existing product slot and retry idempotency"
+}

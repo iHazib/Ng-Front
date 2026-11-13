@@ -1,0 +1,40 @@
+{
+  "kind": "fresh disposable PostgreSQL 001-019 plus exact 020 and 021; Auth/Storage doubles, not hosted",
+  "status": "passed",
+  "execution": "psql -X -v ON_ERROR_STOP=1 -f",
+  "installer_020_sha256": "9495f7d52a00ebbc2679e861215475fddef46e85ff91cb356a770398cb6ae515",
+  "exact_021_file": "supabase\\sql-editor\\19_install_partial_refunds_clean.sql",
+  "installer_021_sha256": "ca34df2f62ca930458238cf43b76d8c1063de7db9cb270f10b52bd61a60db0db",
+  "final_020_flags": {
+    "prerequisite_019": true,
+    "history_complete": true,
+    "sales_present": true,
+    "refunds_present": true,
+    "returns_present": true,
+    "finance_present": true,
+    "action_present": true,
+    "reports_present": true,
+    "receipt_present": true,
+    "receipt_matches": true,
+    "private_rls": true,
+    "no_client_policies": true,
+    "private_grants": true,
+    "rpc_security": true,
+    "action_grants": true
+  },
+  "final_021_flags": {
+    "prerequisite_020": true,
+    "value_contract": true,
+    "view_contract": true,
+    "receipt_present": true,
+    "receipt_matches": true,
+    "private_rls": true,
+    "permissions_preserved": true
+  },
+  "existing_financial_rows_preserved": true,
+  "function_identities_owners_grants_preserved": true,
+  "020_regressions_and_independent_races": "passed",
+  "021_assertions": 11,
+  "repeat_refused": true,
+  "evidence": "database-test-64fe4aa89beb"
+}

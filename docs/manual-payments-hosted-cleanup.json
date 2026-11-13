@@ -1,0 +1,76 @@
+{
+  "kind": "actual hosted synthetic cleanup/reconciliation checks; no SQL",
+  "checks": [
+    {
+      "name": "synthetic product hidden 5a922218",
+      "passed": true
+    },
+    {
+      "name": "synthetic variants archived 5a922218",
+      "passed": true
+    },
+    {
+      "name": "synthetic reservations zero 5a922218",
+      "passed": true
+    },
+    {
+      "name": "public Cloudinary fixture cleaned 5a922218",
+      "passed": true
+    },
+    {
+      "name": "synthetic product hidden 0435bd7e",
+      "passed": true
+    },
+    {
+      "name": "synthetic variants archived 0435bd7e",
+      "passed": true
+    },
+    {
+      "name": "synthetic reservations zero 0435bd7e",
+      "passed": true
+    },
+    {
+      "name": "public Cloudinary fixture cleaned 0435bd7e",
+      "passed": true
+    },
+    {
+      "name": "proof tombstone retains private hash without public provider ID",
+      "passed": true
+    },
+    {
+      "name": "synthetic private proof file removed",
+      "passed": true
+    },
+    {
+      "name": "proof tombstone retains private hash without public provider ID",
+      "passed": true
+    },
+    {
+      "name": "synthetic private proof file removed",
+      "passed": true
+    },
+    {
+      "name": "proof tombstone retains private hash without public provider ID",
+      "passed": true
+    },
+    {
+      "name": "synthetic private proof file removed",
+      "passed": true
+    },
+    {
+      "name": "all test allocations released or consumed, none active",
+      "passed": true
+    },
+    {
+      "name": "actual global reservation counters reconcile",
+      "passed": true
+    }
+  ],
+  "reconciliation": {
+    "overdueHolds": 0,
+    "balanceMismatches": 0
+  },
+  "syntheticOrders": 14,
+  "syntheticProofFiles": 3,
+  "status": "passed"
+}

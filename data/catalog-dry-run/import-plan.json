@@ -1,0 +1,1094 @@
+{
+  "records": [
+    {
+      "original_sku": "SNG-001",
+      "product_id": "a04790f0-6f0b-56a4-b2e2-2e473a402051",
+      "variant_id": "6f3997df-4d16-57b9-9dfc-ffe33da63520",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "SIM-001",
+      "product_id": "b28f3e5d-1ac3-510e-b98b-880a0714c5cd",
+      "variant_id": "b09cdc2f-92f0-58af-858b-b7add15a349a",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "SIM-002",
+      "product_id": "cd8bbbcf-007b-5983-9a86-ea7d78f328c9",
+      "variant_id": "bd3cd388-8536-5020-8e00-3c3d750924c5",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "SNG-002",
+      "product_id": "92a08a68-9302-5eef-9a91-a9a5688359f8",
+      "variant_id": "76c35f18-f5ed-52d8-a0f4-4766f5fb59a8",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "SNG-003",
+      "product_id": "20e3841c-ec32-5792-8fe0-82f6b08d64ad",
+      "variant_id": "795dd7b9-79d8-52b1-b459-8d80d04a62c4",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "SNG-004",
+      "product_id": "7c58fde4-7c4c-5507-9411-e31ca3f5013b",
+      "variant_id": "3ea9622a-41a6-556e-a571-30c34364aefe",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "SNG-005",
+      "product_id": "51e4b426-3359-50f5-80c9-97d9be79b102",
+      "variant_id": "81b4c959-e163-508d-a5bc-4bdc83a11e46",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "SNG-006",
+      "product_id": "d9ee1943-eb8f-551b-9ff8-c64d6250b0b8",
+      "variant_id": "727ef826-3937-57c5-bc61-9ac38ea990a6",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "CLAR-001",
+      "product_id": "1b257a5a-9553-5f15-ac4b-d7a1a23583a9",
+      "variant_id": "e26bbd05-e22f-503d-b7b0-9041ac3ececf",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "BOOTS-001",
+      "product_id": "b63c2756-7354-5d66-9ff3-59532bd371a6",
+      "variant_id": "630b30c7-a3ce-5565-a991-d12ce9664f84",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "BOOTS-002",
+      "product_id": "088343e0-bde3-5056-b607-981fde4ff5fe",
+      "variant_id": "4a8cd28a-f688-5afd-b378-ab1554e352f3",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "BOOTS-003",
+      "product_id": "7f4d41ac-92a0-5d38-beba-65a19f74e2b7",
+      "variant_id": "06fb2593-a700-558f-b838-3b6373a9c378",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "REV-001",
+      "product_id": "87a503f4-a8a0-5b06-bf1c-d0bcf1f97331",
+      "variant_id": "4505044e-7d51-56e4-8bc0-e16069094e82",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "REV-002",
+      "product_id": "df7d215d-5496-51bc-9cde-3abb3dfc0eda",
+      "variant_id": "6859ac12-e61c-5b0e-ad48-ba930828ec93",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "PIX-001",
+      "product_id": "6500fb67-fd80-53d8-9b20-1806af8e1880",
+      "variant_id": "2771cfb1-d5e7-5f4c-bc34-7379dd9b7c1c",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "PIX-002",
+      "product_id": "436d4fbc-564b-578d-9dd6-47a274412069",
+      "variant_id": "e4be1ccc-a201-5170-b949-6b31439d5373",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "PIX-003",
+      "product_id": "fa56c9e9-a256-575b-8513-a06252a1fcbf",
+      "variant_id": "f9c91422-1d41-55e7-893e-acb914f4613f",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "PIX-004",
+      "product_id": "279cec4b-aa3a-59de-8f63-621b030c2dc2",
+      "variant_id": "1c064d39-e189-5709-bf3f-8f00e6b7f6a1",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "PIX-005",
+      "product_id": "5825da3e-b08e-57c8-aac5-be9098f7388c",
+      "variant_id": "96676351-8821-511b-8c58-7ec5f629f1bd",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "PIX-006",
+      "product_id": "30bb7bed-c576-526e-a7c7-969be4223cbe",
+      "variant_id": "96bce813-656a-534a-af13-a96ee2a440ca",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "CERA-001",
+      "product_id": "d183e1c9-a2ad-5d67-8a4b-a1cd5a20a619",
+      "variant_id": "3c1960f9-8a72-59f2-92d7-30e102e14c6f",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "CERA-002",
+      "product_id": "afd4c72e-b9db-55d7-bd79-cce635d23b7f",
+      "variant_id": "6a58afcc-e82a-5700-a693-36afa2bcf159",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "CERA-003",
+      "product_id": "01e9d9ae-97d6-54e8-963f-a161dfe4cb1e",
+      "variant_id": "1bf57b64-2972-5708-8cab-242023af8bed",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "CERA-004",
+      "product_id": "8838d05a-e4dc-54f3-b901-c9268685e3cf",
+      "variant_id": "980c38e8-2157-566b-911c-1e4b6f124159",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "CERA-005",
+      "product_id": "20ddf5ac-3736-56bd-a29b-f9bbace42c88",
+      "variant_id": "e51c24d3-c8d7-5f1b-bdce-b3a0ed5c7811",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "CERA-006",
+      "product_id": "4248f190-41f3-5777-afa5-f6dce98125a7",
+      "variant_id": "2ba80ef4-c374-5e67-99b4-300a59d4410f",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "SKII-001",
+      "product_id": "42319907-84f0-5cd1-8680-8dfb77192516",
+      "variant_id": "72e39c5d-32d2-541e-a956-4ebe492d4a53",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "CERA-007",
+      "product_id": "a9513216-6757-5cf9-b45b-c1ad5947ebdb",
+      "variant_id": "aa50c6c2-5177-566f-8793-c9ee72e4e75c",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "CERA-008",
+      "product_id": "b78c14b8-49a8-5f90-839a-bd2aa9bd9347",
+      "variant_id": "998e5351-254f-5a0a-9448-a290e382a1b6",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "CERA-009",
+      "product_id": "39ebdf86-2b4b-5277-a416-b66b1f41a750",
+      "variant_id": "ef134b72-a874-552c-8895-d5cbf671b576",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "CERA-010",
+      "product_id": "ea16924b-46b0-524b-bb3b-f70e2b6e6586",
+      "variant_id": "b5cbcfef-4e94-5e35-8b56-48dc66207a7a",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "CERA-011",
+      "product_id": "20e26950-794a-52f3-87b2-20c99e0aadbb",
+      "variant_id": "518bd589-0f62-5922-8c93-c1520541094b",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "CERA-012",
+      "product_id": "6f7e2067-4005-5c7c-9082-69004749d1a7",
+      "variant_id": "bc682ab0-28ed-59c4-8774-733c9e5e940e",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "ORD-001",
+      "product_id": "f12c82f1-f6be-5b70-bbc4-606dd63bd546",
+      "variant_id": "ca441147-d47a-57c3-a551-317b8afeb390",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "ORD-002",
+      "product_id": "c6fcd34b-2d84-5005-9abc-4765198c1e9a",
+      "variant_id": "4219c40f-264b-50fd-9464-8b10ebd0deed",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "ORD-003",
+      "product_id": "3f39119e-7e71-53f4-a2ba-9f214e9217db",
+      "variant_id": "39d4e2d6-277d-52ef-a285-a71fd467ef8b",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "ORD-004",
+      "product_id": "a5538fbe-5645-54f5-90ac-4aec3324ee35",
+      "variant_id": "a9b1fa1f-62a5-5433-bc26-97393dbbdbc2",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "ORD-005",
+      "product_id": "0d6086c5-135c-549b-97ec-41450ee2ec9d",
+      "variant_id": "fe0d994b-1980-5291-8ad6-68bc1617004f",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "CTP-001",
+      "product_id": "4ffd515f-a9f4-56b5-9282-935a363cfd9e",
+      "variant_id": "3ab79a71-df67-5695-80b5-630fe00f8a5a",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "EST-001",
+      "product_id": "8a4e760f-1155-5c17-9c86-94fb73050767",
+      "variant_id": "8394a847-1205-5ffd-8892-77910fbb1a5b",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "EST-002",
+      "product_id": "1bf78b19-0ac0-5eb2-a5e1-de400169aaf8",
+      "variant_id": "59882ecb-20e1-5be6-b7ad-5b0ac5b9690c",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "PAU-001",
+      "product_id": "22f88592-b2d5-5a93-aed5-93bd6abb437b",
+      "variant_id": "e883f6b0-05c2-5ca4-8055-f2f7913e955d",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "AXI-001",
+      "product_id": "a399ec75-8d80-5da6-adf9-6d80b552d8c5",
+      "variant_id": "24dd5583-2ea6-51bc-a943-42444bf86fb1",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "AXI-002",
+      "product_id": "1ca7b4a3-d39f-5f8a-931b-c9a089a9f35d",
+      "variant_id": "4998dbb3-552b-5131-a15d-fcd06dd33d09",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "AXI-003",
+      "product_id": "80527604-f3a7-554a-925f-adef31268944",
+      "variant_id": "3926457d-2b68-55f2-b210-376ff9270be7",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "OPI-001",
+      "product_id": "67998d9e-05d7-5122-a150-9b1c5fd7e04e",
+      "variant_id": "2091ae38-b362-53cc-859d-e34c58222df8",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "ORG-001",
+      "product_id": "b55c9273-2792-563a-9a3c-8d6ac4755daf",
+      "variant_id": "f794cea8-4de9-5a95-98f4-d2a96bd9da4d",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "LPR-001",
+      "product_id": "641d089d-9176-5de7-8966-b7a0a887ac0c",
+      "variant_id": "63852cca-cb95-551f-ac49-841ae3ce123b",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "OLE-001",
+      "product_id": "667a7ca9-a224-5d06-a3c7-1accd557a5c9",
+      "variant_id": "a9654046-1789-57f5-a047-75061217ecd1",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "BBW-001",
+      "product_id": "b6abcd5c-8b5d-5f8c-a0b0-ab511b5184c9",
+      "variant_id": "1a060785-1290-5920-bcd1-af529211a76e",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "BBW-002",
+      "product_id": "930f5630-c0dd-59f5-8109-ab358f485aa0",
+      "variant_id": "412b9ccc-9d2d-5739-be82-73183f247d2b",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "VS-001",
+      "product_id": "a8c106ad-cd35-585b-9c9b-034b94a34b56",
+      "variant_id": "1e5e6d6e-f431-5795-b3fe-dfab734935a2",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "NEU-001",
+      "product_id": "0b70a4cf-f5b3-5c39-bfaf-a75390126ce3",
+      "variant_id": "503eabeb-0c26-5451-af7e-3c6012662189",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "NEU-004",
+      "product_id": "5f0443ba-80b8-57f9-97f9-f4b924ee25ac",
+      "variant_id": "d003c6ff-538c-54a9-aabb-119d4d6e1109",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "NEU-003",
+      "product_id": "eed3be00-c186-58bb-8595-993e48c8210b",
+      "variant_id": "6417b5c9-52a9-5107-b972-4d9444482709",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "GLAM-001",
+      "product_id": "98f2f859-d0cf-5843-b6e9-3dce59db707d",
+      "variant_id": "91613ab6-b868-5b45-b4c4-a22b64818ffc",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "UD-001",
+      "product_id": "e4cc1002-0fd7-5d22-9bbc-fde9e1e1375a",
+      "variant_id": "fc46992d-d0cf-5953-8ccd-dbbf9d192383",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "SB-001",
+      "product_id": "3166e93f-a2fa-5e03-9c8e-beedd81820ba",
+      "variant_id": "15b8e6fa-c7f2-5f86-94db-32810dac6bf6",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "EST-003",
+      "product_id": "d1be8165-196f-549d-bc65-691614c94762",
+      "variant_id": "7304ca8f-1d56-527d-8985-db1db20614d3",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "NEU-002",
+      "product_id": "a398abeb-c86e-533e-af4f-080020115301",
+      "variant_id": "4bb1ec41-e537-5b5d-bd26-4438141f3221",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "CLIQ-001",
+      "product_id": "0c2b755a-dfc7-58a4-9f41-8d856c48f179",
+      "variant_id": "76606995-7518-5c15-b3d1-887fb3009acf",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "AXI-004",
+      "product_id": "0000a6a7-b43c-5bc1-b06e-c7885ea5037d",
+      "variant_id": "eeb06e25-7631-55ea-b377-f429b0e7d7d5",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "OLAY-001",
+      "product_id": "0caef4b7-b913-546b-a69b-7aca9fe45e24",
+      "variant_id": "10fe594e-6cfa-511e-a1d1-41d4cd7425ac",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "OLAY-002",
+      "product_id": "508afaae-7607-56b0-8137-f4089d74efab",
+      "variant_id": "6b0931b6-e090-5ea7-ac9c-25fc9ed49f45",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "GR-001",
+      "product_id": "4861b29b-b124-5245-bd33-188badbda8e6",
+      "variant_id": "197956c2-7f35-5f56-b16d-cf3fd9c904f0",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "GR-002",
+      "product_id": "51c27ec8-ee48-5087-9ee3-03b96e009779",
+      "variant_id": "50125613-8936-5f39-a346-689bd98fc84d",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "CLIQ-002",
+      "product_id": "e3eb3cda-3eeb-598a-bb2b-b3d9342be349",
+      "variant_id": "95bc0f67-a22f-5d4b-a124-f43e2a7769fb",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "BOU-001",
+      "product_id": "37c67423-e4c9-5359-be7b-f8994dbc6dd0",
+      "variant_id": "c21f02d0-7e5b-5d9a-8aff-79be44c39413",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "BOU-002",
+      "product_id": "97a60b96-a5c2-50fd-92c9-c19f8bc7797b",
+      "variant_id": "b5402bb5-a42b-5fcb-b78c-d869342c25b3",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "EST-004",
+      "product_id": "6bb77189-daae-5426-8523-9a43c9edf56b",
+      "variant_id": "928058e5-5d25-5399-afdb-9b6f74e765ac",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "EST-005",
+      "product_id": "4264f4a9-1312-5d19-92d1-7bc6339334ad",
+      "variant_id": "e942030f-ea35-55e1-ac3e-79a2dadc04ef",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "LANC-001",
+      "product_id": "afb1c4d0-661c-5b80-8eb3-064856c70201",
+      "variant_id": "507ce531-a957-590c-b6b1-c8bb203b34c0",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "CIA-001",
+      "product_id": "1af91d59-7305-59dc-8ef6-7f19a6fdf01d",
+      "variant_id": "7c14accf-2582-58f4-bde6-46ef6afcb1f0",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "CIA-002",
+      "product_id": "e74f4b9e-4a51-57cf-85d4-bff45e0a63dc",
+      "variant_id": "cea3f2f4-285b-5a0b-b1a2-d6a3f4d51a29",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "ELF-001",
+      "product_id": "42204cca-7d2f-5aac-879a-a5e72e8b90bc",
+      "variant_id": "5a6da613-c79a-54b0-be62-93a372d4fd0b",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "TART-001",
+      "product_id": "fbed4e79-d348-5131-bac8-2404b1b1051b",
+      "variant_id": "005d1db2-c7ca-53ce-93d2-8331d692df55",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "TART-002",
+      "product_id": "21be05b9-254e-5172-b5f4-85c810fec473",
+      "variant_id": "7a7eeea2-b503-5961-bc86-594ec05a6427",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "DIOR-001",
+      "product_id": "e7a300a6-ba18-5481-9acc-2af23ff6d581",
+      "variant_id": "e885848d-dce2-5b2b-bf8e-a5bb1cd5fabb",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "DIOR-002",
+      "product_id": "f67f15a1-5be1-594d-bc6e-f004e82a05f9",
+      "variant_id": "0af1f1c9-7d1d-5adf-8bf4-10591f69c3ce",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "DIOR-003",
+      "product_id": "79d6d4df-bb0d-5d95-86b2-d7240e24364a",
+      "variant_id": "cd051501-5cf5-5212-93dc-6704996de802",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "DIOR-004",
+      "product_id": "527db564-eabb-5c13-a32a-0084d15eb77a",
+      "variant_id": "1c0d7e7e-00f2-5306-be4d-ddc586f31133",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "DIOR-005",
+      "product_id": "3bd3603e-8fd5-5529-b111-88c23a2e5d3f",
+      "variant_id": "6b4d3f56-8fff-58fa-90e4-74ab0cacb4df",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "COTY-001",
+      "product_id": "9b863ab1-d297-5f80-b00f-a5c172e2f224",
+      "variant_id": "2d99dd26-85bd-5887-a52a-1b93291e2cd3",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "ELF-002",
+      "product_id": "37c0b84c-3906-538f-ba91-d6269df3ebaa",
+      "variant_id": "23954444-348b-5e0d-9e3a-6e9e1452dfd5",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "ELF-003",
+      "product_id": "1553f30e-3cd3-5528-8b00-5dc91dfe5715",
+      "variant_id": "4723d1e6-36e2-5f97-a79e-0043b0701393",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "MBM-001",
+      "product_id": "208a788d-11f0-5e8a-a04d-2cffa955ab95",
+      "variant_id": "b5ff3430-a68a-5c11-b6b5-aa12851b8c03",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "MER-001",
+      "product_id": "9aa8dbcc-7af8-5cd1-af26-162b72398df2",
+      "variant_id": "4d30e068-2a41-5921-9b8c-b68091560013",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "SWB-001",
+      "product_id": "376d7b77-e5df-5072-8ed2-d77d010dc56a",
+      "variant_id": "f54c362f-a410-5242-a6a6-a693ada69615",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "LOR-001",
+      "product_id": "e46ce044-1212-5f47-bb36-f00fab4b4896",
+      "variant_id": "d3e6b1b1-9353-5da3-9f13-17b47b383876",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "EST-006",
+      "product_id": "41931885-aa3e-58a8-a8a0-feaf4521d127",
+      "variant_id": "75e4cf7f-f3a0-5b6c-ba57-c8dd7945ff27",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "EST-007",
+      "product_id": "33c12ede-4501-5b76-b502-f7cc82c52a52",
+      "variant_id": "5349728f-1b67-5125-86b4-a0b432956f31",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "EST-008",
+      "product_id": "0a0b2cbf-4c25-57c4-ad2e-f11487708a63",
+      "variant_id": "ffb2023e-29b3-5927-b66e-dc555aade8c8",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "EST-009",
+      "product_id": "b222506d-4255-5858-bd1c-d4cd49906040",
+      "variant_id": "8f6d10a5-a17a-50b9-910b-8f3e87bf3437",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "ORG-002",
+      "product_id": "213b8546-3d9f-5027-bacf-4e218359a91d",
+      "variant_id": "261cd34b-ea48-512e-96d3-157ce32d3cd0",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "BECC-001",
+      "product_id": "c48735d1-ee91-52b0-bb1f-96055dae1b67",
+      "variant_id": "cbd8d44a-7d42-500f-b929-366e8c9bcc82",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "TART-003",
+      "product_id": "fb15ffc9-8cac-5112-8773-49933760bdc9",
+      "variant_id": "211622e4-8712-5b2b-84d2-0dde3eed388e",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "MIL-001",
+      "product_id": "fc4427e2-40fb-5e92-9634-0556f0729cc6",
+      "variant_id": "1e4d61ba-0e44-5ae0-b4d0-6278c68152df",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "OFR-001",
+      "product_id": "6d689d95-856a-5147-b62d-893a77442589",
+      "variant_id": "7f91a28e-9506-5eea-8ce5-88cb7d3299f5",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "ELF-007",
+      "product_id": "f9474bdf-03eb-5fa3-a078-e9346021925c",
+      "variant_id": "f200815a-170f-51a0-ade5-74102c2429a4",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "ELF-006",
+      "product_id": "e9e2cee6-8050-5eee-97b6-0f119377f220",
+      "variant_id": "f3e5e432-2e44-5df4-b209-57da3603dcf1",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "ELF-004",
+      "product_id": "15a96079-209c-559e-95ea-c0ca2d874526",
+      "variant_id": "5a7a445e-1fa8-55f6-ac5d-a2c90efff972",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "NYX-001",
+      "product_id": "73b12c12-a4a2-540a-884e-c37a241bb31e",
+      "variant_id": "e291a9ef-80ff-5a5d-9e67-9cf268308816",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "ELF-005",
+      "product_id": "ff950026-584b-5fd6-83e4-38ebbc8b6b30",
+      "variant_id": "cf3dddda-2832-50ca-9b8d-35d2048cdbb4",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "RTEQ-001",
+      "product_id": "89211881-1c2e-5dc9-9f81-b91ad498f12b",
+      "variant_id": "1ef898d8-291a-5339-a204-abcb4069f8d8",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "VS-002",
+      "product_id": "b4cdd67e-6ba7-531b-8a34-5da12bffbcba",
+      "variant_id": "32346600-3871-57f3-9281-c7d3f048ebe4",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "TB-001",
+      "product_id": "1eb42cc9-3a60-527d-9fa5-b68663567a17",
+      "variant_id": "32d7e79b-eef6-56d5-a594-bc6c500c2327",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "DKNY-001",
+      "product_id": "8a1d99b0-36e0-559a-a261-a065914b36bc",
+      "variant_id": "b8b53ddd-237a-5c78-90df-494bdff18c7d",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "DANM - 001",
+      "product_id": "655f557b-c55c-5c25-ab90-71bea74e44b3",
+      "variant_id": "30108b4a-c588-508a-8f44-1f33e4486cb7",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "NARS-001",
+      "product_id": "396c4510-05b5-52ad-a9c8-8d84f56ea3fb",
+      "variant_id": "fedfb069-43f5-53c1-8c28-ba8d4d1c5ee8",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "MOR-001",
+      "product_id": "9cec744b-a15e-56c9-8dbc-a1ea3cce2945",
+      "variant_id": "7dc4bd9f-49cf-549c-ace3-d4c81cebf923",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "LOR-002",
+      "product_id": "716eb2ad-27df-5d2e-9a19-5b3b704eda71",
+      "variant_id": "c4344131-199f-5208-af3b-b43b0642edde",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "LOR-003",
+      "product_id": "b4f7e15a-99ed-5ac3-8483-e54dc652955a",
+      "variant_id": "00f22e06-d53e-5e63-9cd0-32d096006880",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "ELF-008",
+      "product_id": "56446ea1-06fb-528f-ae3d-ef6e478d4c4b",
+      "variant_id": "0b9cd708-d8ab-5a0f-904b-a31d72b6814f",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "SHEG-001",
+      "product_id": "ff9ce1f2-4d52-54cb-8d25-a2b25b8ee013",
+      "variant_id": "57d4cfcd-8c93-5478-b3aa-b1273d278801",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "VAS-001",
+      "product_id": "a83fd612-8905-5d49-8668-45dca2a67bb1",
+      "variant_id": "65060f90-f6d8-57a5-b523-75f8e4e3cd49",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "MAC - 001",
+      "product_id": "ee0277f5-ac40-5ca1-86ac-cdde6b4ef0c6",
+      "variant_id": "d6706d1f-1880-5329-a239-2f09c89be117",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "CUT-001",
+      "product_id": "30ac60af-fdf1-52ce-9390-c5cf9154bcff",
+      "variant_id": "1aa08b0f-b6cf-513b-b700-a0c2b173df13",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "CUT-002",
+      "product_id": "9bfb80fd-d54c-5e35-9017-7f0e916d7d15",
+      "variant_id": "d21e12ff-a341-5331-ba58-a700a2370f16",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "CUT-003",
+      "product_id": "a09f9053-7b8d-5a9b-96bc-fcf8b48ea0fc",
+      "variant_id": "32d9c73a-f652-5cb5-b179-75813026a616",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "CUT-004",
+      "product_id": "bfdfbecf-f886-5a9f-a2ad-6057ffc066a4",
+      "variant_id": "1475e72e-7a62-5804-a131-1f1ab6526c4d",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    },
+    {
+      "original_sku": "AROM-001",
+      "product_id": "3322e780-6e9c-55a2-82c2-7c6ad3062542",
+      "variant_id": "83e3421e-e0a1-59c5-a12f-6851e8e97672",
+      "import_operation": "stage_draft",
+      "blocking_import_errors": [],
+      "proposed_source_changes": {},
+      "admin_values_action": "preserve; present source changes for field-level review"
+    }
+  ],
+  "retained_absent_records": []
+}

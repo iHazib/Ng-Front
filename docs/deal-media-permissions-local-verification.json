@@ -1,0 +1,12 @@
+{
+  "kind": "existing owned disposable PostgreSQL cluster with 001-017; simulated observed Supabase table grants",
+  "exact_file": "supabase/sql-editor/16_install_deal_media_privileges_clean.sql",
+  "installer_sha256": "c5f793cb6fb447699094700e8a3c3002668f74bfabae434be78a9b45fb2817b5",
+  "execution": "psql -X -v ON_ERROR_STOP=1 -f",
+  "seven_final_flags": true,
+  "business_rows_policies_and_rls_unchanged": true,
+  "service_role_grants_preserved": true,
+  "repeat_refused": true,
+  "hosted_sql_operations": 0,
+  "status": "passed"
+}

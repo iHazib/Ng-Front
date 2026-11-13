@@ -1,0 +1,18 @@
+{
+  "kind": "actual hosted read-only; no fixtures or mocks",
+  "checks": [
+    {
+      "name": "existing public commerce quote remains reachable",
+      "passed": true
+    },
+    {
+      "name": "new public deals RPC reachable",
+      "passed": true
+    }
+  ],
+  "pending": [],
+  "dealsRpcHttp": 200,
+  "dealsRpcCode": null,
+  "status": "failed",
+  "error": "Read-only verification failed; provider payloads and credentials suppressed."
+}

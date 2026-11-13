@@ -1,0 +1,30 @@
+{
+  "kind": "actual Next.js isolated configuration; real server validation",
+  "checks": [
+    {
+      "name": "incomplete Easypaisa and disabled JazzCash omitted",
+      "passed": true
+    },
+    {
+      "name": "easypaisa response status",
+      "http": 400
+    },
+    {
+      "name": "easypaisa rejected server-side when unconfigured/disabled",
+      "passed": true
+    },
+    {
+      "name": "jazzcash response status",
+      "http": 400
+    },
+    {
+      "name": "jazzcash rejected server-side when unconfigured/disabled",
+      "passed": true
+    },
+    {
+      "name": "normal application checkout remains disabled",
+      "passed": true
+    }
+  ],
+  "status": "passed"
+}

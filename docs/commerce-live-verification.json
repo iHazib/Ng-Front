@@ -1,0 +1,62 @@
+{
+  "kind": "actual_Chrome_Next_Supabase",
+  "status": "migration_015_pending",
+  "checks": [
+    {
+      "name": "anonymous list API denied",
+      "result": "passed"
+    },
+    {
+      "name": "actual non-admin login denied",
+      "result": "passed"
+    },
+    {
+      "name": "actual admin browser login works",
+      "result": "passed"
+    },
+    {
+      "name": "CSRF-less dismissal denied",
+      "result": "passed"
+    },
+    {
+      "name": "private list responses uncached",
+      "result": "passed"
+    },
+    {
+      "name": "anonymous hosted RPC admin_catalog_list denied",
+      "result": "passed"
+    },
+    {
+      "name": "anonymous hosted RPC admin_catalog_filter_options denied",
+      "result": "passed"
+    },
+    {
+      "name": "anonymous hosted RPC admin_catalog_reminder denied",
+      "result": "passed"
+    },
+    {
+      "name": "anonymous direct private API read denied",
+      "result": "passed"
+    },
+    {
+      "name": "non-admin hosted RPC admin_catalog_list denied",
+      "result": "passed"
+    },
+    {
+      "name": "non-admin hosted RPC admin_catalog_filter_options denied",
+      "result": "passed"
+    },
+    {
+      "name": "non-admin hosted RPC admin_catalog_reminder denied",
+      "result": "passed"
+    },
+    {
+      "name": "non-admin direct private API read denied",
+      "result": "passed"
+    }
+  ],
+  "pending": [
+    "Apply and confirm incremental 015 before actual synthetic guest/order/stock verification. No fixtures created."
+  ],
+  "fixtures": []
+}

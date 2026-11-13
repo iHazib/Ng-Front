@@ -1,0 +1,19 @@
+# Local source backups and one-time image imports (never served by Next.js).
+/local-sources/
+/product-images-import/
+# Future local configuration and generated output.
+.env*
+!.env.example
+node_modules/
+.next/
+.next-*-verification/
+__pycache__/
+.tools/
+.local/
+.npm-cache/
+test-results/
+playwright-report/
+*.tsbuildinfo
+next-env.d.ts
+# Generated only by the development config, excluded before production builds.
+/src/app/reference/route.ts

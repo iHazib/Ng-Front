@@ -1,0 +1,227 @@
+[
+  {
+    "kind": "actual_content_supabase_cloudinary_next_chrome",
+    "checked_at": "2026-10-07T12:00:30.478Z",
+    "status": "failed",
+    "checks": [
+      {
+        "name": "anonymous content admin access rejected",
+        "result": "passed"
+      },
+      {
+        "name": "actual browser creates and edits a draft",
+        "result": "passed"
+      },
+      {
+        "name": "draft article absent from public RPC",
+        "result": "passed"
+      },
+      {
+        "name": "all pre-existing catalog/content/media rows preserved",
+        "result": "passed"
+      }
+    ],
+    "pending": [
+      "Stopped during stale browser edit; credentials and provider details suppressed."
+    ],
+    "fixtures": [
+      {
+        "id": "0f05ca5e-a6d4-491f-b138-8cd3b8d384ad",
+        "slug": "cmsd49060fccd50",
+        "media": [],
+        "deleted": true
+      }
+    ],
+    "rpc_http": 200,
+    "preservation": {
+      "rows": 808,
+      "tables": 17,
+      "status": "passed"
+    },
+    "failure_type": "TimeoutError",
+    "failure_summary": "locator.fill: Timeout 60000ms exceeded."
+  },
+  {
+    "kind": "actual_content_supabase_cloudinary_next_chrome",
+    "checked_at": "2026-10-07T12:03:42.060Z",
+    "status": "failed",
+    "checks": [
+      {
+        "name": "anonymous content admin access rejected",
+        "result": "passed"
+      },
+      {
+        "name": "actual browser creates and edits a draft",
+        "result": "passed"
+      },
+      {
+        "name": "draft article absent from public RPC",
+        "result": "passed"
+      },
+      {
+        "name": "all pre-existing catalog/content/media rows preserved",
+        "result": "passed"
+      }
+    ],
+    "pending": [
+      "Stopped during main draft Save with second editor open; credentials and provider details suppressed."
+    ],
+    "fixtures": [
+      {
+        "id": "df953e99-223a-4f4e-82b3-fa0716ede9d9",
+        "slug": "cmsad1bf68d63f7",
+        "media": [],
+        "deleted": true
+      }
+    ],
+    "rpc_http": 200,
+    "preservation": {
+      "rows": 814,
+      "tables": 17,
+      "status": "passed"
+    },
+    "failure_type": "TimeoutError",
+    "failure_summary": "locator.fill: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByLabel('Summary (optional)', { exact: true })\u001b[22m\n"
+  },
+  {
+    "kind": "actual_content_supabase_cloudinary_next_chrome",
+    "checked_at": "2026-10-07T12:06:51.482Z",
+    "status": "failed",
+    "checks": [
+      {
+        "name": "anonymous content admin access rejected",
+        "result": "passed"
+      },
+      {
+        "name": "actual browser creates and edits a draft",
+        "result": "passed"
+      },
+      {
+        "name": "draft article absent from public RPC",
+        "result": "passed"
+      },
+      {
+        "name": "all pre-existing catalog/content/media rows preserved",
+        "result": "passed"
+      }
+    ],
+    "pending": [
+      "Stopped during main draft Save with second editor open; credentials and provider details suppressed."
+    ],
+    "fixtures": [
+      {
+        "id": "202b5000-18db-4a07-a3af-8484b0f0f6f2",
+        "slug": "cms12b6d5f110ea",
+        "media": [],
+        "deleted": true
+      }
+    ],
+    "rpc_http": 200,
+    "preservation": {
+      "rows": 819,
+      "tables": 17,
+      "status": "passed"
+    },
+    "failure_type": "TimeoutError",
+    "failure_summary": "locator.fill: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByLabel('Summary (optional)', { exact: true })\u001b[22m\n",
+    "browser_state": {
+      "path": "/admin/articles",
+      "summary_fields": 0,
+      "create_controls": 0
+    }
+  },
+  {
+    "kind": "actual_content_supabase_cloudinary_next_chrome",
+    "checked_at": "2026-10-07T12:10:01.410Z",
+    "status": "failed",
+    "checks": [
+      {
+        "name": "anonymous content admin access rejected",
+        "result": "passed"
+      },
+      {
+        "name": "actual browser creates and edits a draft",
+        "result": "passed"
+      },
+      {
+        "name": "draft article absent from public RPC",
+        "result": "passed"
+      },
+      {
+        "name": "ordinary Save preserves draft status",
+        "result": "passed"
+      },
+      {
+        "name": "stale browser edit rejected with entered text retained",
+        "result": "passed"
+      },
+      {
+        "name": "draft article URL returns 404",
+        "result": "passed"
+      },
+      {
+        "name": "cover private upload has article ownership",
+        "result": "passed"
+      },
+      {
+        "name": "cover explicit approval creates article association",
+        "result": "passed"
+      },
+      {
+        "name": "inline private upload has article ownership",
+        "result": "passed"
+      },
+      {
+        "name": "inline explicit approval creates article association",
+        "result": "passed"
+      },
+      {
+        "name": "actual browser publishes synthetic article",
+        "result": "passed"
+      },
+      {
+        "name": "published article renders approved inline image",
+        "result": "passed"
+      },
+      {
+        "name": "real Cloudinary inline image decodes",
+        "result": "failed"
+      },
+      {
+        "name": "all pre-existing catalog/content/media rows preserved",
+        "result": "passed"
+      }
+    ],
+    "pending": [
+      "Stopped during publication; credentials and provider details suppressed."
+    ],
+    "fixtures": [
+      {
+        "id": "f3ac50cc-bcb3-401a-8c66-0cbafcb25c5d",
+        "slug": "cms3ce6817a3161",
+        "media": [
+          "b0684f53-b52e-4394-beb1-c427020467da",
+          "13c3b590-afc9-4a76-8541-beb9bac4f0e6"
+        ],
+        "deleted": true,
+        "cleaned": [
+          "b0684f53-b52e-4394-beb1-c427020467da",
+          "13c3b590-afc9-4a76-8541-beb9bac4f0e6"
+        ]
+      }
+    ],
+    "rpc_http": 200,
+    "preservation": {
+      "rows": 824,
+      "tables": 17,
+      "status": "passed"
+    },
+    "failure_type": "Error",
+    "failure_summary": "Assertion failed.",
+    "browser_state": {
+      "path": "/admin/articles",
+      "summary_fields": 1,
+      "create_controls": 0
+    }
+  }
+]

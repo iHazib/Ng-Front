@@ -1,0 +1,18 @@
+{
+  "kind": "actual_hosted_read_only",
+  "checked_at": "2026-11-09T11:43:59.339Z",
+  "checks": [
+    {
+      "name": "Actual admin Auth login",
+      "result": "passed"
+    },
+    {
+      "name": "Hosted admin-list RPC available",
+      "http": 200,
+      "result": "passed"
+    }
+  ],
+  "pending": [],
+  "mutations": 0,
+  "status": "ready_for_live_fixtures"
+}

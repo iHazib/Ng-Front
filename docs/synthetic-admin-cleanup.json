@@ -1,0 +1,57 @@
+{
+  "kind": "synthetic_admin_cleanup",
+  "checked_at": "2026-11-09T12:15:23.738Z",
+  "deleted": {
+    "synthetic import records": 1,
+    "synthetic inventory balances": 1,
+    "synthetic inventory movements": 1,
+    "synthetic inventory counts": 1,
+    "synthetic SKU aliases": 1,
+    "synthetic product facets": 1,
+    "synthetic order items": 1,
+    "synthetic variant prices": 1,
+    "synthetic variants": 1,
+    "synthetic media workflows": 1,
+    "synthetic media assets": 1,
+    "synthetic product media": 1,
+    "synthetic homepage selections": 1,
+    "synthetic deal components": 1,
+    "synthetic deals": 1
+  },
+  "errors": [
+    {
+      "label": "synthetic product save requests",
+      "table": "product_save_requests",
+      "status": 404,
+      "body": {
+        "code": "PGRST205",
+        "details": null,
+        "hint": null,
+        "message": "Could not find the table 'public.product_save_requests' in the schema cache"
+      }
+    },
+    {
+      "label": "synthetic orders",
+      "table": "orders",
+      "status": 409,
+      "body": {
+        "code": "23503",
+        "details": "Key (id)=(b0b287b3-62af-4bba-877b-8f9b1f0a05ae) is still referenced from table \"commerce_orders\".",
+        "hint": null,
+        "message": "update or delete on table \"orders\" violates foreign key constraint \"commerce_orders_order_id_fkey\" on table \"commerce_orders\""
+      }
+    },
+    {
+      "label": "synthetic products",
+      "table": "products",
+      "status": 409,
+      "body": {
+        "code": "23503",
+        "details": "Key (id)=(05c38735-6748-4a77-8738-ed68c30da69e) is still referenced from table \"product_save_requests\".",
+        "hint": null,
+        "message": "update or delete on table \"products\" violates foreign key constraint \"product_save_requests_product_id_fkey\" on table \"product_save_requests\""
+      }
+    }
+  ],
+  "status": "partial"
+}

@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-11",
+  "kind": "actual_Chrome_Next_Supabase_and_media_provider",
+  "passed_checks": 49,
+  "status": "verified_with_search_precision_limitation",
+  "main_evidence": "admin-list-live-verification.json",
+  "supplemental_evidence": "admin-list-live-readonly-verification.json",
+  "cleanup_evidence": "admin-list-live-cleanup-verification.json",
+  "preservation": {
+    "tables": 29,
+    "rows": 1211,
+    "status": "passed"
+  },
+  "limitations": [
+    "An exact SKU alias also returns the closely spelled sibling SKU because trigram matching applies to the shared SKU prefix. Alias plus shade/size identifies the intended option. Exact identifier priority requires a future database correction; no hosted SQL was changed."
+  ],
+  "browser": "Chrome desktop 1440x1000 and mobile emulation 390x844; screenshots inspected",
+  "hosted_sql_applied": false,
+  "commerce_started": false,
+  "mocks_used_in_this_run": false
+}

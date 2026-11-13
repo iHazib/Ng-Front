@@ -1,0 +1,43 @@
+{
+  "engine": "PostgreSQL 16.11, compiled by Visual C++ build 1944, 64-bit",
+  "migrations": [
+    "202610050001_catalog.sql",
+    "202610050002_commerce_content.sql",
+    "202610050003_security_publication.sql",
+    "202610050004_access_import.sql",
+    "202610050005_taxonomy.sql",
+    "202610050006_invariants.sql",
+    "202610050007_media_service.sql",
+    "202610060008_daily_product_editor.sql",
+    "202610070009_public_storefront.sql"
+  ],
+  "installation_mode": "exact_storefront_file_with_001_008_base",
+  "source_rows": 121,
+  "permission_tests": "passed",
+  "supabase_auth_service": "not tested; auth.uid test double",
+  "supabase_storage_service": "not tested; table/policy test double",
+  "network_provider_operations": 0,
+  "production_imports": 0,
+  "exact_file": "supabase/sql-editor/07_install_public_storefront_clean.sql",
+  "exact_sha256": "99e5b4c5340b24f7465c3fc34dce1d01f893c7636718e4ca2e958e65d2d74f4a",
+  "migration_receipt_sha256": "f7d321de75bb11b75d6540eef0a5de4d69ddf6f44c6d0f9e4c45dce8594a6588",
+  "evidence": "database-test-f628f7dab43d",
+  "execution": "psql -X -v ON_ERROR_STOP=1 -f exact_file",
+  "all_pre_existing_business_tables_unchanged": true,
+  "repeat_install_refusal": "passed",
+  "read_only_preflight_before_after": "passed",
+  "storefront_search_filters_visibility_tests": "passed",
+  "installer_final_checks": {
+    "storefront_present": true,
+    "aliases_rls": true,
+    "search_rls": true
+  },
+  "private_search_rls": {
+    "enabled": true,
+    "client_policies": 0,
+    "anonymous_direct_access": "denied",
+    "nonadmin_direct_access": "denied",
+    "temporary_grant_rls_isolation": "passed; grants rolled back",
+    "anonymous_and_nonadmin_owner_rpcs": "passed"
+  }
+}

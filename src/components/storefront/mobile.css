@@ -1,0 +1,30 @@
+/* User-approved mobile improvements; keep the supplied reference CSS immutable. */
+.storefront .mobile-menu-toggle { display: none; }
+@media (max-width: 1050px) {
+  .storefront .desktop-nav-intro { display: none; }
+  .storefront .mobile-menu-toggle { display: grid; place-items: center; width: 44px; height: 44px; padding: 10px; border: 0; background: transparent; color: var(--ink); cursor: pointer; }
+  .storefront .mobile-menu-toggle svg { width: 24px; height: 24px; }
+  .storefront .mobile-menu-toggle:focus-visible { outline: 2px solid var(--bronze); outline-offset: 2px; }
+  .storefront .ng-header .nav-intro { max-width: none; }
+  .storefront .mobile-menu-open .ng-links { display: flex; flex-direction: column; align-items: stretch; gap: 0; width: 100%; padding: 8px 0 16px; overflow: visible; }
+  .storefront .mobile-menu-open .nav-category { display: block; }
+  .storefront .mobile-menu-open .category-toggle,
+  .storefront .mobile-menu-open .ng-links > a { display: flex; justify-content: space-between; align-items: center; width: 100%; min-height: 46px; padding: 12px 0; border-bottom: 1px solid var(--line); font-size: 11px; }
+  .storefront .mobile-menu-open .category-menu { position: static; grid-column: 1 / -1; width: 100%; max-height: 65svh; overflow-y: auto; box-shadow: none; margin: 0 0 20px; padding: 22px 0; }
+  .storefront .mobile-menu-open:has(.category-menu:not([hidden])) .nav-category:has([aria-expanded="false"]),
+  .storefront .mobile-menu-open:has(.category-menu:not([hidden])) .ng-links > a { display: none; }
+  .storefront .mobile-menu-open .menu-close { min-width: 44px; min-height: 44px; }
+}
+@media (max-width: 650px) {
+  .storefront .hero-carousel { height: calc(56.25vw + 300px); }
+  .storefront .hero-photo { width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: contain; top: 0; }
+  .storefront .hero-slide .hero-copy,
+  .storefront .hero-slide .brand-copy { top: calc(56.25vw + 24px); bottom: auto; left: 6%; right: 6%; max-width: none; transform: none; }
+  .storefront .hero-slide .hero-copy h2 { font-size: 32px; line-height: 1.05; margin: 12px 0; }
+  .storefront .hero-slide .hero-copy .eyebrow { margin: 0; font-size: 9px; }
+  .storefront .hero-slide .hero-copy p:not(.eyebrow) { font-size: 12px; line-height: 1.6; margin: 12px 0; max-width: 330px; }
+  .storefront .hero-slide .brand-copy h1 { position: static !important; width: auto; height: auto; overflow: visible; clip-path: none; white-space: normal; font-size: 31px; line-height: 1.1; margin: 0 0 18px; max-width: 310px; }
+  .storefront .hero-slide .button { margin-top: 8px; padding: 14px 20px; }
+  .storefront .hero-controls { bottom: 18px; }
+  .storefront .hero-slide-index { bottom: 29px; }
+}

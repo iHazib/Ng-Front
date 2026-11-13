@@ -1,0 +1,19 @@
+{
+  "kind": "actual_browser_and_development_supabase",
+  "checked_at": "2026-10-06T22:46:13.751Z",
+  "status": "passed",
+  "checks": [
+    {
+      "name": "actual browser reconciles five to zero and preserves hidden status",
+      "result": "passed"
+    },
+    {
+      "name": "zero count has exactly one new audited reconciliation",
+      "result": "passed"
+    },
+    {
+      "name": "unchanged zero save creates no additional inventory count",
+      "result": "passed"
+    }
+  ]
+}

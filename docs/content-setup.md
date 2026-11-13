@@ -1,0 +1,23 @@
+# Content CMS development setup
+
+**Current state (2026-10-07): migration010 is installed; do not rerun it.44 actual provider/browser/security/cleanup checks passed with no pending items. See content-live-verification.md. The installation steps below are initial setup reference only.**
+
+Migration010 follows installed001-009. Do not rerun earlier installers, reset databases or use production.
+
+1. In a new empty development SQL Editor query, run `supabase/sql-editor/08_preflight_content_cms.sql`. Before initial installation only prerequisite_009 must be true; all content-presence flags must be false. If any object/receipt exists, stop and inspect.
+2. Only after confirmed absence, run the ENTIRE `supabase/sql-editor/08_install_content_cms_clean.sql` once in another NEW empty query. Never combine it with old SQL. The exact file passed `psql -X -v ON_ERROR_STOP=1 -f` against a new disposable001-009 PostgreSQL16.11 database.
+3. All final checks must be true: content_present, homepage_media_rls, receipt_matches. Installer SHA-256: ff891628343b3429a0fc9c9f82b55beb8fba2c5b280d2af3b43aeec8d277dae7. Receipt010 canonical hash: fc887ea5842eaa16a3980a71c0960a6246cc9b5a4c99a2c90245dd22c2df7bc2.
+4. Existing local configuration suffices: NEXT_PUBLIC_SUPABASE_URL, NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY, CLOUDINARY_CLOUD_NAME, CLOUDINARY_API_KEY, CLOUDINARY_API_SECRET, MEDIA_ENVIRONMENT=development. Preserve existing secure session configuration in .env.example. Browser tests use TEST_ADMIN_EMAIL/TEST_ADMIN_PASSWORD and TEST_USER_EMAIL/TEST_USER_PASSWORD locally; never send values in chat. SITE_URL stays unset until a domain is approved.
+5. After installation, visit /admin/articles and /admin/homepage. Run `npm run verify:content:development` against the existing network-enabled server. It creates tracked synthetic fixtures only and restores prior homepage selections during safe cleanup. It never imports real content.
+
+SQL impact: additive tables/columns/indexes and function replacements; no DROP TABLE, TRUNCATE, stock reset or business-row writes during installation. One article public_read policy is dropped/replaced transactionally to add deleted-record isolation. Confirmed runtime deletion is soft deletion with audit preservation. Referenced media cleanup is guarded.
+
+Owner workflow: Create/Edit, Save draft, Publish or Hide. Publishing requires title, unique valid slug and article text. Cover, author, summary, category/tags and SEO are optional. Ordinary Save preserves visibility, rejects stale/invalid published edits, and retains entered text. Delete requires confirmation. Images stay private until explicit approval; article/homepage owners are direct, with no fake products.
+
+Rich text supports headings, emphasis, lists and quotes; pasted text is plain. Published product/category link choices and article-owned image IDs prevent arbitrary HTML/URLs. Server sanitation runs on saves and reads. Homepage products/articles are manual selections, never rankings; existing narrow slideshow framing, animation and sage/warm/blush themes remain. Original hero/category/concern/brand assets are unchanged.
+
+Passed local: exact installer/RLS/revision/media SQL tests (Auth/Storage/provider doubles), thirteen security/media/sanitizer unit tests, lint, production build, original source integrity and thirteen explicitly mock Chrome checks. This earlier missing-RPC status is superseded: installed RPC200 and actual upload/approval/delivery/isolation/freshness/cleanup all passed; no installation rerun is needed. Mock results are not provider verification. Browser checks use Chrome desktop/mobile emulation, not physical Safari.
+
+Audit: four high findings are in the existing development ESLint/fast-glob/micromatch/braces chain; no production dependency advisory was reported. npm suggests an incompatible plugin downgrade, which was not applied.
+
+Final visual/security checks (2026-10-07): original homepage comparison and all hero/editorial carousel states passed; desktop/mobile navigation, sample flows and mobile hero/hamburger passed. Eight applicable checks passed across runs, two intentionally skipped. Screenshot-heavy tests needed a larger Windows time budget, with every assertion retained. Ten additional public CMS mock checks passed after scoped article-cover framing correction; mobile article/homepage/admin screenshots and matching reference/React editorial snapshots were inspected. Actual new Next content API rejects anonymous GET401 and CSRF-less POST403 with private/no-store; development reference returns200. No hosted CMS DB/provider operation was added. See content-local-verification.json.

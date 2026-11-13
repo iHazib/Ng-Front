@@ -1,0 +1,161 @@
+{
+  "kind": "actual_chrome_and_development_supabase",
+  "status": "passed",
+  "checked_at": "2026-10-06T22:36:31.947Z",
+  "checks": [
+    {
+      "name": "anonymous protected editor redirects",
+      "result": "passed"
+    },
+    {
+      "name": "anonymous API rejects access",
+      "result": "passed"
+    },
+    {
+      "name": "non-admin browser login rejected",
+      "result": "passed"
+    },
+    {
+      "name": "admin browser login validated by actual Auth",
+      "result": "passed"
+    },
+    {
+      "name": "private catalog response no-store",
+      "result": "passed"
+    },
+    {
+      "name": "missing CSRF rejects mutation",
+      "result": "passed"
+    },
+    {
+      "name": "all 121 original catalog SKUs still searchable",
+      "result": "passed"
+    },
+    {
+      "name": "daily editor hides evidence, provenance and technical field labels",
+      "result": "passed"
+    },
+    {
+      "name": "mobile daily editor has no document overflow",
+      "result": "passed"
+    },
+    {
+      "name": "import history is accessible on separate tools page",
+      "result": "passed"
+    },
+    {
+      "name": "daily product page omits import controls",
+      "result": "passed"
+    },
+    {
+      "name": "browser saves incomplete single-product draft easily",
+      "result": "passed"
+    },
+    {
+      "name": "single edit persists PKR minor units and counted zero",
+      "result": "passed"
+    },
+    {
+      "name": "homepage toggle stored internally",
+      "result": "passed"
+    },
+    {
+      "name": "stock-count edit reconciles to exact count",
+      "result": "passed"
+    },
+    {
+      "name": "incomplete publication shows plain missing-info checklist",
+      "result": "passed"
+    },
+    {
+      "name": "single: explicit Publish publishes active options",
+      "result": "passed"
+    },
+    {
+      "name": "single: ordinary Save keeps product and option publication",
+      "result": "passed"
+    },
+    {
+      "name": "single: invalid published edit rejected without unpublishing",
+      "result": "passed"
+    },
+    {
+      "name": "single: ordinary Save keeps hidden product and existing option statuses",
+      "result": "passed"
+    },
+    {
+      "name": "single: only explicit Save draft returns hidden product to draft",
+      "result": "passed"
+    },
+    {
+      "name": "browser creates two separate SKU options with automatic identities",
+      "result": "passed"
+    },
+    {
+      "name": "browser edits an option price and exact stock count",
+      "result": "passed"
+    },
+    {
+      "name": "two-option: explicit Publish publishes active options",
+      "result": "passed"
+    },
+    {
+      "name": "two-option: ordinary Save keeps product and option publication",
+      "result": "passed"
+    },
+    {
+      "name": "two-option: invalid published edit rejected without unpublishing",
+      "result": "passed"
+    },
+    {
+      "name": "two-option: ordinary Save keeps hidden product and existing option statuses",
+      "result": "passed"
+    },
+    {
+      "name": "two-option: only explicit Save draft returns hidden product to draft",
+      "result": "passed"
+    },
+    {
+      "name": "mobile option table scrolls without document overflow",
+      "result": "passed"
+    },
+    {
+      "name": "browser removal archives option while preserving SKU and stock",
+      "result": "passed"
+    },
+    {
+      "name": "all pre-existing catalog/source/stock/media rows unchanged",
+      "result": "passed"
+    },
+    {
+      "name": "logout removes protected access",
+      "result": "passed"
+    }
+  ],
+  "pending": [],
+  "fixtures": [
+    {
+      "productId": "549a80c0-0e60-495d-857c-ca13aa0970b5",
+      "variantId": "1987dbe0-eebf-4cb9-afdc-e051cc75fbaf",
+      "archived": true,
+      "brandId": "usability-2dc4535e-2d6c-4d6a-b3a5-bede7a368355",
+      "categoryId": "usability-ce7846a8-aeca-43aa-a728-a66b62a0aac2",
+      "mediaId": "f9cccaa4-c87f-4142-9f02-d1992c4ec746",
+      "mediaCleaned": true
+    },
+    {
+      "productId": "53726b89-7205-4c44-951e-3f894ce8d697",
+      "variantId": "09fef7ab-6299-4642-bdf0-2eba63c43b95",
+      "archived": true,
+      "brandId": "usability-39174691-722c-4a98-95e9-9803353b1771",
+      "categoryId": "usability-50bc9ddc-ae95-41b1-8a8c-2f2da76f4c78",
+      "mediaId": "e551b784-d020-4a38-ba45-cb740fe3b1d4",
+      "mediaCleaned": true
+    }
+  ],
+  "preservation": {
+    "tables": 18,
+    "baseline_rows": 821,
+    "status": "passed"
+  }
+}

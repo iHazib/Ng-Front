@@ -1,0 +1,178 @@
+{
+  "stage": "manual_advance_payments_016",
+  "kind": "actual_Chrome_Next_Supabase",
+  "status": "passed",
+  "checks": [
+    {
+      "name": "anonymous list API denied",
+      "result": "passed"
+    },
+    {
+      "name": "actual non-admin login denied",
+      "result": "passed"
+    },
+    {
+      "name": "actual admin browser login works",
+      "result": "passed"
+    },
+    {
+      "name": "CSRF-less dismissal denied",
+      "result": "passed"
+    },
+    {
+      "name": "private list responses uncached",
+      "result": "passed"
+    },
+    {
+      "name": "anonymous hosted RPC admin_catalog_list denied",
+      "result": "passed"
+    },
+    {
+      "name": "anonymous hosted RPC admin_catalog_filter_options denied",
+      "result": "passed"
+    },
+    {
+      "name": "anonymous hosted RPC admin_catalog_reminder denied",
+      "result": "passed"
+    },
+    {
+      "name": "anonymous direct private API read denied",
+      "result": "passed"
+    },
+    {
+      "name": "non-admin hosted RPC admin_catalog_list denied",
+      "result": "passed"
+    },
+    {
+      "name": "non-admin hosted RPC admin_catalog_filter_options denied",
+      "result": "passed"
+    },
+    {
+      "name": "non-admin hosted RPC admin_catalog_reminder denied",
+      "result": "passed"
+    },
+    {
+      "name": "non-admin direct private API read denied",
+      "result": "passed"
+    },
+    {
+      "name": "synthetic product created",
+      "result": "passed"
+    },
+    {
+      "name": "audited synthetic count prepares two late holds",
+      "result": "passed"
+    },
+    {
+      "name": "synthetic bank-transfer order placed",
+      "result": "passed"
+    },
+    {
+      "name": "synthetic jazzcash order placed",
+      "result": "passed"
+    },
+    {
+      "name": "synthetic easypaisa order placed",
+      "result": "passed"
+    },
+    {
+      "name": "first timely submission gets a real bounded review extension",
+      "result": "passed"
+    },
+    {
+      "name": "later submissions do not renew the actual deadline",
+      "result": "passed"
+    },
+    {
+      "name": "actual bounded review and two unpaid holds expire once",
+      "result": "passed"
+    },
+    {
+      "name": "audited count reduces unreserved fixture to last unit",
+      "result": "passed"
+    },
+    {
+      "name": "actual hosted late-payment race allocates one unit only",
+      "result": "passed"
+    },
+    {
+      "name": "stock-unavailable receipt retained accurately",
+      "result": "passed"
+    },
+    {
+      "name": "resolution-required order cannot Confirm",
+      "result": "passed"
+    },
+    {
+      "name": "synthetic reservation released",
+      "result": "passed"
+    },
+    {
+      "name": "same reference on different services is separately scoped",
+      "result": "passed"
+    },
+    {
+      "name": "synthetic bank-transfer order placed",
+      "result": "passed"
+    },
+    {
+      "name": "synthetic bank-transfer order placed",
+      "result": "passed"
+    },
+    {
+      "name": "same-account concurrent reference is credited to only one order",
+      "result": "passed"
+    },
+    {
+      "name": "synthetic reservation released",
+      "result": "passed"
+    },
+    {
+      "name": "synthetic reservation released",
+      "result": "passed"
+    },
+    {
+      "name": "all synthetic variant reservations released",
+      "result": "passed"
+    },
+    {
+      "name": "normal storefront checkout remains disabled",
+      "result": "passed"
+    },
+    {
+      "name": "every checked original row and homepage selection preserved",
+      "result": "passed"
+    }
+  ],
+  "pending": [],
+  "fixtures": [
+    {
+      "productId": "096999dc-8ace-49cf-b0a4-87b322dfedde",
+      "marker": "0435bd7e-c950-4ec7-b696-dbe501a5213f",
+      "mediaId": "73fe6dd4-0d70-4e7c-abde-c7163de34399",
+      "variantIds": [
+        "a6855e9e-8fbd-43fe-a296-a3f4227167ab",
+        "5d43a4d4-99ba-455c-baad-77dd56b69500",
+        "95d6ba1a-c8f2-47d4-82dc-a730e8ada81c"
+      ],
+      "hidden": true,
+      "mediaCleaned": true
+    }
+  ],
+  "preservation": {
+    "tables": 37,
+    "rows": 1367,
+    "status": "passed"
+  },
+  "taxonomy": {
+    "brand": "co-0435bd7e-c950-4ec7-b696-dbe501a5213f",
+    "category": "co-cat-0435bd7e-c950-4ec7-b696-dbe501a5213f"
+  },
+  "orders": [
+    "524c1fd4-d1d6-49f5-90ad-0f828427793c",
+    "b4ed667c-ee56-4405-a99c-0385a11e1365",
+    "fc033418-a906-4cf8-bb79-e7cb12176f12",
+    "acfc642f-d4b0-419b-887c-1531b8a6ea30",
+    "17a8f28e-2a58-49cb-b369-6f1dee5f7631"
+  ]
+}

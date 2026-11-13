@@ -1,0 +1,39 @@
+{
+  "stage": "reviews_and_moderation",
+  "implementation": "ready; hosted verification pending setup",
+  "exact_installer_sha256": "32e40f5f7e2cbec18a3ccd8d81de86bb76f0b2c7f108761f155cf193fbb0cc52",
+  "canonical_receipt_sha256": "0a3d7c1ad1e67b09f876c3c43ea8c335f23e698d32bbc38eee0a595321975e52",
+  "checks": {
+    "exact_fresh_001_010_installer_ON_ERROR_STOP": true,
+    "existing_business_values_preserved": true,
+    "repeat_install_refused": true,
+    "local_sql_review_security_media_ratings_history_quota": true,
+    "unit_tests": 16,
+    "mock_actual_Next_Chrome_checks": 14,
+    "homepage_applicable_checks": 6,
+    "homepage_intentional_skips": 2,
+    "homepage_first_mobile_image_decode_timeout": "passed unchanged on isolated rerun",
+    "lint_typecheck_build": true,
+    "production_preview_reference_and_not_found_checks": true,
+    "source_files_unchanged": 64,
+    "original_CSS_blocks_unchanged": 14,
+    "desktop_mobile_review_screenshots_inspected": true
+  },
+  "actual_hosted": {
+    "read_only_probe_review_rpc": 404,
+    "mutations": 0,
+    "fixtures_created": 0,
+    "review_Auth_PostgREST_Storage_Cloudinary_browser_flows": "pending"
+  },
+  "blockers": [
+    "Apply tested migration 011 once after read-only preflight and confirm receipt",
+    "Configure SUPABASE_SECRET_KEY locally",
+    "Configure REVIEW_SESSION_SECRET locally"
+  ],
+  "limitations": [
+    "Local PostgreSQL Auth/Storage are test doubles",
+    "Chrome review UI uses explicit API doubles; no live review-provider verification",
+    "Mobile is Chrome emulation; physical iOS/Safari and high-volume abuse not tested",
+    "Next streamed not-found pages can return 200; blocking crawler 404 and browser noindex/404 UI were checked"
+  ]
+}

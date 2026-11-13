@@ -1,0 +1,6 @@
+{
+  "kind": "actual_Chrome_Next_readonly_no_fixtures",
+  "checks": [],
+  "pending": [],
+  "failure": "Read-only browser/service check failed; no credentials recorded."
+}

@@ -1,0 +1,6 @@
+{
+  "canonical": "202610120014_admin_exact_identifier_search.sql",
+  "canonical_sha256": "3f771bd8309cd0c1de097e93b6aaf76963d7a18c1f26029fb7047ec2c86e53c3",
+  "installer_sha256": "d569fa8fd982d905bc03578740fd5f500646c2c7b58c6d80cba5f748cd57a2fa",
+  "prerequisite_013_sha256": "de9272e1f837c654aa613e84fbabc8e1e12fc6248475764573a6a153d46e51b0"
+}

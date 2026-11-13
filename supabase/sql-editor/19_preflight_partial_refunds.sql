@@ -1,0 +1,9 @@
+-- Read only. Before: prerequisite_020, private_rls and permissions_preserved true;
+-- value_contract, view_contract and receipt flags false. All seven flags true after.
+select exists(select 1 from app_private.sql_editor_receipts where version='202610180020' and sha256='3a274cb58a5da769a57ee7ab0dfb5877b68bb82adcf92caba1031ca1e4b6b434') prerequisite_020,
+ coalesce((select position('chosen' in prosrc)>0 and position('amountMinor' in prosrc)>0 from pg_proc where oid=to_regprocedure('app_private.refund_quote(uuid,jsonb,uuid)')),false) value_contract,
+ coalesce((select position('partialAmountsSupported' in prosrc)>0 and position('remainingAmountMinor' in prosrc)>0 from pg_proc where oid=to_regprocedure('public.admin_order_finance(uuid)')),false) view_contract,
+ exists(select 1 from app_private.sql_editor_receipts where version='202610200021') receipt_present,
+ exists(select 1 from app_private.sql_editor_receipts where version='202610200021' and sha256='2c620c81ec6821b9f733a8108bfc881a6f4d209a04b9fb0fd9347d235c4fda73') receipt_matches,
+ (select count(*)=7 and bool_and(relrowsecurity and not relforcerowsecurity) from pg_class where oid in(to_regclass('app_private.completed_sales'),to_regclass('app_private.receipt_dates'),to_regclass('app_private.finance_versions'),to_regclass('app_private.refund_requests'),to_regclass('app_private.refund_events'),to_regclass('app_private.return_events'),to_regclass('app_private.finance_operations'))) private_rls,
+ (select prosecdef and proowner='postgres'::regrole and has_function_privilege('authenticated',oid,'EXECUTE') and not has_function_privilege('anon',oid,'EXECUTE') and not has_function_privilege('service_role',oid,'EXECUTE') from pg_proc where oid=to_regprocedure('public.admin_order_finance(uuid)')) and not has_function_privilege('authenticated','app_private.refund_quote(uuid,jsonb,uuid)','EXECUTE') permissions_preserved;

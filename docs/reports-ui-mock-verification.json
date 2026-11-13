@@ -1,0 +1,62 @@
+{
+  "kind": "actual Chrome/Next UI with mocked reports/refunds APIs; no hosted business writes",
+  "checks": [
+    {
+      "name": "report metrics and separate cash (1440)",
+      "passed": true
+    },
+    {
+      "name": "component analysis and CSV link (1440)",
+      "passed": true
+    },
+    {
+      "name": "report viewport fits (1440)",
+      "passed": true
+    },
+    {
+      "name": "refund request/approve/send retains CSRF request contract (1440)",
+      "passed": true
+    },
+    {
+      "name": "partial-value refund with zero quantity (1440)",
+      "passed": true
+    },
+    {
+      "name": "damaged return stays separate from money (1440)",
+      "passed": true
+    },
+    {
+      "name": "order finance viewport fits (1440)",
+      "passed": true
+    },
+    {
+      "name": "report metrics and separate cash (390)",
+      "passed": true
+    },
+    {
+      "name": "component analysis and CSV link (390)",
+      "passed": true
+    },
+    {
+      "name": "report viewport fits (390)",
+      "passed": true
+    },
+    {
+      "name": "refund request/approve/send retains CSRF request contract (390)",
+      "passed": true
+    },
+    {
+      "name": "partial-value refund with zero quantity (390)",
+      "passed": true
+    },
+    {
+      "name": "damaged return stays separate from money (390)",
+      "passed": true
+    },
+    {
+      "name": "order finance viewport fits (390)",
+      "passed": true
+    }
+  ],
+  "status": "passed"
+}

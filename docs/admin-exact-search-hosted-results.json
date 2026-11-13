@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-13",
+  "status": "passed",
+  "kind": "actual_Chrome_Next_Supabase_Auth_PostgREST",
+  "owner_confirmed_installation": "014 nine flags true; no installer rerun",
+  "live_checks_passed": 41,
+  "exact_alias_rows": 1,
+  "normalized_spaced_sku_rows": 1,
+  "preservation": {
+    "tables": 29,
+    "rows": 1275,
+    "status": "passed"
+  },
+  "cleanup": {
+    "kind": "actual_Supabase_readonly_cleanup",
+    "synthetic_products": 3,
+    "synthetic_variants": 9,
+    "all_archived": true,
+    "anonymous_products": 0,
+    "anonymous_variants": 0,
+    "media_uploaded": 0
+  },
+  "pending": [],
+  "limitations": [
+    "Chrome desktop and mobile viewport emulation; other engines and physical devices not tested",
+    "Private synthetic audit history and archived identities retained"
+  ],
+  "local_tests": "Historical 2026-10-12 disposable PostgreSQL tests with Auth/Storage doubles; not rerun in this live stage",
+  "commerce_started": false,
+  "installers_executed": 0
+}

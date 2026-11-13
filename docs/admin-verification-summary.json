@@ -1,0 +1,31 @@
+{
+  "kind": "verification_summary",
+  "admin_live_report": "docs/admin-live-verification.json",
+  "admin_extended_report": "docs/admin-extended-verification.json",
+  "catalog_audit_report": "docs/admin-import-audit.json",
+  "local_security_media_tests": {
+    "passed": 10,
+    "note": "Three pure security tests; seven media tests including mocked provider transport."
+  },
+  "eslint": "passed",
+  "typescript": "passed",
+  "production_build": "passed",
+  "production_preview_reference_guards": "passed",
+  "source_integrity": {
+    "files": 64,
+    "reference_css_blocks": 14,
+    "status": "passed"
+  },
+  "homepage_browser_regression": {
+    "browser": "Chrome",
+    "passed": 6,
+    "intentional_skips": 2,
+    "desktop_and_mobile_emulation": true
+  },
+  "pending": [
+    "Timed safe cleanup of one rejected synthetic image; see docs/admin-cleanup-verification.json."
+  ],
+  "storefront_database_integration": false,
+  "products_automatically_published": false,
+  "new_migrations": false
+}

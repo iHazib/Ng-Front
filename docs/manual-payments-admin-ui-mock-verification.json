@@ -1,0 +1,62 @@
+{
+  "kind": "real Chrome/admin Auth; MOCK order and review responses",
+  "checks": [
+    {
+      "name": "unpaid Confirm disabled 1440",
+      "passed": true
+    },
+    {
+      "name": "private proof link and issue shown 1440",
+      "passed": true
+    },
+    {
+      "name": "browser requires receiving-history acknowledgement 1440",
+      "passed": true
+    },
+    {
+      "name": "explicit verify payload and Paid readiness 1440",
+      "passed": true
+    },
+    {
+      "name": "Request correction action 1440",
+      "passed": true
+    },
+    {
+      "name": "Reject submission action 1440",
+      "passed": true
+    },
+    {
+      "name": "responsive payment review fits 1440",
+      "passed": true
+    },
+    {
+      "name": "unpaid Confirm disabled 390",
+      "passed": true
+    },
+    {
+      "name": "private proof link and issue shown 390",
+      "passed": true
+    },
+    {
+      "name": "browser requires receiving-history acknowledgement 390",
+      "passed": true
+    },
+    {
+      "name": "explicit verify payload and Paid readiness 390",
+      "passed": true
+    },
+    {
+      "name": "Request correction action 390",
+      "passed": true
+    },
+    {
+      "name": "Reject submission action 390",
+      "passed": true
+    },
+    {
+      "name": "responsive payment review fits 390",
+      "passed": true
+    }
+  ],
+  "status": "passed"
+}

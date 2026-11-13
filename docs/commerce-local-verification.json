@@ -1,0 +1,30 @@
+{
+  "kind": "disposable_PostgreSQL_Auth_Storage_and_media_doubles",
+  "status": "passed",
+  "exact_file": "supabase/sql-editor/13_install_guest_commerce_clean.sql",
+  "sha256": "ea1d878b6caa9209cba75885448dd84f5b6c075576266f8d1c51c74d1f176ef0",
+  "base_migrations": [
+    "202610050001_catalog.sql",
+    "202610050002_commerce_content.sql",
+    "202610050003_security_publication.sql",
+    "202610050004_access_import.sql",
+    "202610050005_taxonomy.sql",
+    "202610050006_invariants.sql",
+    "202610050007_media_service.sql",
+    "202610060008_daily_product_editor.sql",
+    "202610070009_public_storefront.sql",
+    "202610070010_content_cms.sql",
+    "202610070011_customer_reviews.sql",
+    "202610080012_product_markdown.sql",
+    "202610090013_admin_catalog_list.sql",
+    "202610120014_admin_exact_identifier_search.sql"
+  ],
+  "execution": "psql -X -v ON_ERROR_STOP=1 -f",
+  "all_pre_existing_business_rows_unchanged": true,
+  "repeat_refusal": "passed",
+  "eleven_final_flags": true,
+  "transactional_lifecycle_security": "passed",
+  "concurrent_last_unit_two_sessions": "passed",
+  "hosted": "pending 015 application",
+  "evidence": "database-test-386f142a7abb"
+}

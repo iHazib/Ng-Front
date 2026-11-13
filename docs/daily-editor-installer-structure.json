@@ -1,0 +1,35 @@
+{
+  "status": "passed",
+  "source": "202610060008_daily_product_editor.sql",
+  "files": [
+    "supabase/sql-editor/06_install_daily_product_editor.sql",
+    "supabase/sql-editor/06_install_daily_product_editor_clean.sql"
+  ],
+  "sha256": "ff2d5f584b5572a3c08b82e20251e842f38ca68715a72c335297063ba566ee11",
+  "counts": {
+    "functions": 4,
+    "receipt_inserts": 1,
+    "final_selects": 1,
+    "transactions": 1,
+    "commits": 1,
+    "cache_reload_notifications": 1
+  },
+  "function_declarations": [
+    "app_private.daily_product_issues",
+    "app_private.publication_blockers",
+    "public.publication_report",
+    "public.save_daily_product"
+  ],
+  "ordered_delimiters": [
+    "$install_guard$",
+    "$install_guard$",
+    "$daily_issues$",
+    "$daily_issues$",
+    "$publication_blockers$",
+    "$publication_blockers$",
+    "$publication_report$",
+    "$publication_report$",
+    "$save_daily_product$",
+    "$save_daily_product$"
+  ]
+}

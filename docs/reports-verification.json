@@ -1,0 +1,244 @@
+{
+  "date": "2026-10-20",
+  "stage": "sales reporting, manual refunds and inspected returns",
+  "status": "hosted_synthetic_financial_verification_passed",
+  "implemented": [
+    "Completed-only, exactly-once sales and distinct receipt/refund/shipping reporting",
+    "Asia/Karachi date windows, immutable snapshots, alternative component attribution and formula-safe integer CSV",
+    "Requested/approved/sent manual refunds with cash/quantity/value reservations, explicit outgoing-history verification, idempotency and audited corrections",
+    "Independent inspected returns and guarded resale stock movements",
+    "Separate 021 partial-value support for cancelled partial payments without invented charge classifications",
+    "Simple private admin Reports and order-level refund/return controls; explicit business/test order scopes"
+  ],
+  "local_database": {
+    "kind": "fresh disposable PostgreSQL 001-019; Auth/Storage/provider doubles, not hosted",
+    "exact_file": "supabase\\sql-editor\\18_install_reports_refunds_clean.sql",
+    "installer_sha256": "9495f7d52a00ebbc2679e861215475fddef46e85ff91cb356a770398cb6ae515",
+    "execution": "psql -X -v ON_ERROR_STOP=1 -f",
+    "base_migrations": 19,
+    "all_final_flags": {
+      "prerequisite_019": true,
+      "history_complete": true,
+      "sales_present": true,
+      "refunds_present": true,
+      "returns_present": true,
+      "finance_present": true,
+      "action_present": true,
+      "reports_present": true,
+      "receipt_present": true,
+      "receipt_matches": true,
+      "private_rls": true,
+      "no_client_policies": true,
+      "private_grants": true,
+      "rpc_security": true,
+      "action_grants": true
+    },
+    "existing_rows_preserved": true,
+    "repeat_refused": true,
+    "regressions": "passed",
+    "assertions": 60,
+    "concurrency": "independent authenticated PG sessions: approval oversubscription and duplicate transfer sends blocked",
+    "reconciliation": "zero mismatches/overdue holds/ended pools",
+    "status": "passed",
+    "evidence": "database-test-b2612a56203c"
+  },
+  "partial_value_database": {
+    "kind": "fresh disposable PostgreSQL 001-019 plus exact 020 and 021; Auth/Storage doubles, not hosted",
+    "status": "passed",
+    "execution": "psql -X -v ON_ERROR_STOP=1 -f",
+    "installer_020_sha256": "9495f7d52a00ebbc2679e861215475fddef46e85ff91cb356a770398cb6ae515",
+    "exact_021_file": "supabase\\sql-editor\\19_install_partial_refunds_clean.sql",
+    "installer_021_sha256": "ca34df2f62ca930458238cf43b76d8c1063de7db9cb270f10b52bd61a60db0db",
+    "final_020_flags": {
+      "prerequisite_019": true,
+      "history_complete": true,
+      "sales_present": true,
+      "refunds_present": true,
+      "returns_present": true,
+      "finance_present": true,
+      "action_present": true,
+      "reports_present": true,
+      "receipt_present": true,
+      "receipt_matches": true,
+      "private_rls": true,
+      "no_client_policies": true,
+      "private_grants": true,
+      "rpc_security": true,
+      "action_grants": true
+    },
+    "final_021_flags": {
+      "prerequisite_020": true,
+      "value_contract": true,
+      "view_contract": true,
+      "receipt_present": true,
+      "receipt_matches": true,
+      "private_rls": true,
+      "permissions_preserved": true
+    },
+    "existing_financial_rows_preserved": true,
+    "function_identities_owners_grants_preserved": true,
+    "020_regressions_and_independent_races": "passed",
+    "021_assertions": 11,
+    "repeat_refused": true,
+    "evidence": "database-test-64fe4aa89beb"
+  },
+  "ui_mock_checks": 14,
+  "csv_pkr_unit_tests": 5,
+  "lint": "passed",
+  "typecheck": "passed",
+  "final_build": "passed",
+  "production_security": "passed",
+  "homepage_browser_suite": {
+    "passed": 8,
+    "intentionally_skipped": 2
+  },
+  "homepage_pixels": {
+    "pairs": 23,
+    "pixel_identical": 21,
+    "threshold_status": "existing search difference remains flagged; not waived",
+    "differences": [
+      {
+        "viewport": "desktop",
+        "state": "home",
+        "size": [
+          1440,
+          5948
+        ],
+        "referenceSize": [
+          1440,
+          5948
+        ],
+        "identicalPixels": false,
+        "meanAbsoluteChannelDifference": 0.01711126055443473,
+        "differenceBounds": [
+          72,
+          193,
+          1367,
+          3811
+        ]
+      },
+      {
+        "viewport": "desktop",
+        "state": "search",
+        "size": [
+          1440,
+          362
+        ],
+        "referenceSize": [
+          1440,
+          362
+        ],
+        "identicalPixels": false,
+        "meanAbsoluteChannelDifference": 0.182271204215265,
+        "differenceBounds": [
+          139,
+          317,
+          284,
+          335
+        ]
+      }
+    ]
+  },
+  "source_integrity": "64 original inputs and 14 reference CSS blocks verified",
+  "actual_hosted_readonly": {
+    "kind": "actual hosted read-only Auth/Next/API; no financial fixtures",
+    "checks": [
+      {
+        "name": "unauthenticated /admin/api/reports denied privately",
+        "passed": true
+      },
+      {
+        "name": "unauthenticated /admin/api/finance denied privately",
+        "passed": true
+      },
+      {
+        "name": "CSRF-less finance mutation denied",
+        "passed": true
+      },
+      {
+        "name": "actual non-admin membership rejected",
+        "passed": true
+      },
+      {
+        "name": "actual admin Auth and server membership",
+        "passed": true
+      },
+      {
+        "name": "missing schema shows error without sample financial fallback",
+        "passed": true
+      },
+      {
+        "name": "normal storefront checkout remains disabled",
+        "passed": true
+      }
+    ],
+    "pending": [
+      "Owner application/receipt confirmation of incremental 020; no direct database connection configured."
+    ],
+    "hostedSql": 0,
+    "businessWrites": 0,
+    "rpc": {
+      "http": 404,
+      "code": "PGRST202"
+    },
+    "status": "read_only_passed_hosted_finance_pending"
+  },
+  "actual_hosted_financial_verification": {
+    "status": "passed",
+    "main_checks": 91,
+    "supplemental_checks": 22,
+    "independent_cleanup_checks": 44,
+    "evidence": [
+      "reports-hosted-live-verification.json",
+      "reports-hosted-supplement.json",
+      "reports-hosted-cleanup-readonly.json"
+    ],
+    "preserved_rows": {
+      "tables": 40,
+      "rows": 1525,
+      "status": "passed"
+    },
+    "reconciliation": {
+      "overdueHolds": 0,
+      "balanceMismatches": 0,
+      "endedDealAllocations": 0
+    }
+  },
+  "actual_hosted_financial_writes": {
+    "synthetic_only": true,
+    "orders": 6,
+    "financial_and_audit_history_retained": true,
+    "real_money_moved": false
+  },
+  "hosted_sql_executed": 0,
+  "normal_checkout_enabled": false,
+  "frontend_storefront_changes": false,
+  "dependencies_added": false,
+  "limits": [
+    "Manual service-wide outgoing reference uniqueness is conservative; legitimate colliding references need human review",
+    "CSV export is bounded to 5000 selected events; larger exports require narrower dates",
+    "No physical device/other-engine/production-load claim",
+    "No full hosted financial success is claimed from SQL doubles or UI interception",
+    "Exact Pakistan midnight timestamp fixtures and hostile formula-like CSV names: local SQL/unit evidence only; actual hosted calendar-day filtering/CSV totals/privacy passed",
+    "Synthetic outgoing-history confirmations only; no actual transfer/account statement validation"
+  ],
+  "next_step": "Stop at this stage. No installer, courier or next-stage work. Real checkout remains disabled pending approved launch configuration.",
+  "owner_confirmed_installations": {
+    "020": 15,
+    "021": 7,
+    "installers_rerun": false
+  },
+  "preinstallation_readonly_note": "Older PGRST202/read-only results retained as historical evidence; superseded by owner-confirmed installation and passed hosted financial runs above.",
+  "final_runtime": {
+    "normal_checkout_enabled": false,
+    "reference_http": 200,
+    "isolated_test_server_closed": true
+  },
+  "current_turn_checks": {
+    "full_lint": "passed",
+    "targeted_harness_lint": "passed",
+    "reports_unit_tests": 5,
+    "source_files_byte_identical": 64,
+    "reference_css_blocks": 14
+  }
+}

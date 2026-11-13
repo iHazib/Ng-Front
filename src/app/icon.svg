@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Nook and Glow">
+  <rect width="64" height="64" rx="10" fill="#faf8f4"/>
+  <rect x="3" y="3" width="58" height="58" rx="8" fill="none" stroke="#9e765e" stroke-width="1.5"/>
+  <text x="32" y="43" text-anchor="middle" font-family="Georgia, serif" font-size="30" fill="#161514">N</text>
+  <text x="46" y="49" text-anchor="middle" font-family="Georgia, serif" font-size="17" fill="#9e765e">G</text>
+</svg>

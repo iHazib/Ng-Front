@@ -1,0 +1,10 @@
+{
+  "kind": "actual_provider_final_cleanup",
+  "status": "passed",
+  "synthetic_parents_archived": 4,
+  "media_tombstones_checked": 3,
+  "all_cloudinary_assets_absent": true,
+  "all_private_storage_prefixes_empty": true,
+  "all_test_associations_removed": true,
+  "retained": "Archived synthetic parents, deletion workflow/tombstones and audit history; no active files or associations."
+}

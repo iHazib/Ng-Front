@@ -1,0 +1,13 @@
+{
+  "source": "User-provided development Supabase SQL Editor result",
+  "media_service_present": true,
+  "inventory_counts_present": false,
+  "save_requests_present": false,
+  "daily_issues_present": false,
+  "save_text_signature_present": false,
+  "save_old_boolean_signature_present": false,
+  "receipt_008_present": false,
+  "daily_report_present": false,
+  "daily_blockers_present": false,
+  "interpretation": "Migrations 001-007 ready; no migration 008 objects or receipt remained. Clean installer may be applied once after exact-file verification."
+}

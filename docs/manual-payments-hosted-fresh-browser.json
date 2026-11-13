@@ -1,0 +1,51 @@
+{
+  "kind": "actual fresh Chrome checkout forms; Next/Supabase; synthetic only",
+  "checks": [
+    {
+      "name": "fresh easypaisa browser session creates order 1440",
+      "passed": true
+    },
+    {
+      "name": "actual receiving details/deadline and responsive form 1440",
+      "passed": true
+    },
+    {
+      "name": "secure confirmation survives reload 1440",
+      "passed": true
+    },
+    {
+      "name": "fresh synthetic order reservation released 1440",
+      "passed": true
+    },
+    {
+      "name": "fresh jazzcash browser session creates order 390",
+      "passed": true
+    },
+    {
+      "name": "actual receiving details/deadline and responsive form 390",
+      "passed": true
+    },
+    {
+      "name": "secure confirmation survives reload 390",
+      "passed": true
+    },
+    {
+      "name": "fresh synthetic order reservation released 390",
+      "passed": true
+    }
+  ],
+  "orders": [
+    {
+      "id": "84044568-0878-40de-b605-63002b929496",
+      "revision": 1,
+      "cancelled": true
+    },
+    {
+      "id": "b439f75b-894e-4e36-9853-2e5fff14aee6",
+      "revision": 1,
+      "cancelled": true
+    }
+  ],
+  "fixtureProductId": "096999dc-8ace-49cf-b0a4-87b322dfedde",
+  "status": "passed"
+}

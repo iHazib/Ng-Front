@@ -1,0 +1,9 @@
+{
+  "kind": "actual hosted read-only Auth/Next/API; no financial fixtures",
+  "checks": [],
+  "pending": [],
+  "hostedSql": 0,
+  "businessWrites": 0,
+  "status": "failed",
+  "error": "Read-only verification failed; credentials/provider payloads suppressed."
+}

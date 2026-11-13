@@ -1,0 +1,14 @@
+-- READ ONLY. No customer or catalog records returned.
+select exists(select 1 from app_private.sql_editor_receipts where version='202610120014' and sha256='3f771bd8309cd0c1de097e93b6aaf76963d7a18c1f26029fb7047ec2c86e53c3') as prerequisite_014,
+ (to_regclass('app_private.commerce_orders') is not null or to_regclass('app_private.order_events') is not null or to_regclass('app_private.checkout_rate_buckets') is not null or to_regclass('app_private.order_numbers') is not null or to_regprocedure('app_private.assert_order_allocation(uuid,text,boolean)') is not null) as commerce_present,
+ to_regprocedure('public.place_guest_order(uuid,text,text,jsonb,jsonb,jsonb,jsonb,jsonb)') is not null as placement_present,
+ (to_regprocedure('public.admin_order_action(uuid,integer,text,uuid)') is not null and to_regprocedure('app_private.assert_order_allocation(uuid,text,boolean)') is not null and coalesce(position('Unpaid payment holds cannot be confirmed or dispatched' in pg_get_functiondef(to_regprocedure('public.admin_order_action(uuid,integer,text,uuid)')))>0,false)) as transitions_and_safeguards_present,
+ to_regprocedure('public.expire_commerce_holds(integer)') is not null as expiry_present,
+ exists(select 1 from app_private.sql_editor_receipts where version='202610130015') as receipt_present,
+ exists(select 1 from app_private.sql_editor_receipts where version='202610130015' and sha256='b89d4a6a6ae13c27be9d71928c5ea288c26b64691f8be0d867c8070abf5b0ce0') as receipt_matches,
+ (select count(*)=3 and bool_and(relrowsecurity) from pg_class where oid in(to_regclass('app_private.commerce_orders'),to_regclass('app_private.order_events'),to_regclass('app_private.checkout_rate_buckets'))) as private_rls,
+ not exists(select 1 from pg_policies where schemaname='app_private' and tablename in('commerce_orders','order_events','checkout_rate_buckets')) as no_client_policies,
+ case when to_regprocedure('public.place_guest_order(uuid,text,text,jsonb,jsonb,jsonb,jsonb,jsonb)') is null then false else
+ has_function_privilege('service_role','public.place_guest_order(uuid,text,text,jsonb,jsonb,jsonb,jsonb,jsonb)','execute') and not has_function_privilege('anon','public.place_guest_order(uuid,text,text,jsonb,jsonb,jsonb,jsonb,jsonb)','execute') and not has_function_privilege('authenticated','public.place_guest_order(uuid,text,text,jsonb,jsonb,jsonb,jsonb,jsonb)','execute') end as guest_gateway_private,
+ case when to_regprocedure('public.admin_orders(text,text,date,date,integer,uuid)') is null then false else
+ has_function_privilege('authenticated','public.admin_orders(text,text,date,date,integer,uuid)','execute') and not has_function_privilege('anon','public.admin_orders(text,text,date,date,integer,uuid)','execute') and (select prosecdef and position('require_admin()' in prosrc)>0 from pg_proc where oid=to_regprocedure('public.admin_orders(text,text,date,date,integer,uuid)')) end as admin_authorization;

@@ -1,0 +1,27 @@
+{
+  "kind": "fresh disposable PostgreSQL 001-018; Auth/Storage doubles, not hosted",
+  "exact_file": "supabase\\sql-editor\\17_install_media_policy_dispatch_clean.sql",
+  "installer_sha256": "dedd871f8041ce158b0e32bbb12dde832f8bdc9854011402df9ef78869ae5a3e",
+  "execution": "psql -X -v ON_ERROR_STOP=1 -f",
+  "base_migrations": 18,
+  "reproduced_hosted_failure": true,
+  "final_checks": {
+    "prerequisite_018": true,
+    "correction_present": true,
+    "receipt_matches": true,
+    "legacy_policy_count": 0,
+    "dispatcher_policy_count": 5,
+    "legacy_helper_private": true,
+    "public_helper_accessible": true,
+    "five_tables_rls_enabled": true
+  },
+  "business_rows_unchanged": true,
+  "policy_predicates_preserved_except_dispatcher": true,
+  "rls_grants_policy_roles_commands_with_check_preserved": true,
+  "anonymous_non_admin_admin_reads": true,
+  "draft_isolation": true,
+  "legacy_helper_still_private": true,
+  "repeat_refused": true,
+  "status": "passed",
+  "evidence": "database-test-8a8f74019c85"
+}

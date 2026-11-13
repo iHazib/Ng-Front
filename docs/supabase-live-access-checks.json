@@ -1,0 +1,68 @@
+{
+  "checks": [
+    {
+      "check": "Auth health",
+      "result": "passed",
+      "http_status": 200
+    },
+    {
+      "check": "Invalid Auth token rejected",
+      "result": "passed",
+      "http_status": 403
+    },
+    {
+      "check": "anonymous products endpoint",
+      "result": "passed",
+      "http_status": 200,
+      "detail": "No row contents retained; endpoint reachability alone does not prove draft RLS."
+    },
+    {
+      "check": "anonymous membership",
+      "result": "passed",
+      "http_status": 200
+    },
+    {
+      "check": "anonymous admin search authorization",
+      "result": "passed",
+      "http_status": 401
+    },
+    {
+      "check": "anonymous orders read restriction",
+      "result": "passed",
+      "http_status": 401
+    },
+    {
+      "check": "anonymous import_records read restriction",
+      "result": "passed",
+      "http_status": 401
+    },
+    {
+      "check": "anonymous audit_logs read restriction",
+      "result": "passed",
+      "http_status": 401
+    },
+    {
+      "check": "anonymous private Storage listing",
+      "result": "passed",
+      "http_status": 200,
+      "detail": "Listing only; known-object download/upload isolation remains pending."
+    },
+    {
+      "check": "non-admin actual login/access",
+      "result": "pending",
+      "detail": "Local test-account credentials unavailable."
+    },
+    {
+      "check": "admin actual login/access",
+      "result": "pending",
+      "detail": "Local test-account credentials unavailable."
+    }
+  ],
+  "database_writes": 0,
+  "storage_writes": 0,
+  "limitations": [
+    "SQL grants/exposure metadata not directly inspected over a privileged connection.",
+    "No fixture rows or objects created; empty-result checks have limited coverage.",
+    "Server-only TypeScript wrapper not invoked by this Python HTTP verifier."
+  ]
+}

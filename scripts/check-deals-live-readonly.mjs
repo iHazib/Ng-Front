@@ -1,0 +1,13 @@
+// Actual hosted read-only RPC/Auth checks. No SQL, business writes, uploads or maintenance.
+import {chromium} from '@playwright/test';import {readFile,writeFile} from 'node:fs/promises';import {parseEnv} from 'node:util';
+for(const f of ['.env','.env.local'])try{Object.assign(process.env,parseEnv(await readFile(f,'utf8')));}catch{}
+const report={kind:'actual hosted read-only; no fixtures or mocks',checks:[],pending:[]},check=(name,ok)=>{report.checks.push({name,passed:!!ok});if(!ok)throw Error(name);console.log('PASS (actual read-only): '+name);};let browser;
+try{
+ const key=process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY,url=process.env.NEXT_PUBLIC_SUPABASE_URL;
+ const call=async(name,args)=>fetch(new URL('/rest/v1/rpc/'+name,url),{method:'POST',headers:{apikey:key,'Content-Type':'application/json'},body:JSON.stringify(args),redirect:'error',signal:AbortSignal.timeout(20000)});
+ const quote=await call('commerce_quote',{p_lines:[{id:'17171717-0000-4000-8000-000000000000',quantity:1}]});check('existing public commerce quote remains reachable',quote.status===200);
+ const deals=await call('storefront_deals',{}),body=await deals.json();report.dealsRpcHttp=deals.status;report.dealsRpcCode=body.code??null;
+ if(deals.status===404&&body.code==='PGRST202')report.pending.push('Migration 017 RPC not exposed/installed in the connected development project. Run the read-only preflight before applying the new installer; do not rerun earlier migrations.');else check('new public deals RPC reachable',deals.status===200);
+ browser=await chromium.launch({channel:'chrome',headless:true});const page=await browser.newPage();page.setDefaultTimeout(60000);await page.goto('http://127.0.0.1:3100/admin/login');await page.getByLabel('Email',{exact:true}).fill(process.env.TEST_USER_EMAIL);await page.getByLabel('Password',{exact:true}).fill(process.env.TEST_USER_PASSWORD);await page.getByRole('button',{name:'Sign in',exact:true}).click();await page.getByRole('alert').filter({hasText:'Administrator access required.'}).waitFor();check('actual non-admin login cannot enter deal administration',true);check('non-admin browser deal API denied',await page.evaluate(async()=>(await fetch('/admin/api/deals')).status===401));
+ report.status=report.pending.length?'017_application_pending':'read_only_passed_full_deal_lifecycle_still_pending';
+}catch{report.status='failed';report.error='Read-only verification failed; provider payloads and credentials suppressed.';process.exitCode=1;}finally{if(browser)await browser.close();await writeFile('docs/deals-live-readonly-verification.json',JSON.stringify(report,null,2)+'\n');}

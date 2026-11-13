@@ -1,0 +1,119 @@
+{
+  "kind": "actual_Chrome_Next_Supabase",
+  "status": "incremental_014_pending",
+  "checks": [
+    {
+      "name": "anonymous list API denied",
+      "result": "passed"
+    },
+    {
+      "name": "actual non-admin login denied",
+      "result": "passed"
+    },
+    {
+      "name": "actual admin browser login works",
+      "result": "passed"
+    },
+    {
+      "name": "CSRF-less dismissal denied",
+      "result": "passed"
+    },
+    {
+      "name": "private list responses uncached",
+      "result": "passed"
+    },
+    {
+      "name": "anonymous hosted RPC admin_catalog_list denied",
+      "result": "passed"
+    },
+    {
+      "name": "anonymous hosted RPC admin_catalog_filter_options denied",
+      "result": "passed"
+    },
+    {
+      "name": "anonymous hosted RPC admin_catalog_reminder denied",
+      "result": "passed"
+    },
+    {
+      "name": "anonymous direct private API read denied",
+      "result": "passed"
+    },
+    {
+      "name": "non-admin hosted RPC admin_catalog_list denied",
+      "result": "passed"
+    },
+    {
+      "name": "non-admin hosted RPC admin_catalog_filter_options denied",
+      "result": "passed"
+    },
+    {
+      "name": "non-admin hosted RPC admin_catalog_reminder denied",
+      "result": "passed"
+    },
+    {
+      "name": "non-admin direct private API read denied",
+      "result": "passed"
+    },
+    {
+      "name": "synthetic draft created through authorized Next wrapper",
+      "result": "passed"
+    },
+    {
+      "name": "synthetic options saved through Next wrapper",
+      "result": "passed"
+    },
+    {
+      "name": "ordinary brand/name typo search still works",
+      "result": "passed"
+    },
+    {
+      "name": "general partial identifier search preserves matching variants",
+      "result": "passed"
+    },
+    {
+      "name": "general combined OR facet filters",
+      "result": "passed"
+    },
+    {
+      "name": "synthetic fixtures remain drafts",
+      "result": "passed"
+    },
+    {
+      "name": "synthetic fixture safely hidden",
+      "result": "passed"
+    },
+    {
+      "name": "every pre-existing business record unchanged",
+      "result": "passed"
+    }
+  ],
+  "pending": [
+    "Incremental 014 must be applied through SQL Editor; actual hosted synthetic full alias still matches siblings. Exact-isolation checks await installation."
+  ],
+  "fixtures": [
+    {
+      "productId": "05c38735-6748-4a77-8738-ed68c30da69e",
+      "variantIds": [
+        "d35b9ef1-562e-43ac-8c9a-324d35a97c79",
+        "3f45b26a-10e9-4fc1-8914-aaea7afd6bc1",
+        "2ddba361-f99b-4651-9567-16b8d4b61001"
+      ],
+      "marker": "351c0cfd-58fd-40e1-9821-a48458fc7075",
+      "sku": "EX-351c0cfd-58fd-40e1-9821-a48458fc7075",
+      "hidden": true
+    }
+  ],
+  "preservation": {
+    "tables": 29,
+    "rows": 1257,
+    "status": "passed"
+  },
+  "taxonomy": {
+    "brand": "ex-351c0cfd-58fd-40e1-9821-a48458fc7075",
+    "category": "ex-cat-351c0cfd-58fd-40e1-9821-a48458fc7075",
+    "facet": "ex-finish-351c0cfd-58fd-40e1-9821-a48458fc7075"
+  },
+  "exactAliasRows": 3,
+  "spacedExactRows": 3,
+  "cleanup": "synthetic drafts archived; private audit history retained; no media uploaded"
+}

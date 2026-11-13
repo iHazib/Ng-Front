@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-18",
+  "status": "passed",
+  "kind": "actual Chrome / Next.js / hosted Supabase Auth, PostgreSQL, PostgREST, private Storage / Cloudinary; synthetic business fixtures",
+  "main_checks": 98,
+  "independent_cleanup_checks": 35,
+  "loaded_editor_layout_checks": 3,
+  "mock_requests": 0,
+  "hosted_sql_executed": 0,
+  "applied_migrations_rerun": 0,
+  "preservation": {
+    "tables": 40,
+    "rows": 1416,
+    "status": "passed"
+  },
+  "fixture_counts": {
+    "products": 2,
+    "deals": 3,
+    "media": 5,
+    "orders": 9
+  },
+  "cleanup": {
+    "hiddenProducts": 2,
+    "hiddenDeals": 3,
+    "cleanedMedia": 5
+  },
+  "reconciliation": {
+    "overdueHolds": 0,
+    "balanceMismatches": 0,
+    "endedDealAllocations": 0
+  },
+  "owner_confirmed_corrections": [
+    "018 extra client media privileges",
+    "019 five stale policy helper dependencies"
+  ],
+  "normal_checkout_enabled": false,
+  "remaining_business_setup": [
+    "Owner-approved receiving accounts/instructions and stable account identifiers",
+    "Shipping cities, fees/rules and tax treatment",
+    "Payment/review deadlines and payment-resolution/retention policy",
+    "Hosting/trusted ingress and external every-minute commerce:maintenance scheduler"
+  ],
+  "verification_limits": [
+    "No real money, bank-history integration or payment gateway; manual confirmation tested with clearly labelled synthetic development accounts",
+    "Chrome desktop/mobile viewport emulation; no physical-device/other-engine/production-load claims",
+    "No full pixel-diff suite rerun during this verification-only pass; no storefront source/CSS/asset edits"
+  ],
+  "evidence": [
+    "deals-hosted-live-verification.json",
+    "deals-hosted-cleanup-readonly.json",
+    "deals-hosted-editor-layout.json",
+    "deal-media-policy-hosted-readonly.json",
+    "deals-hosted-security-audit.json"
+  ]
+}

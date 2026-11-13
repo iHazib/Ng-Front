@@ -1,0 +1,27 @@
+{
+  "kind": "disposable_PostgreSQL_Auth_Storage_doubles",
+  "exact_file": "supabase/sql-editor/12_install_admin_exact_search_clean.sql",
+  "installer_sha256": "d569fa8fd982d905bc03578740fd5f500646c2c7b58c6d80cba5f748cd57a2fa",
+  "base_migrations": [
+    "202610050001_catalog.sql",
+    "202610050002_commerce_content.sql",
+    "202610050003_security_publication.sql",
+    "202610050004_access_import.sql",
+    "202610050005_taxonomy.sql",
+    "202610050006_invariants.sql",
+    "202610050007_media_service.sql",
+    "202610060008_daily_product_editor.sql",
+    "202610070009_public_storefront.sql",
+    "202610070010_content_cms.sql",
+    "202610070011_customer_reviews.sql",
+    "202610080012_product_markdown.sql",
+    "202610090013_admin_catalog_list.sql"
+  ],
+  "execution": "psql -X -v ON_ERROR_STOP=1 -f",
+  "preflight_postflight": "passed",
+  "business_rows_unchanged": true,
+  "repeat_refusal": "passed",
+  "exact_search_and_existing_admin_regressions": "passed",
+  "hosted": "pending incremental 014 application",
+  "evidence": "database-test-522e5c99ac55"
+}

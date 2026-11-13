@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-05",
+  "browser": "Microsoft Edge / Chromium",
+  "comparison": "Homepage before and after interior routes; reduced motion; CSS-pixel captures",
+  "results": [
+    {
+      "viewportWidth": 1440,
+      "size": [
+        1440,
+        5948
+      ],
+      "pixelIdentical": false,
+      "meanAbsoluteChannelDifference": 0.005487099616428803,
+      "differenceBounds": [
+        400,
+        3502,
+        1364,
+        3811
+      ]
+    },
+    {
+      "viewportWidth": 390,
+      "size": [
+        390,
+        6630
+      ],
+      "pixelIdentical": false,
+      "meanAbsoluteChannelDifference": 0.02591200319707107,
+      "differenceBounds": [
+        0,
+        1185,
+        390,
+        3961
+      ]
+    }
+  ]
+}

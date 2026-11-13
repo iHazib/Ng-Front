@@ -1,0 +1,53 @@
+{
+  "kind": "actual_supabase_read_only",
+  "status": "passed",
+  "checks": [
+    {
+      "name": "all 121 stable product/variant UUIDs and exact original SKUs retained",
+      "result": "passed"
+    },
+    {
+      "name": "all 121 products and variants are drafts",
+      "result": "passed"
+    },
+    {
+      "name": "all 121 raw source records and quantities preserved",
+      "result": "passed"
+    },
+    {
+      "name": "source quantities total 270; no live stock initialized",
+      "result": "passed"
+    },
+    {
+      "name": "all source target prices preserved as unapproved integer minor units",
+      "result": "passed"
+    },
+    {
+      "name": "all staged source media remain private and unapproved",
+      "result": "passed"
+    },
+    {
+      "name": "anonymous PostgREST cannot see imported draft products",
+      "result": "passed"
+    },
+    {
+      "name": "anonymous PostgREST cannot see imported draft variants",
+      "result": "passed"
+    },
+    {
+      "name": "anonymous PostgREST cannot read source provenance",
+      "result": "passed"
+    },
+    {
+      "name": "each of the 121 original SKUs individually searchable through admin RPC",
+      "result": "passed"
+    }
+  ],
+  "counts": {
+    "products": 121,
+    "variants": 121,
+    "privateImages": 17,
+    "sourceUnits": 270,
+    "liveUnits": 0
+  }
+}

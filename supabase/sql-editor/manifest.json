@@ -1,0 +1,30 @@
+{
+  "migrations": [
+    {
+      "file": "202610050001_catalog.sql",
+      "sha256": "43772250f127bbd90359af9e0e879b8fbc567c11a1bb835950376e6c6ec3ec98"
+    },
+    {
+      "file": "202610050002_commerce_content.sql",
+      "sha256": "56d0168af74f12ce4b64acdb112c4ae6224515a387af073afda8e8b0c2c57fc2"
+    },
+    {
+      "file": "202610050003_security_publication.sql",
+      "sha256": "71144465f39c68881ba92d1d89de7e97b2c7c27e28f66dc8418a4518f73eeedf"
+    },
+    {
+      "file": "202610050004_access_import.sql",
+      "sha256": "4d122cea1649f1b56df5bda6ebffb7f4224deb189c4a5856910a4d7878d5cdd1"
+    },
+    {
+      "file": "202610050005_taxonomy.sql",
+      "sha256": "2ec648947b01deec925096a2fded8e8b469f39d9ae0973befcb6a38d71cd097f"
+    },
+    {
+      "file": "202610050006_invariants.sql",
+      "sha256": "b4bdd99cd16e22b4910785744493b0227442fb6c69e6f9d7ebced04327fc0453"
+    }
+  ],
+  "public_table_count": 47,
+  "bundle_sha256": "cfb1825cc1d73570f4c6531f2221c3e19debce5a464e7d1135f826703951c3f6"
+}

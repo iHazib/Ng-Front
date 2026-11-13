@@ -1,0 +1,47 @@
+{
+  "checked_at": "2026-11-09T11:42:46.552Z",
+  "mode": "read_only_hosted_discovery",
+  "checks": [
+    {
+      "name": "anonymous navigation RPC",
+      "http": 200
+    },
+    {
+      "name": "anonymous catalog RPC",
+      "http": 200
+    },
+    {
+      "name": "admin Auth login",
+      "http": 200
+    },
+    {
+      "name": "admin database membership",
+      "http": 200
+    },
+    {
+      "name": "admin aliases table discovery",
+      "http": 200
+    },
+    {
+      "name": "admin navigation RPC discovery",
+      "http": 200
+    },
+    {
+      "name": "private migration receipt discovery",
+      "http": 406,
+      "code": "PGRST106"
+    },
+    {
+      "name": "private search discovery",
+      "http": 406,
+      "code": "PGRST106"
+    }
+  ],
+  "private_installation_state": "unknown",
+  "receipt_009": "not verified",
+  "mutations": 0,
+  "database_connection_configured": false,
+  "admin_membership_verified": true,
+  "public_rpcs_available": true,
+  "limitations": "Public RPCs are available; private receipt/version and full expected-object state remain unverified. Run the single read-only 07_verify_installed_storefront.sql query in development SQL Editor; do not rerun the installer."
+}

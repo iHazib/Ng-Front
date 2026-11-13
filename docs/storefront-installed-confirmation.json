@@ -1,0 +1,9 @@
+{
+  "confirmed_by": "user SQL Editor result",
+  "date": "2026-10-07",
+  "query": "supabase/sql-editor/07_verify_installed_storefront.sql",
+  "canonical_receipt_hash_matches": true,
+  "missing_expected_objects": [],
+  "rls_owner_grants_passed": true,
+  "installer_rerun": false
+}

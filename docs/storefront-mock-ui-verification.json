@@ -1,0 +1,55 @@
+{
+  "kind": "mock_database_actual_next_and_chrome",
+  "status": "passed",
+  "checks": [
+    {
+      "name": "live frame keeps four ordered heroes and footer",
+      "result": "passed"
+    },
+    {
+      "name": "live homepage includes catalog selections and isolates sample editorial",
+      "result": "passed"
+    },
+    {
+      "name": "live category class layout and supported filters",
+      "result": "passed"
+    },
+    {
+      "name": "filters retain URL selections and removable chips",
+      "result": "passed"
+    },
+    {
+      "name": "real link pagination renders bounded second page",
+      "result": "passed"
+    },
+    {
+      "name": "option switches price/image/availability and disables bag",
+      "result": "passed"
+    },
+    {
+      "name": "published variant bag restores through public revalidation",
+      "result": "passed"
+    },
+    {
+      "name": "unsupported search shows useful taxonomy alternatives",
+      "result": "passed"
+    },
+    {
+      "name": "database failure never substitutes sample products",
+      "result": "passed"
+    },
+    {
+      "name": "unknown product returns actual 404",
+      "result": "passed"
+    },
+    {
+      "name": "mobile drawer restores focus and page has no overflow",
+      "result": "passed"
+    },
+    {
+      "name": "no React runtime errors",
+      "result": "passed"
+    }
+  ],
+  "limitations": "Synthetic RPC responses and intercepted neutral images; not live Supabase/Cloudinary verification."
+}

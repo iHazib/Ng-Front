@@ -1,0 +1,6 @@
+{
+  "canonical": "202610180020_reports_refunds_returns.sql",
+  "canonical_sha256": "3a274cb58a5da769a57ee7ab0dfb5877b68bb82adcf92caba1031ca1e4b6b434",
+  "installer_sha256": "9495f7d52a00ebbc2679e861215475fddef46e85ff91cb356a770398cb6ae515",
+  "prior_019_sha256": "19ee24e376d66ad9dca4e09cc5bec42b1a703e3dfb69011849eef0dd8796623c"
+}

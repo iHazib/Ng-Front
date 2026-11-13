@@ -1,0 +1,52 @@
+{
+  "kind": "actual_supabase_content_permissions_private_storage",
+  "checks": [
+    {
+      "name": "actual admin and non-admin Auth tokens validated",
+      "result": "passed"
+    },
+    {
+      "name": "article media owner is real article, not product",
+      "result": "passed"
+    },
+    {
+      "name": "known private file readable by verified admin",
+      "result": "passed"
+    },
+    {
+      "name": "anonymous cannot read the existing private file",
+      "result": "passed"
+    },
+    {
+      "name": "anonymous cannot read private workflow",
+      "result": "passed"
+    },
+    {
+      "name": "anonymous cannot read draft article directly",
+      "result": "passed"
+    },
+    {
+      "name": "anonymous privileged content RPC rejected",
+      "result": "passed"
+    },
+    {
+      "name": "non-admin cannot read the existing private file",
+      "result": "passed"
+    },
+    {
+      "name": "non-admin cannot read private workflow",
+      "result": "passed"
+    },
+    {
+      "name": "non-admin cannot read draft article directly",
+      "result": "passed"
+    },
+    {
+      "name": "non-admin privileged content RPC rejected",
+      "result": "passed"
+    }
+  ],
+  "status": "passed",
+  "business_mutations": 0,
+  "fixture_media": "b0684f53-b52e-4394-beb1-c427020467da"
+}

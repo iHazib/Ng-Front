@@ -1,0 +1,30 @@
+{
+  "engine": "PostgreSQL 16.11, compiled by Visual C++ build 1944, 64-bit",
+  "migrations": [
+    "202610050001_catalog.sql",
+    "202610050002_commerce_content.sql",
+    "202610050003_security_publication.sql",
+    "202610050004_access_import.sql",
+    "202610050005_taxonomy.sql",
+    "202610050006_invariants.sql",
+    "202610050007_media_service.sql",
+    "202610060008_daily_product_editor.sql",
+    "202610070009_public_storefront.sql",
+    "202610070010_content_cms.sql",
+    "202610070011_customer_reviews.sql",
+    "202610080012_product_markdown.sql"
+  ],
+  "installation_mode": "exact_incremental_012_with_001_011_base",
+  "source_rows": 121,
+  "permission_tests": "passed",
+  "supabase_auth_service": "not tested; auth.uid test double",
+  "supabase_storage_service": "not tested; table/policy test double",
+  "network_provider_operations": 0,
+  "production_imports": 0,
+  "exact_file": "supabase/sql-editor/10_install_product_markdown_clean.sql",
+  "exact_sha256": "2f5df9628568e304f21250379ca1b993db4c8a05b4f2c03a3221cbcd404c1002",
+  "all_existing_columns_and_rows_unchanged": true,
+  "repeat_install_refusal": "passed",
+  "markdown_persistence_and_permissions": "passed",
+  "evidence": "database-test-4b78fd2a65d2"
+}

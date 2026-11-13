@@ -1,0 +1,140 @@
+{
+  "kind": "real Next/Chrome with mocked deals/cart/media responses; actual hosted Auth read-only",
+  "live": [
+    {
+      "name": "anonymous deal API denied 1440",
+      "passed": true
+    },
+    {
+      "name": "admin Auth/server membership 1440",
+      "passed": true
+    },
+    {
+      "name": "deal mutation missing CSRF denied 1440",
+      "passed": true
+    },
+    {
+      "name": "private deal response uncached 1440",
+      "passed": true
+    },
+    {
+      "name": "anonymous deal API denied 390",
+      "passed": true
+    },
+    {
+      "name": "admin Auth/server membership 390",
+      "passed": true
+    },
+    {
+      "name": "deal mutation missing CSRF denied 390",
+      "passed": true
+    },
+    {
+      "name": "private deal response uncached 390",
+      "passed": true
+    }
+  ],
+  "mock": [
+    {
+      "name": "exact option and repeated SKU quantity 1440",
+      "passed": true
+    },
+    {
+      "name": "draft PKR and aggregated component payload 1440",
+      "passed": true
+    },
+    {
+      "name": "private pending image before explicit approval 1440",
+      "passed": true
+    },
+    {
+      "name": "ordinary save keeps published intent 1440",
+      "passed": true
+    },
+    {
+      "name": "responsive deal editor fits 1440",
+      "passed": true
+    },
+    {
+      "name": "deal bag displays exact components 1440",
+      "passed": true
+    },
+    {
+      "name": "deal bag survives navigation and reload 1440",
+      "passed": true
+    },
+    {
+      "name": "responsive deal bag fits 1440",
+      "passed": true
+    },
+    {
+      "name": "mixed checkout sends typed identities and current expectations 1440",
+      "passed": true
+    },
+    {
+      "name": "mixed confirmation keeps deal component snapshot 1440",
+      "passed": true
+    },
+    {
+      "name": "savings uses supplied standalone total 1440",
+      "passed": true
+    },
+    {
+      "name": "responsive deal detail fits 1440",
+      "passed": true
+    },
+    {
+      "name": "exact option and repeated SKU quantity 390",
+      "passed": true
+    },
+    {
+      "name": "draft PKR and aggregated component payload 390",
+      "passed": true
+    },
+    {
+      "name": "private pending image before explicit approval 390",
+      "passed": true
+    },
+    {
+      "name": "ordinary save keeps published intent 390",
+      "passed": true
+    },
+    {
+      "name": "responsive deal editor fits 390",
+      "passed": true
+    },
+    {
+      "name": "deal bag displays exact components 390",
+      "passed": true
+    },
+    {
+      "name": "deal bag survives navigation and reload 390",
+      "passed": true
+    },
+    {
+      "name": "responsive deal bag fits 390",
+      "passed": true
+    },
+    {
+      "name": "mixed checkout sends typed identities and current expectations 390",
+      "passed": true
+    },
+    {
+      "name": "mixed confirmation keeps deal component snapshot 390",
+      "passed": true
+    },
+    {
+      "name": "savings uses supplied standalone total 390",
+      "passed": true
+    },
+    {
+      "name": "responsive deal detail fits 390",
+      "passed": true
+    }
+  ],
+  "pending": [
+    "Hosted 017 deal CRUD, private Storage/Cloudinary owner associations and mixed-cart/manual-payment lifecycle require migration application."
+  ],
+  "hostedDealEndpoint": 200,
+  "status": "passed_with_hosted_017_pending"
+}

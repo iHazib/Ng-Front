@@ -1,0 +1,139 @@
+{
+  "kind": "actual_content_supabase_cloudinary_next_chrome",
+  "checked_at": "2026-10-07T12:15:11.276Z",
+  "status": "passed",
+  "checks": [
+    {
+      "name": "anonymous content admin access rejected",
+      "result": "passed"
+    },
+    {
+      "name": "actual browser creates and edits a draft",
+      "result": "passed"
+    },
+    {
+      "name": "draft article absent from public RPC",
+      "result": "passed"
+    },
+    {
+      "name": "ordinary Save preserves draft status",
+      "result": "passed"
+    },
+    {
+      "name": "stale browser edit rejected with entered text retained",
+      "result": "passed"
+    },
+    {
+      "name": "draft article URL returns 404",
+      "result": "passed"
+    },
+    {
+      "name": "cover private upload has article ownership",
+      "result": "passed"
+    },
+    {
+      "name": "cover explicit approval creates article association",
+      "result": "passed"
+    },
+    {
+      "name": "inline private upload has article ownership",
+      "result": "passed"
+    },
+    {
+      "name": "inline explicit approval creates article association",
+      "result": "passed"
+    },
+    {
+      "name": "actual browser publishes synthetic article",
+      "result": "passed"
+    },
+    {
+      "name": "published article renders approved inline image",
+      "result": "passed"
+    },
+    {
+      "name": "real Cloudinary inline image decodes",
+      "result": "passed"
+    },
+    {
+      "name": "ordinary published edit preserves visibility and freshness",
+      "result": "passed"
+    },
+    {
+      "name": "stored rich text sanitized",
+      "result": "passed"
+    },
+    {
+      "name": "invalid published Save rolls back without unpublishing",
+      "result": "passed"
+    },
+    {
+      "name": "actual homepage ordering and per-article themes",
+      "result": "passed"
+    },
+    {
+      "name": "actual homepage slideshow contains selected article",
+      "result": "passed"
+    },
+    {
+      "name": "homepage upload has true selection owner and no product",
+      "result": "passed"
+    },
+    {
+      "name": "selected theme colour follows article order",
+      "result": "passed"
+    },
+    {
+      "name": "mobile slideshow has no page overflow",
+      "result": "passed"
+    },
+    {
+      "name": "hidden article excluded from public and homepage RPC",
+      "result": "passed"
+    },
+    {
+      "name": "ordinary Save preserves Hidden and public exclusion",
+      "result": "passed"
+    },
+    {
+      "name": "actual browser confirmed deletion retires article",
+      "result": "passed"
+    },
+    {
+      "name": "all pre-existing catalog/content/media rows preserved",
+      "result": "passed"
+    }
+  ],
+  "pending": [],
+  "fixtures": [
+    {
+      "id": "180d3322-d414-4d83-9aee-2d518693f714",
+      "slug": "cms7fc409e8e62b",
+      "media": [
+        "02aad8e3-5d38-497a-97d0-4b98da70a2df",
+        "5c178c0f-6c95-4480-a6a2-66470e5fb127",
+        "35cee4c6-334e-4ee0-96a5-fda6b9eeb294"
+      ],
+      "deleted": true,
+      "homepageId": "0d1e704c-00d4-44f3-9b8c-13cf3289df7b",
+      "cleaned": [
+        "02aad8e3-5d38-497a-97d0-4b98da70a2df",
+        "5c178c0f-6c95-4480-a6a2-66470e5fb127",
+        "35cee4c6-334e-4ee0-96a5-fda6b9eeb294"
+      ]
+    },
+    {
+      "id": "75f9a29c-5111-4509-9872-2276e192155d",
+      "slug": "cms7fc409e8e62b-second",
+      "media": [],
+      "deleted": true,
+      "homepageId": "1ff25656-831b-4345-9750-52e28667dc6f"
+    }
+  ],
+  "rpc_http": 200,
+  "preservation": {
+    "rows": 833,
+    "tables": 17,
+    "status": "passed"
+  }
+}

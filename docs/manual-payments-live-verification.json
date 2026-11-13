@@ -1,0 +1,352 @@
+{
+  "stage": "manual_advance_payments_016",
+  "kind": "actual_Chrome_Next_Supabase",
+  "status": "failed",
+  "checks": [
+    {
+      "name": "anonymous list API denied",
+      "result": "passed"
+    },
+    {
+      "name": "actual non-admin login denied",
+      "result": "passed"
+    },
+    {
+      "name": "actual admin browser login works",
+      "result": "passed"
+    },
+    {
+      "name": "CSRF-less dismissal denied",
+      "result": "passed"
+    },
+    {
+      "name": "private list responses uncached",
+      "result": "passed"
+    },
+    {
+      "name": "anonymous hosted RPC admin_catalog_list denied",
+      "result": "passed"
+    },
+    {
+      "name": "anonymous hosted RPC admin_catalog_filter_options denied",
+      "result": "passed"
+    },
+    {
+      "name": "anonymous hosted RPC admin_catalog_reminder denied",
+      "result": "passed"
+    },
+    {
+      "name": "anonymous direct private API read denied",
+      "result": "passed"
+    },
+    {
+      "name": "non-admin hosted RPC admin_catalog_list denied",
+      "result": "passed"
+    },
+    {
+      "name": "non-admin hosted RPC admin_catalog_filter_options denied",
+      "result": "passed"
+    },
+    {
+      "name": "non-admin hosted RPC admin_catalog_reminder denied",
+      "result": "passed"
+    },
+    {
+      "name": "non-admin direct private API read denied",
+      "result": "passed"
+    },
+    {
+      "name": "synthetic product created",
+      "result": "passed"
+    },
+    {
+      "name": "actual hosted last-unit concurrency commits exactly one order",
+      "result": "passed"
+    },
+    {
+      "name": "duplicate guest request returns same order",
+      "result": "passed"
+    },
+    {
+      "name": "one last-unit reservation",
+      "result": "passed"
+    },
+    {
+      "name": "cancellation works",
+      "result": "passed"
+    },
+    {
+      "name": "cancellation retry releases once",
+      "result": "passed"
+    },
+    {
+      "name": "multi-item unavailable order rolls back",
+      "result": "passed"
+    },
+    {
+      "name": "stale-price order rejected",
+      "result": "passed"
+    },
+    {
+      "name": "unavailable variant rejected",
+      "result": "passed"
+    },
+    {
+      "name": "actual bag persists and does not reserve",
+      "result": "passed"
+    },
+    {
+      "name": "actual guest form creates server-calculated snapshot",
+      "result": "passed"
+    },
+    {
+      "name": "another guest cannot read confirmation",
+      "result": "passed"
+    },
+    {
+      "name": "order number alone rejected",
+      "result": "passed"
+    },
+    {
+      "name": "anonymous admin orders denied",
+      "result": "passed"
+    },
+    {
+      "name": "actual private proof submitted without Paid",
+      "result": "passed"
+    },
+    {
+      "name": "owning guest private proof delivery",
+      "result": "passed"
+    },
+    {
+      "name": "other guest private proof denied",
+      "result": "passed"
+    },
+    {
+      "name": "authorized admin private proof delivery",
+      "result": "passed"
+    },
+    {
+      "name": "unpaid Confirm disabled in actual browser",
+      "result": "passed"
+    },
+    {
+      "name": "synthetic actual hosted manual receipt recorded",
+      "result": "passed"
+    },
+    {
+      "name": "actual admin Confirm flow",
+      "result": "passed"
+    },
+    {
+      "name": "stale admin transition rejected",
+      "result": "passed"
+    },
+    {
+      "name": "actual admin Dispatch and idempotent retry",
+      "result": "passed"
+    },
+    {
+      "name": "actual Complete does not deduct twice or invent extra receipts",
+      "result": "passed"
+    },
+    {
+      "name": "temporary development payment hold created",
+      "result": "passed"
+    },
+    {
+      "name": "actual expiry task releases exactly once",
+      "result": "passed"
+    },
+    {
+      "name": "actual late receipt retained independently of readiness",
+      "result": "passed"
+    },
+    {
+      "name": "actual explicit late allocation without duplicate receipt",
+      "result": "passed"
+    },
+    {
+      "name": "actual reused receiving-account reference not credited again",
+      "result": "passed"
+    },
+    {
+      "name": "paid cancellation releases but retains received funds",
+      "result": "passed"
+    },
+    {
+      "name": "synthetic jazzcash order placed",
+      "result": "passed"
+    },
+    {
+      "name": "browser cannot override fees, accounts, payment/fulfilment or deadline",
+      "result": "passed"
+    },
+    {
+      "name": "object-injected/unconfigured payment method rejected",
+      "result": "passed"
+    },
+    {
+      "name": "COD method unavailable",
+      "result": "passed"
+    },
+    {
+      "name": "unpaid direct Confirm denied",
+      "result": "passed"
+    },
+    {
+      "name": "unpaid direct Dispatch denied",
+      "result": "passed"
+    },
+    {
+      "name": "synthetic reservation released",
+      "result": "passed"
+    },
+    {
+      "name": "synthetic easypaisa order placed",
+      "result": "passed"
+    },
+    {
+      "name": "actual Easypaisa private upload",
+      "result": "passed"
+    },
+    {
+      "name": "private upload same-ID retry is idempotent",
+      "result": "passed"
+    },
+    {
+      "name": "proof upload alone does not extend hold",
+      "result": "passed"
+    },
+    {
+      "name": "claimed mismatch and identical proof flagged without automatic Paid",
+      "result": "passed"
+    },
+    {
+      "name": "same submission retry does not duplicate",
+      "result": "passed"
+    },
+    {
+      "name": "cross-order proof submission denied",
+      "result": "passed"
+    },
+    {
+      "name": "proof remains private and has no Cloudinary identity",
+      "result": "passed"
+    },
+    {
+      "name": "public media publish action rejects payment proof",
+      "result": "passed"
+    },
+    {
+      "name": "verification without account-history acknowledgement denied",
+      "result": "passed"
+    },
+    {
+      "name": "underpayment recorded, not Paid",
+      "result": "passed"
+    },
+    {
+      "name": "distinct partial receipts sum to exact full amount",
+      "result": "passed"
+    },
+    {
+      "name": "admin verification retry credits once",
+      "result": "passed"
+    },
+    {
+      "name": "same reference on different payment service remains valid",
+      "result": "passed"
+    },
+    {
+      "name": "synthetic reservation released",
+      "result": "passed"
+    },
+    {
+      "name": "synthetic jazzcash order placed",
+      "result": "passed"
+    },
+    {
+      "name": "JazzCash reference-only submission under review",
+      "result": "passed"
+    },
+    {
+      "name": "overpayment retained and flagged, not Paid",
+      "result": "passed"
+    },
+    {
+      "name": "synthetic reservation released",
+      "result": "passed"
+    },
+    {
+      "name": "synthetic bank-transfer order placed",
+      "result": "passed"
+    },
+    {
+      "name": "another real private proof uploaded",
+      "result": "passed"
+    },
+    {
+      "name": "receiving-account reference cannot credit a second order",
+      "result": "passed"
+    },
+    {
+      "name": "actual browser Request correction",
+      "result": "passed"
+    },
+    {
+      "name": "actual browser Reject submission releases unpaid order",
+      "result": "passed"
+    },
+    {
+      "name": "audited synthetic count prepares two late holds",
+      "result": "failed"
+    },
+    {
+      "name": "every checked original row and homepage selection preserved",
+      "result": "passed"
+    }
+  ],
+  "pending": [],
+  "fixtures": [
+    {
+      "productId": "a360ca3a-858e-4379-9aa8-5de971eeb1d6",
+      "marker": "5a922218-b741-4718-b973-e6ba2ed24319",
+      "mediaId": "046b200e-8091-4b1d-97f4-db0ceec13eae",
+      "variantIds": [
+        "a5ecee78-d977-4d32-a56c-a93d4be20669",
+        "9421417f-cf86-4527-9fbf-3092fc32f796",
+        "c9f8c05a-5f33-45cb-b914-4b66fdd628f9"
+      ],
+      "hidden": true,
+      "mediaCleaned": true
+    }
+  ],
+  "preservation": {
+    "tables": 37,
+    "rows": 1313,
+    "status": "passed"
+  },
+  "taxonomy": {
+    "brand": "co-5a922218-b741-4718-b973-e6ba2ed24319",
+    "category": "co-cat-5a922218-b741-4718-b973-e6ba2ed24319"
+  },
+  "orders": [
+    "b0b287b3-62af-4bba-877b-8f9b1f0a05ae",
+    "cc10303f-821e-4392-95de-019cd19fc5ab",
+    "04258ba2-fba2-4b9d-bd03-a498451e85f7",
+    "293ba7f3-f2ff-464f-bfed-575a1f6c27a4",
+    "43993528-9703-454b-984f-fa41f77055fd",
+    "468b846a-492d-411c-9555-59926b3d7688",
+    "8b4695d8-e30c-4ce6-84c9-ed7107786ec6"
+  ],
+  "privateProofIds": [
+    "768e2f59-4efe-447f-837a-ef971a5be597",
+    "a680c1c9-1773-4b7e-b78e-fda2115f3ede",
+    "c6d9012d-b00d-437c-9a97-a355db34a332"
+  ],
+  "expiryDeadline": "2026-10-15T16:55:27.990561+00:00",
+  "error": "Live verification stopped; provider payloads and credentials suppressed.",
+  "privateProofsCleaned": 3
+}

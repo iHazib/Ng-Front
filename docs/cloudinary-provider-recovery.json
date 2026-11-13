@@ -1,0 +1,22 @@
+{
+  "kind": "actual_provider_recovery",
+  "attempts": [
+    {
+      "fixture_product_id": "89ff7061-75a4-4ddd-90f1-4f27197a9061",
+      "result": "runner fixed to accept empty HTTP 201 response; exact synthetic product archived; no media intent reached"
+    },
+    {
+      "fixture_media_id": "95f6eb7e-5712-4433-b7b1-f7bbb4d3c798",
+      "fixture_product_id": "9c0d4444-7419-4a15-856f-f214174a589b",
+      "result": "upload through delivery passed; cleanup reconciliation succeeded: Cloudinary lookup 404, Storage delete 200, private read 400 not-found, database deletion transition 200",
+      "root_cause": "initial cleanup error was suppressed by runner; exact cause not established"
+    },
+    {
+      "fixture_media_id": "9adedcc2-7475-439b-8f79-7096e9275bff",
+      "fixture_product_id": "611b04d9-c704-4de9-9983-8dfc72eda1b7",
+      "result": "Cleanup reconciled after fix: authoritative Storage listing confirms removal and database tombstone completed.",
+      "root_cause": "Cleanup previously used a cached download to confirm deletion."
+    }
+  ],
+  "real_catalog_imported": false
+}

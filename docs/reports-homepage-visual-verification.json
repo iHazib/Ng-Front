@@ -1,0 +1,361 @@
+{
+  "browser": "Installed Google Chrome / Chromium",
+  "motion": "reduced for deterministic comparison",
+  "comparisons": [
+    {
+      "viewport": "desktop",
+      "state": "bag",
+      "size": [
+        490,
+        1000
+      ],
+      "referenceSize": [
+        490,
+        1000
+      ],
+      "identicalPixels": true,
+      "meanAbsoluteChannelDifference": 0.0,
+      "differenceBounds": null
+    },
+    {
+      "viewport": "desktop",
+      "state": "category-0",
+      "size": [
+        1440,
+        801
+      ],
+      "referenceSize": [
+        1440,
+        801
+      ],
+      "identicalPixels": true,
+      "meanAbsoluteChannelDifference": 0.0,
+      "differenceBounds": null
+    },
+    {
+      "viewport": "desktop",
+      "state": "category-1",
+      "size": [
+        1440,
+        801
+      ],
+      "referenceSize": [
+        1440,
+        801
+      ],
+      "identicalPixels": true,
+      "meanAbsoluteChannelDifference": 0.0,
+      "differenceBounds": null
+    },
+    {
+      "viewport": "desktop",
+      "state": "category-2",
+      "size": [
+        1440,
+        801
+      ],
+      "referenceSize": [
+        1440,
+        801
+      ],
+      "identicalPixels": true,
+      "meanAbsoluteChannelDifference": 0.0,
+      "differenceBounds": null
+    },
+    {
+      "viewport": "desktop",
+      "state": "category-3",
+      "size": [
+        1440,
+        801
+      ],
+      "referenceSize": [
+        1440,
+        801
+      ],
+      "identicalPixels": true,
+      "meanAbsoluteChannelDifference": 0.0,
+      "differenceBounds": null
+    },
+    {
+      "viewport": "desktop",
+      "state": "category-4",
+      "size": [
+        1440,
+        801
+      ],
+      "referenceSize": [
+        1440,
+        801
+      ],
+      "identicalPixels": true,
+      "meanAbsoluteChannelDifference": 0.0,
+      "differenceBounds": null
+    },
+    {
+      "viewport": "desktop",
+      "state": "edit-0",
+      "size": [
+        1440,
+        411
+      ],
+      "referenceSize": [
+        1440,
+        411
+      ],
+      "identicalPixels": true,
+      "meanAbsoluteChannelDifference": 0.0,
+      "differenceBounds": null
+    },
+    {
+      "viewport": "desktop",
+      "state": "edit-1",
+      "size": [
+        1440,
+        411
+      ],
+      "referenceSize": [
+        1440,
+        411
+      ],
+      "identicalPixels": true,
+      "meanAbsoluteChannelDifference": 0.0,
+      "differenceBounds": null
+    },
+    {
+      "viewport": "desktop",
+      "state": "edit-2",
+      "size": [
+        1440,
+        411
+      ],
+      "referenceSize": [
+        1440,
+        411
+      ],
+      "identicalPixels": true,
+      "meanAbsoluteChannelDifference": 0.0,
+      "differenceBounds": null
+    },
+    {
+      "viewport": "desktop",
+      "state": "hero-0",
+      "size": [
+        1440,
+        677
+      ],
+      "referenceSize": [
+        1440,
+        677
+      ],
+      "identicalPixels": true,
+      "meanAbsoluteChannelDifference": 0.0,
+      "differenceBounds": null
+    },
+    {
+      "viewport": "desktop",
+      "state": "hero-1",
+      "size": [
+        1440,
+        677
+      ],
+      "referenceSize": [
+        1440,
+        677
+      ],
+      "identicalPixels": true,
+      "meanAbsoluteChannelDifference": 0.0,
+      "differenceBounds": null
+    },
+    {
+      "viewport": "desktop",
+      "state": "hero-2",
+      "size": [
+        1440,
+        677
+      ],
+      "referenceSize": [
+        1440,
+        677
+      ],
+      "identicalPixels": true,
+      "meanAbsoluteChannelDifference": 0.0,
+      "differenceBounds": null
+    },
+    {
+      "viewport": "desktop",
+      "state": "hero-3",
+      "size": [
+        1440,
+        677
+      ],
+      "referenceSize": [
+        1440,
+        677
+      ],
+      "identicalPixels": true,
+      "meanAbsoluteChannelDifference": 0.0,
+      "differenceBounds": null
+    },
+    {
+      "viewport": "desktop",
+      "state": "home",
+      "size": [
+        1440,
+        5948
+      ],
+      "referenceSize": [
+        1440,
+        5948
+      ],
+      "identicalPixels": false,
+      "meanAbsoluteChannelDifference": 0.01711126055443473,
+      "differenceBounds": [
+        72,
+        193,
+        1367,
+        3811
+      ]
+    },
+    {
+      "viewport": "desktop",
+      "state": "menu-0",
+      "size": [
+        1296,
+        382
+      ],
+      "referenceSize": [
+        1296,
+        382
+      ],
+      "identicalPixels": true,
+      "meanAbsoluteChannelDifference": 0.0,
+      "differenceBounds": null
+    },
+    {
+      "viewport": "desktop",
+      "state": "menu-1",
+      "size": [
+        1296,
+        434
+      ],
+      "referenceSize": [
+        1296,
+        434
+      ],
+      "identicalPixels": true,
+      "meanAbsoluteChannelDifference": 0.0,
+      "differenceBounds": null
+    },
+    {
+      "viewport": "desktop",
+      "state": "menu-2",
+      "size": [
+        1296,
+        330
+      ],
+      "referenceSize": [
+        1296,
+        330
+      ],
+      "identicalPixels": true,
+      "meanAbsoluteChannelDifference": 0.0,
+      "differenceBounds": null
+    },
+    {
+      "viewport": "desktop",
+      "state": "menu-3",
+      "size": [
+        1296,
+        356
+      ],
+      "referenceSize": [
+        1296,
+        356
+      ],
+      "identicalPixels": true,
+      "meanAbsoluteChannelDifference": 0.0,
+      "differenceBounds": null
+    },
+    {
+      "viewport": "desktop",
+      "state": "menu-4",
+      "size": [
+        1296,
+        252
+      ],
+      "referenceSize": [
+        1296,
+        252
+      ],
+      "identicalPixels": true,
+      "meanAbsoluteChannelDifference": 0.0,
+      "differenceBounds": null
+    },
+    {
+      "viewport": "desktop",
+      "state": "product-0",
+      "size": [
+        309,
+        386
+      ],
+      "referenceSize": [
+        309,
+        386
+      ],
+      "identicalPixels": true,
+      "meanAbsoluteChannelDifference": 0.0,
+      "differenceBounds": null
+    },
+    {
+      "viewport": "desktop",
+      "state": "product-1",
+      "size": [
+        309,
+        386
+      ],
+      "referenceSize": [
+        309,
+        386
+      ],
+      "identicalPixels": true,
+      "meanAbsoluteChannelDifference": 0.0,
+      "differenceBounds": null
+    },
+    {
+      "viewport": "desktop",
+      "state": "product-2",
+      "size": [
+        309,
+        386
+      ],
+      "referenceSize": [
+        309,
+        386
+      ],
+      "identicalPixels": true,
+      "meanAbsoluteChannelDifference": 0.0,
+      "differenceBounds": null
+    },
+    {
+      "viewport": "desktop",
+      "state": "search",
+      "size": [
+        1440,
+        362
+      ],
+      "referenceSize": [
+        1440,
+        362
+      ],
+      "identicalPixels": false,
+      "meanAbsoluteChannelDifference": 0.182271204215265,
+      "differenceBounds": [
+        139,
+        317,
+        284,
+        335
+      ]
+    }
+  ]
+}

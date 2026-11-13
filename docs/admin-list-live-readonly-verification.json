@@ -1,0 +1,46 @@
+{
+  "kind": "actual_Chrome_Next_Supabase_read_only",
+  "mutations": 0,
+  "checks": [
+    {
+      "name": "cleaned synthetic products isolated from anonymous public reads",
+      "result": "passed"
+    },
+    {
+      "name": "cleaned synthetic variants isolated from anonymous public reads",
+      "result": "passed"
+    },
+    {
+      "name": "trigram spelling variation matches assigned brand and concern",
+      "result": "passed"
+    },
+    {
+      "name": "unsupported suitability is not invented",
+      "result": "passed"
+    },
+    {
+      "name": "browser combined brand/additional-category/facet controls and count",
+      "result": "passed"
+    },
+    {
+      "name": "removed media immediately restores missing-image badge",
+      "result": "passed"
+    },
+    {
+      "name": "browser advances a bounded server page",
+      "result": "passed"
+    }
+  ],
+  "limitations": [
+    "An exact SKU alias also returns the closely spelled sibling SKU because trigram matching applies to the shared SKU prefix. Alias plus shade/size identifies the intended option. Exact identifier priority requires a future database correction; no hosted SQL was changed."
+  ],
+  "exactAlias": {
+    "matchingRows": 2,
+    "labels": [
+      "Large",
+      "Small"
+    ]
+  },
+  "phase": "browser pagination",
+  "status": "passed_with_limitation"
+}

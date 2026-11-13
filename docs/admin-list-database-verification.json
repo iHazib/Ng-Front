@@ -1,0 +1,15 @@
+{
+  "kind": "disposable_PostgreSQL_with_Auth_Storage_doubles",
+  "exact_file": "supabase/sql-editor/11_install_admin_catalog_list_clean.sql",
+  "exact_sha256": "c570fff73caf5395271f6e5cde9bce658cb7e5359c13e301684cb23be2584310",
+  "all_pre_existing_business_rows_unchanged": true,
+  "repeat_install_refusal": "passed",
+  "permissions_search_filters_reminders": "passed",
+  "execution": "psql -X -v ON_ERROR_STOP=1 -f",
+  "evidence": "database-test-0cc53f2d96da",
+  "hosted": "not verified by this local test",
+  "targeted_freshness_regressions": "passed",
+  "targeted_freshness_assertions": 29,
+  "preflight_postflight": "passed",
+  "canonical_sha256": "de9272e1f837c654aa613e84fbabc8e1e12fc6248475764573a6a153d46e51b0"
+}

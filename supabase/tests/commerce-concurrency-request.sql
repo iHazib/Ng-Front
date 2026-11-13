@@ -1,0 +1,2 @@
+set role service_role;
+select public.place_guest_order('ORDER_ID',repeat('a',64),repeat('b',64),'[{"id":"15151515-0000-4000-8000-000000000002","quantity":1,"expectedPriceMinor":100000}]','{"name":"Synthetic Guest","phone":"+923001234567","address":"Synthetic address only","city":"Test City","email":""}','{"feeMinor":0,"label":"Development only"}','{"allocation":"accepted","label":"Development COD"}','{"mode":"development","version":"concurrency"}');

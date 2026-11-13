@@ -1,0 +1,8 @@
+{
+  "kind": "actual_hosted_read_only_cleanup_confirmation",
+  "synthetic_products_archived": 4,
+  "test_media_deleted": 2,
+  "anonymous_visible_synthetic_products": 0,
+  "status": "passed",
+  "note": "Audit/inventory/import histories and archived fixture identities retained; no business rows deleted."
+}

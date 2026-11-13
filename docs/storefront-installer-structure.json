@@ -1,0 +1,45 @@
+{
+  "status": "passed",
+  "source": "supabase/migrations/202610070009_public_storefront.sql",
+  "files": [
+    "supabase/sql-editor/07_install_public_storefront.sql",
+    "supabase/sql-editor/07_install_public_storefront_clean.sql"
+  ],
+  "sha256": "99e5b4c5340b24f7465c3fc34dce1d01f893c7636718e4ca2e958e65d2d74f4a",
+  "migration_receipt_sha256": "f7d321de75bb11b75d6540eef0a5de4d69ddf6f44c6d0f9e4c45dce8594a6588",
+  "counts": {
+    "functions": 6,
+    "navigation_brands": 1,
+    "receipt_inserts": 1,
+    "receipt_values": 1,
+    "final_selects": 1,
+    "transactions": 1,
+    "commits": 1
+  },
+  "function_declarations": [
+    "app_private.refresh_storefront_search",
+    "app_private.refresh_storefront_trigger",
+    "app_private.matches_storefront_query",
+    "app_private.storefront_filter_match",
+    "public.storefront_catalog",
+    "public.storefront_navigation"
+  ],
+  "ordered_delimiters": [
+    "$preflight$",
+    "$preflight$",
+    "$refresh$",
+    "$refresh$",
+    "$trigger$",
+    "$trigger$",
+    "$triggers$",
+    "$triggers$",
+    "$match$",
+    "$match$",
+    "$filters$",
+    "$filters$",
+    "$catalog$",
+    "$catalog$",
+    "$navigation$",
+    "$navigation$"
+  ]
+}

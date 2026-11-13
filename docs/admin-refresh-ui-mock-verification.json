@@ -1,0 +1,99 @@
+{
+  "kind": "actual_next_chrome_mock_provider",
+  "checks": [
+    {
+      "name": "unauthenticated catalog rejects access",
+      "result": "passed"
+    },
+    {
+      "name": "existing description and usage remain exact in Write fields",
+      "result": "passed"
+    },
+    {
+      "name": "ordinary browser save preserves untouched legacy CRLF text exactly",
+      "result": "passed"
+    },
+    {
+      "name": "Markdown preview supports headings bold lists and steps",
+      "result": "passed"
+    },
+    {
+      "name": "Markdown preview escapes HTML rejects unsafe links and embedded images",
+      "result": "passed"
+    },
+    {
+      "name": "unsaved feedback appears",
+      "result": "passed"
+    },
+    {
+      "name": "single-product save persists all three exact Markdown strings",
+      "result": "passed"
+    },
+    {
+      "name": "two-variant UI retains SKU price stock and labels",
+      "result": "passed"
+    },
+    {
+      "name": "mobile product editor has no document overflow",
+      "result": "passed"
+    },
+    {
+      "name": "draft preview shows current content without publication",
+      "result": "passed"
+    },
+    {
+      "name": "public product renders three labelled safe Markdown sections",
+      "result": "passed"
+    },
+    {
+      "name": "product content mobile layout has no overflow",
+      "result": "passed"
+    },
+    {
+      "name": "empty optional content sections are hidden",
+      "result": "passed"
+    },
+    {
+      "name": "product list retains fractional PKR price",
+      "result": "passed"
+    },
+    {
+      "name": "product list has price stock visibility and separate tools",
+      "result": "passed"
+    },
+    {
+      "name": "visibility filter is sent to provider",
+      "result": "passed"
+    },
+    {
+      "name": "article editing preserves rich text and draft visibility",
+      "result": "passed"
+    },
+    {
+      "name": "article preview works without publishing",
+      "result": "passed"
+    },
+    {
+      "name": "article editor has no mobile page overflow",
+      "result": "passed"
+    },
+    {
+      "name": "homepage selection order and theme remain functional",
+      "result": "passed"
+    },
+    {
+      "name": "homepage management has no mobile overflow",
+      "result": "passed"
+    },
+    {
+      "name": "redesigned review moderation retains approval workflow",
+      "result": "passed"
+    },
+    {
+      "name": "review management has no mobile overflow",
+      "result": "passed"
+    }
+  ],
+  "status": "passed",
+  "limitations": "Local Auth/PostgREST doubles; database semantics separately tested against disposable PostgreSQL. No hosted writes or real media uploads."
+}

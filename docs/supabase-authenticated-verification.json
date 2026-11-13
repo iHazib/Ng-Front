@@ -1,0 +1,222 @@
+{
+  "checks": [
+    {
+      "check": "admin actual password login",
+      "result": "passed",
+      "http_status": 200
+    },
+    {
+      "check": "admin Auth server validates token identity",
+      "result": "passed",
+      "http_status": 200
+    },
+    {
+      "check": "admin database membership",
+      "result": "passed",
+      "http_status": 200
+    },
+    {
+      "check": "non-admin actual password login",
+      "result": "passed",
+      "http_status": 200
+    },
+    {
+      "check": "non-admin Auth server validates token identity",
+      "result": "passed",
+      "http_status": 200
+    },
+    {
+      "check": "non-admin database membership",
+      "result": "passed",
+      "http_status": 200
+    },
+    {
+      "check": "actual server-only authorizeAdmin accepts admin",
+      "result": "passed"
+    },
+    {
+      "check": "actual server-only authorizeAdmin denies non-admin",
+      "result": "passed"
+    },
+    {
+      "check": "actual server-only authorizeAdmin rejects invalid token",
+      "result": "passed"
+    },
+    {
+      "check": "admin creates synthetic draft",
+      "result": "passed",
+      "http_status": 201
+    },
+    {
+      "check": "admin creates synthetic variant",
+      "result": "passed",
+      "http_status": 201
+    },
+    {
+      "check": "admin creates synthetic empty draft order",
+      "result": "passed",
+      "http_status": 201
+    },
+    {
+      "check": "actual searchAdminCatalog finds photo-free synthetic draft",
+      "result": "passed"
+    },
+    {
+      "check": "actual getAdminProduct reads synthetic draft",
+      "result": "passed"
+    },
+    {
+      "check": "actual publication wrapper reports draft blockers",
+      "result": "passed"
+    },
+    {
+      "check": "actual public-search wrapper hides known draft",
+      "result": "passed"
+    },
+    {
+      "check": "actual catalog wrapper denies non-admin",
+      "result": "passed"
+    },
+    {
+      "check": "anonymous cannot read known synthetic products",
+      "result": "passed",
+      "http_status": 200
+    },
+    {
+      "check": "anonymous cannot read known synthetic variants",
+      "result": "passed",
+      "http_status": 200
+    },
+    {
+      "check": "anonymous cannot read known synthetic orders",
+      "result": "passed",
+      "http_status": 401
+    },
+    {
+      "check": "anonymous cannot call admin search RPC",
+      "result": "passed",
+      "http_status": 401
+    },
+    {
+      "check": "non-admin cannot read known synthetic products",
+      "result": "passed",
+      "http_status": 200
+    },
+    {
+      "check": "non-admin cannot read known synthetic variants",
+      "result": "passed",
+      "http_status": 200
+    },
+    {
+      "check": "non-admin cannot read known synthetic orders",
+      "result": "passed",
+      "http_status": 200
+    },
+    {
+      "check": "non-admin cannot call admin search RPC",
+      "result": "passed",
+      "http_status": 403
+    },
+    {
+      "check": "non-admin draft creation denied",
+      "result": "passed",
+      "http_status": 403
+    },
+    {
+      "check": "non-admin cannot modify known draft",
+      "result": "passed",
+      "http_status": 204
+    },
+    {
+      "check": "private membership schema not exposed",
+      "result": "passed",
+      "http_status": 406
+    },
+    {
+      "check": "admin uploads known private file",
+      "result": "passed",
+      "http_status": 200
+    },
+    {
+      "check": "admin downloads identical private bytes",
+      "result": "passed",
+      "http_status": 200
+    },
+    {
+      "check": "anonymous cannot download known private file",
+      "result": "passed",
+      "http_status": 400
+    },
+    {
+      "check": "anonymous cannot list known private file",
+      "result": "passed",
+      "http_status": 200
+    },
+    {
+      "check": "anonymous cannot sign private download URL",
+      "result": "passed",
+      "http_status": 400
+    },
+    {
+      "check": "anonymous cannot upload private file",
+      "result": "passed",
+      "http_status": 400
+    },
+    {
+      "check": "non-admin cannot download known private file",
+      "result": "passed",
+      "http_status": 400
+    },
+    {
+      "check": "non-admin cannot list known private file",
+      "result": "passed",
+      "http_status": 200
+    },
+    {
+      "check": "non-admin cannot sign private download URL",
+      "result": "passed",
+      "http_status": 400
+    },
+    {
+      "check": "non-admin cannot upload private file",
+      "result": "passed",
+      "http_status": 400
+    },
+    {
+      "check": "public download route cannot expose known private file",
+      "result": "passed",
+      "http_status": 400
+    },
+    {
+      "check": "synthetic Storage cleanup request",
+      "result": "passed",
+      "http_status": 200
+    },
+    {
+      "check": "synthetic Storage prefix is empty after cleanup",
+      "result": "passed",
+      "http_status": 200
+    },
+    {
+      "check": "synthetic variants cleanup fixture",
+      "result": "passed"
+    },
+    {
+      "check": "synthetic products cleanup fixture",
+      "result": "passed"
+    },
+    {
+      "check": "synthetic products cleanup denied-attempt",
+      "result": "passed"
+    },
+    {
+      "check": "synthetic orders cleanup fixture",
+      "result": "passed"
+    }
+  ],
+  "fixture_run_id": "3b9b5ca8-9187-4839-8e4e-82a9364141c5",
+  "real_catalog_imported": false,
+  "storefront_modified": false,
+  "wrapper_runtime": "Actual TypeScript source, Node 24 type stripping, react-server condition; no Next.js HTTP route added.",
+  "retained_records": "Append-only audit events and provider Auth logs from synthetic verification remain by design."
+}

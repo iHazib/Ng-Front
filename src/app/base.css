@@ -1,0 +1,4 @@
+/* Reference document behavior applies only while the storefront is mounted. */
+body { margin: 0; }
+.storefront { display: flow-root; }
+html:has(.storefront) { scroll-behavior: smooth; }

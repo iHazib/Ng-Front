@@ -1,0 +1,66 @@
+{
+  "kind": "actual hosted Auth/PostgREST/Storage, read-only security probes",
+  "checks": [
+    {
+      "name": "real private proof exists for authorized admin",
+      "passed": true
+    },
+    {
+      "name": "anonymous cannot download private proof",
+      "passed": true
+    },
+    {
+      "name": "anonymous cannot read pending proof metadata",
+      "passed": true
+    },
+    {
+      "name": "anonymous cannot read private order/customer rows",
+      "passed": true
+    },
+    {
+      "name": "anonymous direct review_manual_payment denied",
+      "passed": true
+    },
+    {
+      "name": "anonymous direct admin_payment_proof denied",
+      "passed": true
+    },
+    {
+      "name": "anonymous direct submit_manual_payment denied",
+      "passed": true
+    },
+    {
+      "name": "non-admin cannot download private proof",
+      "passed": true
+    },
+    {
+      "name": "non-admin cannot read pending proof metadata",
+      "passed": true
+    },
+    {
+      "name": "non-admin cannot read private order/customer rows",
+      "passed": true
+    },
+    {
+      "name": "non-admin direct review_manual_payment denied",
+      "passed": true
+    },
+    {
+      "name": "non-admin direct admin_payment_proof denied",
+      "passed": true
+    },
+    {
+      "name": "non-admin direct submit_manual_payment denied",
+      "passed": true
+    },
+    {
+      "name": "even admin generic order mutation cannot bypass workflow",
+      "passed": true
+    },
+    {
+      "name": "private proof cannot use public Storage delivery",
+      "passed": true
+    }
+  ],
+  "status": "passed"
+}

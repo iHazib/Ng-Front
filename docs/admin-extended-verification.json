@@ -1,0 +1,62 @@
+{
+  "kind": "actual_browser_and_supabase",
+  "status": "passed",
+  "checks": [
+    {
+      "name": "cross-origin request rejected even with a correct CSRF token",
+      "result": "passed"
+    },
+    {
+      "name": "synthetic fixture identity confirmed before changes",
+      "result": "passed"
+    },
+    {
+      "name": "audited positive stock adjustment",
+      "result": "passed"
+    },
+    {
+      "name": "stock retry returns same movement",
+      "result": "passed"
+    },
+    {
+      "name": "insufficient stock adjustment rejected",
+      "result": "passed"
+    },
+    {
+      "name": "audited stock cleanup restores zero",
+      "result": "passed"
+    },
+    {
+      "name": "compatible category/type and copy edit",
+      "result": "passed"
+    },
+    {
+      "name": "stale product revision rejected",
+      "result": "passed"
+    },
+    {
+      "name": "explicit evidence-backed concern assignment on synthetic product",
+      "result": "passed"
+    },
+    {
+      "name": "category-specific typed quantity facet",
+      "result": "passed"
+    },
+    {
+      "name": "unhide restores draft without publication",
+      "result": "passed"
+    },
+    {
+      "name": "manual homepage selection remains draft",
+      "result": "passed"
+    },
+    {
+      "name": "valid non-admin Auth token cannot access admin API",
+      "result": "passed"
+    },
+    {
+      "name": "private image route rejects non-admin token",
+      "result": "passed"
+    }
+  ]
+}

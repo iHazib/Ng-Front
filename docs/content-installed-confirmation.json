@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-07",
+  "source": "user SQL Editor confirmation",
+  "migration": "202610070010",
+  "checks": {
+    "content_present": true,
+    "homepage_media_rls": true,
+    "receipt_matches": true
+  },
+  "installer_rerun": false,
+  "anonymous_public_rpc_http": 200,
+  "canonical_hash": "fc887ea5842eaa16a3980a71c0960a6246cc9b5a4c99a2c90245dd22c2df7bc2"
+}

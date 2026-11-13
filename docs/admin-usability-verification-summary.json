@@ -1,0 +1,40 @@
+{
+  "status": "pending_development_migration_and_live_writes",
+  "implemented": [
+    "simplified daily fields",
+    "optional shade/size table",
+    "plain conditional warnings and publication checklist",
+    "clean image gallery",
+    "audited atomic stock-count/save migration",
+    "separate import tools/history/manual assignment"
+  ],
+  "passed": {
+    "lint": true,
+    "typecheck": true,
+    "production_build": true,
+    "security_media_unit_tests": 10,
+    "disposable_sql_editor_installation": true,
+    "daily_editor_sql_assertion_groups": 10,
+    "actual_browser_read_access_layout_checks": 12,
+    "homepage_browser_tests": 6,
+    "homepage_intentional_skips": 2,
+    "byte_identical_source_files": 64,
+    "reference_css_blocks": 14
+  },
+  "pending": [
+    "Apply development SQL Editor file 06 / migration 008",
+    "Actual browser single product and two-option creation/editing/save/stock/publication checks",
+    "Independent exercise of revised image-control UI",
+    "Earlier synthetic failed-image cleanup eligibility 2026-10-06T23:53:51.291Z",
+    "Live published/hidden preservation for single and two-option fixtures after corrected migration application"
+  ],
+  "notes": [
+    "Native database Auth/Storage are test doubles.",
+    "Security/media transport mocks are separate from actual browser Auth/PostgREST read tests.",
+    "No real catalog publication or source stock reconciliation performed.",
+    "No new dependency or lockfile rewrite.",
+    "Storefront and original assets preserved.",
+    "Ordinary Save preserves existing visibility; explicit Draft/Publish/Hide only. Invalid published edits roll back."
+  ],
+  "daily_editor_contract_version": 2
+}

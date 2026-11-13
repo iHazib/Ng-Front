@@ -1,0 +1,113 @@
+{
+  "kind": "actual hosted read-only API/Auth",
+  "date": "2026-10-18",
+  "roles": [
+    {
+      "role": "anonymous",
+      "records": [
+        {
+          "table": "product_media",
+          "http": 200,
+          "legacy_helper_denial": false
+        },
+        {
+          "table": "article_media",
+          "http": 200,
+          "legacy_helper_denial": false
+        },
+        {
+          "table": "homepage_selections",
+          "http": 200,
+          "legacy_helper_denial": false
+        },
+        {
+          "table": "homepage_media",
+          "http": 200,
+          "legacy_helper_denial": false
+        },
+        {
+          "table": "review_media",
+          "http": 200,
+          "legacy_helper_denial": false
+        }
+      ]
+    },
+    {
+      "role": "non-admin",
+      "records": [
+        {
+          "table": "product_media",
+          "http": 200,
+          "legacy_helper_denial": false
+        },
+        {
+          "table": "article_media",
+          "http": 200,
+          "legacy_helper_denial": false
+        },
+        {
+          "table": "homepage_selections",
+          "http": 200,
+          "legacy_helper_denial": false
+        },
+        {
+          "table": "homepage_media",
+          "http": 200,
+          "legacy_helper_denial": false
+        },
+        {
+          "table": "review_media",
+          "http": 200,
+          "legacy_helper_denial": false
+        }
+      ]
+    },
+    {
+      "role": "admin",
+      "records": [
+        {
+          "table": "product_media",
+          "http": 200,
+          "legacy_helper_denial": false
+        },
+        {
+          "table": "article_media",
+          "http": 200,
+          "legacy_helper_denial": false
+        },
+        {
+          "table": "homepage_selections",
+          "http": 200,
+          "legacy_helper_denial": false
+        },
+        {
+          "table": "homepage_media",
+          "http": 200,
+          "legacy_helper_denial": false
+        },
+        {
+          "table": "review_media",
+          "http": 200,
+          "legacy_helper_denial": false
+        }
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "name": "public storefront_deals reachable",
+      "passed": true,
+      "http": 200
+    },
+    {
+      "name": "public commerce_quote reachable",
+      "passed": true,
+      "http": 200
+    },
+    {
+      "name": "normal checkout read-only check unavailable",
+      "passed": false
+    }
+  ],
+  "writes": 0
+}

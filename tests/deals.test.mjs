@@ -1,0 +1,6 @@
+import {test} from 'node:test';import assert from 'node:assert/strict';import ts from 'typescript';import {readFile} from 'node:fs/promises';
+async function module(path){const source=await readFile(path,'utf8'),code=ts.transpileModule(source,{compilerOptions:{module:ts.ModuleKind.ESNext,target:ts.ScriptTarget.ES2022}}).outputText;return import('data:text/javascript;base64,'+Buffer.from(code).toString('base64'));}
+const {cartWireLine}=await module('src/lib/catalog/deals.ts'),{cartLines}=await module('src/lib/server/commerce/validation.ts');
+const id='17171717-0000-4000-8000-000000000001';
+test('deal and individual UUIDs remain distinct across bag persistence and checkout',()=>{const lines=cartLines([cartWireLine('deal:'+id,2,12345,7),cartWireLine(id,1,90000)]);assert.equal(lines[0].kind,'deal');assert.equal(lines[0].expectedDealRevision,7);assert.equal(lines[0].id,id);assert.equal(lines[1].kind,undefined);assert.equal(lines.length,2);});
+test('invalid deal options and duplicate lines cannot bypass bounded cart validation',()=>{for(const x of [[{id,kind:'deal',quantity:1,expectedDealRevision:0}],[{id,kind:'deal',quantity:100}],[{id,kind:'deal',quantity:1},{id,kind:'deal',quantity:2}],[{id,kind:'arbitrary',quantity:1}],[{id,kind:'deal',quantity:1,expectedPriceMinor:1.5}]])assert.throws(()=>cartLines(x));});

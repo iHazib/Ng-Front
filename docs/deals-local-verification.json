@@ -1,0 +1,33 @@
+{
+  "kind": "disposable PostgreSQL; Auth/Storage/media doubles",
+  "status": "passed",
+  "exact_file": "supabase/sql-editor/15_install_deals_clean.sql",
+  "installer_sha256": "a7228064c4fe7cc7ad5fc79148b0c2bdd60402905cc1c879a3dc9c79f1918f59",
+  "base_migrations": [
+    "202610050001_catalog.sql",
+    "202610050002_commerce_content.sql",
+    "202610050003_security_publication.sql",
+    "202610050004_access_import.sql",
+    "202610050005_taxonomy.sql",
+    "202610050006_invariants.sql",
+    "202610050007_media_service.sql",
+    "202610060008_daily_product_editor.sql",
+    "202610070009_public_storefront.sql",
+    "202610070010_content_cms.sql",
+    "202610070011_customer_reviews.sql",
+    "202610080012_product_markdown.sql",
+    "202610090013_admin_catalog_list.sql",
+    "202610120014_admin_exact_identifier_search.sql",
+    "202610130015_guest_commerce.sql",
+    "202610150016_manual_advance_payments.sql"
+  ],
+  "existing_values_preserved": true,
+  "repeat_refused": true,
+  "fifteen_flags": true,
+  "sql_regressions": "passed",
+  "concurrency": "individual versus deal, two deals, late payment stock race; independent PG sessions",
+  "manual_payment_regressions": "passed against 017",
+  "cleanup": "all race reservations released; disposable cluster stopped",
+  "hosted": "pending incremental 017 application",
+  "evidence": "database-test-94d12d6e0515"
+}

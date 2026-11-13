@@ -1,0 +1,10 @@
+{
+  "kind": "actual_provider_cleanup",
+  "status": "pending",
+  "mediaId": "be93a19f-5a0f-45c1-a708-16ed7418da39",
+  "parent_archived": true,
+  "associations": 0,
+  "cloudinary_asset_present": true,
+  "cleanup_eligible_at_utc": "2026-10-06T23:53:51.291Z",
+  "result": "Existing 24-hour uncertainty guard is still active. Do not bypass it; rerun this script after eligibility."
+}

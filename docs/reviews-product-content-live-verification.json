@@ -1,0 +1,287 @@
+{
+  "kind": "actual_chrome_and_development_supabase",
+  "status": "passed",
+  "checked_at": "2026-10-08T16:00:09.721Z",
+  "checks": [
+    {
+      "name": "anonymous protected editor redirects",
+      "result": "passed"
+    },
+    {
+      "name": "anonymous API rejects access",
+      "result": "passed"
+    },
+    {
+      "name": "non-admin browser login rejected",
+      "result": "passed"
+    },
+    {
+      "name": "admin browser login validated by actual Auth",
+      "result": "passed"
+    },
+    {
+      "name": "private catalog response no-store",
+      "result": "passed"
+    },
+    {
+      "name": "missing CSRF rejects mutation",
+      "result": "passed"
+    },
+    {
+      "name": "all 121 original catalog SKUs still searchable",
+      "result": "passed"
+    },
+    {
+      "name": "daily editor hides evidence, provenance and technical field labels",
+      "result": "passed"
+    },
+    {
+      "name": "mobile daily editor has no document overflow",
+      "result": "passed"
+    },
+    {
+      "name": "import history is accessible on separate tools page",
+      "result": "passed"
+    },
+    {
+      "name": "daily product page omits import controls",
+      "result": "passed"
+    },
+    {
+      "name": "browser saves incomplete single-product draft easily",
+      "result": "passed"
+    },
+    {
+      "name": "single edit persists PKR minor units and counted zero",
+      "result": "passed"
+    },
+    {
+      "name": "stock-count edit reconciles to exact count",
+      "result": "passed"
+    },
+    {
+      "name": "incomplete publication shows plain missing-info checklist",
+      "result": "passed"
+    },
+    {
+      "name": "single: explicit Publish publishes active options",
+      "result": "passed"
+    },
+    {
+      "name": "single: safe Markdown Write/Preview",
+      "result": "passed"
+    },
+    {
+      "name": "single: all three Markdown fields persist exactly",
+      "result": "passed"
+    },
+    {
+      "name": "single: ordinary save retains untouched content and stock",
+      "result": "passed"
+    },
+    {
+      "name": "single: hosted public rendering escapes HTML and unsafe links/images",
+      "result": "passed"
+    },
+    {
+      "name": "single: mobile product content has no overflow",
+      "result": "passed"
+    },
+    {
+      "name": "actual customer submits pending review with private review-owned image",
+      "result": "passed"
+    },
+    {
+      "name": "pending review excluded from public ratings",
+      "result": "passed"
+    },
+    {
+      "name": "review image ownership does not use a fake product",
+      "result": "passed"
+    },
+    {
+      "name": "anonymous private review Storage read denied",
+      "result": "passed"
+    },
+    {
+      "name": "non-admin private review Storage read denied",
+      "result": "passed"
+    },
+    {
+      "name": "admin can inspect private review image",
+      "result": "passed"
+    },
+    {
+      "name": "unauthorized moderation request rejected",
+      "result": "passed"
+    },
+    {
+      "name": "actual admin browser approves review and publishes Cloudinary image",
+      "result": "passed"
+    },
+    {
+      "name": "actual approved Cloudinary review delivery decodes",
+      "result": "passed"
+    },
+    {
+      "name": "private contact and unsupported verified-purchase badge absent",
+      "result": "passed"
+    },
+    {
+      "name": "pending second rating is excluded from approved average",
+      "result": "passed"
+    },
+    {
+      "name": "actual browser decline excludes rating",
+      "result": "passed"
+    },
+    {
+      "name": "approved-only average/count reflect two real synthetic submissions",
+      "result": "passed"
+    },
+    {
+      "name": "actual browser Hide removes review image and rating",
+      "result": "passed"
+    },
+    {
+      "name": "editing approved content requires moderation again",
+      "result": "passed"
+    },
+    {
+      "name": "public freshness removes hidden and edited reviews",
+      "result": "passed"
+    },
+    {
+      "name": "synthetic reviews cleaned from public output",
+      "result": "passed"
+    },
+    {
+      "name": "single: ordinary Save keeps product and option publication",
+      "result": "passed"
+    },
+    {
+      "name": "single: invalid published edit rejected without unpublishing",
+      "result": "passed"
+    },
+    {
+      "name": "single: ordinary Save keeps hidden product and existing option statuses",
+      "result": "passed"
+    },
+    {
+      "name": "single: only explicit Save draft returns hidden product to draft",
+      "result": "passed"
+    },
+    {
+      "name": "browser creates two separate SKU options with automatic identities",
+      "result": "passed"
+    },
+    {
+      "name": "browser edits an option price and exact stock count",
+      "result": "passed"
+    },
+    {
+      "name": "two-option: explicit Publish publishes active options",
+      "result": "passed"
+    },
+    {
+      "name": "two-option: safe Markdown Write/Preview",
+      "result": "passed"
+    },
+    {
+      "name": "two-option: all three Markdown fields persist exactly",
+      "result": "passed"
+    },
+    {
+      "name": "two-option: ordinary save retains untouched content and stock",
+      "result": "passed"
+    },
+    {
+      "name": "two-option: hosted public rendering escapes HTML and unsafe links/images",
+      "result": "passed"
+    },
+    {
+      "name": "two-option: mobile product content has no overflow",
+      "result": "passed"
+    },
+    {
+      "name": "two-option: ordinary Save keeps product and option publication",
+      "result": "passed"
+    },
+    {
+      "name": "two-option: invalid published edit rejected without unpublishing",
+      "result": "passed"
+    },
+    {
+      "name": "two-option: ordinary Save keeps hidden product and existing option statuses",
+      "result": "passed"
+    },
+    {
+      "name": "two-option: only explicit Save draft returns hidden product to draft",
+      "result": "passed"
+    },
+    {
+      "name": "mobile option table scrolls without document overflow",
+      "result": "passed"
+    },
+    {
+      "name": "browser removal archives option while preserving SKU and stock",
+      "result": "passed"
+    },
+    {
+      "name": "all pre-existing catalog/source/stock/media rows unchanged",
+      "result": "passed"
+    },
+    {
+      "name": "logout removes protected access",
+      "result": "passed"
+    }
+  ],
+  "pending": [],
+  "fixtures": [
+    {
+      "productId": "5bf0a5af-b1f5-42da-ad7c-c443aba55f49",
+      "variantId": "7beacaef-2532-41c0-88da-764ac045f80c",
+      "archived": true,
+      "brandId": "usability-c8a5006c-f687-4324-bb27-16e018652ed1",
+      "categoryId": "usability-7a80115d-cc52-4dfb-ac49-91a02cd0aba8",
+      "mediaId": "db026371-d21c-4b7c-8e8a-9701c9a87795",
+      "mediaCleaned": true
+    },
+    {
+      "productId": "ce86ad4d-3f75-4abf-8689-fa014baf7160",
+      "variantId": "ff8e8fff-c63f-4c82-b3bf-edf81fa7b530",
+      "archived": true,
+      "brandId": "usability-3abe3329-0cb7-4820-9293-0fe8bb095f98",
+      "categoryId": "usability-1a78d79c-3d7f-40f5-9547-541206751a00",
+      "mediaId": "3c15fbcd-15d2-439a-8213-18a95dea6394",
+      "mediaCleaned": true
+    }
+  ],
+  "reviews": [
+    {
+      "id": "f285dbf4-01de-4e68-8ac6-8ec40b8d8448",
+      "media": [
+        "73ae254e-957a-85af-d112-a3b24b22cddd"
+      ],
+      "hidden": true,
+      "mediaCleaned": true
+    },
+    {
+      "id": "960b60e7-1fff-4f7d-b36a-2128619b0cf4",
+      "media": [],
+      "hidden": true,
+      "mediaCleaned": true
+    }
+  ],
+  "preservation": {
+    "tables": 25,
+    "baseline_rows": 923,
+    "status": "passed"
+  },
+  "reviewImageDelivery": {
+    "decoded": true,
+    "naturalWidth": 119,
+    "cloudinaryHost": true,
+    "responsive": true
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "kind": "actual hosted Next.js / Supabase / Chrome supplemental verification",
+  "checks": [
+    {
+      "name": "anonymous private financial table completed_sales denied",
+      "passed": true
+    },
+    {
+      "name": "anonymous private financial table receipt_dates denied",
+      "passed": true
+    },
+    {
+      "name": "anonymous private financial table finance_versions denied",
+      "passed": true
+    },
+    {
+      "name": "anonymous private financial table refund_requests denied",
+      "passed": true
+    },
+    {
+      "name": "anonymous private financial table refund_events denied",
+      "passed": true
+    },
+    {
+      "name": "anonymous private financial table return_events denied",
+      "passed": true
+    },
+    {
+      "name": "anonymous private financial table finance_operations denied",
+      "passed": true
+    },
+    {
+      "name": "non-admin private financial table completed_sales denied",
+      "passed": true
+    },
+    {
+      "name": "non-admin private financial table receipt_dates denied",
+      "passed": true
+    },
+    {
+      "name": "non-admin private financial table finance_versions denied",
+      "passed": true
+    },
+    {
+      "name": "non-admin private financial table refund_requests denied",
+      "passed": true
+    },
+    {
+      "name": "non-admin private financial table refund_events denied",
+      "passed": true
+    },
+    {
+      "name": "non-admin private financial table return_events denied",
+      "passed": true
+    },
+    {
+      "name": "non-admin private financial table finance_operations denied",
+      "passed": true
+    },
+    {
+      "name": "historical item amount cap rejects excess",
+      "passed": true
+    },
+    {
+      "name": "Sent requires explicit outgoing-history confirmation",
+      "passed": true
+    },
+    {
+      "name": "stale finance mutation rejected",
+      "passed": true
+    },
+    {
+      "name": "financial detail responses remain private and uncached",
+      "passed": true
+    },
+    {
+      "name": "catalog and deal price edits preserve historical totals and attribution",
+      "passed": true
+    },
+    {
+      "name": "hidden fixture Save remains hidden after price change",
+      "passed": true
+    },
+    {
+      "name": "previous Pakistan calendar day excludes new synthetic events",
+      "passed": true
+    },
+    {
+      "name": "normal checkout remains disabled",
+      "passed": true
+    }
+  ],
+  "hostedSql": 0,
+  "noRealMoneyMoved": true,
+  "pending": [],
+  "status": "passed",
+  "cleanup": "temporary fixture prices restored; unsent refund holds released"
+}

@@ -1,0 +1,197 @@
+{
+  "kind": "actual_Chrome_Next_Supabase",
+  "status": "passed",
+  "checks": [
+    {
+      "name": "anonymous list API denied",
+      "result": "passed"
+    },
+    {
+      "name": "actual non-admin login denied",
+      "result": "passed"
+    },
+    {
+      "name": "actual admin browser login works",
+      "result": "passed"
+    },
+    {
+      "name": "CSRF-less dismissal denied",
+      "result": "passed"
+    },
+    {
+      "name": "private list responses uncached",
+      "result": "passed"
+    },
+    {
+      "name": "anonymous hosted RPC admin_catalog_list denied",
+      "result": "passed"
+    },
+    {
+      "name": "anonymous hosted RPC admin_catalog_filter_options denied",
+      "result": "passed"
+    },
+    {
+      "name": "anonymous hosted RPC admin_catalog_reminder denied",
+      "result": "passed"
+    },
+    {
+      "name": "anonymous direct private API read denied",
+      "result": "passed"
+    },
+    {
+      "name": "non-admin hosted RPC admin_catalog_list denied",
+      "result": "passed"
+    },
+    {
+      "name": "non-admin hosted RPC admin_catalog_filter_options denied",
+      "result": "passed"
+    },
+    {
+      "name": "non-admin hosted RPC admin_catalog_reminder denied",
+      "result": "passed"
+    },
+    {
+      "name": "non-admin direct private API read denied",
+      "result": "passed"
+    },
+    {
+      "name": "synthetic draft created through authorized Next wrapper",
+      "result": "passed"
+    },
+    {
+      "name": "synthetic options saved through Next wrapper",
+      "result": "passed"
+    },
+    {
+      "name": "actual hosted full alias isolates only its variant",
+      "result": "passed"
+    },
+    {
+      "name": "original Small SKU isolates its exact option",
+      "result": "passed"
+    },
+    {
+      "name": "original Large sibling SKU isolates its exact option",
+      "result": "passed"
+    },
+    {
+      "name": "case-normalized trimmed SKU isolates its exact option",
+      "result": "passed"
+    },
+    {
+      "name": "case-normalized trimmed alias isolates its exact option",
+      "result": "passed"
+    },
+    {
+      "name": "whitespace-trimmed SKU isolates its exact option",
+      "result": "passed"
+    },
+    {
+      "name": "original spaced SKU isolates its exact option",
+      "result": "passed"
+    },
+    {
+      "name": "normalized spaced SKU isolates its exact option",
+      "result": "passed"
+    },
+    {
+      "name": "expanded separator spaces isolates its exact option",
+      "result": "passed"
+    },
+    {
+      "name": "exact identifier combined brand/category/type/facet filters",
+      "result": "passed"
+    },
+    {
+      "name": "excluded exact facet does not fall back to close sibling",
+      "result": "passed"
+    },
+    {
+      "name": "excluded exact visibility does not fall back",
+      "result": "passed"
+    },
+    {
+      "name": "excluded exact category does not fall back",
+      "result": "passed"
+    },
+    {
+      "name": "excluded exact brand does not fall back",
+      "result": "passed"
+    },
+    {
+      "name": "excluded original spaced SKU facet does not fall back",
+      "result": "passed"
+    },
+    {
+      "name": "actual browser alias isolates one option",
+      "result": "passed"
+    },
+    {
+      "name": "actual browser original SKU isolates one option",
+      "result": "passed"
+    },
+    {
+      "name": "actual browser normalized spaced SKU isolates one option",
+      "result": "passed"
+    },
+    {
+      "name": "mobile browser alias isolation",
+      "result": "passed"
+    },
+    {
+      "name": "spaced SKU matches normalized query and retains immutable original",
+      "result": "passed"
+    },
+    {
+      "name": "ordinary brand/name typo search still works",
+      "result": "passed"
+    },
+    {
+      "name": "general partial identifier search preserves matching variants",
+      "result": "passed"
+    },
+    {
+      "name": "general combined OR facet filters",
+      "result": "passed"
+    },
+    {
+      "name": "synthetic fixtures remain drafts",
+      "result": "passed"
+    },
+    {
+      "name": "synthetic fixture safely hidden",
+      "result": "passed"
+    },
+    {
+      "name": "every pre-existing business record unchanged",
+      "result": "passed"
+    }
+  ],
+  "pending": [],
+  "fixtures": [
+    {
+      "productId": "e0956643-4628-42ba-85c8-67a225b1f080",
+      "variantIds": [
+        "fe1d14c9-6785-4135-b496-915e49e562eb",
+        "5b2663ea-2c34-4bbd-a974-506d7b217bfb",
+        "5b296b0f-f940-496c-8029-81cf87676129"
+      ],
+      "marker": "f4005515-4895-4341-b54d-a4c3919adb8e",
+      "sku": "EX-f4005515-4895-4341-b54d-a4c3919adb8e",
+      "hidden": true
+    }
+  ],
+  "preservation": {
+    "tables": 29,
+    "rows": 1275,
+    "status": "passed"
+  },
+  "taxonomy": {
+    "brand": "ex-f4005515-4895-4341-b54d-a4c3919adb8e",
+    "category": "ex-cat-f4005515-4895-4341-b54d-a4c3919adb8e",
+    "facet": "ex-finish-f4005515-4895-4341-b54d-a4c3919adb8e"
+  },
+  "exactAliasRows": 1,
+  "spacedExactRows": 1,
+  "cleanup": "synthetic drafts archived; private audit history retained; no media uploaded"
+}

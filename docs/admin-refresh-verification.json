@@ -1,0 +1,41 @@
+{
+  "status": "local_and_hosted_complete",
+  "unit_checks": {
+    "passed": 19,
+    "failed": 0,
+    "kind": "unit/security; includes explicitly mocked provider transports"
+  },
+  "chrome_mock_checks": 23,
+  "homepage_browser_checks": {
+    "passed": 6,
+    "skipped": 2,
+    "scaffold_passed": 2,
+    "mode": "explicit isolated development sample preview",
+    "initial_transient_failure": "mobile interaction hydration readiness exceeded 5 seconds during concurrent compilation; identical test passed on retry",
+    "physical_ios_safari": "not tested"
+  },
+  "lint": "passed",
+  "production_build": "passed",
+  "production_boundary_checks": "passed",
+  "source_files_preserved": 64,
+  "reference_css_blocks": 14,
+  "exact_installer_sha256": "2f5df9628568e304f21250379ca1b993db4c8a05b4f2c03a3221cbcd404c1002",
+  "installer_final_flags": "all eight true",
+  "hosted_mutations": "synthetic verification fixtures only; safe cleanup completed",
+  "hosted_pending": [],
+  "browser_limitations": "Chrome desktop/mobile emulation; no physical iOS Safari. Actual hosted providers verified separately from earlier mocks.",
+  "actual_hosted_checks": {
+    "passed": 58,
+    "failed": 0,
+    "pending": 0,
+    "report": "reviews-product-content-live-verification.json",
+    "preserved_rows": 923,
+    "preserved_tables": 25
+  },
+  "hosted_prerequisites": {
+    "011_and_012": "user-confirmed installed; not rerun",
+    "secret_presence_only": "passed",
+    "next_restarted": "passed"
+  },
+  "typecheck": "passed"
+}

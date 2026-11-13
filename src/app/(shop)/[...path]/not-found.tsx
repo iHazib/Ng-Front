@@ -1,0 +1,2 @@
+import Link from 'next/link';
+export default function NotFound() { return <section className="commerce-empty"><p className="eyebrow">404 · Not found</p><h1>This corner is not here.</h1><p>The product, article or collection you requested could not be found.</p><Link className="commerce-button" href="/">Return home</Link><Link className="text-link" href="/search">Explore the edit</Link></section>; }
