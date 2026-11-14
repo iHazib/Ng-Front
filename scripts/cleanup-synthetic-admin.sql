@@ -1,71 +1,94 @@
 -- ============================================================
--- Clean up all synthetic/test data from hosted Supabase
--- Run this in Supabase SQL Editor (https://app.supabase.com/project/_/sql)
+-- Synthetic/test data cleanup for hosted Supabase
+-- Run in the Supabase SQL Editor (connects as `postgres`, which can see the
+-- non-exposed app_private schema).
+-- ============================================================
+--
+-- WHY THE ORIGINAL VERSION FAILED
+--   The blocking foreign keys are:
+--     app_private.commerce_orders.order_id        -> public.orders(id)
+--     app_private.product_save_requests.product_id -> public.products(id)
+--   Those tables live in app_private, not public. The original script ran
+--   `ALTER TABLE public.commerce_orders ... IF EXISTS`, which silently did
+--   nothing, so the DELETE later failed with 23503
+--   (commerce_orders_order_id_fkey).
+--
+-- The script is idempotent: each step is safe to re-run on a clean database.
 -- ============================================================
 
--- Step 1: Drop orphaned FK constraints blocking deletion
--- The FK constraints are defined ON commerce_orders and product_save_requests
--- referencing orders and products. Since those tables aren't accessible via
--- PostgREST API, drop the constraints directly.
+-- ---------------------------------------------
+-- Stage 1 — catalog, orders, media (TRUNCATE)
+-- ---------------------------------------------
+-- Done. TRUNCATE ... CASCADE removes every dependent row in public *and*
+-- app_private (commerce_orders, order_events, manual_payments, payment_*,
+-- refund_*, return_events, completed_sales, finance_*, product_save_requests,
+-- inventory_*, order_items, sales, shipments, variants, prices, sku aliases,
+-- deal components, media_workflows, ...).
+--
+--   truncate table public.orders       cascade;
+--   truncate table public.products     cascade;
+--   truncate table public.deals        cascade;
+--   truncate table public.media_assets cascade;
 
--- Drop FK constraint on commerce_orders referencing orders
-DO $$
-BEGIN
-  ALTER TABLE IF EXISTS public.commerce_orders DROP CONSTRAINT IF EXISTS commerce_orders_order_id_fkey;
-EXCEPTION WHEN OTHERS THEN
-  RAISE NOTICE 'Could not drop commerce_orders_order_id_fkey: %', SQLERRM;
-END $$;
+-- ---------------------------------------------
+-- Stage 2 — content
+-- ---------------------------------------------
+-- Done. article_tags / article_media first, then the articles themselves.
+--
+--   delete from public.article_tags;
+--   delete from public.article_media;
+--   delete from public.articles;
 
--- Drop FK constraint on product_save_requests referencing products
-DO $$
-BEGIN
-  ALTER TABLE IF EXISTS public.product_save_requests DROP CONSTRAINT IF EXISTS product_save_requests_product_id_fkey;
-EXCEPTION WHEN OTHERS THEN
-  RAISE NOTICE 'Could not drop product_save_requests_product_id_fkey: %', SQLERRM;
-END $$;
+-- ---------------------------------------------
+-- Stage 3 — synthetic taxonomy (run this)
+-- ---------------------------------------------
+begin;
 
--- Step 2: Delete synthetic orders (now unblocked)
-DELETE FROM public.orders
-WHERE id IN (
-  'b0b287b3-62af-4bba-877b-8f9b1f0a05ae',
-  'cc10303f-821e-4392-95de-019cd19fc5ab',
-  '04258ba2-fba2-4b9d-bd03-a498451e85f7',
-  '293ba7f3-f2ff-464f-bfed-575a1f6c27a4',
-  '43993528-9703-454b-984f-fa41f77055fd',
-  '468b846a-492d-411c-9555-59926b3d7688',
-  '8b4695d8-e30c-4ce6-84c9-ed7107786ec6',
-  '524c1fd4-d1d6-49f5-90ad-0f828427793c',
-  'b4ed667c-ee56-4405-a99c-0385a11e1365',
-  'fc033418-a906-4cf8-bb79-e7cb12176f12',
-  'acfc642f-d4b0-419b-887c-1531b8a6ea30',
-  '17a8f28e-2a58-49cb-b369-6f1dee5f7631',
-  '84044568-0878-40de-b605-63002b929496',
-  'b439f75b-894e-4e36-9853-2e5fff14aee6'
-);
+-- Aliases pointing at synthetic brands
+delete from public.brand_aliases
+ where brand_id in (select id from public.brands where name ~* 'synthetic');
 
--- Step 3: Delete synthetic products (now unblocked)
-DELETE FROM public.products
-WHERE id IN (
-  'e0956643-4628-42ba-85c8-67a225b1f080',
-  'eb384ec9-8e0b-479c-996a-58f56c2ca876',
-  '05c38735-6748-4a77-8738-ed68c30da69e',
-  'a360ca3a-858e-4379-9aa8-5de971eeb1d6',
-  '096999dc-8ace-49cf-b0a4-87b322dfedde',
-  '1d7bc133-41fd-4246-8258-34eebcfee338'
-);
+-- Synthetic brands (e.g. "CeraVe synthetic <uuid>", "Synthetic commerce ...")
+delete from public.brands where name ~* 'synthetic';
 
--- Step 4: Verify nothing synthetic remains
-SELECT 'products remaining' AS check_type, COUNT(*) AS count
-FROM public.products
-WHERE name ILIKE '%synthetic%' OR slug ILIKE '%synthetic%';
+-- Synthetic concerns (e.g. "Dry skin synthetic <uuid>")
+delete from public.concerns
+ where id ~ '^(sfdaae73|al-dry-)';
 
-SELECT 'orders remaining' AS check_type, COUNT(*) AS count
-FROM public.orders
-WHERE delivery_name ILIKE '%synthetic%';
+-- Category/product-type links belonging to synthetic categories
+delete from public.category_product_types
+ where category_id ~ '^(usability-|al-(cat|parent|extra|dry)-|ex-cat-|co-cat-|dl-cat-|sfdaae73)';
 
-SELECT 'deals remaining' AS check_type, COUNT(*) AS count
-FROM public.deals
-WHERE title ILIKE '%synthetic%';
+-- Synthetic categories. Parent and child are removed by the same statement,
+-- so the self-referencing FK is satisfied.
+delete from public.categories
+ where id ~ '^(usability-|al-(cat|parent|extra|dry)-|ex-cat-|co-cat-|dl-cat-|sfdaae73)';
+
+commit;
+
+-- ---------------------------------------------
+-- Verification — synthetic counts must all be 0
+-- ---------------------------------------------
+select 'synthetic brands'  as check_name, count(*) as remaining from public.brands       where name ~* 'synthetic'
+union all select 'synthetic aliases',   count(*) from public.brand_aliases
+         where brand_id in (select id from public.brands where name ~* 'synthetic')
+union all select 'synthetic categories',count(*) from public.categories
+         where id ~ '^(usability-|al-(cat|parent|extra|dry)-|ex-cat-|co-cat-|dl-cat-|sfdaae73)'
+union all select 'synthetic concerns',  count(*) from public.concerns
+         where id ~ '^(sfdaae73|al-dry-)'
+union all select 'synthetic articles',  count(*) from public.articles where title ~* 'synthetic'
+union all select 'catalog products',    count(*) from public.products
+union all select 'catalog orders',      count(*) from public.orders
+union all select 'media assets',        count(*) from public.media_assets
+order by 1;
+
+-- Remaining real reference data (expected, keep these)
+select 'real brands'     as kept, count(*) from public.brands     where name !~* 'synthetic'
+union all select 'real categories', count(*) from public.categories
+         where id !~ '^(usability-|al-(cat|parent|extra|dry)-|ex-cat-|co-cat-|dl-cat-|sfdaae73)'
+union all select 'real concerns',   count(*) from public.concerns
+         where id !~ '^(sfdaae73|al-dry-)'
+order by 1;
 
 -- ============================================================
 -- End
