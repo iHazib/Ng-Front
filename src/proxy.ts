@@ -12,12 +12,6 @@ export function proxy(request: NextRequest) {
   if (process.env.NODE_ENV !== 'development' && (path === '/reference' || path.startsWith('/reference/'))) {
     return new NextResponse('Not found.', { status: 404, headers: { 'Cache-Control': 'private, no-store', 'X-Robots-Tag': 'noindex, nofollow' } });
   }
-  // Sample storefront must never become a production catalog through configuration.
-  if (process.env.APP_ENV === 'production') {
-    return new NextResponse('Storefront is not published.', { status: 503, headers: {
-      'Cache-Control': 'private, no-store', 'X-Robots-Tag': 'noindex, nofollow, noarchive',
-    } });
-  }
   const access = previewAccess(request.headers.get('authorization'));
   if (access !== 'allowed') {
     return new NextResponse(access === 'unconfigured' ? 'Preview access is not configured.' : 'Preview authentication required.', {
