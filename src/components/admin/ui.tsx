@@ -1,5 +1,25 @@
 'use client';
 import type {ReactNode} from 'react';
+import {publicationMessage} from '@/lib/catalog/publication-messages';
+
+const readinessText:Record<string,string>={
+  slug_missing:'Add a product link.',
+  description_missing:'Add a product description.',
+  usage_missing:'Add how to use.',
+  benefits_missing:'Add key benefits.',
+  price_missing:'Enter a price for every option.',
+  price_approval:'Approve the price.',
+  image_missing:'Add a main image.',
+  image_approval:'Approve the main image.',
+  stock_count_missing:'Enter the stock count, including zero if sold out.',
+  out_of_stock:'This option is out of stock.',
+  brand_missing:'Choose the brand.',
+  category_type_missing:'Choose a category and product type.',
+  option_missing:'Add a shade or size for this option.',
+  publication_blockers:'Publication blockers are still open.'
+};
+
+export function readinessMessage(code:string){return readinessText[code]??publicationMessage(code);}
 
 const stroke={fill:'none',stroke:'currentColor',strokeWidth:1.6,strokeLinecap:'round',strokeLinejoin:'round'} as const;
 

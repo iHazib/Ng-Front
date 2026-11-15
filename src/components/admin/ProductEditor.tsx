@@ -4,7 +4,7 @@ import type { Detail, References } from './types';
 import {ProductMarkdown} from '@/components/storefront/ProductMarkdown';
 import {MarkdownEditor} from './MarkdownEditor';
 import { ProductMedia } from './ProductMedia';
-import { SectionCard, icon } from './ui';
+import { SectionCard, icon, readinessMessage } from './ui';
 import { publicationMessage } from '@/lib/catalog/publication-messages';
 type Props={detail:Detail;refs:References;run:(work:()=>Promise<unknown>,success?:string)=>Promise<void>;mutate:(body:Record<string,unknown>)=>Promise<void>;refresh:()=>Promise<void>;onDirty:(dirty:boolean)=>void;onBack:()=>void};
 type Option={id:string;sku:string;label:string;price:string;stock:string;originalStock:string;expectedStock:number;existing:boolean};
@@ -66,9 +66,9 @@ export function ProductEditor({detail,refs,run,mutate,refresh,onDirty,onBack}:Pr
    <nav className="editor-jumps" aria-label="Product sections">{sectionState.map(section=><a key={section.id} href={'#'+section.id} data-state={section.done?'done':'todo'}><span className="editor-jump-dot" aria-hidden="true"/>{section.label}</a>)}</nav>
    <div className="admin-readiness" data-ready={blockers.length===0}>
     <p className="admin-readiness-head"><span className="admin-readiness-mark" aria-hidden="true"/>{blockers.length===0?'Ready to publish':`${blockers.length} item${blockers.length===1?'':'s'} to resolve`}</p>
-    {blockers.length>0&&<ul className="admin-readiness-list">{blockers.map(code=><li key={code}>{publicationMessage(code)}</li>)}</ul>}
+    {blockers.length>0&&<ul className="admin-readiness-list">{blockers.map(code=><li key={code}>{readinessMessage(code)}</li>)}</ul>}
     {blockers.length===0&&<p className="admin-readiness-note">Everything required is in place. Save, then publish when you are ready.</p>}
-    {optional.length>0&&<details className="admin-readiness-more"><summary>Optional polish ({optional.length})</summary><ul className="admin-readiness-list">{optional.map(code=><li key={code}>{publicationMessage(code)}</li>)}</ul></details>}
+    {optional.length>0&&<details className="admin-readiness-more"><summary>Optional polish ({optional.length})</summary><ul className="admin-readiness-list">{optional.map(code=><li key={code}>{readinessMessage(code)}</li>)}</ul></details>}
    </div>
   </aside>
   <div className="admin-editor-main">
