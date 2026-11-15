@@ -17,3 +17,5 @@ playwright-report/
 next-env.d.ts
 # Generated only by the development config, excluded before production builds.
 /src/app/reference/route.ts
+# Office lock files left open by Excel while editing the source workbook.
+~$*.xlsx
