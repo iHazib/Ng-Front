@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import type { Detail, InitialImage, References, SearchRow } from './types';
 import { ProductEditor } from './ProductEditor';
 import { ProductList } from './ProductList';
+import { PageHeader } from './ui';
 
 export async function adminRequest<T>(path:string, body?:unknown, bytes?:File,onProgress?:(percent:number)=>void):Promise<T> {
   const headers:Record<string,string>={};
@@ -38,11 +39,10 @@ export function ProductAdmin({toolsOnly=false}:{toolsOnly?:boolean}){
   const mutate=async(body:Record<string,unknown>)=>{
     await adminRequest('/admin/api/catalog',body);if(detail)await open(detail.product.id);setDirty(false);await load();
   };
-  return <><div className="toolbar"><h1>Products</h1></div>
-    <p>Manage your products, prices and images.</p>
+  return <>{toolsOnly&&<PageHeader eyebrow="Utilities" title="Import & technical tools" description="Bring the reviewed workbook into the catalog and stage the original product images."/>}
     <p role="status" aria-live="polite">{busy?'Working…':message}</p>
     <fieldset disabled={busy||!refs} style={{border:0,padding:0,background:'transparent'}}>
-    {detail&&refs?<><button className="btn-ghost" onClick={()=>{if(!dirty||window.confirm('Leave without saving your changes?')){setDirty(false);setDetail(null);}}}>← All products</button><ProductEditor key={detail.product.id+':'+detail.product.revision} detail={detail} onDirty={setDirty} refs={refs} run={run} mutate={mutate} refresh={()=>open(detail.product.id)} /></>:<>
+    {detail&&refs?<><ProductEditor key={detail.product.id+':'+detail.product.revision} detail={detail} onDirty={setDirty} refs={refs} run={run} mutate={mutate} refresh={()=>open(detail.product.id)} onBack={()=>{if(!dirty||window.confirm('Leave without saving your changes?')){setDirty(false);setDetail(null);}}} /></>:<>
     {toolsOnly&&<form className="actions" onSubmit={event=>{event.preventDefault();setOffset(0);void run(()=>load(q,0),'Search updated.');}}><label>Search by SKU or product name<input value={q} onChange={e=>setQ(e.target.value)} name="search" type="search" /></label><label>Visibility<select aria-label="Visibility" value={visibility} onChange={e=>setVisibility(e.target.value)}><option value="">All products</option><option value="draft">Draft</option><option value="published">Published</option><option value="archived">Hidden</option></select></label><button>Search</button><button type="button" onClick={()=>setCreateIds({productId:crypto.randomUUID(),variantId:crypto.randomUUID()})}>New product</button></form>}
     {createIds&&<section><h2>Create draft product</h2><form onSubmit={e=>{e.preventDefault();const f=new FormData(e.currentTarget);void run(async()=>{const result=await adminRequest<{productId:string}>('/admin/api/catalog',{action:'create',...createIds,name:f.get('name'),sku:f.get('sku')});setCreateIds(null);await load();await open(result.productId);},'Draft created.');}}><label>Product name<input name="name" required maxLength={300}/></label><label>SKU<input name="sku" required maxLength={120}/></label><button>Create draft</button> <button type="button" onClick={()=>setCreateIds(null)}>Cancel</button></form></section>}
     {!toolsOnly&&refs&&<ProductList refs={refs} onEdit={id=>void run(()=>open(id),'Product loaded.')} onCreate={()=>setCreateIds({productId:crypto.randomUUID(),variantId:crypto.randomUUID()})}/>}

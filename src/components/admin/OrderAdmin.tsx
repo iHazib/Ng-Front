@@ -1,6 +1,7 @@
 'use client';
 import {useCallback,useEffect,useRef,useState,type FormEvent} from 'react';
-import {PaymentReview} from './PaymentReview';import {adminRequest} from './ProductAdmin';import {pkrMinor} from '@/lib/catalog/public-types';import type {CommerceOrder} from '@/lib/catalog/commerce';
+import {PaymentReview} from './PaymentReview';import {adminRequest} from './ProductAdmin';
+import {KpiTile,PageHeader} from './ui';import {pkrMinor} from '@/lib/catalog/public-types';import type {CommerceOrder} from '@/lib/catalog/commerce';
 
 function copyBtn(label:string,value:string){
   return (
@@ -63,11 +64,14 @@ export function OrderAdmin(){
 
   return (
     <div>
-      <div className="toolbar">
-        <h1>Orders</h1>
-        <button onClick={()=>{setOrder(null);void load();}}>Refresh list</button>
-      </div>
+      <PageHeader eyebrow="Commerce" title="Orders" description="Every order, its payment proof, and what still needs a decision from you." actions={<button className="btn-secondary" onClick={()=>{setOrder(null);void load();}}>Refresh list</button>}/>
       <p role="status">{message}</p>
+      {result&&<div className="admin-kpis">
+        <KpiTile label="Awaiting verification" value={pendingCount} caption="need a decision" tone={pendingCount?'warn':undefined}/>
+        <KpiTile label="Orders" value={result.total} caption="in this filter"/>
+        <KpiTile label="Paid" value={result.rows.filter(r=>r.paymentStatus==='paid').length} caption="on this page" tone="good"/>
+        <KpiTile label="Still open" value={result.rows.filter(r=>!['cancelled','completed','expired'].includes(r.fulfilment)).length} caption="on this page"/>
+      </div>}
       {pendingCount>0&&<p className="notice"><strong>{pendingCount}</strong> order(s) awaiting payment verification.</p>}
 
       <form onSubmit={filters} className="filter-form">
@@ -95,13 +99,13 @@ export function OrderAdmin(){
                 const isPending=r.paymentStatus!=='paid'&&!['cancelled','dispatched','completed'].includes(r.fulfilment);
                 return (
                   <tr key={r.id}>
-                    <td><a href={`?order=${r.id}`}>{r.number}</a></td>
-                    <td>{r.name}<br/><small>{r.phone}</small></td>
-                    <td>{pkrMinor(r.totalMinor)}</td>
+                    <td><a className="order-number" href={`?order=${r.id}`}>{r.number}</a></td>
+                    <td><strong className="order-customer">{r.name}</strong><br/><small>{r.phone}</small></td>
+                    <td className="cell-price">{pkrMinor(r.totalMinor)}</td>
                     <td>{isPending?<span className="status-pending">{r.paymentStatus.replaceAll('_',' ')}</span>:<span className="status-paid">{r.paymentStatus.replaceAll('_',' ')}</span>}</td>
-                    <td>{r.fulfilment}</td>
-                    <td>{new Date(r.createdAt).toLocaleString('en-PK',{timeZone:'Asia/Karachi',dateStyle:'medium',timeStyle:'short'})}</td>
-                    <td><a href={`?order=${r.id}`}>View</a>{isPending&&<span> · <a href={`?order=${r.id}`}>Verify</a></span>}</td>
+                    <td><span className="status-pill">{r.fulfilment}</span></td>
+                    <td className="order-date">{new Date(r.createdAt).toLocaleString('en-PK',{timeZone:'Asia/Karachi',dateStyle:'medium',timeStyle:'short'})}</td>
+                    <td className="order-actions"><a className="admin-linkbtn" href={`?order=${r.id}`}>View</a>{isPending&&<a className="admin-linkbtn admin-linkbtn-strong" href={`?order=${r.id}`}>Verify</a>}</td>
                   </tr>
                 );
               })}
@@ -119,13 +123,16 @@ export function OrderAdmin(){
 
       {order&&(
         <>
-          <button onClick={()=>setOrder(null)}>Back to orders</button>
+          <button className="btn-ghost" onClick={()=>setOrder(null)}>Back to orders</button>
           <section className="order-detail">
             <div className="toolbar">
               <h2>{order.number}</h2>
               {order.paymentStatus!=='paid'?<span className="status-pill status-pending">Pending verification</span>:order.paymentStatus==='paid'?<span className="status-pill status-paid">Paid</span>:<span className="status-pill status-rejected">{String(order.paymentStatus??'').replaceAll('_',' ')}</span>}
               <span className="status-pill">{order.fulfilment}</span>
             </div>
+            <ol className="admin-stepper">
+              {[{label:'Order placed',done:true},{label:'Payment verified',done:order.paymentStatus==='paid'},{label:'Confirmed',done:['confirmed','dispatched','completed'].includes(order.fulfilment)},{label:'Dispatched',done:['dispatched','completed'].includes(order.fulfilment)},{label:'Completed',done:order.fulfilment==='completed'}].map(step=><li key={step.label} data-done={step.done?'yes':'no'}><span className="admin-step-dot" aria-hidden="true"/>{step.label}</li>)}
+            </ol>
 
             {/* Two-stage verification panel */}
             {order.paymentStatus!=='paid'&&(

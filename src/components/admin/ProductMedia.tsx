@@ -8,7 +8,7 @@ export function ProductMedia({detail,run,refresh,owner,onOwnerChange}:Props){
  const [replace,setReplace]=useState(''),[progress,setProgress]=useState<number|null>(null);const active=detail.variants.filter(v=>v.status!=='archived');
  const associations=detail.associations;const visible=detail.workflows.filter(w=>(w.variant_id===owner||w.variant_id===null)&&!['deleted','retired','deleting'].includes(w.media_assets.lifecycle)).sort((a,b)=>(associations.find(x=>x.media_id===a.media_id)?.position??10000)-(associations.find(x=>x.media_id===b.media_id)?.position??10000));
  const act=async(action:string,id:string,extra:Record<string,unknown>={})=>{await adminRequest('/admin/api/media',{action,id,...extra});await refresh();};
- return <section id="product-images"><h3>Images</h3><p>Images stay private until you approve them for public use.</p>
+ return <div className="admin-media-block">
  {active.length>1&&<label>Images for<select aria-label="Images for" value={owner} onChange={e=>{onOwnerChange(e.target.value);setReplace('');}}><option value="">All options</option>{active.map(v=><option key={v.id} value={v.id}>{v.label||v.original_sku}</option>)}</select></label>}
  <form onSubmit={e=>{e.preventDefault();const f=new FormData(e.currentTarget);const files=f.getAll('photos').filter((file):file is File=>file instanceof File&&file.size>0);void run(async()=>{
   if(replace&&files.length!==1)throw new Error('Choose one replacement image.');
@@ -23,5 +23,5 @@ export function ProductMedia({detail,run,refresh,owner,onOwnerChange}:Props){
  {!association&&<button type="button" onClick={()=>run(()=>act('approve-publish',w.media_id),'Image approved.')}>Approve image</button>}
  {association&&<><button type="button" disabled={association.is_primary} onClick={()=>run(()=>act('primary',w.media_id,{productId:detail.product.id,variantId:w.variant_id}))}>Set primary</button><button type="button" disabled={index<=0} aria-label="Move image earlier" onClick={()=>run(()=>move(-1))}>←</button><button type="button" disabled={index===group.length-1} aria-label="Move image later" onClick={()=>run(()=>move(1))}>→</button><button type="button" onClick={()=>{setReplace(association.id);document.querySelector('#product-images input[type=file]')?.scrollIntoView({behavior:'smooth'});}}>Replace</button></>}
  <button type="button" onClick={()=>run(async()=>{if(association)await adminRequest('/admin/api/media',{action:'detach',id:w.media_id});try{await adminRequest('/admin/api/media',{action:'cleanup',id:w.media_id});}finally{await refresh();}},'Image removed.')}>Remove</button>
- </div></article>;})}</div></section>;
+ </div></article>;})}</div></div>;
 }
