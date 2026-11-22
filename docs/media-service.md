@@ -27,6 +27,12 @@ MEDIA_ENVIRONMENT=development
 
 Keep the existing `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY` and local test-account variables. No Supabase service-role key is required. Restart a running server/test process after updating configuration. Use distinct credentials/product environments for staging/production and their matching explicit `MEDIA_ENVIRONMENT` values; there is no implicit production fallback.
 
+### Hosted deployment
+
+All four server variables above must exist in the hosting project for **every** environment that serves the admin, not only locally. `MEDIA_ENVIRONMENT` must equal the `media_environment` stored on `media_assets`, because every private read, approval, publication and cleanup compares the two and refuses on a mismatch. A missing variable makes `mediaSettings()` throw before any provider call, so images stop loading, approval and removal all fail together. The admin now reports that as *"Media provider configuration is incomplete."* instead of a generic failure.
+
+Vercel project `nookandglow` runs with `MEDIA_ENVIRONMENT=development`, matching the staged catalog media (17 images carry `media_environment=development` and `nook-glow/development/<media id>` public IDs). Re-tag media only through the media service, never by editing those columns.
+
 4. Do **not** create an unsigned upload preset. This service signs every upload on the server and does not use a preset. Avoid default incoming transformations that modify original bytes; the service checks the delivered original against the reviewed source hash. If your account restricts dynamic transformations, authorize the documented responsive delivery transformations rather than guessing delivery works.
 5. In the connected **development Supabase SQL Editor**, run the entire `supabase/sql-editor/05_install_media_service.sql` once. Expect `MEDIA SERVICE MIGRATION COMMITTED`. It requires the six existing receipts, adds migration 007 and a seventh receipt, and refuses a duplicate install. Do not rerun the old installer. Existing media receives `lifecycle=legacy`; its associations and source values remain intact. No existing product rows or files are deleted by this migration.
 6. After configuration and migration, run the actual development check below or tell me setup is ready. No passwords/secrets should be posted to chat.
