@@ -81,7 +81,7 @@ export function ProductEditor({detail,refs,run,mutate,refresh,onDirty,onBack}:Pr
   </SectionCard>
   </form>
   <SectionCard id="product-images" icon={icon.image} title="Images" description="Images stay private until you approve them for public use.">
-   <ProductMedia detail={detail} run={run} refresh={refresh} owner={mediaOwner} onOwnerChange={setMediaOwner}/>
+   <ProductMedia detail={detail} refresh={refresh} owner={mediaOwner} onOwnerChange={setMediaOwner}/>
   </SectionCard>
   <SectionCard id="product-content" icon={icon.sparkle} title="Content" description="What the customer reads on the product page.">
    <MarkdownEditor form={formId} name="description" label="Product description" initial={p.description??''} onValueChange={value=>setContent(c=>({...c,description:value}))}/>

@@ -6,8 +6,22 @@ import { boundedImageBody } from '@/lib/server/media/cloudinary';
 import {invalidatePublicCatalog} from '@/lib/server/storefront/invalidate';
 export const dynamic='force-dynamic';
 export const maxDuration=120;
+// Deployment/configuration faults that an administrator can act on, and that reveal
+// no credentials, provider internals or storage paths. Anything else stays generic.
+const explainable=new Set([
+  'Media provider configuration is incomplete.',
+  'Stored media belongs to another environment.',
+  'Media intent not found.',
+  'Private image unavailable.',
+  'Private image is no longer available.',
+  'Private image differs from upload intent.',
+  'Only PNG, JPEG and WebP image files are accepted.',
+  'Image must be between 1 byte and 10 MiB.',
+]);
 function failure(error:unknown) {
-  return Response.json({error:error instanceof AdminError?error.message:'Media operation incomplete. Refresh and retry the same image identity; referenced assets cannot be cleaned up.'},{status:error instanceof AdminError?error.status:400,headers:privateHeaders});
+  const known=error instanceof Error&&explainable.has(error.message)?error.message:null;
+  const message=error instanceof AdminError?error.message:known??'Media operation incomplete. Refresh and retry the same image identity; referenced assets cannot be cleaned up.';
+  return Response.json({error:message},{status:error instanceof AdminError?error.status:400,headers:privateHeaders});
 }
 export async function GET(request:Request) {
   try {

@@ -1726,6 +1726,77 @@
 .ng-admin .admin-attribute b { color: var(--text); font-weight: 600; }
 .ng-admin .admin-media-block { display: block; }
 
+.ng-admin .admin-media-status {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin: 14px 0 0;
+  padding: 10px 14px;
+  border: 1px solid #c4ddd1;
+  border-radius: var(--radius-sm);
+  background: var(--accent-soft);
+  color: var(--accent-strong);
+  font-size: 13px;
+  font-weight: 550;
+}
+
+.ng-admin .admin-media-status::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  flex: 0 0 7px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+.ng-admin .admin-media-status.is-error {
+  border-color: #e6c2bc;
+  background: var(--danger-soft, #fbeae8);
+  color: #8f3229;
+}
+
+.ng-admin .admin-media-empty {
+  margin: 16px 0 0;
+  padding: 22px;
+  border: 1px dashed var(--border-strong);
+  border-radius: var(--radius);
+  background: var(--surface-sunken);
+  color: var(--text-muted);
+  font-size: 13.5px;
+  text-align: center;
+}
+
+.ng-admin .media-grid .admin-media-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  align-self: flex-start;
+  margin: 0;
+  padding: 3px 10px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-pill);
+  background: var(--surface);
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: var(--text-muted);
+}
+
+.ng-admin .media-grid .admin-media-label::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--border-strong);
+}
+
+.ng-admin .media-grid .admin-media-label[data-kind="private"] { border-color: #eddcb8; background: var(--warn-soft); color: #6d4d15; }
+.ng-admin .media-grid .admin-media-label[data-kind="private"]::before { background: #d8b464; }
+.ng-admin .media-grid .admin-media-label[data-kind="approved"] { border-color: #c4ddd1; background: var(--accent-soft); color: var(--accent-strong); }
+.ng-admin .media-grid .admin-media-label[data-kind="approved"]::before { background: var(--accent); }
+.ng-admin .media-grid .admin-media-label[data-kind="primary"] { border-color: transparent; background: var(--accent); color: #fff; }
+.ng-admin .media-grid .admin-media-label[data-kind="primary"]::before { background: rgba(255, 255, 255, 0.85); }
+
 /* 10. Sign in -------------------------------------------------------------- */
 .ng-admin.ng-admin-auth {
   display: block;
