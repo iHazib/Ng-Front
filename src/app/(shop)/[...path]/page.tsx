@@ -66,7 +66,7 @@ export async function generateMetadata({ params,searchParams }: Props): Promise<
       description:'Beauty, home and everyday stories from Nook & Glow.'});
   }
   if(Object.hasOwn(rootRoutes,path)){
-    const result=await publicCatalog(path,'{}').catch(()=>null),label=rootLabels[path],filtered=collectionFiltered(query);
+    const filtered=collectionFiltered(query),result=filtered?null:await publicCatalog(path,JSON.stringify(query)).catch(()=>null),label=rootLabels[path];
     return pageMetadata({title:label,path:'/'+path,index:Boolean(result?.total)&&!filtered,
       description:`${label} published at Nook & Glow.`});
   }

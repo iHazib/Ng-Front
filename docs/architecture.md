@@ -404,3 +404,14 @@ Per-page metadata and structured data live in `src/lib/seo/metadata.ts` and `src
 The sitemap includes only canonical eligible collections/brands, published articles/deals and the homepage. `lastModified` is emitted only for articles because no other public RPC exposes a genuine timestamp. Slug redirects are owner-maintained rows in `public.slug_redirects` resolved by `storefront_slug_redirect`; a target is followed only while still public, otherwise the route returns a real 404. The migration is not applied to hosted Supabase.
 
 Performance hardening keeps the first hero eager/high priority and later media lazy/low, retains aspect-ratio containers (CLS 0), and relies on the existing reduced-motion carousel guard. Production-build staging measurement is documented in seo-performance.md/results.json. Images remain the dominant payload. No deployment, launch authorization, courier work or Prompt 18 work was performed.
+
+
+## Category filters and navigation responsiveness — 2026-11-23
+
+Implemented a scoped filter sidebar and mobile modal drawer: expandable groups, compact native checkboxes, inventory counts, selected-count indicator, sort/reset/apply controls, rounded chips, keyboard focus return and reduced-motion support. Fixed the broad input rule that styled checkboxes as full-width inputs. Existing filter URL/query and eligibility semantics remain intact.
+
+Storefront markup internal anchors now use Next Link; filter/search forms use Next Form client navigation. Category metadata avoids an unnecessary unfiltered query on filtered pages and reuses identical query arguments on unfiltered pages. Only anonymous shared navigation uses a 60-second tagged server cache, expired immediately by existing authorized public invalidation. Product prices, visibility, inventory, checkout and private reads remain uncached. No backend, schema, packages or production data changed.
+
+Read-only deployed baseline (nookandglow-three.vercel.app): category headers 1010–2040ms, complete HTML 1375–2705ms; product headers 1031–1039ms, complete HTML 1290–1782ms from this client connection. Network/cold-start/database contributions are not separately instrumented; Vercel bom1 response-edge identifier does not establish function/database co-location. Recommend checking Vercel function region against Supabase region, then measuring after deployment. No claimed deployed speedup: changes are local and not deployed.
+
+Verification: TypeScript and lint passed; 14 actual Chrome/Next checks with synthetic RPC/image responses passed, including no document reload on filter submission, URL chips, pagination, variants, missing/error handling, compact mobile checkboxes, focus restoration and no overflow/runtime errors. Desktop/mobile screenshots visually inspected. See storefront-mock-ui-verification.json and storefront-response-baseline.json. Provider data was not mutated. Existing homepage structure/assets preserved.

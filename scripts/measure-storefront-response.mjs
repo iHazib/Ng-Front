@@ -1,0 +1,5 @@
+import {writeFile} from 'node:fs/promises';
+const origin='https://nookandglow-three.vercel.app',results=[];let product;
+for(const path of ['/skincare','/skincare?sort=price-asc','/skincare']){const t=performance.now();const r=await fetch(origin+path);const headersMs=performance.now()-t;const html=await r.text();product??=html.match(/href="(\/products\/[^"?]+)/)?.[1];results.push({path,status:r.status,headersMs:Math.round(headersMs),totalMs:Math.round(performance.now()-t),cache:r.headers.get('x-vercel-cache'),region:r.headers.get('x-vercel-id')?.split('::')[0]});}
+if(product)for(let i=0;i<2;i++){const t=performance.now();const r=await fetch(origin+product);const headersMs=performance.now()-t;await r.text();results.push({path:product,status:r.status,headersMs:Math.round(headersMs),totalMs:Math.round(performance.now()-t)});}
+await writeFile('docs/storefront-response-baseline.json',JSON.stringify({kind:'read-only deployed HTTP measurements before local fixes; client network included',date:new Date().toISOString(),results},null,2)+'\n');console.log(JSON.stringify(results));

@@ -1,5 +1,6 @@
 import 'server-only';
 import {cache} from 'react';
+import {unstable_cache} from 'next/cache';
 import {getEnvironment} from '@/lib/server/environment';
 import {catalogParams,rootRoutes,type CatalogQuery,type CatalogResult,type PublicNavigation} from '@/lib/catalog/public-types';
 export function samplePreviewEnabled(){
@@ -12,7 +13,7 @@ export function samplePreviewEnabled(){
 }
 export class CatalogUnavailable extends Error{constructor(){super('The collection is temporarily unavailable. Please try again shortly.');}}
 // No Auth cookies/tokens enter this boundary, including when an admin visits public pages.
-// No cross-request cache: every navigation sees committed admin/media/taxonomy edits.
+// Product queries remain request-local so prices, visibility and stock stay current.
 async function publicRpc<T>(name:string,args:Record<string,unknown>):Promise<T>{
  try{
   const url=process.env.NEXT_PUBLIC_SUPABASE_URL,key=process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY;
@@ -22,7 +23,9 @@ async function publicRpc<T>(name:string,args:Record<string,unknown>):Promise<T>{
   if(!response.ok)throw Error();return await response.json() as T;
  }catch{throw new CatalogUnavailable();}
 }
-export const publicNavigation=cache(()=>publicRpc<PublicNavigation>('storefront_navigation',{}));
+// Only anonymous taxonomy/navigation is shared; prices, inventory and private reads remain uncached.
+const navigationCached=unstable_cache(()=>publicRpc<PublicNavigation>('storefront_navigation',{}),['public-navigation-v1'],{tags:['public-navigation'],revalidate:60});
+export const publicNavigation=cache(navigationCached);
 export const publicCatalog=cache(async(path:string,encodedQuery:string,slug?:string,home=false)=>{
  const parsed=catalogParams(JSON.parse(encodedQuery) as CatalogQuery);
  return publicRpc<CatalogResult>('storefront_catalog',{p_query:parsed.q,p_scopes:rootRoutes[path]??[],p_brand:path.startsWith('brands/')?path.slice(7):null,p_filters:parsed.filters,p_sort:parsed.sort,p_page:parsed.page,p_size:24,p_slug:slug??null,p_home:home});

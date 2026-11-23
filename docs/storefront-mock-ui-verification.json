@@ -15,6 +15,10 @@
       "result": "passed"
     },
     {
+      "name": "filter submission preserves client document",
+      "result": "passed"
+    },
+    {
       "name": "filters retain URL selections and removable chips",
       "result": "passed"
     },
@@ -40,6 +44,10 @@
     },
     {
       "name": "unknown product returns actual 404",
+      "result": "passed"
+    },
+    {
+      "name": "drawer checkboxes stay compact",
       "result": "passed"
     },
     {

@@ -1,6 +1,7 @@
 'use client';
 
 import { createContext, createElement, useContext, type ReactNode } from 'react';
+import Link from 'next/link';
 import { resolveMedia } from '@/lib/catalog/media';
 import { Carousel, CategoryCarousel, ScrollRail } from './SampleCarousels';
 import { SampleHeader } from './SampleHeader';
@@ -70,7 +71,8 @@ export function Plain({ node, overrides = new Map() }: { node: MarkupNode; overr
   if (hasClass(node, 'bag-count')) props.children = actions.count;
   Object.assign(props, overrides.get(node));
   if (!('children' in props) && node.children.length) props.children = node.children.map((child, index) => <Node key={index} node={child} overrides={overrides} />);
-  return createElement(node.tag, props);
+  if(node.tag==='a'&&typeof props.href==='string'&&props.href.startsWith('/')&&!props.href.startsWith('//'))return createElement(Link,{...props,href:props.href});
+  return createElement(node.tag,props);
 }
 export function Node({ node, overrides }: { node: MarkupNode | string; overrides?: Overrides }): ReactNode {
   if (typeof node === 'string') return node;

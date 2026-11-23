@@ -1,0 +1,42 @@
+{
+  "kind": "read-only deployed HTTP measurements before local fixes; client network included",
+  "date": "2026-11-23T04:23:20.009Z",
+  "results": [
+    {
+      "path": "/skincare",
+      "status": 200,
+      "headersMs": 2040,
+      "totalMs": 2705,
+      "cache": "MISS",
+      "region": "bom1"
+    },
+    {
+      "path": "/skincare?sort=price-asc",
+      "status": 200,
+      "headersMs": 1010,
+      "totalMs": 1449,
+      "cache": "MISS",
+      "region": "bom1"
+    },
+    {
+      "path": "/skincare",
+      "status": 200,
+      "headersMs": 1140,
+      "totalMs": 1375,
+      "cache": "MISS",
+      "region": "bom1"
+    },
+    {
+      "path": "/products/product-1ca7b4a3d39f5f8a931bc9a089a9f35d",
+      "status": 200,
+      "headersMs": 1031,
+      "totalMs": 1782
+    },
+    {
+      "path": "/products/product-1ca7b4a3d39f5f8a931bc9a089a9f35d",
+      "status": 200,
+      "headersMs": 1039,
+      "totalMs": 1290
+    }
+  ]
+}

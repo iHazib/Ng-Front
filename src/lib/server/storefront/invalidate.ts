@@ -1,5 +1,5 @@
 import 'server-only';
-import {revalidatePath} from 'next/cache';
-// Public reads are no-store and React cache is request-local. Invalidate router
-// layout entries after authorized writes; no private response is ever cached.
-export function invalidatePublicCatalog(){revalidatePath('/','layout');}
+import {revalidatePath,revalidateTag} from 'next/cache';
+// Expire shared anonymous navigation immediately after authorized writes.
+// Product/stock reads and all private responses remain uncached.
+export function invalidatePublicCatalog(){revalidateTag('public-navigation',{expire:0});revalidatePath('/','layout');}
