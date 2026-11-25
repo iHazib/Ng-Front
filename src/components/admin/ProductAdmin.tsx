@@ -1,6 +1,8 @@
 'use client';
 /* eslint-disable @next/next/no-img-element -- Private thumbnails require authorized uncached delivery. */
 import { useEffect, useState } from 'react';
+import {missingSavedDiscovery} from '@/lib/catalog/discovery-persistence';
+import type {DiscoveryDraft} from '@/lib/catalog/discovery';
 import type { Detail, InitialImage, References, SearchRow } from './types';
 import { ProductEditor } from './ProductEditor';
 import { ProductList } from './ProductList';
@@ -20,6 +22,7 @@ export async function adminRequest<T>(path:string, body?:unknown, bytes?:File,on
 }
 export function ProductAdmin({toolsOnly=false}:{toolsOnly?:boolean}){
   const [rows,setRows]=useState<SearchRow[]>([]),[refs,setRefs]=useState<References|null>(null),[detail,setDetail]=useState<Detail|null>(null);
+  const [failed,setFailed]=useState(false);
   const [dirty,setDirty]=useState(false),[visibility,setVisibility]=useState('');
   const [q,setQ]=useState(''),[offset,setOffset]=useState(0),[message,setMessage]=useState(''),[busy,setBusy]=useState(false),[images,setImages]=useState<InitialImage[]|null>(null);
   const [createIds,setCreateIds]=useState<{productId:string;variantId:string}|null>(null);
@@ -34,15 +37,20 @@ export function ProductAdmin({toolsOnly=false}:{toolsOnly?:boolean}){
   }
   const load=async(query=q,start=offset)=>{if(!toolsOnly)return;const list=await adminRequest<SearchRow[]>(`/admin/api/catalog?q=${encodeURIComponent(query)}&offset=${start}&status=${visibility}`);setRows(list);};
   useEffect(()=>{Promise.all([adminRequest<References>('/admin/api/catalog?view=references'),toolsOnly?adminRequest<SearchRow[]>('/admin/api/catalog'):Promise.resolve([] as SearchRow[])]).then(([references,list])=>{setRefs(references);setRows(list);}).catch(error=>setMessage(error.message));},[toolsOnly]);
-  async function run(work:()=>Promise<unknown>,success='Saved.'){setBusy(true);setMessage('');try{await work();setMessage(success);}catch(error){setMessage(error instanceof Error?error.message:'Operation failed.');}finally{setBusy(false);}}
+  async function run(work:()=>Promise<unknown>,success='Saved.'){setBusy(true);setFailed(false);setMessage('');try{await work();setMessage(success);}catch(error){setFailed(true);setMessage(error instanceof Error?error.message:'Operation failed.');}finally{setBusy(false);}}
   const open=async(id:string)=>{setDetail(await adminRequest<Detail>(`/admin/api/catalog?view=product&id=${id}`));};
   const mutate=async(body:Record<string,unknown>)=>{
-    await adminRequest('/admin/api/catalog',body);if(detail)await open(detail.product.id);setDirty(false);await load();
+    await adminRequest('/admin/api/catalog',body);if(detail){
+      const latest=await adminRequest<Detail>(`/admin/api/catalog?view=product&id=${detail.product.id}`);
+      const discovery=(body.data as {discovery?:DiscoveryDraft}|undefined)?.discovery;
+      if(body.action==='daily-save'&&discovery){const missing=missingSavedDiscovery(discovery,latest);if(missing.length)throw new Error('The server did not return the saved filters: '+missing.join(', ')+'. Refresh before retrying.');}
+      setDetail(latest);
+    }setDirty(false);await load();
   };
   return <>{toolsOnly&&<PageHeader eyebrow="Utilities" title="Import & technical tools" description="Bring the reviewed workbook into the catalog and stage the original product images."/>}
     <p role="status" aria-live="polite">{busy?'Working…':message}</p>
     <fieldset disabled={busy||!refs} style={{border:0,padding:0,background:'transparent'}}>
-    {detail&&refs?<><ProductEditor key={detail.product.id+':'+detail.product.revision} detail={detail} onDirty={setDirty} refs={refs} run={run} mutate={mutate} refresh={()=>open(detail.product.id)} onBack={()=>{if(!dirty||window.confirm('Leave without saving your changes?')){setDirty(false);setDetail(null);}}} /></>:<>
+    {detail&&refs?<><ProductEditor key={detail.product.id+':'+detail.product.revision} detail={detail} errorMessage={failed?message:undefined} onDirty={setDirty} refs={refs} run={run} mutate={mutate} refresh={()=>open(detail.product.id)} onBack={()=>{if(!dirty||window.confirm('Leave without saving your changes?')){setDirty(false);setDetail(null);}}} /></>:<>
     {toolsOnly&&<form className="actions" onSubmit={event=>{event.preventDefault();setOffset(0);void run(()=>load(q,0),'Search updated.');}}><label>Search by SKU or product name<input value={q} onChange={e=>setQ(e.target.value)} name="search" type="search" /></label><label>Visibility<select aria-label="Visibility" value={visibility} onChange={e=>setVisibility(e.target.value)}><option value="">All products</option><option value="draft">Draft</option><option value="published">Published</option><option value="archived">Hidden</option></select></label><button>Search</button><button type="button" onClick={()=>setCreateIds({productId:crypto.randomUUID(),variantId:crypto.randomUUID()})}>New product</button></form>}
     {createIds&&<section><h2>Create draft product</h2><form onSubmit={e=>{e.preventDefault();const f=new FormData(e.currentTarget);void run(async()=>{const result=await adminRequest<{productId:string}>('/admin/api/catalog',{action:'create',...createIds,name:f.get('name'),sku:f.get('sku')});setCreateIds(null);await load();await open(result.productId);},'Draft created.');}}><label>Product name<input name="name" required maxLength={300}/></label><label>SKU<input name="sku" required maxLength={120}/></label><button>Create draft</button> <button type="button" onClick={()=>setCreateIds(null)}>Cancel</button></form></section>}
     {!toolsOnly&&refs&&<ProductList refs={refs} onEdit={id=>void run(()=>open(id),'Product loaded.')} onCreate={()=>setCreateIds({productId:crypto.randomUUID(),variantId:crypto.randomUUID()})}/>}

@@ -1,0 +1,11 @@
+{
+  "kind": "actual hosted read-only assignment-to-public projection diagnosis",
+  "date": "2026-11-25T19:12:25.123Z",
+  "writes": 0,
+  "productCount": 121,
+  "publicCount": 4,
+  "facets": 0,
+  "concerns": 0,
+  "publicNavigationFacets": [],
+  "cases": []
+}

@@ -6,6 +6,10 @@
       "result": "passed"
     },
     {
+      "name": "unconfirmed selections visibly block Publish before sending a request",
+      "result": "passed"
+    },
+    {
       "name": "browser Save includes confirmed category features and concern atomically",
       "result": "passed"
     },
@@ -15,6 +19,10 @@
     },
     {
       "name": "discovery editor fits mobile",
+      "result": "passed"
+    },
+    {
+      "name": "a successful HTTP response without stored filters produces a visible error",
       "result": "passed"
     },
     {

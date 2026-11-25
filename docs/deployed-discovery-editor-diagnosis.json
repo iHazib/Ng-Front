@@ -1,0 +1,29 @@
+{
+  "kind": "actual deployed browser reads with intercepted Save dry-run; not persistence verification",
+  "sku": "AXI-003",
+  "writes": 0,
+  "productId": "80527604-f3a7-554a-925f-adef31268944",
+  "status": "completed_read_only",
+  "discoverySection": 1,
+  "namedFieldsPresent": true,
+  "deployedCapability": 1,
+  "initialAssignments": {
+    "facets": 0,
+    "concerns": 0
+  },
+  "savePayload": {
+    "productMatches": true,
+    "hasDiscovery": true,
+    "facets": [
+      {
+        "facetId": "skin-type",
+        "value": "skin-type:dry"
+      }
+    ],
+    "concerns": [
+      "uneven-texture"
+    ],
+    "confirmed": true
+  },
+  "originalUnchanged": true
+}
