@@ -43,7 +43,7 @@ export async function productDetail(token: string, id: string) {
     variants.length ? admin.read('import_records',query({variant_id:`in.(${variants.map(v=>v.id).join(',')})`,select:'original_sku,raw_fields,mapping,source_quantity,flags,state',limit:'1000'})) : [],
     admin.read('media_workflows',query({product_id:`eq.${id}`,select:'media_id,variant_id,association_id,replace_association_id,media_assets(id,alt,lifecycle,cloudinary_public_id,cloudinary_cloud_name,cloudinary_version,cloudinary_format,width,height)',order:'created_at.asc'})),
     admin.read('product_media',query({product_id:`eq.${id}`,select:'*',order:'position.asc'})),
-    admin.read('product_facets',query({product_id:`eq.${id}`,select:'*,evidence(*)'})),
+    admin.read('product_facets',query({product_id:`eq.${id}`,select:'*,evidence(*),facet_values(label)'})),
     admin.read('product_concerns',query({product_id:`eq.${id}`,select:'*,evidence(*)'})),
     admin.read('product_checks',query({product_id:`eq.${id}`,select:'*'})),
     admin.read('homepage_selections',query({product_id:`eq.${id}`,section:'eq.products',select:'id,position,status'})),

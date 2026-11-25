@@ -1996,3 +1996,12 @@
 .discovery-row { margin:18px 0; padding:18px; background:#f6f7f3; border-radius:12px; }
 .discovery-confirmation { margin:22px 0; padding:18px; border-left:3px solid #385646; }
 @media(max-width:650px) { .discovery-checks { grid-template-columns:1fr; } .discovery-assignment { align-items:flex-start; } }
+
+.discovery-fields { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:22px; margin:22px 0; }
+.discovery-field { min-width:0; padding:18px; border:1px solid var(--admin-line,#e2e5df); border-radius:12px; background:#fafbf8; }
+.discovery-field h3 { display:flex; align-items:center; justify-content:space-between; gap:10px; margin:0 0 14px; font-size:15px; }
+.discovery-field h3 small { font-size:11px; font-weight:400; color:#728077; }
+.discovery-field-row+.discovery-field-row { padding-top:14px; border-top:1px solid #e2e5df; }
+@media(max-width:700px) { .discovery-fields { grid-template-columns:1fr; gap:16px; } }
+
+.discovery-field .filter-sr-only { position:absolute; width:1px; height:1px; padding:0; overflow:hidden; clip-path:inset(50%); white-space:nowrap; }

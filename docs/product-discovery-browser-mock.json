@@ -18,11 +18,35 @@
       "result": "passed"
     },
     {
+      "name": "pre-existing fragrance fields visible before adding rows",
+      "result": "passed"
+    },
+    {
       "name": "fragrance editor does not offer skincare concerns",
       "result": "passed"
     },
     {
+      "name": "pre-existing fragrance family notes and occasion fields visible",
+      "result": "passed"
+    },
+    {
       "name": "fragrance concentration and one exact note submitted",
+      "result": "passed"
+    },
+    {
+      "name": "newly saved custom note label appears without reloading references",
+      "result": "passed"
+    },
+    {
+      "name": "pre-existing body fields visible without Add filter",
+      "result": "passed"
+    },
+    {
+      "name": "blank optional fields excluded from Save payload",
+      "result": "passed"
+    },
+    {
+      "name": "body fields fit mobile",
       "result": "passed"
     }
   ],
