@@ -27,6 +27,18 @@
       "result": "passed"
     },
     {
+      "name": "description starts expanded and optional content starts collapsed",
+      "result": "passed"
+    },
+    {
+      "name": "keyboard opens how to use with original Markdown",
+      "result": "passed"
+    },
+    {
+      "name": "key benefits expands independently",
+      "result": "passed"
+    },
+    {
       "name": "option switches price/image/availability and disables bag",
       "result": "passed"
     },
@@ -52,6 +64,14 @@
     },
     {
       "name": "mobile drawer restores focus and page has no overflow",
+      "result": "passed"
+    },
+    {
+      "name": "mobile description collapses without horizontal overflow",
+      "result": "passed"
+    },
+    {
+      "name": "empty optional product disclosures are absent",
       "result": "passed"
     },
     {

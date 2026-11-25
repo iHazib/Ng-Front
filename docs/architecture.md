@@ -415,3 +415,23 @@ Storefront markup internal anchors now use Next Link; filter/search forms use Ne
 Read-only deployed baseline (nookandglow-three.vercel.app): category headers 1010–2040ms, complete HTML 1375–2705ms; product headers 1031–1039ms, complete HTML 1290–1782ms from this client connection. Network/cold-start/database contributions are not separately instrumented; Vercel bom1 response-edge identifier does not establish function/database co-location. Recommend checking Vercel function region against Supabase region, then measuring after deployment. No claimed deployed speedup: changes are local and not deployed.
 
 Verification: TypeScript and lint passed; 14 actual Chrome/Next checks with synthetic RPC/image responses passed, including no document reload on filter submission, URL chips, pagination, variants, missing/error handling, compact mobile checkboxes, focus restoration and no overflow/runtime errors. Desktop/mobile screenshots visually inspected. See storefront-mock-ui-verification.json and storefront-response-baseline.json. Provider data was not mutated. Existing homepage structure/assets preserved.
+
+
+## Optional boxed-set contents — 2026-11-23
+
+Owner requested removing boxed-set confirmation as a publication requirement for AXI-004 and future products. A read-only hosted admin check confirmed AXI-004 (The Mini Glow Set) is draft, sellable_kind=unconfirmed_set, with set_contents_missing as its only essential blocker and no specific issues. No hosted product or publication state was changed.
+
+Incremental 023 removes boxed contents gates from publication_blockers, variant public eligibility and admin reminder generation, plus the boxed-pack-only import confirmation flag. Other identity/scope/claim issues, required price/category/description/stock and approved-media safeguards remain. Original classifications, factory contents, exact SKUs, content, stock, orders and audit history are retained. Existing derived boxed reminders become inactive; dismissals/history are retained. No automatic publication or product reclassification.
+
+The exact complete SQL Editor file 20_install_optional_boxed_sets_clean.sql passed psql -X -v ON_ERROR_STOP=1 -f against a fresh disposable PostgreSQL database with all 23 existing migration files (001–022 plus the additional SEO migration). All seven final flags true; business-row snapshots and function OIDs/owners/ACLs/settings preserved. Local fixtures demonstrated daily Publish for unconfirmed_set, public eligibility for factory_set without contents, removed reminders and repeat-install refusal. Supabase Auth/Storage were local test doubles, not hosted verification. Evidence: boxed-set-local-verification.json and boxed-set-installer-manifest.json.
+
+Pending owner SQL Editor application: run 20_preflight_optional_boxed_sets.sql read-only, then only the complete 20_install_optional_boxed_sets_clean.sql once using ordinary Run. Before: prerequisites_present/admin_write_grants_preserved true and five correction/receipt flags false. After: all seven true. Do not rerun older installers. Refresh AXI-004 and choose Publish explicitly afterward. Existing HTTP configuration cannot apply DDL; no passwords/keys requested in chat. No Git push/deployment performed for this follow-up.
+
+
+## Collapsible product information — 2026-11-25
+
+Replaced long product-copy panels with shared native details/summary disclosures for Product description (initially open), How to use, Key benefits and Delivery information (initially closed). Each row toggles independently, including keyboard interaction before JavaScript hydration. Optional empty/whitespace-only copy is omitted. Published and explicit sample product pages use the same component; no product copy is rewritten. Existing Markdown sanitation, product metadata, reviews, pricing, inventory and admin data remain unchanged. Styling uses cream/ink/bronze, fine dividers, compact uppercase labels and inline SVG chevrons; responsive spacing and reduced-motion rules are scoped to product disclosures.
+
+Verification: production build, lint and TypeScript passed; 19 Chrome/Next browser checks with explicit synthetic catalog/image responses passed, including expanded/collapsed defaults, keyboard How to use, independent benefit expansion, mobile collapse/no overflow and missing optional sections. Desktop/mobile screenshots visually inspected under .local/storefront-verification/product-disclosures-*.png. These are browser UI checks, not new hosted provider verification. No database mutation, auto-publication or deployment.
+
+Owner separately confirmed 023 installation: all seven flags true. Do not rerun its installer. The product-disclosure change requires no migration.

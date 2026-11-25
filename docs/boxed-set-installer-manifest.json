@@ -1,0 +1,5 @@
+{
+  "canonical": "supabase\\migrations\\202611230023_optional_boxed_set_contents.sql",
+  "canonical_sha256": "9249d60fa419ef50e017fe7b2e5ab5d92c5810f0d72bf4d77271e2d2b6cea8b3",
+  "installer_sha256": "0094150eb5c8f69d6a7b490b40e52c5a0e81fcfcb9416218a3f02ed44ea8c206"
+}

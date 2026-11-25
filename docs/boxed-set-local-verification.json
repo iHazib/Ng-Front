@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "kind": "fresh disposable PostgreSQL, Supabase Auth/Storage doubles; not hosted",
+  "base_migrations": 23,
+  "exact_file": "supabase\\sql-editor\\20_install_optional_boxed_sets_clean.sql",
+  "installer_sha256": "15302a35958034a6aea59ba975ea107829b30d21d8876b2cee1eb2ecff2ceb2e",
+  "execution": "psql -X -v ON_ERROR_STOP=1 -f",
+  "business_rows_preserved": true,
+  "function_oids_owners_grants_preserved": true,
+  "unconfirmed_set_daily_publish_and_public_visibility": true,
+  "factory_set_without_contents_public_visibility": true,
+  "reminder_removed": true,
+  "other_safeguards_retained": true,
+  "repeat_refused": true,
+  "final_flags_in_log": ".local\\database-test-0d843f10c67f\\exact-installer.log"
+}

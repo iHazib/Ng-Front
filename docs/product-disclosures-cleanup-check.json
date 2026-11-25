@@ -1,0 +1,10 @@
+{
+  "date": "2026-11-25T09:39:32.939Z",
+  "kind": "actual hosted admin-authorized read-only cleanup check",
+  "adminMembership": true,
+  "syntheticNameMatches": 0,
+  "registeredEarlierFixtureProductMatches": 0,
+  "adminSyntheticSearchMatches": 0,
+  "currentAccordionTest": "isolated mock RPC process only; never imported into hosted Supabase",
+  "writes": 0
+}

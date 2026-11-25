@@ -1,6 +1,7 @@
 import type {ReactNode} from 'react';
 import Link from 'next/link';
 import Form from 'next/form';
+import {ProductDisclosure} from './ProductDisclosure';
 import {ProductMarkdown} from './ProductMarkdown';
 import {notFound} from 'next/navigation';
 import {assets} from '@/config/assets';
@@ -21,7 +22,7 @@ export function PublicCommercePage({path,query,result,navigation,reviews,reviewR
  if(path.startsWith('products/')){
   const product=result.products[0];if(!product)notFound();
   const scopeRoute=scopeRoutes[product.scope],items=scopeRoute?[{label:rootLabels[scopeRoute]??product.category,href:'/'+scopeRoute},{label:product.name}]:[{label:product.name}];
-  return <><JsonLd data={breadcrumbJsonLd(items,'/products/'+product.slug)}/><JsonLd data={productJsonLd(product,reviewResult)}/><Breadcrumbs items={items}/><PublicPurchase product={product} initialVariant={queryValues(query.variant)[0]}/><section className="detail-sections"><div><h2>Product description</h2><ProductMarkdown source={product.description??''}/></div>{product.usage&&<div><h2>How to use</h2><ProductMarkdown source={product.usage}/></div>}{product.keyBenefits&&<div><h2>Key benefits</h2><ProductMarkdown source={product.keyBenefits}/></div>}<div><h2>Delivery information</h2><p>Delivery options will be confirmed when checkout is configured.</p><Link className="text-link" href="/shipping">Delivery information →</Link></div>{reviews}</section></>;
+  return <><JsonLd data={breadcrumbJsonLd(items,'/products/'+product.slug)}/><JsonLd data={productJsonLd(product,reviewResult)}/><Breadcrumbs items={items}/><PublicPurchase product={product} initialVariant={queryValues(query.variant)[0]}/><section className="product-detail-sections" aria-label="Product information"><div className="product-disclosures">{product.description?.trim()&&<ProductDisclosure title="Product description" initiallyOpen><ProductMarkdown source={product.description}/></ProductDisclosure>}{product.usage?.trim()&&<ProductDisclosure title="How to use"><ProductMarkdown source={product.usage}/></ProductDisclosure>}{product.keyBenefits?.trim()&&<ProductDisclosure title="Key benefits"><ProductMarkdown source={product.keyBenefits}/></ProductDisclosure>}<ProductDisclosure title="Delivery information"><p>Delivery options will be confirmed when checkout is configured.</p><Link className="text-link" href="/shipping">Delivery information →</Link></ProductDisclosure></div>{reviews}</section></>;
  }
  if(!title)notFound();
  if(path==='brands'){const items=[{label:'Brands'}];return <><JsonLd data={breadcrumbJsonLd(items,'/brands')}/><Breadcrumbs items={items}/><header className="commerce-heading"><p className="eyebrow">The names in our edit</p><h1>{title}</h1></header><div className="brand-directory">{navigation.brands.map(b=><Link key={b.id} href={'/brands/'+b.id}>{brandArtwork[b.id]&&<img src={brandArtwork[b.id]} alt={b.name+' logo'}/>}<span>{b.name} ↗</span><small>{b.count} products</small></Link>)}</div>{!navigation.brands.length&&<div className="commerce-empty"><h2>Our collection is being prepared.</h2></div>}</>;}
