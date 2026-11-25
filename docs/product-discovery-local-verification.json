@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "kind": "fresh disposable PostgreSQL; Auth/Storage doubles, not hosted",
+  "base_migrations": 24,
+  "exact_file": "supabase\\sql-editor\\21_install_product_discovery_clean.sql",
+  "installer_sha256": "a4aaff5b81bd31d0e70567607c006b493413584a275433a8433d5d086b2b4b53",
+  "execution": "psql -X -v ON_ERROR_STOP=1 -f",
+  "existing_business_rows_preserved": true,
+  "final_flags": {
+    "prerequisite_023": true,
+    "discovery_present": true,
+    "capability_present": true,
+    "save_hook_present": true,
+    "navigation_facets_present": true,
+    "receipt_matches": true,
+    "public_security_preserved": true,
+    "helper_private": true
+  },
+  "assertions": 37,
+  "repeat_refused": true,
+  "evidence": "database-test-9b8d46e53f00"
+}

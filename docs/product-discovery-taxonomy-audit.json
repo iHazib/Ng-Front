@@ -1,0 +1,1019 @@
+{
+  "kind": "actual hosted read-only taxonomy inventory",
+  "date": "2026-11-25T16:27:02.167Z",
+  "writes": 0,
+  "categories": [
+    {
+      "id": "home",
+      "parent_id": null,
+      "name": "Home",
+      "scope": null,
+      "status": "draft"
+    },
+    {
+      "id": "makeup",
+      "parent_id": "beauty",
+      "name": "Makeup",
+      "scope": "makeup",
+      "status": "draft"
+    },
+    {
+      "id": "bath-body",
+      "parent_id": "beauty",
+      "name": "Bath & Body",
+      "scope": "bath-body",
+      "status": "draft"
+    },
+    {
+      "id": "hair-care",
+      "parent_id": "beauty",
+      "name": "Hair Care",
+      "scope": "hair-care",
+      "status": "draft"
+    },
+    {
+      "id": "personal-fragrance",
+      "parent_id": "beauty",
+      "name": "Personal Fragrance",
+      "scope": "personal-fragrance",
+      "status": "draft"
+    },
+    {
+      "id": "home-fragrance",
+      "parent_id": "home",
+      "name": "Home Fragrance",
+      "scope": "home-fragrance",
+      "status": "draft"
+    },
+    {
+      "id": "cutlery",
+      "parent_id": "home",
+      "name": "Cutlery",
+      "scope": "cutlery",
+      "status": "draft"
+    },
+    {
+      "id": "skincare/moisturizers",
+      "parent_id": "skincare",
+      "name": "Moisturizers",
+      "scope": "skincare",
+      "status": "draft"
+    },
+    {
+      "id": "skincare/eye-care",
+      "parent_id": "skincare",
+      "name": "Eye Care",
+      "scope": "skincare",
+      "status": "draft"
+    },
+    {
+      "id": "skincare/exfoliants",
+      "parent_id": "skincare",
+      "name": "Exfoliants",
+      "scope": "skincare",
+      "status": "draft"
+    },
+    {
+      "id": "skincare/masks",
+      "parent_id": "skincare",
+      "name": "Masks",
+      "scope": "skincare",
+      "status": "draft"
+    },
+    {
+      "id": "skincare/sun-care",
+      "parent_id": "skincare",
+      "name": "Sun Care",
+      "scope": "skincare",
+      "status": "draft"
+    },
+    {
+      "id": "makeup/face",
+      "parent_id": "makeup",
+      "name": "Face",
+      "scope": "makeup",
+      "status": "draft"
+    },
+    {
+      "id": "makeup/eyes",
+      "parent_id": "makeup",
+      "name": "Eyes",
+      "scope": "makeup",
+      "status": "draft"
+    },
+    {
+      "id": "makeup/lips",
+      "parent_id": "makeup",
+      "name": "Lips",
+      "scope": "makeup",
+      "status": "draft"
+    },
+    {
+      "id": "makeup/tools-accessories",
+      "parent_id": "makeup",
+      "name": "Tools / Accessories",
+      "scope": "makeup",
+      "status": "draft"
+    },
+    {
+      "id": "makeup/sets",
+      "parent_id": "makeup",
+      "name": "Sets",
+      "scope": "makeup",
+      "status": "draft"
+    },
+    {
+      "id": "bath-body/cleansing",
+      "parent_id": "bath-body",
+      "name": "Body Cleansing",
+      "scope": "bath-body",
+      "status": "draft"
+    },
+    {
+      "id": "bath-body/exfoliation",
+      "parent_id": "bath-body",
+      "name": "Body Exfoliation",
+      "scope": "bath-body",
+      "status": "draft"
+    },
+    {
+      "id": "bath-body/moisturizers",
+      "parent_id": "bath-body",
+      "name": "Body Moisturizers",
+      "scope": "bath-body",
+      "status": "draft"
+    },
+    {
+      "id": "bath-body/hand-nail-care",
+      "parent_id": "bath-body",
+      "name": "Hand & Nail Care",
+      "scope": "bath-body",
+      "status": "draft"
+    },
+    {
+      "id": "hair-care/dry-shampoo",
+      "parent_id": "hair-care",
+      "name": "Dry Shampoo",
+      "scope": "hair-care",
+      "status": "draft"
+    },
+    {
+      "id": "personal-fragrance/perfume",
+      "parent_id": "personal-fragrance",
+      "name": "Perfume",
+      "scope": "personal-fragrance",
+      "status": "draft"
+    },
+    {
+      "id": "personal-fragrance/sets",
+      "parent_id": "personal-fragrance",
+      "name": "Fragrance Sets",
+      "scope": "personal-fragrance",
+      "status": "draft"
+    },
+    {
+      "id": "home-fragrance/sets",
+      "parent_id": "home-fragrance",
+      "name": "Home Fragrance Sets",
+      "scope": "home-fragrance",
+      "status": "draft"
+    },
+    {
+      "id": "cutlery/sets",
+      "parent_id": "cutlery",
+      "name": "Cutlery Sets",
+      "scope": "cutlery",
+      "status": "draft"
+    },
+    {
+      "id": "skincare/cleansers",
+      "parent_id": "skincare",
+      "name": "Cleansers",
+      "scope": "skincare",
+      "status": "published"
+    },
+    {
+      "id": "skincare/serums",
+      "parent_id": "skincare",
+      "name": "Serums & Ampoules",
+      "scope": "skincare",
+      "status": "published"
+    },
+    {
+      "id": "skincare/sets",
+      "parent_id": "skincare",
+      "name": "Sets",
+      "scope": "skincare",
+      "status": "published"
+    },
+    {
+      "id": "beauty",
+      "parent_id": null,
+      "name": "Beauty",
+      "scope": null,
+      "status": "published"
+    },
+    {
+      "id": "skincare",
+      "parent_id": "beauty",
+      "name": "Skincare",
+      "scope": "skincare",
+      "status": "published"
+    }
+  ],
+  "facet_definitions": [
+    {
+      "id": "size",
+      "name": "size",
+      "kind": "quantity",
+      "active": false
+    },
+    {
+      "id": "shade",
+      "name": "shade",
+      "kind": "reference",
+      "active": false
+    },
+    {
+      "id": "finish-colour",
+      "name": "finish-colour",
+      "kind": "enum",
+      "active": false
+    },
+    {
+      "id": "skin-type",
+      "name": "skin-type",
+      "kind": "enum",
+      "active": false
+    },
+    {
+      "id": "application-area",
+      "name": "application-area",
+      "kind": "enum",
+      "active": false
+    },
+    {
+      "id": "fragrance-family",
+      "name": "fragrance-family",
+      "kind": "reference",
+      "active": false
+    },
+    {
+      "id": "fragrance-note",
+      "name": "fragrance-note",
+      "kind": "reference",
+      "active": false
+    },
+    {
+      "id": "concentration",
+      "name": "concentration",
+      "kind": "enum",
+      "active": false
+    },
+    {
+      "id": "marketed-audience",
+      "name": "marketed-audience",
+      "kind": "enum",
+      "active": false
+    },
+    {
+      "id": "home-format",
+      "name": "home-format",
+      "kind": "enum",
+      "active": false
+    },
+    {
+      "id": "material",
+      "name": "material",
+      "kind": "reference",
+      "active": false
+    },
+    {
+      "id": "piece-count",
+      "name": "piece-count",
+      "kind": "integer",
+      "active": false
+    },
+    {
+      "id": "care",
+      "name": "care",
+      "kind": "reference",
+      "active": false
+    },
+    {
+      "id": "body-format",
+      "name": "body-format",
+      "kind": "enum",
+      "active": false
+    },
+    {
+      "id": "makeup-format",
+      "name": "makeup-format",
+      "kind": "enum",
+      "active": false
+    },
+    {
+      "id": "spf",
+      "name": "spf",
+      "kind": "integer",
+      "active": false
+    },
+    {
+      "id": "sfdaae73cb3799-size",
+      "name": "Synthetic size",
+      "kind": "quantity",
+      "active": false
+    },
+    {
+      "id": "sfdaae73cb3799-finish",
+      "name": "Synthetic finish",
+      "kind": "enum",
+      "active": false
+    },
+    {
+      "id": "al-finish-75fbda80-ee3a-4dc7-8c5f-c542f5273d86",
+      "name": "Synthetic finish 75fbda80-ee3a-4dc7-8c5f-c542f5273d86",
+      "kind": "enum",
+      "active": false
+    },
+    {
+      "id": "al-finish-3dd9b56b-98fb-4389-9e48-cef1a442abf7",
+      "name": "Synthetic finish 3dd9b56b-98fb-4389-9e48-cef1a442abf7",
+      "kind": "enum",
+      "active": false
+    },
+    {
+      "id": "al-finish-0ed2928d-e9c2-4dea-9820-8f42d1ff1768",
+      "name": "Synthetic finish 0ed2928d-e9c2-4dea-9820-8f42d1ff1768",
+      "kind": "enum",
+      "active": false
+    },
+    {
+      "id": "ex-finish-c51f2fa7-25c3-41ad-8934-aec7034613ae",
+      "name": "Synthetic finish c51f2fa7-25c3-41ad-8934-aec7034613ae",
+      "kind": "enum",
+      "active": false
+    },
+    {
+      "id": "ex-finish-351c0cfd-58fd-40e1-9821-a48458fc7075",
+      "name": "Synthetic finish 351c0cfd-58fd-40e1-9821-a48458fc7075",
+      "kind": "enum",
+      "active": false
+    },
+    {
+      "id": "ex-finish-f4005515-4895-4341-b54d-a4c3919adb8e",
+      "name": "Synthetic finish f4005515-4895-4341-b54d-a4c3919adb8e",
+      "kind": "enum",
+      "active": false
+    }
+  ],
+  "facet_scopes": [
+    {
+      "facet_id": "size",
+      "scope": "skincare"
+    },
+    {
+      "facet_id": "size",
+      "scope": "makeup"
+    },
+    {
+      "facet_id": "size",
+      "scope": "bath-body"
+    },
+    {
+      "facet_id": "size",
+      "scope": "hair-care"
+    },
+    {
+      "facet_id": "size",
+      "scope": "personal-fragrance"
+    },
+    {
+      "facet_id": "size",
+      "scope": "home-fragrance"
+    },
+    {
+      "facet_id": "shade",
+      "scope": "makeup"
+    },
+    {
+      "facet_id": "finish-colour",
+      "scope": "cutlery"
+    },
+    {
+      "facet_id": "skin-type",
+      "scope": "skincare"
+    },
+    {
+      "facet_id": "application-area",
+      "scope": "skincare"
+    },
+    {
+      "facet_id": "application-area",
+      "scope": "makeup"
+    },
+    {
+      "facet_id": "application-area",
+      "scope": "bath-body"
+    },
+    {
+      "facet_id": "application-area",
+      "scope": "hair-care"
+    },
+    {
+      "facet_id": "fragrance-family",
+      "scope": "personal-fragrance"
+    },
+    {
+      "facet_id": "fragrance-family",
+      "scope": "home-fragrance"
+    },
+    {
+      "facet_id": "fragrance-note",
+      "scope": "personal-fragrance"
+    },
+    {
+      "facet_id": "fragrance-note",
+      "scope": "home-fragrance"
+    },
+    {
+      "facet_id": "concentration",
+      "scope": "personal-fragrance"
+    },
+    {
+      "facet_id": "marketed-audience",
+      "scope": "personal-fragrance"
+    },
+    {
+      "facet_id": "home-format",
+      "scope": "home-fragrance"
+    },
+    {
+      "facet_id": "material",
+      "scope": "cutlery"
+    },
+    {
+      "facet_id": "material",
+      "scope": "makeup"
+    },
+    {
+      "facet_id": "piece-count",
+      "scope": "cutlery"
+    },
+    {
+      "facet_id": "piece-count",
+      "scope": "makeup"
+    },
+    {
+      "facet_id": "piece-count",
+      "scope": "personal-fragrance"
+    },
+    {
+      "facet_id": "piece-count",
+      "scope": "home-fragrance"
+    },
+    {
+      "facet_id": "piece-count",
+      "scope": "skincare"
+    },
+    {
+      "facet_id": "care",
+      "scope": "cutlery"
+    },
+    {
+      "facet_id": "body-format",
+      "scope": "bath-body"
+    },
+    {
+      "facet_id": "makeup-format",
+      "scope": "makeup"
+    },
+    {
+      "facet_id": "spf",
+      "scope": "skincare"
+    },
+    {
+      "facet_id": "spf",
+      "scope": "bath-body"
+    },
+    {
+      "facet_id": "sfdaae73cb3799-size",
+      "scope": "skincare"
+    },
+    {
+      "facet_id": "sfdaae73cb3799-finish",
+      "scope": "skincare"
+    },
+    {
+      "facet_id": "al-finish-75fbda80-ee3a-4dc7-8c5f-c542f5273d86",
+      "scope": "skincare"
+    },
+    {
+      "facet_id": "al-finish-3dd9b56b-98fb-4389-9e48-cef1a442abf7",
+      "scope": "skincare"
+    },
+    {
+      "facet_id": "al-finish-0ed2928d-e9c2-4dea-9820-8f42d1ff1768",
+      "scope": "skincare"
+    },
+    {
+      "facet_id": "ex-finish-c51f2fa7-25c3-41ad-8934-aec7034613ae",
+      "scope": "skincare"
+    },
+    {
+      "facet_id": "ex-finish-351c0cfd-58fd-40e1-9821-a48458fc7075",
+      "scope": "skincare"
+    },
+    {
+      "facet_id": "ex-finish-f4005515-4895-4341-b54d-a4c3919adb8e",
+      "scope": "skincare"
+    }
+  ],
+  "facet_values": [
+    {
+      "id": "finish-colour:gold",
+      "facet_id": "finish-colour",
+      "label": "gold"
+    },
+    {
+      "id": "finish-colour:rose-gold",
+      "facet_id": "finish-colour",
+      "label": "rose-gold"
+    },
+    {
+      "id": "finish-colour:rainbow",
+      "facet_id": "finish-colour",
+      "label": "rainbow"
+    },
+    {
+      "id": "finish-colour:silver",
+      "facet_id": "finish-colour",
+      "label": "silver"
+    },
+    {
+      "id": "skin-type:normal",
+      "facet_id": "skin-type",
+      "label": "normal"
+    },
+    {
+      "id": "skin-type:dry",
+      "facet_id": "skin-type",
+      "label": "dry"
+    },
+    {
+      "id": "skin-type:oily",
+      "facet_id": "skin-type",
+      "label": "oily"
+    },
+    {
+      "id": "skin-type:combination",
+      "facet_id": "skin-type",
+      "label": "combination"
+    },
+    {
+      "id": "skin-type:sensitive",
+      "facet_id": "skin-type",
+      "label": "sensitive"
+    },
+    {
+      "id": "application-area:face",
+      "facet_id": "application-area",
+      "label": "face"
+    },
+    {
+      "id": "application-area:eyes",
+      "facet_id": "application-area",
+      "label": "eyes"
+    },
+    {
+      "id": "application-area:lips",
+      "facet_id": "application-area",
+      "label": "lips"
+    },
+    {
+      "id": "application-area:body",
+      "facet_id": "application-area",
+      "label": "body"
+    },
+    {
+      "id": "application-area:hair",
+      "facet_id": "application-area",
+      "label": "hair"
+    },
+    {
+      "id": "application-area:hands",
+      "facet_id": "application-area",
+      "label": "hands"
+    },
+    {
+      "id": "application-area:nails",
+      "facet_id": "application-area",
+      "label": "nails"
+    },
+    {
+      "id": "concentration:parfum",
+      "facet_id": "concentration",
+      "label": "parfum"
+    },
+    {
+      "id": "concentration:eau-de-parfum",
+      "facet_id": "concentration",
+      "label": "eau-de-parfum"
+    },
+    {
+      "id": "concentration:eau-de-toilette",
+      "facet_id": "concentration",
+      "label": "eau-de-toilette"
+    },
+    {
+      "id": "concentration:eau-de-cologne",
+      "facet_id": "concentration",
+      "label": "eau-de-cologne"
+    },
+    {
+      "id": "concentration:body-mist",
+      "facet_id": "concentration",
+      "label": "body-mist"
+    },
+    {
+      "id": "marketed-audience:women",
+      "facet_id": "marketed-audience",
+      "label": "women"
+    },
+    {
+      "id": "marketed-audience:men",
+      "facet_id": "marketed-audience",
+      "label": "men"
+    },
+    {
+      "id": "marketed-audience:unisex",
+      "facet_id": "marketed-audience",
+      "label": "unisex"
+    },
+    {
+      "id": "home-format:candle",
+      "facet_id": "home-format",
+      "label": "candle"
+    },
+    {
+      "id": "home-format:reed-diffuser",
+      "facet_id": "home-format",
+      "label": "reed-diffuser"
+    },
+    {
+      "id": "home-format:room-spray",
+      "facet_id": "home-format",
+      "label": "room-spray"
+    },
+    {
+      "id": "home-format:mixed-set",
+      "facet_id": "home-format",
+      "label": "mixed-set"
+    },
+    {
+      "id": "body-format:wash",
+      "facet_id": "body-format",
+      "label": "wash"
+    },
+    {
+      "id": "body-format:scrub",
+      "facet_id": "body-format",
+      "label": "scrub"
+    },
+    {
+      "id": "body-format:lotion",
+      "facet_id": "body-format",
+      "label": "lotion"
+    },
+    {
+      "id": "body-format:serum",
+      "facet_id": "body-format",
+      "label": "serum"
+    },
+    {
+      "id": "body-format:cream",
+      "facet_id": "body-format",
+      "label": "cream"
+    },
+    {
+      "id": "body-format:hand-nail-set",
+      "facet_id": "body-format",
+      "label": "hand-nail-set"
+    },
+    {
+      "id": "makeup-format:stick",
+      "facet_id": "makeup-format",
+      "label": "stick"
+    },
+    {
+      "id": "makeup-format:liquid",
+      "facet_id": "makeup-format",
+      "label": "liquid"
+    },
+    {
+      "id": "makeup-format:cream",
+      "facet_id": "makeup-format",
+      "label": "cream"
+    },
+    {
+      "id": "makeup-format:powder",
+      "facet_id": "makeup-format",
+      "label": "powder"
+    },
+    {
+      "id": "makeup-format:spray",
+      "facet_id": "makeup-format",
+      "label": "spray"
+    },
+    {
+      "id": "makeup-format:palette",
+      "facet_id": "makeup-format",
+      "label": "palette"
+    },
+    {
+      "id": "makeup-format:tool",
+      "facet_id": "makeup-format",
+      "label": "tool"
+    },
+    {
+      "id": "makeup-format:pouch",
+      "facet_id": "makeup-format",
+      "label": "pouch"
+    },
+    {
+      "id": "makeup-format:mixed-set",
+      "facet_id": "makeup-format",
+      "label": "mixed-set"
+    },
+    {
+      "id": "pixi:shade:fleur",
+      "facet_id": "shade",
+      "label": "Fleur"
+    },
+    {
+      "id": "pixi:shade:ruby",
+      "facet_id": "shade",
+      "label": "Ruby"
+    },
+    {
+      "id": "pixi:shade:juicy",
+      "facet_id": "shade",
+      "label": "Juicy"
+    },
+    {
+      "id": "ciate:shade:coconut",
+      "facet_id": "shade",
+      "label": "Coconut"
+    },
+    {
+      "id": "ciate:shade:papaya",
+      "facet_id": "shade",
+      "label": "Papaya"
+    },
+    {
+      "id": "elf:shade:light-medium",
+      "facet_id": "shade",
+      "label": "Light Medium"
+    },
+    {
+      "id": "tarte:shade:12n-fair-neutral",
+      "facet_id": "shade",
+      "label": "12N Fair Neutral"
+    },
+    {
+      "id": "tarte:shade:20s-light-sand",
+      "facet_id": "shade",
+      "label": "20S Light Sand"
+    },
+    {
+      "id": "dior:shade:004-coral",
+      "facet_id": "shade",
+      "label": "004 Coral"
+    },
+    {
+      "id": "dior:shade:020-mahogany",
+      "facet_id": "shade",
+      "label": "020 Mahogany"
+    },
+    {
+      "id": "dior:shade:012-rosewood",
+      "facet_id": "shade",
+      "label": "012 Rosewood"
+    },
+    {
+      "id": "dior:shade:007-raspberry",
+      "facet_id": "shade",
+      "label": "007 Raspberry"
+    },
+    {
+      "id": "elf:shade:vine-shine",
+      "facet_id": "shade",
+      "label": "Vine & Shine"
+    },
+    {
+      "id": "elf:shade:blackest-black",
+      "facet_id": "shade",
+      "label": "Blackest Black"
+    },
+    {
+      "id": "makeup-by-mario:shade:hot-pink",
+      "facet_id": "shade",
+      "label": "Hot Pink"
+    },
+    {
+      "id": "estee-lauder:shade:662-rule-maker",
+      "facet_id": "shade",
+      "label": "662 Rule Maker"
+    },
+    {
+      "id": "estee-lauder:shade:131-bois-de-rose",
+      "facet_id": "shade",
+      "label": "131 Bois De Rose"
+    },
+    {
+      "id": "estee-lauder:shade:553-passion",
+      "facet_id": "shade",
+      "label": "553 Passion"
+    },
+    {
+      "id": "estee-lauder:shade:912-astonishing",
+      "facet_id": "shade",
+      "label": "912 Astonishing"
+    },
+    {
+      "id": "origins:shade:14-bold-bouquet",
+      "facet_id": "shade",
+      "label": "14 Bold Bouquet"
+    },
+    {
+      "id": "becca:shade:scarlet",
+      "facet_id": "shade",
+      "label": "Scarlet"
+    },
+    {
+      "id": "tarte:shade:cherry",
+      "facet_id": "shade",
+      "label": "Cherry"
+    },
+    {
+      "id": "milani:shade:120-fantasy",
+      "facet_id": "shade",
+      "label": "120 Fantasy"
+    },
+    {
+      "id": "elf:shade:bronze-2",
+      "facet_id": "shade",
+      "label": "Bronze 2"
+    },
+    {
+      "id": "nars:shade:orgasm-edge",
+      "facet_id": "shade",
+      "label": "Orgasm Edge"
+    },
+    {
+      "id": "morphe:shade:energized",
+      "facet_id": "shade",
+      "label": "Energized"
+    },
+    {
+      "id": "l-oreal:shade:01-peach-addict",
+      "facet_id": "shade",
+      "label": "01 Peach Addict"
+    },
+    {
+      "id": "l-oreal:shade:01-warm-glow",
+      "facet_id": "shade",
+      "label": "01 Warm Glow"
+    },
+    {
+      "id": "elf:shade:yummy-gummy",
+      "facet_id": "shade",
+      "label": "Yummy Gummy"
+    },
+    {
+      "id": "mac:shade:year-of-glam-palette-edition-contents-pending",
+      "facet_id": "shade",
+      "label": "Year of Glam (palette edition, contents pending)"
+    },
+    {
+      "id": "sfdaae73cb3799-red",
+      "facet_id": "sfdaae73cb3799-finish",
+      "label": "Synthetic red"
+    },
+    {
+      "id": "sfdaae73cb3799-blue",
+      "facet_id": "sfdaae73cb3799-finish",
+      "label": "Synthetic blue"
+    },
+    {
+      "id": "al-small-75fbda80-ee3a-4dc7-8c5f-c542f5273d86",
+      "facet_id": "al-finish-75fbda80-ee3a-4dc7-8c5f-c542f5273d86",
+      "label": "Synthetic matte"
+    },
+    {
+      "id": "al-large-75fbda80-ee3a-4dc7-8c5f-c542f5273d86",
+      "facet_id": "al-finish-75fbda80-ee3a-4dc7-8c5f-c542f5273d86",
+      "label": "Synthetic gloss"
+    },
+    {
+      "id": "al-small-3dd9b56b-98fb-4389-9e48-cef1a442abf7",
+      "facet_id": "al-finish-3dd9b56b-98fb-4389-9e48-cef1a442abf7",
+      "label": "Synthetic matte"
+    },
+    {
+      "id": "al-large-3dd9b56b-98fb-4389-9e48-cef1a442abf7",
+      "facet_id": "al-finish-3dd9b56b-98fb-4389-9e48-cef1a442abf7",
+      "label": "Synthetic gloss"
+    },
+    {
+      "id": "al-small-0ed2928d-e9c2-4dea-9820-8f42d1ff1768",
+      "facet_id": "al-finish-0ed2928d-e9c2-4dea-9820-8f42d1ff1768",
+      "label": "Synthetic matte"
+    },
+    {
+      "id": "al-large-0ed2928d-e9c2-4dea-9820-8f42d1ff1768",
+      "facet_id": "al-finish-0ed2928d-e9c2-4dea-9820-8f42d1ff1768",
+      "label": "Synthetic gloss"
+    },
+    {
+      "id": "ex-matte-c51f2fa7-25c3-41ad-8934-aec7034613ae",
+      "facet_id": "ex-finish-c51f2fa7-25c3-41ad-8934-aec7034613ae",
+      "label": "Matte"
+    },
+    {
+      "id": "ex-gloss-c51f2fa7-25c3-41ad-8934-aec7034613ae",
+      "facet_id": "ex-finish-c51f2fa7-25c3-41ad-8934-aec7034613ae",
+      "label": "Gloss"
+    },
+    {
+      "id": "ex-matte-351c0cfd-58fd-40e1-9821-a48458fc7075",
+      "facet_id": "ex-finish-351c0cfd-58fd-40e1-9821-a48458fc7075",
+      "label": "Matte"
+    },
+    {
+      "id": "ex-gloss-351c0cfd-58fd-40e1-9821-a48458fc7075",
+      "facet_id": "ex-finish-351c0cfd-58fd-40e1-9821-a48458fc7075",
+      "label": "Gloss"
+    },
+    {
+      "id": "ex-matte-f4005515-4895-4341-b54d-a4c3919adb8e",
+      "facet_id": "ex-finish-f4005515-4895-4341-b54d-a4c3919adb8e",
+      "label": "Matte"
+    },
+    {
+      "id": "ex-gloss-f4005515-4895-4341-b54d-a4c3919adb8e",
+      "facet_id": "ex-finish-f4005515-4895-4341-b54d-a4c3919adb8e",
+      "label": "Gloss"
+    }
+  ],
+  "concerns": [
+    {
+      "id": "dryness",
+      "name": "Dryness",
+      "claim_kind": "hydration",
+      "active": false
+    },
+    {
+      "id": "oiliness",
+      "name": "Oiliness",
+      "claim_kind": "cosmetic",
+      "active": false
+    },
+    {
+      "id": "dark-spots",
+      "name": "Dark Spots",
+      "claim_kind": "cosmetic",
+      "active": false
+    },
+    {
+      "id": "uneven-texture",
+      "name": "Uneven Texture",
+      "claim_kind": "cosmetic",
+      "active": false
+    },
+    {
+      "id": "acne-and-blemishes",
+      "name": "Acne and Blemishes",
+      "claim_kind": "suitability",
+      "active": false
+    },
+    {
+      "id": "sensitive-skin",
+      "name": "Sensitive Skin",
+      "claim_kind": "suitability",
+      "active": false
+    },
+    {
+      "id": "dullness",
+      "name": "Dullness",
+      "claim_kind": "cosmetic",
+      "active": false
+    },
+    {
+      "id": "fine-lines",
+      "name": "Fine lines",
+      "claim_kind": "cosmetic",
+      "active": false
+    }
+  ]
+}

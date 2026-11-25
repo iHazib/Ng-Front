@@ -1,0 +1,57 @@
+{
+  "kind": "actual hosted Auth/PostgREST read-only checks; no fixtures/mutations/installers",
+  "checkedAt": "2026-11-25T17:48:33.683Z",
+  "checks": [
+    {
+      "name": "admin membership verified",
+      "passed": true
+    },
+    {
+      "name": "non-admin membership rejected",
+      "passed": true
+    },
+    {
+      "name": "installed 024 capability is advertised",
+      "passed": true
+    },
+    {
+      "name": "boxed-set publication gate stays removed",
+      "passed": true
+    },
+    {
+      "name": "anonymous private publication report denied",
+      "passed": true
+    },
+    {
+      "name": "non-admin private publication report denied",
+      "passed": true
+    },
+    {
+      "name": "all eight approved concerns readable by admin",
+      "passed": true
+    },
+    {
+      "name": "new category-specific vocabulary installed",
+      "passed": true
+    },
+    {
+      "name": "anonymous navigation supports approved scoped facets",
+      "passed": true
+    },
+    {
+      "name": "private discovery helper is not a public RPC",
+      "passed": true
+    },
+    {
+      "name": "admin remains free of synthetic test products",
+      "passed": true
+    }
+  ],
+  "writes": 0,
+  "installersRun": 0,
+  "pending": [
+    "Persistent hosted discovery Save/removal/freshness browser tests remain pending a fixture cleanup workflow that does not leave admin product records.",
+    "Frontend not pushed/deployed."
+  ],
+  "status": "read_only_passed_write_verification_pending"
+}

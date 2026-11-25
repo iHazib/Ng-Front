@@ -98,6 +98,7 @@ export async function mutateProduct(token: string, body: Record<string,unknown>)
     const id=identifier(body.productId);const revision=integer(body.revision,1);const key=identifier(body.operationId);
     if(!body.data||typeof body.data!=='object'||Array.isArray(body.data))throw new AdminError('Check the product details and try again.');
     try{await admin.read('products',query({id:`eq.${id}`,select:'key_benefits',limit:'1'}));}catch{throw new AdminError('Product content update is not ready. Apply and verify migration 012 before saving.',503);}
+    if('discovery' in (body.data as Record<string,unknown>)){const report=await admin.rpc<{discovery_editor_version?:number}>('publication_report',{p_product:id});if(report.discovery_editor_version!==1)throw new AdminError('Apply and verify migration 024 before saving discovery filters. Your product is unchanged.',503);}
     const intent=body.intent??'save';if(typeof intent!=='string'||!['save','draft','publish','hide'].includes(intent))throw new AdminError('Choose Save, Draft, Publish or Hide.');
     const response=await fetch(new URL('/rest/v1/rpc/save_daily_product',process.env.NEXT_PUBLIC_SUPABASE_URL).toString(),{method:'POST',headers:{apikey:process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY??'',Authorization:`Bearer ${token}`,'Content-Type':'application/json'},body:JSON.stringify({p_product:id,p_revision:revision,p_data:body.data,p_key:key,p_intent:intent}),cache:'no-store',redirect:'error',signal:AbortSignal.timeout(20000)});
     const result=await response.json();
@@ -107,7 +108,7 @@ export async function mutateProduct(token: string, body: Record<string,unknown>)
       const message=String(result.message??'');
       if(message.startsWith('Missing publication information: '))throw new AdminError('Before publishing:\n'+Array.from(new Set(message.slice(33).split(',').map(publicationMessage))).join('\n'));
       if(message.startsWith('Published edit would be invalid: '))throw new AdminError('This edit cannot be saved while published. Your published product is unchanged. Fix the following, or explicitly choose Save draft:\n'+Array.from(new Set(message.slice('Published edit would be invalid: '.length).split(',').map(publicationMessage))).join('\n'));
-      if(result.code==='P0001'&&/^(Product changed|Stock changed|Stock cannot|Every option|Add a shade|Product name|Existing SKU|Removed option|An option reserved|Stock count|Duplicate option|Save request)/.test(message))throw new AdminError(message);
+      if(result.code==='P0001'&&/^(Invalid discovery|Too many discovery|Choose a category before|Confirm the selections|Choose label|Add the official|Filter changed|This filter|Choose an active shade|Keep mixed fragrance|Choose an existing option|Choose a value|Enter a filter|Enter a whole|Enter a positive|Filter values|Choose a supported skincare|Product changed|Stock changed|Stock cannot|Every option|Add a shade|Product name|Existing SKU|Removed option|An option reserved|Stock count|Duplicate option|Save request)/.test(message))throw new AdminError(message);
       throw new AdminError('Could not save. Check the category, product type, prices and stock counts.');
     }
     return result;

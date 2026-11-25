@@ -5,10 +5,13 @@ import {ProductMarkdown} from '@/components/storefront/ProductMarkdown';
 import {MarkdownEditor} from './MarkdownEditor';
 import { ProductMedia } from './ProductMedia';
 import { SectionCard, icon, readinessMessage } from './ui';
+import {ProductDiscovery} from './ProductDiscovery';
+import type {DiscoveryDraft} from '@/lib/catalog/discovery';
 import { publicationMessage } from '@/lib/catalog/publication-messages';
 type Props={detail:Detail;refs:References;run:(work:()=>Promise<unknown>,success?:string)=>Promise<void>;mutate:(body:Record<string,unknown>)=>Promise<void>;refresh:()=>Promise<void>;onDirty:(dirty:boolean)=>void;onBack:()=>void};
 type Option={id:string;sku:string;label:string;price:string;stock:string;originalStock:string;expectedStock:number;existing:boolean};
 export function ProductEditor({detail,refs,run,mutate,refresh,onDirty,onBack}:Props){
+  const [discovery,setDiscovery]=useState<DiscoveryDraft|null>(null);
   const p=detail.product;const active=detail.variants.filter(v=>v.status!=='archived');
   const [content,setContent]=useState({description:p.description??'',usage:p.usage??'',keyBenefits:p.key_benefits??''});
   const [options,setOptions]=useState<Option[]>(()=>active.map(v=>({id:v.id,sku:v.original_sku,label:v.label??'',price:v.variant_prices?String(v.variant_prices.amount_minor/100):'',stock:v.inventory_balances?.reconciled_at?String(v.inventory_balances.on_hand):'',originalStock:v.inventory_balances?.reconciled_at?String(v.inventory_balances.on_hand):'',expectedStock:v.inventory_balances?.on_hand??0,existing:true})));
@@ -23,15 +26,6 @@ export function ProductEditor({detail,refs,run,mutate,refresh,onDirty,onBack}:Pr
   const optional=[...new Set(detail.report.optional_enrichment??[])];
   const update=(id:string,key:'sku'|'label'|'price'|'stock',value:string)=>{changed();setOptions(rows=>rows.map(row=>row.id===id?{...row,[key]:value}:row));};
   const input=(o:Option,key:'sku'|'label'|'price'|'stock',label:string)=><input form={formId} aria-label={`${label}${multiple?` ${options.indexOf(o)+1}`:''}`} value={o[key]} readOnly={key==='sku'&&o.existing} onChange={e=>update(o.id,key,e.target.value)} required={key==='sku'||(key==='label'&&multiple)} inputMode={key==='price'?'decimal':key==='stock'?'numeric':undefined} type={key==='stock'?'number':'text'} min={key==='stock'?0:undefined} step={key==='stock'?1:undefined}/>;
-  const facets=detail.facets??[],concerns=detail.concerns??[];
-  const facetLabel=(facetId:string)=>refs.facet_definitions.find(f=>f.id===facetId)?.name??facetId;
-  const facetValue=(facetId:string,optionId:string|null,kind:string,integer:number|null,decimal:number|null,bool:boolean|null,unit:string|null)=>{
-   if(optionId)return refs.facet_values.find(v=>v.id===optionId)?.label??optionId;
-   if(integer!==null)return String(integer)+(unit?' '+unit:'');
-   if(decimal!==null)return String(decimal)+(unit?' '+unit:'');
-   if(bool!==null)return bool?'Yes':'No';
-   return kind;
-  };
   const sectionState=[
    {id:'basic-details',label:'Basics',done:Boolean(p.name.trim()&&p.brand_id&&p.category_id&&p.product_type_id&&options.every(o=>o.price))},
    {id:'product-images',label:'Images',done:detail.associations.length>0},
@@ -44,7 +38,7 @@ export function ProductEditor({detail,refs,run,mutate,refresh,onDirty,onBack}:Pr
    await run(async()=>{
     const rows=options.map(o=>{let priceMinor:number|null=null;if(o.price){if(!/^\d+(\.\d{1,2})?$/.test(o.price))throw new Error('Enter a price with no more than two decimal places.');const [whole,part='']=o.price.split('.');priceMinor=Number(whole)*100+Number(part.padEnd(2,'0'));if(!Number.isSafeInteger(priceMinor)||priceMinor<=0)throw new Error('Price must be greater than zero.');}
      return{id:o.id,sku:o.sku,label:o.label,priceMinor,stock:o.stock===''?null:Number(o.stock),expectedStock:o.expectedStock,countChanged:o.stock!==o.originalStock};});
-    const data={name:String(f.get('name')),brand:String(f.get('brand')),category,productType:String(f.get('type')),...(content.description!==(p.description??'')?{description:content.description}:{}),...(content.usage!==(p.usage??'')?{usage:content.usage}:{}),...(content.keyBenefits!==(p.key_benefits??'')?{keyBenefits:content.keyBenefits}:{}),featured:f.has('featured'),resolvedIssues:f.getAll('resolved'),options:rows};
+    const data={name:String(f.get('name')),brand:String(f.get('brand')),category,productType:String(f.get('type')),...(content.description!==(p.description??'')?{description:content.description}:{}),...(content.usage!==(p.usage??'')?{usage:content.usage}:{}),...(content.keyBenefits!==(p.key_benefits??'')?{keyBenefits:content.keyBenefits}:{}),...(discovery?{discovery}:{}),featured:f.has('featured'),resolvedIssues:f.getAll('resolved'),options:rows};
     const body={action:'daily-save',productId:p.id,revision:p.revision,data,intent};const encoded=JSON.stringify(body);if(request.current.body!==encoded)request.current={body:encoded,id:crypto.randomUUID()};
     try{await mutate({...body,operationId:request.current.id});setDirty(false);onDirty(false);}catch(error){
      if(error instanceof Error&&(error.message.startsWith('Before publishing:\n')||error.message.startsWith('This edit cannot be saved while published.')))setPublishMissing(error.message.split('\n').slice(1));
@@ -92,11 +86,12 @@ export function ProductEditor({detail,refs,run,mutate,refresh,onDirty,onBack}:Pr
    <label className="check"><input type="checkbox" checked={multiple} onChange={e=>{if(!e.target.checked&&options.length>1){window.alert('Remove the extra options first.');return;}setMultiple(e.target.checked);}}/>Does this product have different shades or sizes?</label>
    {multiple&&<><div className="variant-rows">{options.map(o=><div className="variant-row" key={o.id}><label>Shade / size{input(o,'label','Shade / size')}</label><label>SKU{input(o,'sku','SKU')}</label><label>Price (PKR){input(o,'price','Price (PKR)')}</label><label>Stock count{input(o,'stock','Stock count')}</label><div className="actions"><button type="button" className="btn-secondary btn-sm" onClick={()=>{if(!o.existing){window.alert('Save first, then add images to this option.');return;}setMediaOwner(o.id);document.getElementById('product-images')?.scrollIntoView({behavior:'smooth'});}}>Images</button><button type="button" className="btn-ghost btn-sm" disabled={options.length===1} onClick={()=>{if(!o.existing||window.confirm('Remove this option from sale? Its history will be kept.')){changed();setOptions(rows=>rows.filter(row=>row.id!==o.id));}}}>Remove option</button></div></div>)}</div><button type="button" onClick={()=>{changed();setOptions(rows=>[...rows,{id:crypto.randomUUID(),sku:'',label:'',price:'',stock:'',originalStock:'',expectedStock:0,existing:false}]);}} className="btn-secondary">Add shade/size</button></>}
   </SectionCard>
+  <ProductDiscovery key={p.id} detail={detail} refs={refs} category={category} onValue={value=>{setDiscovery(value);changed();}}/>
   <SectionCard id="stock-visibility" icon={icon.box} title="Stock & visibility" description="Count what you physically have, including zero.">
    {!multiple&&options[0]&&<label>Stock count{input(options[0],'stock','Stock count')}</label>}<small>Enter the quantity you have, including zero. Leave blank if you have not counted it yet.</small><label className="check"><input form={formId} type="checkbox" name="featured" defaultChecked={detail.features.length>0}/>Feature on homepage <small>Optional · manual selection</small></label><p>Save keeps the current visibility.</p>
    {issues.length>0&&<div className="notice"><h4>Check before publishing</h4>{Array.from(new Set(issues)).map(code=><label className="check" key={code}><input form={formId} type="checkbox" name="resolved" value={code}/><span>{publicationMessage(code)} <small>Tick after checking and correcting the information above.</small></span></label>)}</div>}
    {publishMissing.length>0&&<div className="notice" role="alert"><h4>Still needed for publication</h4><ul>{Array.from(new Set(publishMissing)).map(message=><li key={message}>{message}</li>)}</ul></div>}
-   {(facets.length>0||concerns.length>0)&&<div className="admin-attributes"><h4>Assigned attributes</h4>{facets.map(f=><p className="admin-attribute" key={f.id}><b>{facetLabel(f.facet_id)}</b> {facetValue(f.facet_id,f.option_id,f.kind,f.integer_value,f.decimal_value,f.boolean_value,f.unit)}</p>)}{concerns.map(c=><p className="admin-attribute" key={c.concern_id}><b>{refs.concerns.find(x=>x.id===c.concern_id)?.name??c.concern_id}</b> {c.qualification}</p>)}</div>}
+
    <details><summary>More information (optional)</summary><p>How to use, benefits and concerns are optional. Existing product history is preserved.</p></details>
   </SectionCard>
   <div className="editor-actions"><button form={formId} type="submit" value="save">Save</button><button type="button" className="btn-secondary" onClick={()=>{const form=document.getElementById(formId) as HTMLFormElement;const data=new FormData(form);setPreviewContent(Object.fromEntries(['name','description','usage','keyBenefits'].map(key=>[key,String(data.get(key)??'')])));preview.current?.showModal();}}>Preview</button><button form={formId} type="submit" value="draft" className="btn-secondary">Save draft</button><button form={formId} type="submit" value="publish" className="btn-publish">Publish</button><button type="button" className="btn-ghost" onClick={()=>{if(dirty&&!window.confirm('Hide the saved product without saving these edits?'))return;void run(()=>mutate({action:'visibility',productId:p.id,hidden:true}),'Product hidden.');}}>Hide</button><small>Preview shows your current content. It does not publish the product.</small></div>

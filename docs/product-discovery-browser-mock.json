@@ -1,0 +1,31 @@
+{
+  "kind": "actual_next_chrome_mock_provider",
+  "checks": [
+    {
+      "name": "all eight approved concerns available in skincare",
+      "result": "passed"
+    },
+    {
+      "name": "browser Save includes confirmed category features and concern atomically",
+      "result": "passed"
+    },
+    {
+      "name": "saved attributes return in editor",
+      "result": "passed"
+    },
+    {
+      "name": "discovery editor fits mobile",
+      "result": "passed"
+    },
+    {
+      "name": "fragrance editor does not offer skincare concerns",
+      "result": "passed"
+    },
+    {
+      "name": "fragrance concentration and one exact note submitted",
+      "result": "passed"
+    }
+  ],
+  "status": "passed",
+  "limitations": "Local Auth/PostgREST doubles; database semantics separately tested against disposable PostgreSQL. No hosted writes or real media uploads."
+}

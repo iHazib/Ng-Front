@@ -3,6 +3,10 @@
   "status": "passed",
   "checks": [
     {
+      "name": "navigation links assigned concerns skin type and occasion",
+      "result": "passed"
+    },
+    {
       "name": "live frame keeps four ordered heroes and footer",
       "result": "passed"
     },
