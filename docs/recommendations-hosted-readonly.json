@@ -1,0 +1,8 @@
+{
+  "kind": "actual hosted anonymous Supabase read-only query smoke; no browser deployment claim",
+  "date": "2026-11-25T16:07:16.035Z",
+  "writes": 0,
+  "categoryQueryPassed": true,
+  "candidateCount": 2,
+  "availableOtherProducts": 1
+}

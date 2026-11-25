@@ -27,6 +27,10 @@
       "result": "passed"
     },
     {
+      "name": "recommendations exclude the current product and link to a related product",
+      "result": "passed"
+    },
+    {
       "name": "description starts expanded and optional content starts collapsed",
       "result": "passed"
     },
@@ -68,6 +72,14 @@
     },
     {
       "name": "mobile description collapses without horizontal overflow",
+      "result": "passed"
+    },
+    {
+      "name": "recommendations fit mobile without overflow",
+      "result": "passed"
+    },
+    {
+      "name": "no unrelated recommendation fallback when category has no matches",
       "result": "passed"
     },
     {

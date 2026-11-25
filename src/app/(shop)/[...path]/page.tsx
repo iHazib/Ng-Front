@@ -1,3 +1,5 @@
+import {Suspense} from 'react';
+import {SimilarProducts} from '@/components/storefront/SimilarProducts';
 import {ProductReviews} from '@/components/storefront/ProductReviews';
 import type { Metadata } from 'next';
 import { notFound, permanentRedirect } from 'next/navigation';
@@ -85,7 +87,7 @@ export default async function ShopPage({ params, searchParams }: Props) {
     const product=path.startsWith('products/')?result.products[0]:undefined;
     const reviewPage=Math.min(1000,Math.max(1,Number(Array.isArray(query.reviewPage)?query.reviewPage[0]:query.reviewPage)||1));
     const reviewResult=product?await publicReviews(product.id,reviewPage).catch(()=>null):null;
-    return <PublicCommercePage path={path} query={query} result={result} navigation={navigation} reviewResult={reviewResult} reviews={product?<ProductReviews productId={product.id} slug={product.slug} page={reviewPage} result={reviewResult}/>:undefined}/>;
+    return <PublicCommercePage path={path} query={query} result={result} navigation={navigation} recommendations={product?<Suspense key={product.id} fallback={null}><SimilarProducts product={product}/></Suspense>:undefined} reviewResult={reviewResult} reviews={product?<ProductReviews productId={product.id} slug={product.slug} page={reviewPage} result={reviewResult}/>:undefined}/>;
   }
   if(path==='cart')return <PublicBag/>;
   if(path==='checkout')return <ActualCheckout/>;

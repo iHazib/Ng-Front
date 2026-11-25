@@ -199,3 +199,14 @@ html:has(.filter-dialog[open]) { overflow:hidden; }
 .product-disclosure-content>:last-child { margin-bottom:0; }
 @media(max-width:800px) { .product-detail-sections { margin-top:36px; gap:28px; } .product-disclosure>summary { min-height:60px; padding:18px 0; } .product-disclosure-content { padding-bottom:20px; } }
 @media(prefers-reduced-motion:no-preference) { .product-disclosure>summary svg { transition:transform .2s ease; } }
+
+/* Related products reuse the catalog cards without changing the product purchase area. */
+.similar-products { margin-top:72px; padding-top:32px; border-top:1px solid var(--line); }
+.similar-products>header { display:flex; align-items:end; justify-content:space-between; gap:24px; margin-bottom:28px; }
+.commerce .similar-products>header h2 { font-size:clamp(30px,3vw,42px); margin:10px 0 0; }
+.similar-products .eyebrow { margin:0; }
+.similar-products-grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:28px 20px; }
+.similar-products-grid .catalog-card { min-width:0; }
+@media(max-width:800px) { .similar-products { margin-top:44px; padding-top:24px; } .similar-products-grid { grid-template-columns:repeat(2,minmax(0,1fr)); gap:24px 16px; } .similar-products>header { align-items:start; flex-direction:column; gap:4px; margin-bottom:20px; } .similar-products>header .text-link { margin:0; } }
+
+.product-detail-sections>.similar-products { margin-top:0; }
