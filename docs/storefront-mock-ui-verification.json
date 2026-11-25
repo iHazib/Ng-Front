@@ -31,6 +31,10 @@
       "result": "passed"
     },
     {
+      "name": "product page does not display discovery filter attributes",
+      "result": "passed"
+    },
+    {
       "name": "recommendations exclude the current product and link to a related product",
       "result": "passed"
     },
@@ -72,6 +76,10 @@
     },
     {
       "name": "mobile drawer restores focus and page has no overflow",
+      "result": "passed"
+    },
+    {
+      "name": "mobile product page keeps discovery attributes out of purchase details",
       "result": "passed"
     },
     {
