@@ -837,3 +837,12 @@ Verification: 14 real Chrome/Next editor checks with faithful isolated provider 
 Removed the raw variant-attribute definition list from the public product purchase panel at the owner’s request. Concern/skin-type/area/occasion and other discovery assignments remain in admin/database and continue powering public collection filtering, search, supported navigation and related-product ranking. Legitimate shade/size selection, images, prices, stock, product copy disclosures and reviews remain visible. No assignment deletion, data migration or publication change.
 
 Verification: 25 actual Chrome/Next storefront checks with isolated synthetic RPC/images passed, including absence of attribute lists on desktop/mobile and existing navigation/filter/recommendation/variant behavior. TypeScript/lint passed. No hosted write, synthetic hosted product, SQL installer or deployment. Local change not pushed yet.
+
+
+## Product SKU and stock display — 2026-11-27
+
+Owner request: hide SKU on product pages and show available stock counts. Implemented in the public purchase panel with accessible status updates when the option changes; SKU identities and admin use are preserved.
+
+Verification: 29 real Next.js/Chrome checks with isolated mock RPC/image responses passed, including hidden SKU, selected-option stock, one remaining unit, zero availability, capped counts and mobile overflow checks. TypeScript passed. No live provider writes or deployment.
+The repository-wide lint run stalled and was stopped; no passing full lint result is claimed.
+Targeted lint of both changed source/verification files passed.
