@@ -501,3 +501,12 @@ Targeted lint of both changed source/verification files passed.
 Use initial capitals for storefront filter headings/options, sorting controls and applied chips (for example, “dry” displays as “Dry”), rather than all-uppercase styling. This is scoped CSS presentation; stored values, URL parameters, search, catalog records and other typography remain unchanged. No migration or provider setup. Local and unpushed.
 
 Verification: isolated Chrome rendering with the actual stylesheet passed at 1440px and 390px: visible “Dry”, unchanged stored/input “dry”, and initial-capital styling across filter controls/chips. Whitespace check passed; no hosted/full-page verification claimed.
+
+
+## Navigation/admin filter capitalisation — 2026-11-27
+
+Shared filterLabel display formatting capitalises a lowercase initial while preserving existing acronym/mixed casing, remaining text and stored identifiers. Published navigation facet/concern/type/category links, admin discovery options/saved assignments/concerns and admin list facet labels now use it. No persisted taxonomy rewrite.
+
+Verification so far: six unit checks, TypeScript and 17 real Next.js/Chrome admin checks with isolated Auth/PostgREST doubles passed. Tests include lowercase source labels becoming Dry/Eau de parfum, unchanged option IDs/payloads, saved labels and responsive editor workflows. Initial parallel browser startup conflicted over the shared local build folder; checks were rerun sequentially. Full repository lint stalled and was stopped; targeted lint is checked separately. No live provider writes, data migrations or deployment.
+
+Final checks: all 30 isolated storefront Chrome/Next checks passed, including navigation labels and unchanged URL values; targeted lint of all seven changed code/test files and whitespace checks passed. Provider results are mocked; real catalog records and approved assets remain untouched. Not pushed/deployed.

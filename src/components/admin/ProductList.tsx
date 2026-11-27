@@ -6,6 +6,7 @@ import {adminRequest} from './ProductAdmin';
 import {EmptyState,KpiTile,PageHeader,icon} from './ui';
 import type {AdminFacet,AdminListFilters,AdminListResult,Reminder} from '@/lib/catalog/admin-list';
 import {attentionOptions,reminderLabels} from '@/lib/catalog/admin-list';
+import {filterLabel} from '@/lib/catalog/discovery';
 import {publicationMessage} from '@/lib/catalog/publication-messages';
 const label=(issue:Reminder)=>reminderLabels[issue.code]??publicationMessage(issue.code);
 const money=(minor:number)=>new Intl.NumberFormat('en-PK',{style:'currency',currency:'PKR',minimumFractionDigits:2,maximumFractionDigits:2}).format(minor/100);
@@ -70,7 +71,7 @@ export function ProductList({refs,onEdit,onCreate}:{refs:References;onEdit:(id:s
   <label>Reminders<select aria-label="Reminders" value={filters.reminders??''} onChange={e=>change('reminders',e.target.value)}><option value="">All products</option><option value="ignored">Ignored reminders</option></select></label>
   </div>
   <fieldset className="attention-options"><legend>Needs attention</legend><div className="list-checks">{attentionOptions.map(code=><label className="check" key={code}><input type="checkbox" checked={filters.issues?.includes(code)??false} onChange={()=>toggleIssue(code)}/>{reminderLabels[code]}</label>)}</div><label>Match issues<select aria-label="Match issues" value={filters.mode??'any'} onChange={e=>change('mode',e.target.value)}><option value="any">Any selected issue</option><option value="all">All selected issues</option></select></label><small>These filters check missing information even when a reminder is ignored. Optional content never blocks publication.</small></fieldset>
-  {facets.length>0&&<details><summary>Assigned filters &amp; concerns</summary><p>Matches existing assignments only; it does not infer suitability.</p><div className="list-filter-grid">{facets.map(f=><fieldset key={f.key}><legend>{f.label}</legend>{f.values.map(v=><label className="check" key={v.value}><input type="checkbox" checked={filters.facets?.[f.key]?.includes(v.value)??false} onChange={()=>toggleFacet(f.key,v.value)}/>{v.label}</label>)}</fieldset>)}</div></details>}
+  {facets.length>0&&<details><summary>Assigned filters &amp; concerns</summary><p>Matches existing assignments only; it does not infer suitability.</p><div className="list-filter-grid">{facets.map(f=><fieldset key={f.key}><legend>{filterLabel(f.label)}</legend>{f.values.map(v=><label className="check" key={v.value}><input type="checkbox" checked={filters.facets?.[f.key]?.includes(v.value)??false} onChange={()=>toggleFacet(f.key,v.value)}/>{filterLabel(v.label)}</label>)}</fieldset>)}</div></details>}
   <div className="actions"><button disabled={busy}>Apply filters</button><button type="button" className="btn-ghost" disabled={busy} onClick={()=>{setQuery('');setFilters({});setApplied({query:'',filters:{}});setOffset(0);setUndo(null);}}>Clear all</button></div></details>
   </form>
   {error&&<p role="alert">{error} <button onClick={()=>setReload(n=>n+1)}>Retry</button></p>}

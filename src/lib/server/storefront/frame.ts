@@ -1,5 +1,6 @@
 import 'server-only';
 import {assets} from '@/config/assets';
+import {filterLabel} from '@/lib/catalog/discovery';
 const brandArtwork:Readonly<Record<string,string|undefined>>=assets.brands;
 import {getApprovedPreview,type ApprovedPreview} from '@/lib/catalog/approved-preview';
 import {resolveMedia} from '@/lib/catalog/media';
@@ -23,10 +24,10 @@ export function publicFrame(navigation:PublicNavigation,catalogProducts:PublicPr
    const heading=column.children.find(c=>typeof c!=='string'&&c.tag==='h3') as MarkupNode;
    const text=heading?.children.filter(c=>typeof c==='string').join('')??'';
    let links:MarkupNode[]=[];
-   const facetLinks=(keys:string[])=>keys.flatMap(key=>(navigation.facets??[]).filter(f=>f.key===key&&scopes.includes(f.scope)).slice(0,10).map(f=>tag('a',[f.value_label],{href:'/'+(scopeRoutes[f.scope]??route)+'?'+encodeURIComponent(key)+'='+encodeURIComponent(f.value)})));
-   const typeLinks=()=>navigation.types.filter(t=>scopes.includes(t.scope)).map(t=>tag('a',[t.name],{href:`/${route}?type=${encodeURIComponent(t.id)}`}));
+   const facetLinks=(keys:string[])=>keys.flatMap(key=>(navigation.facets??[]).filter(f=>f.key===key&&scopes.includes(f.scope)).slice(0,10).map(f=>tag('a',[filterLabel(f.value_label)],{href:'/'+(scopeRoutes[f.scope]??route)+'?'+encodeURIComponent(key)+'='+encodeURIComponent(f.value)})));
+   const typeLinks=()=>navigation.types.filter(t=>scopes.includes(t.scope)).map(t=>tag('a',[filterLabel(t.name)],{href:`/${route}?type=${encodeURIComponent(t.id)}`}));
    if(/concern/i.test(text)&&route==='skincare'){
-    links=navigation.concerns.map(c=>tag('a',[c.name],{href:'/skincare?concern='+encodeURIComponent(c.id)}));
+    links=navigation.concerns.map(c=>tag('a',[filterLabel(c.name)],{href:'/skincare?concern='+encodeURIComponent(c.id)}));
     const skin=facetLinks(['skin-type']);if(skin.length)links.push(tag('h3',['Skin type']),...skin);
    }else if(/concern/i.test(text)){if(heading)heading.children=['Shop by feature'];links=facetLinks(['body-format','application-area','occasion']);}
    else if(/gender/i.test(text))links=facetLinks(['marketed-audience']);
@@ -37,7 +38,7 @@ export function publicFrame(navigation:PublicNavigation,catalogProducts:PublicPr
    else if(route==='makeup'&&index===1){if(heading)heading.children=['Finish & coverage'];links=facetLinks(['makeup-finish','coverage','makeup-format']);}
    else if(route==='makeup'&&index===2)links=typeLinks().filter(l=>/tool|brush|accessor|sponge/i.test(l.children.join(' ')));
    else if(/brand/i.test(text))links=navigation.brands.filter(b=>b.scopes?.some(scope=>scopes.includes(scope))).map(b=>tag('a',[b.name],{href:`/${route}?brand=${encodeURIComponent(b.id)}`}));
-   else if(index===0){links=navigation.categories.filter(c=>c.scope&&scopes.includes(c.scope)&&c.id!==route).map(c=>tag('a',[c.name],{href:`/${route}?category=${encodeURIComponent(c.id)}`}));if(!links.length)links=typeLinks();}
+   else if(index===0){links=navigation.categories.filter(c=>c.scope&&scopes.includes(c.scope)&&c.id!==route).map(c=>tag('a',[filterLabel(c.name)],{href:`/${route}?category=${encodeURIComponent(c.id)}`}));if(!links.length)links=typeLinks();}
    else links=typeLinks();
    if(index===0&&route==='fragrances'){if(heading)heading.children=['Shop fragrances'];links=['personal-fragrance','home-fragrance'].filter(s=>navigation.categories.some(c=>c.scope===s)).map(s=>tag('a',[s==='home-fragrance'?'Home Fragrance':'Personal Fragrance'],{href:'/'+scopeRoutes[s]}));links.push(...facetLinks(['marketed-audience']));}
    if(index===0&&route==='bath-body'&&navigation.categories.some(c=>c.scope==='hair-care'))links.push(tag('a',['Hair Care'],{href:'/hair-care'}));

@@ -2,6 +2,10 @@
   "kind": "actual_next_chrome_mock_provider",
   "checks": [
     {
+      "name": "admin dropdown capitalises lowercase labels without changing option IDs",
+      "result": "passed"
+    },
+    {
       "name": "all eight approved concerns available in skincare",
       "result": "passed"
     },
@@ -11,6 +15,10 @@
     },
     {
       "name": "browser Save includes confirmed category features and concern atomically",
+      "result": "passed"
+    },
+    {
+      "name": "saved filter values use initial capitals",
       "result": "passed"
     },
     {
@@ -27,6 +35,10 @@
     },
     {
       "name": "pre-existing fragrance fields visible before adding rows",
+      "result": "passed"
+    },
+    {
+      "name": "fragrance option preserves natural phrase casing",
       "result": "passed"
     },
     {
