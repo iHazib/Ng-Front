@@ -610,3 +610,10 @@ Removed the visible product-page SKU and added selected-option available stock m
 Verification: 29 real Next.js/Chrome checks with isolated mock RPC/image responses passed, including hidden SKU, selected-option stock, one remaining unit, zero availability, capped counts and mobile overflow checks. TypeScript passed. No live provider writes or deployment.
 The repository-wide lint run stalled and was stopped; no passing full lint result is claimed.
 Targeted lint of both changed source/verification files passed.
+
+
+## Filter label capitalisation — 2026-11-27
+
+Use initial capitals for storefront filter headings/options, sorting controls and applied chips (for example, “dry” displays as “Dry”), rather than all-uppercase styling. This is scoped CSS presentation; stored values, URL parameters, search, catalog records and other typography remain unchanged. No migration or provider setup. Local and unpushed.
+
+Verification: isolated Chrome rendering with the actual stylesheet passed at 1440px and 390px: visible “Dry”, unchanged stored/input “dry”, and initial-capital styling across filter controls/chips. Whitespace check passed; no hosted/full-page verification claimed.
